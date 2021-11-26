@@ -32,7 +32,7 @@ Nei buildout di produzione, va messo uno dei file di versione con la data, in mo
 
 extends =
     ...
-    https://raw.githubusercontent.com/RedTurtle/dist.design.plone/main/20211126.cfg
+    https://raw.githubusercontent.com/RedTurtle/dist.design.plone/main/20211126-01.cfg
 ```
 
 
