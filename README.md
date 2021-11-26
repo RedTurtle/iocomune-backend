@@ -1,38 +1,38 @@
 # Design Plone Versions
 
-Questo è un repository con le versioni aggiornate delle dipendenze che servono per un sito agid creato con design.plone.policy.
-
-Ci sono due diversi tipi di file di versione:
-
-- **latest.cfg** contiene tutte le versioni più aggiornate delle varie dipendenze
-- **yyyymmdd.cfg** contiene le versioni più aggiornate delle dipendenze ad una data specifica
-
-## Come utilizzare questi file
+Repository con le versioni aggiornate delle dipendenze che servono per un sito agid creato con design.plone.policy.
+## Come utilizzare questo file
 
 ## Staging e sviluppo
 
-__latest.cfg__ è da utilizzare in sviluppo o per i siti di staging, in quanto potrebbe avere delle versioni che non sono ancora pronte per finire in produzione.
+Il file **versions.cfg** che si trova nel branch __main__ è da utilizzare in sviluppo o per i siti di staging, in quanto potrebbe avere delle versioni che non sono ancora pronte per finire in produzione.
 
 ```
 [buildout]
 
 extends =
     ...
-    https://raw.githubusercontent.com/RedTurtle/dist.design.plone/main/latest.cfg
+    https://raw.githubusercontent.com/RedTurtle/dist.design.plone/main/versions.cfg
 ```
 
 
 
 ## Produzione
 
-Nei buildout di produzione, va messo uno dei file di versione con la data, in modo da non avere effetti indesiderati rilanciando il buildout.
+Nei buildout di produzione, va messo il file **versions.cfg** preso da un tag.
+In questo modo si ha sempre una lista di versioni consistenti e immutabili.
+
 
 ```
 [buildout]
 
 extends =
     ...
-    https://raw.githubusercontent.com/RedTurtle/dist.design.plone/main/20211126-01.cfg
+    https://raw.githubusercontent.com/RedTurtle/dist.design.plone/20211126-01/versions.cfg
 ```
 
+# Quando fare un nuovo tag
 
+Quando si devono fare degli aggiornamenti in produzione, e tutto è pronto e testato, allora si può fare un nuovo tag per fissarle.
+
+Creando anche una release, è possibile andare a descrivere le modifiche che ci sono in quel determinato tag.
