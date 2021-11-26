@@ -36,3 +36,9 @@ extends =
 Quando si devono fare degli aggiornamenti in produzione, e tutto è pronto e testato, allora si può fare un nuovo tag per fissarle.
 
 Creando anche una release, è possibile andare a descrivere le modifiche che ci sono in quel determinato tag.
+
+Esempio di comando per il tag:
+
+```shell
+git tag -a 20211126-01 -m "versioni congelate al 2021-11-26"
+```
