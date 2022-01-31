@@ -1,10 +1,11 @@
 name: Update base docker image
+
 on:
   # Triggers the workflow on releases
   push:
-    branches: [ci]
-  release:
-    types: [published]
+    tags:
+      - '*'
+
 jobs:
   update:
     name: Update themes
@@ -19,6 +20,6 @@ jobs:
           curl --fail --request POST \
           --form token=${{ secrets.TOKEN }} \
           --form ref=main \
-          --form "variables[GITHUB_RELEASE]=${{ steps.get_version.outputs.VERSION }}" \
+          --form "variables[GITHUB_TAG]=${{ steps.get_version.outputs.VERSION }}" \
           "https://gitlab.com/api/v4/projects/${{ secrets.PROJECT_ID }}/trigger/pipeline"
 
