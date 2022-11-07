@@ -19,7 +19,7 @@ jobs:
 
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Generate constraints.txt from constraint.cfg
       run: |
@@ -28,7 +28,7 @@ jobs:
         python create-constraints.py constraints.cfg constraints.txt
 
     - name: Set up QEMU
-      uses: docker/setup-qemu-action@v1
+      uses: docker/setup-qemu-action@v2
 
     - name: Set up Docker Buildx
       id: buildx
