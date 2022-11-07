@@ -24,8 +24,7 @@ jobs:
     - name: Generate constraints.txt from constraint.cfg
       run: |
         cd docker
-        pip install zc.buildout
-        python create-constraints.py constraints.cfg constraints.txt
+        make constraints.txt
 
     - name: Set up QEMU
       uses: docker/setup-qemu-action@v2
