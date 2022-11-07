@@ -11,4 +11,4 @@ bin/buildout: bin/python
 	bin/pip install -r https://dist.plone.org/release/5.2.9/requirements.txt
 
 bin/python:
-	virtualenv .
+	python -m venv .
