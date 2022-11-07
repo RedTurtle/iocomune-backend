@@ -21,6 +21,12 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
+    - name: Generate constraints.txt from constraint.cfg
+      run: |
+        cd docker
+        pip install zc.buildout
+        python create-constraints.py constraints.cfg constraints.txt
+
     - name: Set up QEMU
       uses: docker/setup-qemu-action@v1
 
@@ -30,12 +36,6 @@ jobs:
 
     - name: Log-in to ghcr.io
       run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login https://ghcr.io -u ${{ github.actor }} --password-stdin
-
-    - name: Generate constraints.txt from constraint.cfg
-      run: |
-        cd docker
-        pip install zc.buildout
-        python create-constraints.py constraints.cfg constraints.txt
 
     - name: Build and push container image
       run: |
