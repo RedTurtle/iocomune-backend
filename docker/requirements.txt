@@ -1,3 +1,2 @@
 Plone
 design.plone.policy
-collective.tiles.collection
