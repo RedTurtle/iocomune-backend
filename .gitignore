@@ -1,1 +1,10 @@
+.installed.cfg
+.mr.developer.cfg
+pyvenv.cfg
+/bin
+/develop-eggs
+/lib
+/lib64
+/parts
+/var
 /src/*
