@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  backend:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - SITE=Plone
+      - PROFILES=design.plone.policy:default
+      # TODO: improve this part
+      # i.e. develop redturtle.volto withd docker
+      # 1. run something like "cd src && git clone git@github.com:redturtle/redturtle.volto"
+      # 2. uncomment the line beloow
+      # - DEVELOP=/app/src/redturtle.volto
+    volumes:
+      - ./src:/app/src
+

@@ -20,11 +20,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Generate constraints.txt from constraint.cfg
-        run: |
-          cd docker
-          make constraints.txt
-
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
 
@@ -56,7 +51,7 @@ jobs:
       - name: Build and push container image
         uses: docker/build-push-action@v3
         with:
-          context: ./docker
+          context: .
           push: true
           tags: ${{ steps.get_image_id.outputs.IMAGE_ID }}:${{ steps.get_version.outputs.VERSION }}
           platforms: linux/amd64,linux/arm64
