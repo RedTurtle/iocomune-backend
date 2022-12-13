@@ -19,7 +19,7 @@ E' possibile eventualmente anche usare il buildout.cfg presnte in questo reposit
 
 ```bash
 python3.8 -m venv .
-bin/pip install -r https://dist.plone.org/release/5.2.9/requirements.txt
+bin/pip install -r requirements.txt
 bin/buildout
 ```
 
