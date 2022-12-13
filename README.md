@@ -16,7 +16,20 @@ extends =
     https://raw.githubusercontent.com/RedTurtle/dist.design.plone/main/versions.cfg
 ```
 
+E' possibile eventualmente anche usare il buildout.cfg presente in questo repository
 
+```bash
+python3.8 -m venv .
+bin/pip install -r requirements.txt
+bin/buildout
+```
+
+O il docker compose::
+
+```bash
+docker compose build
+docker compose up
+```
 
 ## Produzione
 
@@ -31,6 +44,12 @@ extends =
     ...
     https://raw.githubusercontent.com/RedTurtle/dist.design.plone/20211126-01/versions.cfg
 ```
+
+# Docker images
+
+Dal branch __main__ e dai tag vengono create automaticamente immagini Docker linux/amd64 e linux/arm64 rilasciate sul repository gihub
+
+https://github.com/RedTurtle/dist.design.plone/pkgs/container/dist.design.plone
 
 # Quando fare un nuovo tag
 
