@@ -15,7 +15,7 @@ extends =
     https://raw.githubusercontent.com/RedTurtle/dist.design.plone/main/versions.cfg
 ```
 
-E' possibile eventualmente anche usare il buildout.cfg presnte in questo repository
+E' possibile eventualmente anche usare il buildout.cfg presente in questo repository
 
 ```bash
 python3.8 -m venv .
