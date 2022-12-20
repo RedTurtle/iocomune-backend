@@ -2,7 +2,6 @@ name: Run development buildout
 
 on:
   push:
-  pull_request:
   # Allow to run this workflow manually from the Actions tab
   workflow_dispatch:
 
