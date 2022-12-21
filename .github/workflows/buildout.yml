@@ -24,3 +24,9 @@ jobs:
       - name: Build
         run: |
           buildout -t 2
+      - name: c.r.plonesite
+        run: |
+          echo "from plone import api; print(api.portal.get().getId())" | bin/instance -OPlone debug
+      - name: Test
+        run: |
+          bin/test
