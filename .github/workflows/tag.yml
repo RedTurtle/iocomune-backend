@@ -19,7 +19,7 @@ jobs:
       # Update the file
       - name: Update file
         run: |
-          sed -i s/__CURRENT_VERSION__/${{ github.ref }}/g versions.cfg
+          sed -i s/__CURRENT_VERSION__/${{ github.ref_name }}/g versions.cfg
       
       - name: Commit and push changes
         uses: ad-m/github-push-action@master
