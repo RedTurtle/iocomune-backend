@@ -1,8 +1,12 @@
 name: Update version
 
+# on:
+#   create:
+#     types: [tag]
 on:
-  create:
-    types: [tag]
+  push:
+    tags:
+    - '*'
 
 jobs:
   update_file:
@@ -21,7 +25,5 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
+          branch: ${{ github.ref }}
           message: "Update version on tag creation"
-          committer_name: "GitHub Actions"
-          committer_email: "actions@redturtle.it"
