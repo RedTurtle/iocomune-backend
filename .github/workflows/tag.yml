@@ -1,0 +1,25 @@
+on:
+  create:
+    types: [tag]
+
+jobs:
+  update_file:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref }}
+
+      # Update the file
+      - name: Update file
+        run: |
+          sed -i s/__CURRENT_VERSION__/${{ github.ref }}/g versions.cfg
+      
+      - name: Commit and push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+          message: "Update version on tag creation"
+          committer_name: "GitHub Actions"
+          committer_email: "actions@redturtle.it"
