@@ -1,4 +1,5 @@
 .vscode/
+.idea/
 .installed.cfg
 .plone.versioncheck.tracked.json
 .mr.developer.cfg
