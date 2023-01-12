@@ -1,6 +1,6 @@
 # Design Plone Versions
 
-Repository con le versioni aggiornate delle dipendenze che servono per un sito agid creato con design.plone.policy (backend Plone) e https://github.com/italia/design-comuni-plone-theme (Frontend Volto/ReactJS).
+Repository con le versioni aggiornate delle dipendenze che servono per un sito agid pnrr creato con design.plone.policy (backend Plone 6.0+) e https://github.com/italia/design-comuni-plone-theme (Frontend Volto/ReactJS).
 
 ## Come utilizzare questo file
 

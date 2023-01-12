@@ -1,4 +1,6 @@
+.vscode/
 .installed.cfg
+.plone.versioncheck.tracked.json
 .mr.developer.cfg
 pyvenv.cfg
 /bin
@@ -8,3 +10,4 @@ pyvenv.cfg
 /parts
 /var
 /src/*
+
