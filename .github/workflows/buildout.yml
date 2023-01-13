@@ -15,8 +15,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Set locale
         run: |
-          sudo apt-get update && sudo apt-get install locales
-          sudo locale-gen locale-gen en_US en_US.ISO-8859-1 en_US.ISO8859-15 en_GB.ISO8859-15 de_DE@euro fr_FR@euro nl_NL@euro
+          sudo locale-gen en_US en_US.ISO-8859-1 en_US.ISO8859-15 en_GB.ISO8859-15 de_DE@euro fr_FR@euro nl_NL@euro
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
