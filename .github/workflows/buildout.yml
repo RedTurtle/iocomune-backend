@@ -29,4 +29,4 @@ jobs:
           echo "from plone import api; print(api.portal.get().getId())" | bin/instance -OPlone debug
       - name: Test
         run: |
-          bin/test
+          bin/test -u
