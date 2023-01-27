@@ -1,6 +1,6 @@
 # Design Plone Versions
 
-Repository con le versioni aggiornate delle dipendenze che servono per un sito agid pnrr creato con design.plone.policy (backend Plone 6.0+) e https://github.com/italia/design-comuni-plone-theme (Frontend Volto/ReactJS).
+Repository con le versioni aggiornate delle dipendenze che servono per un sito agid con le nuove specifiche per il pnrr creato con backend Plone 6.0+ e https://github.com/italia/design-comuni-plone-theme (Frontend Volto/ReactJS).
 
 ## Come utilizzare questo file
 
@@ -13,13 +13,13 @@ Il file **versions.cfg** che si trova nel branch __main__ è da utilizzare in sv
 
 extends =
     ...
-    https://raw.githubusercontent.com/RedTurtle/dist.design.plone/main/versions.cfg
+    https://raw.githubusercontent.com/RedTurtle/iocomune-backend/main/versions.cfg
 ```
 
 E' possibile eventualmente anche usare il buildout.cfg presente in questo repository
 
 ```bash
-python3.8 -m venv .
+python3.11 -m venv .
 bin/pip install -r requirements.txt
 bin/buildout
 ```
@@ -42,14 +42,14 @@ In questo modo si ha sempre una lista di versioni consistenti e immutabili.
 
 extends =
     ...
-    https://raw.githubusercontent.com/RedTurtle/dist.design.plone/20211126-01/versions.cfg
+    https://raw.githubusercontent.com/RedTurtle/iocomune-backend/*tag*/versions.cfg
 ```
 
 # Docker images
 
 Dal branch __main__ e dai tag vengono create automaticamente immagini Docker linux/amd64 e linux/arm64 rilasciate sul repository gihub
 
-https://github.com/RedTurtle/dist.design.plone/pkgs/container/dist.design.plone
+https://github.com/RedTurtle/iocomune-backend/pkgs/container/iocomune-backend
 
 # Quando fare un nuovo tag
 
