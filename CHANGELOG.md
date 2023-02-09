@@ -1,5 +1,7 @@
 # Changelog
 
+## (unreleased)
+
 ## 20230209-04 (2023/02/09)
 
 - Removed update-image.yml

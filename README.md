@@ -62,3 +62,5 @@ Esempio di comando per il tag:
 ```shell
 git tag -a 20211126-01 -m "versioni congelate al 2021-11-26"
 ```
+
+Con il tag viene triggerata una pipeline all'interno di questo repo gitlab: https://gitlab.com/redturtle/io-comune/dist.backend.iocittadino, che aggiorna gli altri siti di test 
