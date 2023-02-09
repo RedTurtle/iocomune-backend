@@ -2,6 +2,12 @@
 
 ## (unreleased)
 
+- 
+
+## 20230209-01 (2023/02/09)
+
+- Update update-image.yml
+  [eikichi18]
 - Upgrade Plone 6.0.0.2 -> 6.0.1
   [mamico] 
 
