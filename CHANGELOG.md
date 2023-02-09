@@ -2,7 +2,8 @@
 
 ## (unreleased)
 
-- 
+- Removed update-image.yml
+- Update build.yml
 
 ## 20230209-01 (2023/02/09)
 

@@ -1,4 +1,4 @@
-name: Update gh docker image
+name: Update gh docker image and triggers
 
 on:
   # Triggers the workflow on releases
@@ -68,3 +68,11 @@ jobs:
           workload: ${{ secrets.RANCHER_WORKLOAD }}
           image: ${{ steps.get_image_id.outputs.IMAGE_ID }}:${{ steps.get_version.outputs.VERSION }}
           slack-hook-url: ${{ secrets.RANCHER_SLACK_HOOK_URL }}
+
+      - name: Trigger job
+        run: |
+          curl --fail --request POST \
+          --form token=${{ secrets.TOKEN }} \
+          --form ref=main \
+          --form "variables[GITHUB_TAG]=${{ steps.get_version.outputs.VERSION }}" \
+          "https://gitlab.com/api/v4/projects/${{ secrets.PROJECT_ID }}/trigger/pipeline"
