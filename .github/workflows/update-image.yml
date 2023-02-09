@@ -1,7 +1,8 @@
 name: Update base docker image
 
 on:
-  # Triggers the workflow on releases
+  workflow_run:
+    workflows: ["Update gh docker image"]
   push:
     tags:
       - '*'
