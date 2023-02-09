@@ -70,6 +70,7 @@ jobs:
           slack-hook-url: ${{ secrets.RANCHER_SLACK_HOOK_URL }}
 
       - name: Trigger job
+        if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
         run: |
           curl --fail --request POST \
           --form token=${{ secrets.TOKEN }} \
