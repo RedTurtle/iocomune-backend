@@ -2,6 +2,9 @@
 
 ## (unreleased)
 
+- Upgrade redturtle.volto 5.0.0a1 (branch pip) > 5.0.0rc1 (master)
+  [mamico]
+
 ## 20230209-04 (2023/02/09)
 
 - Removed update-image.yml
