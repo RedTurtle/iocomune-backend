@@ -2,7 +2,15 @@
 
 ## (unreleased)
 
-- Upgrade redturtle.volto 5.0.0a1 (branch pip) > 5.0.0rc1 (master)
+- Upgrade Plone 6.0.1 -> 6.0.3
+          plone.patternslib 1.1.1 -> 1.3.0
+          plone.rest 2.0.0 -> 3.0.0
+          z3c.unconfigure 1.1 -> 2.0
+  [mamico] 
+
+## 2023????-??
+
+- Upgrade redturtle.volto 5.0.0a1 -> 5.0.0
   [mamico]
 
 ## 20230209-04 (2023/02/09)
