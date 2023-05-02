@@ -1,8 +1,28 @@
 # Changelog
 
-## (unreleased)
+## Unreleased
 
-- Upgrade Plone 6.0.1 -> 6.0.4
+- Upgrade Plone 6.0.3 -> 6.0.4
+  [mamico]
+
+## 20230428-02
+
+- Upgrade design.plone.contenttypes 6.0.5 -> 6.0.6
+   Added images serialization to the summary serializer of the UO content type;
+   If both the image and preview image are present, the 'image_field' attribute
+   is forced to contain 'preview_image'.
+  [lucabel]
+
+## 20230428-01
+
+- Upgrade design.plone.contenttypes 6.0.4 -> 6.0.5
+    Remove address, city, zip_code, nome_sede, title,
+    quartiere, circoscrizione, street from UO summary
+    serializer and add sede in thery place in the
+    UO summary serializer
+  [lucabel]
+
+- Upgrade Plone 6.0.1 -> 6.0.3
           plone.patternslib 1.1.1 -> 1.3.0
           plone.rest 2.0.0 -> 3.0.0
           z3c.unconfigure 1.1 -> 2.0
