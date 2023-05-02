@@ -2,7 +2,7 @@
 
 ## (unreleased)
 
-- Upgrade Plone 6.0.1 -> 6.0.3
+- Upgrade Plone 6.0.1 -> 6.0.4
           plone.patternslib 1.1.1 -> 1.3.0
           plone.rest 2.0.0 -> 3.0.0
           z3c.unconfigure 1.1 -> 2.0
