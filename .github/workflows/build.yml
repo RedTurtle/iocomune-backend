@@ -57,6 +57,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
 
       - name: Deploy to rancher # io-comune-test
+        if: github.ref == 'main'
         uses: redturtle/rancher-deploy-action@v0.1.0
         with:
           host: ${{ secrets.RANCHER_HOST }} # organization
