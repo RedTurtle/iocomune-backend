@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+- Upgrade design.plone.policy 5.0.0 -> 5.0.1
+    Add X-ForceAuth header and iw.rejectanonymous
+    Customize Access inactive portal content permission to allow access these contents also for not manager users.
+  [mamico]
+
 ## 20230504-02
 
 - Upgrade design.plone.contenttypes 6.0.7 -> 6.0.8
