@@ -1,5 +1,12 @@
 # Changelog
 
+## 20230504-02
+
+- Upgrade design.plone.contenttypes 6.0.7 -> 6.0.8
+  Fix bug in Persona summary serializer with "incarichi"
+  field
+  [lucabel]
+
 ## 20230504-01
 
 - Upgrade design.plone.contenttypes 6.0.6 -> 6.0.7
