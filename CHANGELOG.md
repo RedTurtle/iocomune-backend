@@ -1,5 +1,12 @@
 # Changelog
 
+## 20230504-01
+
+- Upgrade design.plone.contenttypes 6.0.6 -> 6.0.7
+   Made servizio/canale_fisico optional
+   Update check_servizi
+  [lucabel]
+
 ## 20230428-02
 
 - Upgrade design.plone.contenttypes 6.0.5 -> 6.0.6
