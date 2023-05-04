@@ -5,6 +5,25 @@
 - Upgrade Plone 6.0.3 -> 6.0.4
   [mamico]
 
+- Upgrade design.plone.policy 5.0.0 -> 5.0.1
+    Add X-ForceAuth header and iw.rejectanonymous
+    Customize Access inactive portal content permission to allow access these contents also for not manager users.
+  [mamico]
+
+## 20230504-02
+
+- Upgrade design.plone.contenttypes 6.0.7 -> 6.0.8
+  Fix bug in Persona summary serializer with "incarichi"
+  field
+  [lucabel]
+
+## 20230504-01
+
+- Upgrade design.plone.contenttypes 6.0.6 -> 6.0.7
+   Made servizio/canale_fisico optional
+   Update check_servizi
+  [lucabel]
+
 ## 20230428-02
 
 - Upgrade design.plone.contenttypes 6.0.5 -> 6.0.6
