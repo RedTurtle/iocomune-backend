@@ -1,6 +1,9 @@
 # Changelog
 
-## Unreleased
+## Unreleased
+
+- Upgrade Plone 6.0.3 -> 6.0.4
+  [mamico]
 
 - Upgrade design.plone.policy 5.0.0 -> 5.0.1
     Add X-ForceAuth header and iw.rejectanonymous
@@ -37,8 +40,6 @@
     serializer and add sede in thery place in the
     UO summary serializer
   [lucabel]
-
-## (unreleased)
 
 - Upgrade Plone 6.0.1 -> 6.0.3
           plone.patternslib 1.1.1 -> 1.3.0
