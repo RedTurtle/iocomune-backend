@@ -5,7 +5,8 @@
 - Upgrade Plone 6.0.3 -> 6.0.4
   [mamico]
 
-- Upgrade design.plone.policy 5.0.0 -> 5.0.1
+- Upgrade design.plone.policy 5.0.0 -> 5.0.2
+    Fix setuphandlers' utils for robotframework
     Add X-ForceAuth header and iw.rejectanonymous
     Customize Access inactive portal content permission to allow access these contents also for not manager users.
   [mamico]
