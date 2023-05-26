@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 20230525-1
 
 - Upgrade Plone 6.0.3 -> 6.0.4
   [mamico]
@@ -10,6 +10,10 @@
     Add X-ForceAuth header and iw.rejectanonymous
     Customize Access inactive portal content permission to allow access these contents also for not manager users.
   [mamico]
+
+- Upgrade design.plone.contenttypes 6.0.8 -> 6.0.9
+    Used isoformat for scadenziario-day time field in summary
+  [sabrina-bongiovanni]
 
 ## 20230504-02
 
