@@ -1,19 +1,17 @@
 # Changelog
 
-## 20230525-1
+## 20230525-1
 
 - Upgrade Plone 6.0.3 -> 6.0.4
   [mamico]
 
-- Upgrade design.plone.policy 5.0.0 -> 5.0.2
-    Fix setuphandlers' utils for robotframework
-    Add X-ForceAuth header and iw.rejectanonymous
-    Customize Access inactive portal content permission to allow access these contents also for not manager users.
-  [mamico]
+- Upgrade design.plone.policy 5.0.0 -> 5.0.2 [mamico]
+  - Fix setuphandlers' utils for robotframework
+  - Add X-ForceAuth header and iw.rejectanonymous
+  - Customize Access inactive portal content permission to allow access these contents also for not manager users.
 
-- Upgrade design.plone.contenttypes 6.0.8 -> 6.0.9
-    Used isoformat for scadenziario-day time field in summary
-  [sabrina-bongiovanni]
+- Upgrade design.plone.contenttypes 6.0.8 -> 6.0.9 [sabrina-bongiovanni]
+  - Used isoformat for scadenziario-day time field in summary
 
 ## 20230504-02
 
