@@ -1,6 +1,6 @@
 # Changelog
 
-## 20230525-1
+## 20230525-01
 
 - Upgrade Plone 6.0.3 -> 6.0.4
   [mamico]
