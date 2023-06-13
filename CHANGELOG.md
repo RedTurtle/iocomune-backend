@@ -1,5 +1,10 @@
 # Changelog
 
+## 20230613-01
+
+- Upgrade design.plone.policy 5.0.2 -> 5.0.3 [cekk]
+  - Fix creation script: now set default blocks and blocks_layout.
+
 ## 20230525-01
 
 - Upgrade Plone 6.0.3 -> 6.0.4
