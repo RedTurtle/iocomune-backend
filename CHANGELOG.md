@@ -1,5 +1,12 @@
 # Changelog
 
+
+## 20230619-01
+
+- Upgrade design.plone.contenttypes 6.0.9 -> 6.0.10 [eikichi18]
+  - removed required from persone_struttura field
+  - removed preview_caption
+
 ## 20230613-01
 
 - Upgrade design.plone.policy 5.0.2 -> 5.0.3 [cekk]
