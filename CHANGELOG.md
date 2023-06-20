@@ -1,5 +1,9 @@
 # Changelog
 
+## 20230620-01
+
+- Upgrade design.plone.contenttypes 6.0.10 -> 6.0.11 [eikichi18]
+  - Added image_scales field in service of ScadenziarioDay
 
 ## 20230619-01
 
