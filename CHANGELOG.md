@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+- redturtle.rssservice 2.0.0 -> 2.2.0 [mamico]
+  - Allow configuring the User-Agent for the requests to get feeds, via the REQUESTS_USER_AGENT environment variable. [davisagli]
+  - Customizable timeout. [cekk]
+  - Return 404 if block not found instead BadRequest. [cekk]
+  - Handle site root blocks in plone 6. [cekk]
+
 ## 20230620-01
 
 - Upgrade design.plone.contenttypes 6.0.10 -> 6.0.11 [eikichi18]
