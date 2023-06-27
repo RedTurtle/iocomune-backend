@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- redturtle.bandi 1.4.2 -> 1.4.3 [mamico]
+  -  Fix workaround for Link bug (?) (remoteUrl in catalog) [mamico]
+  -  Feat url dei file compleata con filename [mamico]
+  -  Fix invalid tipologie_bando [mamico]
+
 - redturtle.rssservice 2.0.0 -> 2.2.0 [mamico]
   - Allow configuring the User-Agent for the requests to get feeds, via the REQUESTS_USER_AGENT environment variable. [davisagli]
   - Customizable timeout. [cekk]
