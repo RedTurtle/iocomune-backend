@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- collective.z3cform.datagridfield 3.0.0 -> 3.0.1 [mamico]
+
 - redturtle.bandi 1.4.2 -> 1.4.3 [mamico]
   -  Fix workaround for Link bug (?) (remoteUrl in catalog) [mamico]
   -  Feat url dei file compleata con filename [mamico]
