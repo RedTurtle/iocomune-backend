@@ -1,5 +1,7 @@
 # Changelog
 
+
+
 ## Unreleased
 
 - collective.z3cform.datagridfield 3.0.0 -> 3.0.1 [mamico]
@@ -14,6 +16,9 @@
   - Customizable timeout. [cekk]
   - Return 404 if block not found instead BadRequest. [cekk]
   - Handle site root blocks in plone 6. [cekk]
+
+- plone.restapi 8.37.0 -> 8.41.0 [cekk]
+  -  Fix path2uid method, to handle suffix with non-traversable objects [cekk]
 
 ## 20230620-01
 
