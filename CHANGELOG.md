@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- redturtle.volto 5.0.0 -> 5.0.1 [mamico]
+  - Custom portal url in @@fix-links [mamico]
+
 - collective.z3cform.datagridfield 3.0.0 -> 3.0.1 [mamico]
 
 - redturtle.bandi 1.4.2 -> 1.4.3 [mamico]
