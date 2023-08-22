@@ -4,6 +4,8 @@
 
 ## Unreleased
 
+- Upgrade Plone 6.0.4 -> 6.0.6 [mamico]
+  
 - redturtle.volto 5.0.0 -> 5.0.1 [mamico]
   - Custom portal url in @@fix-links [mamico]
 
