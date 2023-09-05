@@ -1,6 +1,8 @@
 # Changelog
 
-
+## 20230829-01
+ - design.plone.policy 5.0.5 -> design.plone.policy 5.0.6[folix-01]
+   - Fix to 3001 upgrade step. [folix-01]
 
 ## 20230824-01
 
