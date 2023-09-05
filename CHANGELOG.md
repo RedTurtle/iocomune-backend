@@ -2,7 +2,7 @@
 
 
 
-## Unreleased
+## 20230824-01
 
 - Upgrade Plone 6.0.4 -> 6.0.6 [mamico]
   
@@ -24,6 +24,11 @@
 
 - plone.restapi 8.37.0 -> 8.41.0 [cekk]
   -  Fix path2uid method, to handle suffix with non-traversable objects [cekk]
+
+- Upgrade design.plone.contenttypes 6.0.15 -> 6.0.16 [eikichi18]
+  - chaged migration of compensi and importi_di_viaggio field on Incaricto ct
+    creation. [eikichi18]
+  - Fixed relation between person and uo. [deodorhunter]
 
 ## 20230620-01
 
