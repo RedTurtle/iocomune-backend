@@ -2,6 +2,12 @@
 
 
 
+## 20230906-01
+
+- Upgrade design.plone.contenttypes 6.0.16 -> 6.0.17 [eikichi18]
+  - added dates for incarico persona [deodorhunter]
+ 
+
 ## 20230824-01
 
 - redturtle.volto 5.0.0 -> 5.0.1 [mamico]
