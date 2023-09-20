@@ -1,5 +1,9 @@
 # Changelog
 
+## 20230920-01
+ - design.plone.contenttypes 6.0.17 -> design.plone.policy 6.0.18 [lucabel]
+   - Add permission check to solve problem accessing private resources with anonymous user [lucabel]
+
 ## 20230829-01
  - design.plone.policy 5.0.5 -> design.plone.policy 5.0.6[folix-01]
    - Fix to 3001 upgrade step. [folix-01]
