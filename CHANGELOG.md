@@ -1,9 +1,18 @@
 # Changelog
 
-
 ## Unreleased
 
 - Upgrade Plone 6.0.4 -> 6.0.7 [mamico]
+
+## 20230906-01
+
+- Upgrade design.plone.contenttypes 6.0.16 -> 6.0.17 [eikichi18]
+  - added dates for incarico persona [deodorhunter]
+
+
+## 20230829-01
+ - design.plone.policy 5.0.5 -> design.plone.policy 5.0.6[folix-01]
+   - Fix to 3001 upgrade step. [folix-01]
 
 
 ## 20230824-01
