@@ -1,5 +1,14 @@
 # Changelog
 
+## 20230926-01
+ - redturtle.volto 2.5.3 -> redturtle.volto 2.5.4 [lucabel]
+   - Fix the issue in the @translation GET endpoint: If this endpoint 
+     is invoked, possibly by a bot, and plone.app.multilingual is not
+     installed, the call will result in an empty search query on the catalog. 
+     [lucabel]
+   - backport https://github.com/plone/Products.CMFPlone/pull/3845 fix: avoid 
+     searching all users when many_users is flagged [mamico] 
+
 ## 20230920-01
  - design.plone.contenttypes 6.0.17 -> design.plone.policy 6.0.18 [lucabel]
    - Add permission check to solve problem accessing private resources with anonymous user [lucabel]
