@@ -43,7 +43,7 @@ jobs:
       - name: Get the version
         id: get_version
         run: |
-          VERSION=$(echo "${{ github.ref }}" | sed -e 's,.*/\(.*\),\1,')
+          VERSION="${{ github.ref_name }}"
           [[ "${{ github.ref }}" == "refs/tags/"* ]] && VERSION=$(echo $VERSION | sed -e 's/^v//')
           [ "$VERSION" == "main" ] && VERSION=latest
           echo ::set-output name=VERSION::$VERSION
