@@ -40,10 +40,15 @@ jobs:
           IMAGE_ID=$(echo ghcr.io/${{ github.repository }} | tr '[A-Z]' '[a-z]')
           echo ::set-output name=IMAGE_ID::$IMAGE_ID
 
+      - name: Extract branch name
+        shell: bash
+        run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
+        id: extract_branch
+
       - name: Get the version
         id: get_version
         run: |
-          VERSION="${{ github.ref_name }}"
+          VERSION="${{ steps.extract_branch.outputs.branch }}"
           [[ "${{ github.ref }}" == "refs/tags/"* ]] && VERSION=$(echo $VERSION | sed -e 's/^v//')
           [ "$VERSION" == "main" ] && VERSION=latest
           echo ::set-output name=VERSION::$VERSION
