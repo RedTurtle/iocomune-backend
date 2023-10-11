@@ -1,0 +1,3 @@
+Plone
+design.plone.policy[test]
+collective.MockMailHost

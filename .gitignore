@@ -12,3 +12,4 @@ pyvenv.cfg
 /var
 /src/*
 Pipfile*
+.python-version
