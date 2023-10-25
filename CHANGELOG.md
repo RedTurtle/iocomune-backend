@@ -1,5 +1,11 @@
 # Changelog
 
+## 20231026-01
+
+- design.plone.contenttypes 6.0.18 -> 6.0.19 [pnicolli]
+  - Event field "Costi" is now required
+  - Fix typo in field help text
+
 ## 20230926-01
  - redturtle.volto 2.5.3 -> redturtle.volto 2.5.4 [lucabel]
    - Fix the issue in the @translation GET endpoint: If this endpoint 
