@@ -1,7 +1,13 @@
 # Changelog
 
-## 20231025-01
+## 20231027-01
 - redturtle.volto 5.2.4 -> 5.3.0 [cekk]
+
+## 20231026-01
+
+- design.plone.contenttypes 6.0.18 -> 6.0.19 [pnicolli]
+  - Event field "Costi" is now required
+  - Fix typo in field help text
 
 ## 20230926-01
  - redturtle.volto 5.2.3 -> redturtle.volto 5.2.4 [lucabel]
