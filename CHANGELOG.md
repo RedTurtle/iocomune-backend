@@ -1,5 +1,8 @@
 # Changelog
 
+## 20231027-01
+- redturtle.volto 5.2.4 -> 5.3.0 [cekk]
+
 ## 20231026-01
 
 - design.plone.contenttypes 6.0.18 -> 6.0.19 [pnicolli]
@@ -7,7 +10,7 @@
   - Fix typo in field help text
 
 ## 20230926-01
- - redturtle.volto 2.5.3 -> redturtle.volto 2.5.4 [lucabel]
+ - redturtle.volto 5.2.3 -> redturtle.volto 5.2.4 [lucabel]
    - Fix the issue in the @translation GET endpoint: If this endpoint 
      is invoked, possibly by a bot, and plone.app.multilingual is not
      installed, the call will result in an empty search query on the catalog. 
