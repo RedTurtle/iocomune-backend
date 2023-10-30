@@ -1,5 +1,10 @@
 # Changelog
 
+## 20231030-02
+
+- design.plone.contenttypes 6.0.20 -> 6.0.21 [cekk]
+  - Fix Upgrade-step to set default value in "Costi" field.
+
 ## 20231030-01
 
 - design.plone.contenttypes 6.0.19 -> 6.0.20 [cekk]
