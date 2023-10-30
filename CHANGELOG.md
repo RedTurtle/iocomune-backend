@@ -1,6 +1,12 @@
 # Changelog
 
+## 20231030-01
+
+- design.plone.contenttypes 6.0.19 -> 6.0.20 [cekk]
+  - Upgrade-step to set default value in "Costi" field.
+
 ## 20231027-01
+
 - redturtle.volto 5.2.4 -> 5.3.0 [cekk]
 
 ## 20231026-01
@@ -10,6 +16,7 @@
   - Fix typo in field help text
 
 ## 20230926-01
+
  - redturtle.volto 5.2.3 -> redturtle.volto 5.2.4 [lucabel]
    - Fix the issue in the @translation GET endpoint: If this endpoint 
      is invoked, possibly by a bot, and plone.app.multilingual is not
@@ -19,10 +26,12 @@
      searching all users when many_users is flagged [mamico] 
 
 ## 20230920-01
+
  - design.plone.contenttypes 6.0.17 -> design.plone.policy 6.0.18 [lucabel]
    - Add permission check to solve problem accessing private resources with anonymous user [lucabel]
 
 ## 20230829-01
+
  - design.plone.policy 5.0.5 -> design.plone.policy 5.0.6[folix-01]
    - Fix to 3001 upgrade step. [folix-01]
 
