@@ -2,9 +2,7 @@
 
 ## Unreleased
 
-- Upgrade Plone 6.0.4 -> 6.0.7 [mamico]
-- Upgrade collective.sentry 0.3.0 -> 0.3.1 [mamico]
-  -  Fix SENTRY_MAX_LENGTH default value. [folix-01]
+- Upgrade Plone 6.0.4 -> 6.0.8 [mamico]
 
 ## 20230906-01
 
