@@ -1,5 +1,11 @@
 # Changelog
 
+## 20231114-01
+
+- redturtle.volto 5.3.0 -> 5.4.0 [cekk]
+  - Return error instead of raise Excpetion for BadRequest in querystringsearch [mamico]
+  - Add upgrade step and setuphandler to fix robots.txt original rules adding 'Allow: /?expand' [lucabel]
+
 ## 20231030-02
 
 - design.plone.contenttypes 6.0.20 -> 6.0.21 [cekk]
