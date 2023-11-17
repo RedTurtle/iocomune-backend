@@ -4,6 +4,17 @@
 
 - Upgrade Plone 6.0.4 -> 6.0.8 [mamico]
 
+- design.plone.contenttypes 6.0.21 -> 6.1.0 [mamico]
+    - Optionally add image_scales and image_field in Summary serializer. [mamico]
+    - Add @@design-utils view that shows all available utility views. [cekk]
+    - Add user action that points to @@design-utils view. [cekk]
+    - Add @@export-incarichi view that allows to download a csv file with all - Persona and their roles. [cekk]
+    - Add tipologia_bando to summary serializer. [cekk]
+
+- redturtle.volto 5.3.0 -> 5.4.0 [cekk]
+  - Return error instead of raise Excpetion for BadRequest in querystringsearch [mamico]
+  - Add upgrade step and setuphandler to fix robots.txt original rules adding 'Allow: /?expand' [lucabel]
+
 ## 20231030-02
 
 - design.plone.contenttypes 6.0.20 -> 6.0.21 [cekk]
