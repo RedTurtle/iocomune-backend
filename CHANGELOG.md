@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- plone.event 2.0.0 -> 2.0.1 [mamico]
+    - fix gestione ricorrenze https://github.com/plone/plone.event/pull/23
+
 - design.plone.contenttypes 6.0.21 -> 6.1.0 [mamico]
     - Optionally add image_scales and image_field in Summary serializer. [mamico]
     - Add @@design-utils view that shows all available utility views. [cekk]
