@@ -1,14 +1,7 @@
-name: Update gh docker image and triggers
+name: Build demo image
 
 on:
-  # Triggers the workflow on releases
-  push:
-  #   branches:
-  #     - cekk_check_views
-  #   tags:
-  #     - "*"
-  pull_request:
-  # Allow to run this workflow manually from the Actions tab
+  # Allow to run this workflow only manually from the Actions tab
   workflow_dispatch:
 
 jobs:
@@ -40,18 +33,10 @@ jobs:
           IMAGE_ID=$(echo ghcr.io/${{ github.repository }} | tr '[A-Z]' '[a-z]')
           echo ::set-output name=IMAGE_ID::$IMAGE_ID
 
-      # - name: Extract branch name
-      #   shell: bash
-      #   run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
-      #   id: extract_branch
-
-      # - name: Get the version
-      #   id: get_version
-      #   run: |
-      #     VERSION="${{ steps.extract_branch.outputs.branch }}"
-      #     [[ "${{ github.ref }}" == "refs/tags/"* ]] && VERSION=$(echo $VERSION | sed -e 's/^v//')
-      #     [ "$VERSION" == "main" ] && VERSION=latest
-      #     echo ::set-output name=VERSION::$VERSION
+      - name: Extract branch name
+        shell: bash
+        run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
+        id: extract_branch
 
       - name: Build and push container image
         uses: docker/build-push-action@v3
@@ -59,6 +44,5 @@ jobs:
           context: .
           file: ./Dockerfile.demo
           push: true
-          # tags: ${{ steps.get_image_id.outputs.IMAGE_ID }}:${{ steps.get_version.outputs.VERSION }}
-          tags: ${{ steps.get_image_id.outputs.IMAGE_ID }}:demo
+          tags: ${{ steps.get_image_id.outputs.IMAGE_ID }}:${{ steps.extract_branch.outputs.branch }}_demo
           platforms: linux/amd64,linux/arm64

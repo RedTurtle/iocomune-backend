@@ -51,6 +51,20 @@ Dal branch __main__ e dai tag vengono create automaticamente immagini Docker lin
 
 https://github.com/RedTurtle/iocomune-backend/pkgs/container/iocomune-backend
 
+## Immagini demo
+
+E' possibile generare delle immagini per demo con pacchetti in sviluppo non ancora rilasciati.
+
+Per fare questo, basta creare un branch e modificare il file mx.ini (file di configurazione per [mxdev](https://pypi.org/project/mxdev)).
+
+Nel file si possono impostare versioni custom e anche attivare pacchetti in sviluppo.
+
+Non viene generata in automatico l'immagine (per evitare build inutili).
+Per far partire una nuova build, basta far partire l'azione manualmente: https://github.com/RedTurtle/iocomune-backend/actions
+
+Verrà creata un'immagine chiamata `nome_del_branch_demo` (dove nome_del_branch è il nome del branch ovviamente) su https://ghcr.io/redturtle/iocomune-backend
+
+
 # Quando fare un nuovo tag
 
 Quando si devono fare degli aggiornamenti in produzione, e tutto è pronto e testato, allora si può fare un nuovo tag per fissarle.
