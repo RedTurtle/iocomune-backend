@@ -57,7 +57,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          file: {context}/Dockerfile.demo
+          file: ./Dockerfile.demo
           push: true
           tags: ${{ steps.get_image_id.outputs.IMAGE_ID }}:${{ steps.get_version.outputs.VERSION }}
           platforms: linux/amd64,linux/arm64
