@@ -1,0 +1,11 @@
+FROM plone/plone-backend:6.0.4
+COPY docker/create-constraints.py docker/constraints.cfg docker/requirements.txt requirements-rer.txt mx.ini /app/
+
+
+COPY versions.cfg /
+
+RUN python create-constraints.py constraints.cfg constraints.txt && \
+    ./bin/pip install mxdev && \
+    ./bin/mxdev -c mx.ini && \
+    ./bin/pip install --ignore-requires-python -r requirements-mxdev.txt ${PIP_PARAMS} && \
+    find /app/lib -name LC_MESSAGES -exec chown -R plone:plone {} \;
