@@ -2,7 +2,7 @@ name: Update gh docker image and triggers
 
 on:
   # Triggers the workflow on releases
-  # push:
+  push:
   #   branches:
   #     - cekk_check_views
   #   tags:
