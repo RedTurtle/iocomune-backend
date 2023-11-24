@@ -1,5 +1,5 @@
 FROM plone/plone-backend:6.0.4
-COPY docker/create-constraints.py docker/constraints.cfg docker/requirements.txt requirements-demo.txt mx.ini /app/
+COPY docker/create-constraints.py docker/constraints.cfg docker/requirements.txt requirements-development.txt mx.ini /app/
 
 
 COPY versions.cfg /

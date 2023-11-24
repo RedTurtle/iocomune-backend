@@ -1,4 +1,4 @@
-name: Build demo image
+name: Build development image
 
 on:
   # Allow to run this workflow only manually from the Actions tab
@@ -42,7 +42,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          file: ./Dockerfile.demo
+          file: ./Dockerfile.development
           push: true
-          tags: ${{ steps.get_image_id.outputs.IMAGE_ID }}:${{ steps.extract_branch.outputs.branch }}_demo
+          tags: ${{ steps.get_image_id.outputs.IMAGE_ID }}:${{ steps.extract_branch.outputs.branch }}_development
           platforms: linux/amd64,linux/arm64
