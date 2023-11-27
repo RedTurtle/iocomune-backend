@@ -1,7 +1,7 @@
 # Changelog
 
 ## 20231127-01
-- design.plone.contenttypes 6.0.21 -> 6.1.2
+- design.plone.contenttypes 6.1.0 -> 6.1.2
     - Added utility views: @@check-notizie and @@download-check-notizie. [daniele]
     - Fix event for obj parent update. [eikichi18]
     - Added utility views: @@check-eventi and @@download-check-eventi. [daniele]
