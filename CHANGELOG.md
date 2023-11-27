@@ -1,6 +1,15 @@
 # Changelog
 
-## Unreleased
+## 20231127-01
+- design.plone.contenttypes 6.0.21 -> 6.1.2
+    - Added utility views: @@check-notizie and @@download-check-notizie. [daniele]
+    - Fix event for obj parent update. [eikichi18]
+    - Added utility views: @@check-eventi and @@download-check-eventi. [daniele]
+    - Added utility views for Venue: @@check-luoghi and @@download-check-luoghi. [daniele]
+    - Added utility view for Documento:  @@check-documenti and @@download-check-documenti. [daniele]
+    - Added utils view for UO:  @@check-uo and @@download-check-uo. [daniele]
+    - Added utility views for Persona: @@check-persone and @@download-check-persone. [daniele]
+
 
 - plone.event 2.0.0 -> 2.0.1 [mamico]
     - fix gestione ricorrenze https://github.com/plone/plone.event/pull/23
