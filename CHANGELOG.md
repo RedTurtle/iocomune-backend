@@ -1,5 +1,9 @@
 # Changelog
 
+## 20231128-01
+- design.plone.contenttypes 6.1.2 -> 6.1.3
+    - "Buone pratiche" views: fixed check on Competenze field. Excluding expired events and news. [daniele]
+
 ## 20231127-01
 - design.plone.contenttypes 6.1.0 -> 6.1.2
     - Added utility views: @@check-notizie and @@download-check-notizie. [daniele]
