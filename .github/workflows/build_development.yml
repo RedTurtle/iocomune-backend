@@ -29,15 +29,13 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Get the image id
-        id: get_image_id
         run: |
           IMAGE_ID=$(echo ghcr.io/${{ github.repository }} | tr '[A-Z]' '[a-z]')
-          echo ::set-output name=IMAGE_ID::$IMAGE_ID
+          echo "IMAGE_ID=$IMAGE_ID" >> "$GITHUB_ENV"
 
       - name: Extract branch name
         shell: bash
-        run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
-        id: extract_branch
+        run: echo "IMAGE_BRANCH=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> "$GITHUB_ENV"
 
       - name: Build and push container image
         uses: docker/build-push-action@v3
@@ -45,5 +43,5 @@ jobs:
           context: .
           file: ./Dockerfile.development
           push: true
-          tags: ${{ steps.get_image_id.outputs.IMAGE_ID }}:${{ steps.extract_branch.outputs.branch }}_development
+          tags: ${{ env.IMAGE_ID}}:${{ env.IMAGE_BRANCH }}_development
           platforms: linux/amd64,linux/arm64
