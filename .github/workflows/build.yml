@@ -75,7 +75,7 @@ jobs:
           curl --fail --request POST \
           --form token=${{ secrets.TOKEN }} \
           --form ref=main \
-          --form "variables[GITHUB_TAG]=$VERSION" \
+          --form "variables[GITHUB_TAG]=${{ env.VERSION }}" \
           "https://gitlab.com/api/v4/projects/${{ secrets.PROJECT_ID }}/trigger/pipeline"
 
   build-acceptance-image:
