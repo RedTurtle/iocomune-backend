@@ -35,18 +35,17 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Get the image id
-        # id: get_image_id
         run: |
           IMAGE_ID=$(echo ghcr.io/${{ github.repository }} | tr '[A-Z]' '[a-z]')
           echo "IMAGE_ID=$IMAGE_ID" >> "$GITHUB_ENV"
 
-      # - name: Get the version PR
-      #   run: echo "VERSION=${{ github.base_ref }}" >> "$GITHUB_ENV"
-      #  if: github.event_name == 'pull_request'
+      - name: Get the version PR
+        run: echo "VERSION=${{ github.head_ref }}" >> "$GITHUB_ENV"
+        if: github.event_name == 'pull_request'
 
       - name: Get the version
         run: echo "VERSION=${{ github.ref_name }}" >> "$GITHUB_ENV"
-      #  if: github.event_name != 'pull_request'
+        if: github.event_name != 'pull_request'
 
       - name: Build and push container image
         uses: docker/build-push-action@v3
@@ -107,13 +106,13 @@ jobs:
           IMAGE_ID=$(echo ghcr.io/${{ github.repository }}-acceptance | tr '[A-Z]' '[a-z]')
           echo "IMAGE_ID=$IMAGE_ID" >> "$GITHUB_ENV"
 
-      # - name: Get the version PR
-      #   run: echo "VERSION=${{ github.base_ref }}" >> "$GITHUB_ENV"
-      #   if: github.event_name == 'pull_request'
+      - name: Get the version PR
+        run: echo "VERSION=${{ github.head_ref }}" >> "$GITHUB_ENV"
+        if: github.event_name == 'pull_request'
 
       - name: Get the version
         run: echo "VERSION=${{ github.ref_name }}" >> "$GITHUB_ENV"
-      #  if: github.event_name != 'pull_request'
+        if: github.event_name != 'pull_request'
 
       - name: Build and push container image
         uses: docker/build-push-action@v3
