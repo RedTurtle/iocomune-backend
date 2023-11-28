@@ -47,11 +47,11 @@ jobs:
       #  id: extract_branch
 
       - name: Get the version PR
-        run: echo "VERSION={{ $github.base_ref }}" >> "$GITHUB_ENV"
+        run: echo "VERSION=${{ github.base_ref }}" >> "$GITHUB_ENV"
         if: github.event_name == 'pull_request'
 
       - name: Get the version
-        run: echo "VERSION={{ $github.ref_name }}" >> "$GITHUB_ENV"
+        run: echo "VERSION=${{ github.ref_name }}" >> "$GITHUB_ENV"
         if: github.event_name != 'pull_request'
         
           # VERSION="${{ steps.extract_branch.outputs.branch }}"
@@ -120,11 +120,11 @@ jobs:
           # echo ::set-output name=IMAGE_ID::$IMAGE_ID
 
       - name: Get the version PR
-        run: echo "VERSION={{ $github.base_ref }}" >> "$GITHUB_ENV"
+        run: echo "VERSION=${{ github.base_ref }}" >> "$GITHUB_ENV"
         if: github.event_name == 'pull_request'
 
       - name: Get the version
-        run: echo "VERSION={{ $github.ref_name }}" >> "$GITHUB_ENV"
+        run: echo "VERSION=${{ github.ref_name }}" >> "$GITHUB_ENV"
         if: github.event_name != 'pull_request'
 
       - name: Build and push container image
