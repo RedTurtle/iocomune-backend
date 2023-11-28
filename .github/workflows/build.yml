@@ -35,30 +35,36 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Get the image id
-        id: get_image_id
+        # id: get_image_id
         run: |
           IMAGE_ID=$(echo ghcr.io/${{ github.repository }} | tr '[A-Z]' '[a-z]')
-          echo ::set-output name=IMAGE_ID::$IMAGE_ID
+          echo "IMAGE_ID=$IMAGE_ID" >> "$GITHUB_ENV"
+          # echo ::set-output name=IMAGE_ID::$IMAGE_ID
 
-      - name: Extract branch name
-        shell: bash
-        run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
-        id: extract_branch
+      # - name: Extract branch name
+      #  shell: bash
+      #  run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
+      #  id: extract_branch
+
+      - name: Get the version PR
+        run: echo "VERSION={{ $github.base_ref }} >> "$GITHUB_ENV"
+        if: github.event_name == 'pull_request'
 
       - name: Get the version
-        id: get_version
-        run: |
-          VERSION="${{ steps.extract_branch.outputs.branch }}"
-          [[ "${{ github.ref }}" == "refs/tags/"* ]] && VERSION=$(echo $VERSION | sed -e 's/^v//')
-          [ "$VERSION" == "main" ] && VERSION=latest
-          echo ::set-output name=VERSION::$VERSION
+        run: echo "VERSION={{ $github.ref_name }} >> "$GITHUB_ENV"
+        if: github.event_name != 'pull_request'
+        
+          # VERSION="${{ steps.extract_branch.outputs.branch }}"
+          # [[ "${{ github.ref }}" == "refs/tags/"* ]] && VERSION=$(echo $VERSION | sed -e 's/^v//')
+          # [ "$VERSION" == "main" ] && VERSION=latest
+          # echo ::set-output name=VERSION::$VERSION
 
       - name: Build and push container image
         uses: docker/build-push-action@v3
         with:
           context: .
           push: true
-          tags: ${{ steps.get_image_id.outputs.IMAGE_ID }}:${{ steps.get_version.outputs.VERSION }}
+          tags: $IMAGE_ID:$VERSION
           platforms: linux/amd64,linux/arm64
 
       - name: Deploy to rancher # io-comune-test
@@ -72,7 +78,7 @@ jobs:
           project-id: ${{ secrets.RANCHER_PROJECT_ID }} # organization
           namespace: ${{ secrets.RANCHER_NAMESPACE }}
           workload: ${{ secrets.RANCHER_WORKLOAD }}
-          image: ${{ steps.get_image_id.outputs.IMAGE_ID }}:${{ steps.get_version.outputs.VERSION }}
+          image: $IMAGE_ID:$VERSION
           slack-hook-url: ${{ secrets.RANCHER_SLACK_HOOK_URL }}
 
       - name: Trigger job
@@ -81,7 +87,7 @@ jobs:
           curl --fail --request POST \
           --form token=${{ secrets.TOKEN }} \
           --form ref=main \
-          --form "variables[GITHUB_TAG]=${{ steps.get_version.outputs.VERSION }}" \
+          --form "variables[GITHUB_TAG]=$VERSION" \
           "https://gitlab.com/api/v4/projects/${{ secrets.PROJECT_ID }}/trigger/pipeline"
 
   build-acceptance-image:
@@ -110,15 +116,16 @@ jobs:
         id: get_image_id
         run: |
           IMAGE_ID=$(echo ghcr.io/${{ github.repository }}-acceptance | tr '[A-Z]' '[a-z]')
-          echo ::set-output name=IMAGE_ID::$IMAGE_ID
+          echo "IMAGE_ID=$IMAGE_ID" >> "$GITHUB_ENV"
+          # echo ::set-output name=IMAGE_ID::$IMAGE_ID
+
+      - name: Get the version PR
+        run: echo "VERSION={{ $github.base_ref }} >> "$GITHUB_ENV"
+        if: github.event_name == 'pull_request'
 
       - name: Get the version
-        id: get_version
-        run: |
-          VERSION=$(echo "${{ github.ref }}" | sed -e 's,.*/\(.*\),\1,')
-          [[ "${{ github.ref }}" == "refs/tags/"* ]] && VERSION=$(echo $VERSION | sed -e 's/^v//')
-          [ "$VERSION" == "main" ] && VERSION=latest
-          echo ::set-output name=VERSION::$VERSION
+        run: echo "VERSION={{ $github.ref_name }} >> "$GITHUB_ENV"
+        if: github.event_name != 'pull_request'
 
       - name: Build and push container image
         uses: docker/build-push-action@v3
@@ -126,5 +133,5 @@ jobs:
           context: .
           file: ./Dockerfile.acceptance
           push: true
-          tags: ${{ steps.get_image_id.outputs.IMAGE_ID }}:${{ steps.get_version.outputs.VERSION }}
+          tags: $IMAGE_ID:$VERSION
           platforms: linux/amd64,linux/arm64
