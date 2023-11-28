@@ -64,7 +64,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: $IMAGE_ID:$VERSION
+          tags: ${{ env.IMAGE_ID }}:${{ env.VERSION }}
           platforms: linux/amd64,linux/arm64
 
       - name: Deploy to rancher # io-comune-test
@@ -78,7 +78,7 @@ jobs:
           project-id: ${{ secrets.RANCHER_PROJECT_ID }} # organization
           namespace: ${{ secrets.RANCHER_NAMESPACE }}
           workload: ${{ secrets.RANCHER_WORKLOAD }}
-          image: $IMAGE_ID:$VERSION
+          image: ${{ env.IMAGE_ID }}:${{ env.VERSION }}
           slack-hook-url: ${{ secrets.RANCHER_SLACK_HOOK_URL }}
 
       - name: Trigger job
@@ -133,5 +133,5 @@ jobs:
           context: .
           file: ./Dockerfile.acceptance
           push: true
-          tags: $IMAGE_ID:$VERSION
+          tags: ${{ env.IMAGE_ID }}:${{ env.VERSION }}
           platforms: linux/amd64,linux/arm64
