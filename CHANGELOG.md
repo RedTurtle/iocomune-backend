@@ -1,5 +1,9 @@
 # Changelog
 
+## 20231204-01
+- design.plone.contenttypes 6.1.3 -> 6.1.4
+    - Fix check_persone. When there are no relation. [mamico]
+
 ## 20231128-01
 - design.plone.contenttypes 6.1.2 -> 6.1.3
     - "Buone pratiche" views: fixed check on Competenze field. Excluding expired events and news. [daniele]
