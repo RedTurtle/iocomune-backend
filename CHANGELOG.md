@@ -1,5 +1,13 @@
 # Changelog
 
+## 20231213-01
+- design.plone.contenttypes 6.1.4 -> 6.1.5
+    - Allow reorder of data grid fields.
+
+- design.plone.policy 5.0.6 -> 5.0.7
+    - Update list of non searchable type in io-Comune
+    - Do not return section children in @search-filters endpoint if they are types omitted from search results.
+
 ## 20231204-01
 - design.plone.contenttypes 6.1.3 -> 6.1.4
     - Fix check_persone. When there are no relation. [mamico]
