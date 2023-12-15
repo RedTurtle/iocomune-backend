@@ -1,5 +1,9 @@
 # Changelog
 
+## 20231215-01
+- design.plone.contenttypes 6.1.5 -> 6.1.6
+    - Improved "Buone pratiche" view for Event. [daniele]
+
 ## 20231213-01
 - design.plone.contenttypes 6.1.4 -> 6.1.5
     - Allow reorder of data grid fields.
