@@ -34,6 +34,8 @@
 - plone.event 2.0.0 -> 2.0.1 [mamico]
     - fix gestione ricorrenze https://github.com/plone/plone.event/pull/23
 
+- Upgrade Plone 6.0.4 -> 6.0.8 [mamico]
+
 - design.plone.contenttypes 6.0.21 -> 6.1.0 [mamico]
     - Optionally add image_scales and image_field in Summary serializer. [mamico]
     - Add @@design-utils view that shows all available utility views. [cekk]
@@ -89,10 +91,16 @@
 
 - Upgrade design.plone.contenttypes 6.0.16 -> 6.0.17 [eikichi18]
   - added dates for incarico persona [deodorhunter]
- 
+
+
+## 20230829-01
+ - design.plone.policy 5.0.5 -> design.plone.policy 5.0.6[folix-01]
+   - Fix to 3001 upgrade step. [folix-01]
+
 
 ## 20230824-01
 
+  
 - redturtle.volto 5.0.0 -> 5.0.1 [mamico]
   - Custom portal url in @@fix-links [mamico]
 
