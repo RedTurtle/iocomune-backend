@@ -1,5 +1,8 @@
 # Changelog
 
+## 20231218-01
+- Upgrade Plone 6.0.4 -> 6.0.8 [mamico]
+
 ## 20231215-01
 - design.plone.contenttypes 6.1.5 -> 6.1.6
     - Improved "Buone pratiche" view for Event. [daniele]
@@ -33,8 +36,6 @@
 
 - plone.event 2.0.0 -> 2.0.1 [mamico]
     - fix gestione ricorrenze https://github.com/plone/plone.event/pull/23
-
-- Upgrade Plone 6.0.4 -> 6.0.8 [mamico]
 
 - design.plone.contenttypes 6.0.21 -> 6.1.0 [mamico]
     - Optionally add image_scales and image_field in Summary serializer. [mamico]
