@@ -2,6 +2,7 @@
 
 ## 20231218-01
 - Upgrade Plone 6.0.4 -> 6.0.8 [mamico]
+- redturtle.prenotazioni 2.2.5 -> 2.3.0 [cekk]
 
 ## 20231215-01
 - design.plone.contenttypes 6.1.5 -> 6.1.6
