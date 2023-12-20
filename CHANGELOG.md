@@ -1,5 +1,12 @@
 # Changelog
 
+## 20231220-01
+- Update versions for pas.plugins.ldap dependencies
+  - yafowil.plone = 5.0.0a1
+  - yafowil.bootstrap = 2.0.0a1
+- Merge two section with pas.plusings.ldap dependencies versions
+  [lucabel]
+
 ## 20231218-01
 - Upgrade Plone 6.0.4 -> 6.0.8 [mamico]
 - redturtle.prenotazioni 2.2.5 -> 2.3.0 [cekk]
