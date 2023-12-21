@@ -4,4 +4,4 @@ COPY versions.cfg /
 RUN pip install -r https://dist.plone.org/release/6.0.4/requirements.txt ${PIP_PARAMS} && \
     python create-constraints.py constraints.cfg constraints.txt && \
     ./bin/pip install --ignore-requires-python -r requirements.txt -c constraints.txt ${PIP_PARAMS} && \
-    find /app/lib -name LC_MESSAGES -exec chown -R plone:plone {} \;
+    find /app -name LC_MESSAGES -exec chown -R plone:plone {} \;
