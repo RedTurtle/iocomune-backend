@@ -1,5 +1,10 @@
 # Changelog
 
+## 20231222-01
+- design.plone.contenttypes 6.1.7 -> 6.1.8
+  - Add behavior argomento to Link CT
+  - Removed maximumSelectionSize from all fields that had it greater than 0
+
 ## 20231220-01
 - Update versions for pas.plugins.ldap dependencies [lucabel]
   - yafowil.plone = 5.0.0a1
