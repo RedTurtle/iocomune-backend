@@ -1,5 +1,10 @@
 # Changelog
 
+## 20231228-01
+- redturtle.volto 5.4.0 -> 5.4.1
+  - patch for start index of events [filippo]
+  - patch for relatediteam [filippo]
+
 ## 20231222-01
 - design.plone.contenttypes 6.1.7 -> 6.1.8
   - Add behavior argomento to Link CT
