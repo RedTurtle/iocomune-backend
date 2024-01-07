@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+- Upgrade Plone 6.0.8 -> 6.0.9 [mamico]
+- Added pin for bravado (App IO) [mamico]
+
 ## 20231218-01
 - Upgrade Plone 6.0.4 -> 6.0.8 [mamico]
 - redturtle.prenotazioni 2.2.5 -> 2.3.0 [cekk]
