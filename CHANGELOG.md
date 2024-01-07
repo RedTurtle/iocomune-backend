@@ -4,6 +4,27 @@
 - Upgrade Plone 6.0.8 -> 6.0.9 [mamico]
 - Added pin for bravado (App IO) [mamico]
 
+## 20231228-01
+- redturtle.volto 5.4.0 -> 5.4.1
+  - patch for start index of events [filippo]
+  - patch for relatediteam [filippo]
+
+## 20231222-01
+- design.plone.contenttypes 6.1.7 -> 6.1.8
+  - Add behavior argomento to Link CT
+  - Removed maximumSelectionSize from all fields that had it greater than 0
+
+## 20231220-01
+- Update versions for pas.plugins.ldap dependencies [lucabel]
+  - yafowil.plone = 5.0.0a1
+  - yafowil.bootstrap = 2.0.0a1
+
+- Merge two section with pas.plusings.ldap dependencies versions [lucabel]
+
+- design.plone.contenttypes 6.1.6 -> 6.1.7
+  - Improved "Check notizie" view [lucabel]
+  - Fixed label for tassonomia_evento taxonomies [filippo] 
+
 ## 20231218-01
 - Upgrade Plone 6.0.4 -> 6.0.8 [mamico]
 - redturtle.prenotazioni 2.2.5 -> 2.3.0 [cekk]
