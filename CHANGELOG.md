@@ -1,5 +1,12 @@
 # Changelog
 
+## 20240111-01
+- redturtle.volto 5.4.1 -> 5.4.2
+  - Fixed get obj from url in relateditems serializer [filippo]
+
+- design.plone.contenttypes 6.1.8 -> 6.1.9
+  - Add UID info to summary serializer of UO [filippo]
+
 ## 20231228-01
 - redturtle.volto 5.4.0 -> 5.4.1
   - patch for start index of events [filippo]
