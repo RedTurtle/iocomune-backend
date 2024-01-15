@@ -1,8 +1,14 @@
 # Changelog
 
 ## 20240115-01
-- redturtle.prenotazioni = 2.4.1 [cekk]
-
+- redturtle.prenotazioni = 2.4.2 [cekk]
+  - Change notification fields: now there are 3 different behaviors to manage email, appIO and SMS.
+    There is an upgrade-step that enables the default one: email.
+  - New notification messages defaults with better infos.
+  - Added new fields (see redturtle.prenotazioni changelog for more infos).
+  - Add notifications management: need a cron job in buildout to work properly (see redturtle.prenotazioni README).
+  - Need volto-io-prenoto >= 1.14.0.
+  
 ## 20240111-01
 - redturtle.volto 5.4.1 -> 5.4.2
   - Fixed get obj from url in relateditems serializer [filippo]
