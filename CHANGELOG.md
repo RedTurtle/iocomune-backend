@@ -2,6 +2,7 @@
 
 ## 20240115-01
 - redturtle.prenotazioni = 2.4.0 [cekk]
+  - Split booking notification gateways to 'App IO', 'Email' and 'SMS' [folix-01]
 
 ## 20240111-01
 - redturtle.volto 5.4.1 -> 5.4.2
