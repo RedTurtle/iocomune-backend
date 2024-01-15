@@ -1,7 +1,7 @@
 # Changelog
 
 ## 20240115-01
-- redturtle.prenotazioni = 2.4.0 [cekk]
+- redturtle.prenotazioni = 2.4.1 [cekk]
 
 ## 20240111-01
 - redturtle.volto 5.4.1 -> 5.4.2
