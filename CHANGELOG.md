@@ -1,5 +1,12 @@
 # Changelog
 
+## 20240116-01
+- design.plone.contenttypes 6.1.9 -> 6.1.10
+  - Added description to PDC fields [pnicolli]
+  - Added upgrade step to update PDC fields description [lucabel]
+  - Added new widget for event luoghi_correlati [pnicolli]
+  - Added UID for all summary obj [eikichi18]
+
 ## 20240115-01
 - redturtle.prenotazioni = 2.4.2 [cekk]
   - Change notification fields: now there are 3 different behaviors to manage email, appIO and SMS.
