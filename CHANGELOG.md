@@ -1,7 +1,7 @@
 # Changelog
 
 ## 20240124-01
-- Upgrade redturtle.prentoazioni version to 2.4.3
+- Upgrade redturtle.prentoazioni version to 2.4.3 [folix-01]
   - Remove the notifications allowing cross logic [folix-01]
 
 ## 20240116-02
