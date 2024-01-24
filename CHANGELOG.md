@@ -1,5 +1,9 @@
 # Changelog
 
+## 20240124
+- Upgrade redturtle.prentoazioni version to 2.4.3
+  - Remove the notifications allowing cross logic [folix-01]
+
 ## 20240116-02
 - design.plone.contenttypes 6.1.9 -> 6.1.10
   - Added description to PDC fields [pnicolli]
