@@ -1,5 +1,73 @@
 # Changelog
 
+## 20240125-01
+- Upgrade redturtle.prenotazioni version to 2.4.4 [folix-01]
+  - Update the sms notifications behaviour's field label [folix-01]
+
+## 20240124-01
+- Upgrade redturtle.prentoazioni version to 2.4.3 [folix-01]
+  - Remove the notifications allowing cross logic [folix-01]
+
+## 20240116-02
+- design.plone.contenttypes 6.1.9 -> 6.1.10
+  - Added description to PDC fields [pnicolli]
+  - Added upgrade step to update PDC fields description [lucabel]
+  - Added new widget for event luoghi_correlati [pnicolli]
+  - Added UID for all summary obj [eikichi18]
+
+## 20240116-01
+- redturtle.prenotazioni = 2.4.2 [cekk]
+  - Change notification fields: now there are 3 different behaviors to manage email, appIO and SMS.
+    There is an upgrade-step that enables the default one: email.
+  - New notification messages defaults with better infos.
+  - Added new fields (see redturtle.prenotazioni changelog for more infos).
+  - Add notifications management: need a cron job in buildout to work properly (see redturtle.prenotazioni README).
+  - Need volto-io-prenoto >= 1.14.0.
+  
+## 20240111-01
+- redturtle.volto 5.4.1 -> 5.4.2
+  - Fixed get obj from url in relateditems serializer [filippo]
+
+- design.plone.contenttypes 6.1.8 -> 6.1.9
+  - Add UID info to summary serializer of UO [filippo]
+
+## 20231228-01
+- redturtle.volto 5.4.0 -> 5.4.1
+  - patch for start index of events [filippo]
+  - patch for relatediteam [filippo]
+
+## 20231222-01
+- design.plone.contenttypes 6.1.7 -> 6.1.8
+  - Add behavior argomento to Link CT
+  - Removed maximumSelectionSize from all fields that had it greater than 0
+
+## 20231220-01
+- Update versions for pas.plugins.ldap dependencies [lucabel]
+  - yafowil.plone = 5.0.0a1
+  - yafowil.bootstrap = 2.0.0a1
+
+- Merge two section with pas.plusings.ldap dependencies versions [lucabel]
+
+- design.plone.contenttypes 6.1.6 -> 6.1.7
+  - Improved "Check notizie" view [lucabel]
+  - Fixed label for tassonomia_evento taxonomies [filippo] 
+
+## 20231218-01
+- Upgrade Plone 6.0.4 -> 6.0.8 [mamico]
+- redturtle.prenotazioni 2.2.5 -> 2.3.0 [cekk]
+
+## 20231215-01
+- design.plone.contenttypes 6.1.5 -> 6.1.6
+    - Improved "Buone pratiche" view for Event. [daniele]
+
+## 20231213-01
+- design.plone.contenttypes 6.1.4 -> 6.1.5
+    - Allow reorder of data grid fields.
+
+- design.plone.policy 5.0.6 -> 5.0.7
+    - Update list of non searchable type in io-Comune
+    - Do not return section children in @search-filters endpoint if they are types omitted from search results.
+
 ## 20231204-01
 - design.plone.contenttypes 6.1.3 -> 6.1.4
     - Fix check_persone. When there are no relation. [mamico]
@@ -77,10 +145,16 @@
 
 - Upgrade design.plone.contenttypes 6.0.16 -> 6.0.17 [eikichi18]
   - added dates for incarico persona [deodorhunter]
- 
+
+
+## 20230829-01
+ - design.plone.policy 5.0.5 -> design.plone.policy 5.0.6[folix-01]
+   - Fix to 3001 upgrade step. [folix-01]
+
 
 ## 20230824-01
 
+  
 - redturtle.volto 5.0.0 -> 5.0.1 [mamico]
   - Custom portal url in @@fix-links [mamico]
 
