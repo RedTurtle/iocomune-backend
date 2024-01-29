@@ -1,10 +1,12 @@
 # Changelog
 
+## 20240129-01
+- Upgrade design.plone.ioprenoto 1.2.2
+  - Fix encoding booking_type vocab [mamico]
+
 ## 20240125-01
 - Upgrade redturtle.prenotazioni version to 2.4.4 [folix-01]
   - Update the sms notifications behaviour's field label [folix-01]
-- Upgrade design.plone.ioprenoto 1.2.2
-  - Fix encoding booking_type vocab [mamico]
 
 ## 20240124-01
 - Upgrade redturtle.prentoazioni version to 2.4.3 [folix-01]
