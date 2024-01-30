@@ -4,7 +4,26 @@
 - Upgrade Plone 6.0.8 -> 6.0.9 [mamico]
 - Added pin for bravado (App IO) [mamico]
 
-## 20240115-01
+## 20240129-01
+- Upgrade design.plone.ioprenoto 1.2.2
+  - Fix encoding booking_type vocab [mamico]
+
+## 20240125-01
+- Upgrade redturtle.prenotazioni version to 2.4.4 [folix-01]
+  - Update the sms notifications behaviour's field label [folix-01]
+
+## 20240124-01
+- Upgrade redturtle.prentoazioni version to 2.4.3 [folix-01]
+  - Remove the notifications allowing cross logic [folix-01]
+
+## 20240116-02
+- design.plone.contenttypes 6.1.9 -> 6.1.10
+  - Added description to PDC fields [pnicolli]
+  - Added upgrade step to update PDC fields description [lucabel]
+  - Added new widget for event luoghi_correlati [pnicolli]
+  - Added UID for all summary obj [eikichi18]
+
+## 20240116-01
 - redturtle.prenotazioni = 2.4.2 [cekk]
   - Change notification fields: now there are 3 different behaviors to manage email, appIO and SMS.
     There is an upgrade-step that enables the default one: email.
