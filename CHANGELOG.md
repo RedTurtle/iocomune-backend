@@ -1,5 +1,9 @@
 # Changelog
 
+## 20240201-01
+- Upgrade redturtle.prenotazioni version to 2.4.5
+  - sort_on/sort_order in restapi bookings and xlsx [mamico]
+
 ## 20240130-01
 - Upgrade redturtle.volto 5.4.3
   - Upgrade step to remove all custom Googlebot rules from robots.txt [mamico]
