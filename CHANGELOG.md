@@ -1,5 +1,9 @@
 # Changelog
 
+## 20240201-01
+- Upgrade redturtle.prenotazioni version to 2.4.5
+  - sort_on/sort_order in restapi bookings and xlsx [mamico]
+
 ## 20240129-01
 - Upgrade design.plone.ioprenoto 1.2.2
   - Fix encoding booking_type vocab [mamico]
