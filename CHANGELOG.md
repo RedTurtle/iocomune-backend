@@ -1,5 +1,9 @@
 # Changelog
 
+## 20240206-01
+- Upgrade design.plone.contenttypes 6.1.10 -> 6.1.12
+  - removed un-needed commit in upgrade-step [cekk]
+
 ## 20240201-01
 - Upgrade redturtle.prenotazioni version to 2.4.5
   - sort_on/sort_order in restapi bookings and xlsx [mamico]
