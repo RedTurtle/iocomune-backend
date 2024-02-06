@@ -1,8 +1,21 @@
 # Changelog
 
-## 20240130-01
+## 20240206-02
 - Upgrade Plone 6.0.8 -> 6.0.9 [mamico]
 - Added pin for bravado (App IO) [mamico]
+
+## 20240206-01
+- Upgrade design.plone.contenttypes 6.1.10 -> 6.1.12
+  - removed un-needed commit in upgrade-step [cekk]
+
+## 20240201-01
+- Upgrade redturtle.prenotazioni version to 2.4.5
+  - sort_on/sort_order in restapi bookings and xlsx [mamico]
+
+## 20240130-01
+- Upgrade redturtle.volto 5.4.3
+  - Upgrade step to remove all custom Googlebot rules from robots.txt [mamico]
+  - Fix: add range_start to function for calculate recurrences in the right way [eikichi18]
 
 ## 20240129-01
 - Upgrade design.plone.ioprenoto 1.2.2
