@@ -1,5 +1,9 @@
 # Changelog
 
+## 20240608-01
+- Upgrade design.plone.contenttypes 6.1.12 -> 6.1.13
+  - Handle missing show_dynamic_folders_in_footer in registry entry. [cekk]
+
 ## 20240206-01
 - Upgrade design.plone.contenttypes 6.1.10 -> 6.1.12
   - removed un-needed commit in upgrade-step [cekk]
