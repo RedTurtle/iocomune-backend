@@ -1,5 +1,9 @@
 # Changelog
 
+## 20240212-02
+- Upgrade redturtle.prenotazioni 2.4.6 -> 2.4.7
+  - Permission for move bookings for booking managers [mamico]
+
 ## 20240212-01
 - Upgrade redturtle.prenotazioni 2.4.5 -> 2.4.6
   - Permission for move bookings for booking managers [mamico]
