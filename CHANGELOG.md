@@ -2,7 +2,7 @@
 
 ## 20240212-01
 - Upgrade redturtle.prenotazioni 2.4.5 -> 2.4.6
-  -permission for move bookings for booking managers [mamico]
+  - Permission for move bookings for booking managers [mamico]
   - Use the yaml file to configure the AppIO keys [folix-01]
 
 ## 20240608-01
