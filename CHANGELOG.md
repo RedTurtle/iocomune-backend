@@ -1,5 +1,10 @@
 # Changelog
 
+## 20240216-01
+- Upgrade redturtle.prenotazioni 2.4.7 -> 2.4.8
+  - No cache per restapi available_slots, available_slots changes frequently and anonymous users need to see the updated data. [mamico]
+  - Remove acquisition when getting version_id in on_modify event handler. [cekk]
+
 ## 20240212-02
 - Upgrade redturtle.prenotazioni 2.4.6 -> 2.4.7
   - Permission for move bookings for booking managers [mamico]
