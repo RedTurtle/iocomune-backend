@@ -1,5 +1,16 @@
 # Changelog
 
+## 20240220-01
+- Upgrade design.plone.contenttypes 6.1.13 -> 6.1.14
+  - Fix in @scadenziario endpoint: return future events if afterToday criteria is set. [cekk]
+  - Set base view to News Item, to do not break on Classic Plone. [cekk]
+  - Change description for field sede in UnitaOrganizzativa CT.
+  - Fixed typo in update_note field description. [eikichi18]
+
+- Upgrade redturtle.volto 5.4.3 -> 5.4.4
+  - Add adapters for link integrity for content-types with BlocksField fields. [cekk]
+  - Fix: occurrences indexing [mamico]
+
 ## 20240216-01
 - Upgrade redturtle.prenotazioni 2.4.7 -> 2.4.8
   - No cache per restapi available_slots, available_slots changes frequently and anonymous users need to see the updated data. [mamico]
