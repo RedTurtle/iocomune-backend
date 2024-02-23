@@ -1,5 +1,9 @@
 # Changelog
 
+## 20240222-01
+- Upgrade redturtle.prenotazioni 2.4.8 -> 2.4.9
+  - Improved check on fiscal code when booking considering max user limit. [daniele]
+
 ## 20240220-01
 - Upgrade design.plone.contenttypes 6.1.13 -> 6.1.14
   - Fix in @scadenziario endpoint: return future events if afterToday criteria is set. [cekk]
