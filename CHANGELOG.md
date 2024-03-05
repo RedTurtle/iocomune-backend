@@ -1,7 +1,7 @@
 # Changelog
 
 ## 20240305-01
-- Upgrade Plone 6.0.8 -> 6.0.9 [mamico]
+- Upgrade Plone 6.0.8 -> 6.0.10.1 [mamico]
 - Added pin for bravado (App IO) [mamico]
 
 ## 20240222-01
