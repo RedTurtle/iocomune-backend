@@ -1,5 +1,8 @@
 # Changelog
 
+## 20240305
+- Upgrade redturtle.volto 5.4.4 -> 5.4.5 and pick plone.restapi version to 9.6.0
+
 ## 20240222-01
 - Upgrade redturtle.prenotazioni 2.4.8 -> 2.4.9
   - Improved check on fiscal code when booking considering max user limit. [daniele]
