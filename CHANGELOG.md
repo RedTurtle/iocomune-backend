@@ -1,8 +1,41 @@
 # Changelog
 
-## 20240206-02
+## 20240305-01
 - Upgrade Plone 6.0.8 -> 6.0.9 [mamico]
 - Added pin for bravado (App IO) [mamico]
+
+## 20240222-01
+- Upgrade redturtle.prenotazioni 2.4.8 -> 2.4.9
+  - Improved check on fiscal code when booking considering max user limit. [daniele]
+
+## 20240220-01
+- Upgrade design.plone.contenttypes 6.1.13 -> 6.1.14
+  - Fix in @scadenziario endpoint: return future events if afterToday criteria is set. [cekk]
+  - Set base view to News Item, to do not break on Classic Plone. [cekk]
+  - Change description for field sede in UnitaOrganizzativa CT.
+  - Fixed typo in update_note field description. [eikichi18]
+
+- Upgrade redturtle.volto 5.4.3 -> 5.4.4
+  - Add adapters for link integrity for content-types with BlocksField fields. [cekk]
+  - Fix: occurrences indexing [mamico]
+
+## 20240216-01
+- Upgrade redturtle.prenotazioni 2.4.7 -> 2.4.8
+  - No cache per restapi available_slots, available_slots changes frequently and anonymous users need to see the updated data. [mamico]
+  - Remove acquisition when getting version_id in on_modify event handler. [cekk]
+
+## 20240212-02
+- Upgrade redturtle.prenotazioni 2.4.6 -> 2.4.7
+  - Permission for move bookings for booking managers [mamico]
+
+## 20240212-01
+- Upgrade redturtle.prenotazioni 2.4.5 -> 2.4.6
+  - Permission for move bookings for booking managers [mamico]
+  - Use the yaml file to configure the AppIO keys [folix-01]
+
+## 20240608-01
+- Upgrade design.plone.contenttypes 6.1.12 -> 6.1.13
+  - Handle missing show_dynamic_folders_in_footer in registry entry. [cekk]
 
 ## 20240206-01
 - Upgrade design.plone.contenttypes 6.1.10 -> 6.1.12
