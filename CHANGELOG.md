@@ -1,6 +1,6 @@
 # Changelog
 
-## 20240305
+## 20240305-01
 - Upgrade redturtle.volto 5.4.4 -> 5.4.5 and pick plone.restapi version to 9.6.0 (early it was undirectly picked to 9.1.2)
 
 ## 20240222-01
