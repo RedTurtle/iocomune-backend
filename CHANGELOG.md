@@ -1,5 +1,9 @@
 # Changelog
 
+## 20240306-02
+- Upgrade redturtle.volto 5.4.5 -> 5.4.6
+  - Added check if value is a dict before using get method. [eikichi18]
+
 ## 20240306-01
 - Upgrade design.plone.contenttypes 6.1.14 -> 6.1.15
 - Upgrade redturtle.prenotazioni 2.4.9 -> 2.5.0
