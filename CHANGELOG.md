@@ -1,5 +1,9 @@
 # Changelog
 
+## 20240306-03
+- Upgrade collective.purgebyid 1.2.0 -> 1.2.2 
+  - plone 6.0 / python 3.11, 3.12 support [mamico]
+
 ## 20240306-02
 - Upgrade redturtle.volto 5.4.5 -> 5.4.6
   - Added check if value is a dict before using get method. [eikichi18]
