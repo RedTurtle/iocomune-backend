@@ -1,5 +1,9 @@
 # Changelog
 
+## 20240306-01
+- Upgrade design.plone.contenttypes 6.1.14 -> 6.1.15
+- Upgrade redturtle.prenotazioni 2.4.9 -> 2.5.0
+
 ## 20240305-02
 - Upgrade Plone 6.0.8 -> 6.0.10.1 [mamico]
 - Added pin for bravado (App IO) [mamico]
