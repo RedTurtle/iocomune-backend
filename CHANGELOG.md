@@ -1,5 +1,11 @@
 # Changelog
 
+## xxx
+- redturtle.voltoplugin.editablefooter 1.1.2 -> 1.3.0
+  - Add footer_top field in settings, to manage a new footer row before columns [cekk]
+  - Handle /api (remove it) urls when absolut-ize urls [cekk]
+  - absolut-ize urls [mamico]
+
 ## 20240306-03
 - Upgrade collective.purgebyid 1.2.0 -> 1.2.2 
   - plone 6.0 / python 3.11, 3.12 support [mamico]
