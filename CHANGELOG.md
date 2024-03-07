@@ -1,5 +1,11 @@
 # Changelog
 
+##
+- Update redturtle.prenotazioni 2.5.0 -> 2.5.1
+  - Add the years range configuration to week table overrides. [folix-01]
+  - Bypass the today delete limit for the 'out-of-office' types. [folix-01]
+  - Change the booking notification flag label. [folix-01]
+
 ## 20240306-03
 - Upgrade collective.purgebyid 1.2.0 -> 1.2.2 
   - plone 6.0 / python 3.11, 3.12 support [mamico]
