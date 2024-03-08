@@ -1,7 +1,9 @@
 # Changelog
 
 ##
-- Update redturtle.prenotazioni 2.5.0 -> 2.5.1
+- Update redturtle.prenotazioni 2.5.0 -> 2.5.2
+  - Fix rolemap [lucabel]
+  - Add manager notification on booking canceled [folix-01]
   - Add the years range configuration to week table overrides. [folix-01]
   - Bypass the today delete limit for the 'out-of-office' types. [folix-01]
   - Change the booking notification flag label. [folix-01]
