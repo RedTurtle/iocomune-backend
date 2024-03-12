@@ -5,6 +5,12 @@
   - Add footer_top field in settings, to manage a new footer row before columns [cekk]
   - Handle /api (remove it) urls when absolut-ize urls [cekk]
   - absolut-ize urls [mamico]
+- Update redturtle.prenotazioni 2.5.0 -> 2.5.2
+  - Fix rolemap [lucabel]
+  - Add manager notification on booking canceled [folix-01]
+  - Add the years range configuration to week table overrides. [folix-01]
+  - Bypass the today delete limit for the 'out-of-office' types. [folix-01]
+  - Change the booking notification flag label. [folix-01]
 
 ## 20240306-03
 - Upgrade collective.purgebyid 1.2.0 -> 1.2.2 
