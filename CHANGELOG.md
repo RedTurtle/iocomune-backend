@@ -1,6 +1,10 @@
 # Changelog
 
-##
+## xxx
+- redturtle.voltoplugin.editablefooter 1.1.2 -> 1.3.0
+  - Add footer_top field in settings, to manage a new footer row before columns [cekk]
+  - Handle /api (remove it) urls when absolut-ize urls [cekk]
+  - absolut-ize urls [mamico]
 - Update redturtle.prenotazioni 2.5.0 -> 2.5.2
   - Fix rolemap [lucabel]
   - Add manager notification on booking canceled [folix-01]
