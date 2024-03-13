@@ -11,7 +11,7 @@
   - Add the years range configuration to week table overrides. [folix-01]
   - Bypass the today delete limit for the 'out-of-office' types. [folix-01]
   - Change the booking notification flag label. [folix-01]
-- Update collective.feedback 1.0.0 -> 1.1.0
+- Update collective.feedback 1.0.0 -> 1.1.1
   - Only managers can access deleted feedbacks.
     [cekk]
   - Allow all authenticated users to access @feedback endpoint.
@@ -20,8 +20,6 @@
   - Improve tests.
     [cekk]
   - Install souper.plone to have its control-panel in backend.
-    [cekk]
-  - Remove unused user action.
     [cekk]
   - Add `actions` infos in @feedback endpoint, to let the frontend know what the user can do.
     [cekk]
