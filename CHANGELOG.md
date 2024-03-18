@@ -3,13 +3,13 @@
 ## xxx
 - redturtle.voltoplugin.editablefooter 1.1.2 -> 1.3.2
   - Serie di release inutili ma che non si potevano cancellare. Andiamo avanti per restare allineati. [cekk]
-- Update redturtle.prenotazioni 2.5.0 -> 2.5.2
+- Upgrade redturtle.prenotazioni 2.5.0 -> 2.5.2
   - Fix rolemap [lucabel]
   - Add manager notification on booking canceled [folix-01]
   - Add the years range configuration to week table overrides. [folix-01]
   - Bypass the today delete limit for the 'out-of-office' types. [folix-01]
   - Change the booking notification flag label. [folix-01]
-- Update collective.feedback 1.0.0 -> 1.1.2
+- Upgrade collective.feedback 1.0.0 -> 1.1.2
   - Only managers can access deleted feedbacks.
     [cekk]
   - Allow all authenticated users to access @feedback endpoint.
@@ -21,7 +21,9 @@
     [cekk]
   - Add `actions` infos in @feedback endpoint, to let the frontend know what the user can do.
     [cekk]
-
+- Upgrade collective.volto.enhancedlinks 1.0.0 -> 1.1.0
+  - Add tool to manage infos, removed memoize machinery [mamico]
+  
 ## 20240306-03
 - Upgrade collective.purgebyid 1.2.0 -> 1.2.2 
   - plone 6.0 / python 3.11, 3.12 support [mamico]
