@@ -1,5 +1,10 @@
 # Changelog
 
+## ???
+
+- New dependency: collective.volto.gdprcookie
+  [cekk]
+
 ## 20240319-01
 
 - Update redturtle.prenotazioni 2.5.0 -> 2.5.2
