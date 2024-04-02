@@ -2,7 +2,7 @@
 
 ## 20240402-01
 
-- Update redturtle.prenotazioni 2.5.2 -> 2.6.0
+- Update redturtle.prenotazioni 2.5.2 -> 2.6.1
   - Return empty data from the @day endpoint if requested date is out of PrenotazioniFolder range [folix-01]
   - Fix double gate bug. [folix-01]
   - first_available flag for the @available-slots endpoint. [folix-01]
