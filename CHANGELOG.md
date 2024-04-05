@@ -1,15 +1,34 @@
 # Changelog
 
-## xxx
-- redturtle.voltoplugin.editablefooter 1.1.2 -> 1.3.2
-  - Serie di release inutili ma che non si potevano cancellare. Andiamo avanti per restare allineati. [cekk]
-- Upgrade redturtle.prenotazioni 2.5.0 -> 2.5.2
+## 20240205-01
+
+- New dependency: collective.volto.gdprcookie
+  [cekk]
+- Upgrade collective.volto.enhancedlinks 1.0.0 -> 1.1.0
+  - Add tool to manage infos, removed memoize machinery [mamico]
+  
+## 20240402-01
+
+- Update redturtle.prenotazioni 2.5.2 -> 2.6.1
+  - Return empty data from the @day endpoint if requested date is out of PrenotazioniFolder range [folix-01]
+  - Fix double gate bug. [folix-01]
+  - first_available flag for the @available-slots endpoint. [folix-01]
+  - Fix double gate when it is repeated in more than one week table overrides. [folix-01
+
+## 20240319-02
+  - Upgrade collective.feedback 1.0.0 -> 1.1.2
+    - Fix typo in actions.xml permission. [cekk]
+    - 
+## 20240319-01
+
+- Update redturtle.prenotazioni 2.5.0 -> 2.5.2
   - Fix rolemap [lucabel]
   - Add manager notification on booking canceled [folix-01]
   - Add the years range configuration to week table overrides. [folix-01]
   - Bypass the today delete limit for the 'out-of-office' types. [folix-01]
   - Change the booking notification flag label. [folix-01]
-- Upgrade collective.feedback 1.0.0 -> 1.1.2
+
+- Update collective.feedback 1.0.0 -> 1.1.1
   - Only managers can access deleted feedbacks.
     [cekk]
   - Allow all authenticated users to access @feedback endpoint.
@@ -21,9 +40,27 @@
     [cekk]
   - Add `actions` infos in @feedback endpoint, to let the frontend know what the user can do.
     [cekk]
-- Upgrade collective.volto.enhancedlinks 1.0.0 -> 1.1.0
-  - Add tool to manage infos, removed memoize machinery [mamico]
-  
+
+- redturtle.voltoplugin.editablefooter 1.1.2 -> 1.3.2
+  - Serie di release inutili ma che non si potevano cancellare. Andiamo avanti per restare allineati. [cekk]
+
+- update design.plone.contenttypes 6.2.0 -> 6.2.2
+  - Added check for blocks field in check_luoghi view [eikichi18]
+  - UnitaOrganizzativa.assessore_riferimento title internationalize. [folix-01]
+  - @@check-servizi: provides also the full list of servizi. [daniele]
+
+- update redturtle.volto 5.4.7 -> 5.4.8
+  - Do not try to convert strings in internal paths for form blocks. [cekk]
+  - Handle None values in link integrity blocks adapter. [cekk]
+  - Patch in @querystring-search that avoid to search through all the
+    site if there is an absolutePath criteria with non existing UID
+    and b_size==1. See #99 for more details. [cekk]
+
+- update design.plone.ioprenoto 1.2.2 -> 1.2.3
+  - Fix problem with DefaultJSONSummarySerializer hineritance in
+    prenotazioniFolder DefaultJSONSummarySerializer override. [lucabel]
+  - Add the plone.restapi>=9.6.0 constaint. [folix-01]
+
 ## 20240306-03
 - Upgrade collective.purgebyid 1.2.0 -> 1.2.2 
   - plone 6.0 / python 3.11, 3.12 support [mamico]
