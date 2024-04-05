@@ -1,11 +1,12 @@
 # Changelog
 
-
 ## 20240205-01
 
 - New dependency: collective.volto.gdprcookie
   [cekk]
-
+- Upgrade collective.volto.enhancedlinks 1.0.0 -> 1.1.0
+  - Add tool to manage infos, removed memoize machinery [mamico]
+  
 ## 20240402-01
 
 - Update redturtle.prenotazioni 2.5.2 -> 2.6.1
@@ -14,6 +15,10 @@
   - first_available flag for the @available-slots endpoint. [folix-01]
   - Fix double gate when it is repeated in more than one week table overrides. [folix-01
 
+## 20240319-02
+  - Upgrade collective.feedback 1.0.0 -> 1.1.2
+    - Fix typo in actions.xml permission. [cekk]
+    - 
 ## 20240319-01
 
 - Update redturtle.prenotazioni 2.5.0 -> 2.5.2
@@ -22,7 +27,8 @@
   - Add the years range configuration to week table overrides. [folix-01]
   - Bypass the today delete limit for the 'out-of-office' types. [folix-01]
   - Change the booking notification flag label. [folix-01]
-  - Update collective.feedback 1.0.0 -> 1.1.2
+
+- Update collective.feedback 1.0.0 -> 1.1.1
   - Only managers can access deleted feedbacks.
     [cekk]
   - Allow all authenticated users to access @feedback endpoint.
@@ -54,7 +60,6 @@
   - Fix problem with DefaultJSONSummarySerializer hineritance in
     prenotazioniFolder DefaultJSONSummarySerializer override. [lucabel]
   - Add the plone.restapi>=9.6.0 constaint. [folix-01]
-
 
 ## 20240306-03
 - Upgrade collective.purgebyid 1.2.0 -> 1.2.2 
