@@ -22,8 +22,7 @@
   - Add the years range configuration to week table overrides. [folix-01]
   - Bypass the today delete limit for the 'out-of-office' types. [folix-01]
   - Change the booking notification flag label. [folix-01]
-
-- Update collective.feedback 1.0.0 -> 1.1.1
+  - Update collective.feedback 1.0.0 -> 1.1.2
   - Only managers can access deleted feedbacks.
     [cekk]
   - Allow all authenticated users to access @feedback endpoint.
