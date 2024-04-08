@@ -1,6 +1,8 @@
 # Changelog
 
 ##
+- Update design.plone.policy 5.0.7 -> 5.0.8
+  [folix-01]
 - Add collective.volto.slimheader version
   [folix-01]
 
