@@ -1,5 +1,9 @@
 # Changelog
 
+##
+- Add collective.volto.slimheader version
+  [folix-01]
+
 ## 20240205-01
 
 - New dependency: collective.volto.gdprcookie
