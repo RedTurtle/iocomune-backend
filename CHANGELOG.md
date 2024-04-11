@@ -1,6 +1,13 @@
 # Changelog
 
-## 20240205-01
+## 20240411-01
+
+- Update design.plone.ioprenoto 1.2.3 -> 1.2.4
+  b_size del vocabolario delle tipologie di prenotazione (usato per il pulsante
+  delle prenotazioni) a 200, il default era 25
+  [mamico]
+
+## 20240405-01
 
 - New dependency: collective.volto.gdprcookie
   [cekk]
