@@ -1,5 +1,11 @@
 # Changelog
 
+## 20240215-01
+- Update design.plone.policy 5.0.7 -> 5.0.8
+  [folix-01]
+- Add collective.volto.slimheader version
+  [folix-01]
+
 ## 20240411-01
 
 - Update design.plone.ioprenoto 1.2.3 -> 1.2.4
