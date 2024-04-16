@@ -1,6 +1,11 @@
 # Changelog
 
 ## 20240215-01
+- Update redturtle.prenotazioni 2.6.1 -> 2.6.3
+    - avoid gate collision [mamico]
+    - Bypass notBeforeDays when using the @available-slots to find the first bookable slot(used by BookingManager). [folix-01]
+    - Fix day endpoint to show the available scheduling for the same day as start date. [folix-01]
+    - Manage the user's phone attribute in booking-schema [mamico]
 - Update design.plone.policy 5.0.7 -> 5.0.8
   [folix-01]
 - Add collective.volto.slimheader version
