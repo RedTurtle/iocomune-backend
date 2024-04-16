@@ -10,6 +10,12 @@
   [folix-01]
 - Add collective.volto.slimheader version
   [folix-01]
+- Update design.plone.contenttypes 6.2.2 -> 6.2.3
+   - Image are no longer required in venue [lucabel]
+
+- Update design.plone.policy 5.0.8 -> 5.0.9
+   - Fix test [lucabel]
+
 
 ## 20240411-01
 
