@@ -1,6 +1,6 @@
 # Changelog
 
-## 20240215-01
+## 20240416-01
 - Update redturtle.prenotazioni 2.6.1 -> 2.6.3
     - avoid gate collision [mamico]
     - Bypass notBeforeDays when using the @available-slots to find the first bookable slot(used by BookingManager). [folix-01]
