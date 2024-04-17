@@ -1,5 +1,9 @@
 # Changelog
 
+## 20240417-01
+- Update design.plone.contenttypes 6.2.3 -> 6.2.5
+    - check-servizi: fixed check on relation title. [daniele]
+
 ## 20240416-01
 - Update redturtle.prenotazioni 2.6.1 -> 2.6.3
     - avoid gate collision [mamico]
