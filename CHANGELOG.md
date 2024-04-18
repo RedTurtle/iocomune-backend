@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024????-01
+- Update collective.volto.formsupport 2.6.2 -> 3.0.1
+  - See changelog for details [cekk]
+
 ## 20240416-01
 - Update redturtle.prenotazioni 2.6.1 -> 2.6.3
     - avoid gate collision [mamico]
