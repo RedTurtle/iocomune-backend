@@ -1,5 +1,9 @@
 # Changelog
 
+## 20240419-01
+- Update design.plone.contenttypes 6.2.3 -> 6.2.6
+   - Improved check on relation. [daniele]
+
 ## 20240416-01
 - Update redturtle.prenotazioni 2.6.1 -> 2.6.3
     - avoid gate collision [mamico]
