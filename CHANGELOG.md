@@ -3,6 +3,8 @@
 ## 20240419-01
 - Update design.plone.contenttypes 6.2.3 -> 6.2.6
    - Improved check on relation. [daniele]
+   - check-servizi: fixed check on relation title. [daniele]
+   - converted some file and image fields as blob fields [mamico]
 
 ## 20240416-01
 - Update redturtle.prenotazioni 2.6.1 -> 2.6.3
