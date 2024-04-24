@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024????-01
+- collective.volto.enhancedlinks 1.1.0 -> 1.1.1
+  - prevent write-on-read [cekk]
+
 ## 20240422-02
 - design.plone.contenttypes 6.2.3 -> 6.2.8
   - converted some file and image fields as blob fields [mamico]
