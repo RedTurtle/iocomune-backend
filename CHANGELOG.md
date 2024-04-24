@@ -3,6 +3,9 @@
 ## 2024????-01
 - collective.volto.enhancedlinks 1.1.0 -> 1.1.1
   - prevent write-on-read [cekk]
+- update redturtle.prenotazioni 2.6.3 -> 2.6.5
+  - Package chore. [folix-01]
+  - Fix reminder send view. [folix-01]
 
 ## 20240422-02
 - design.plone.contenttypes 6.2.3 -> 6.2.8
