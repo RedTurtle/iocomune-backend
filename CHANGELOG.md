@@ -3,6 +3,8 @@
 ## 2024????-01
 - collective.volto.enhancedlinks 1.1.0 -> 1.1.1
   - prevent write-on-read [cekk]
+- redturtle.voltoplugin.editablefooter 1.3.2 -> 1.3.3
+  - Fix serializer/deserializer for footerTop blocks: use blocks handlers to fix data. [cekk]
 
 ## 20240422-02
 - design.plone.contenttypes 6.2.3 -> 6.2.8
