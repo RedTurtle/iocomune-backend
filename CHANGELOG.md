@@ -6,6 +6,8 @@
 - update redturtle.prenotazioni 2.6.3 -> 2.6.5
   - Package chore. [folix-01]
   - Fix reminder send view. [folix-01]
+- collective.feedback 1.1.2 -> 1.1.3
+  - add a plone2volto url converter [lucabel]
 
 ## 20240422-02
 - design.plone.contenttypes 6.2.3 -> 6.2.8
