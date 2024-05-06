@@ -8,6 +8,8 @@
   - Fix reminder send view. [folix-01]
 - collective.feedback 1.1.2 -> 1.1.3
   - add a plone2volto url converter [lucabel]
+- collective.volto.gdprcookie 1.0.2 -> 1.0.3
+  - Fix deserializer and save all data in registry. [cekk]
 
 ## 20240422-02
 - design.plone.contenttypes 6.2.3 -> 6.2.8
