@@ -8,6 +8,9 @@
   - Fix reminder send view. [folix-01]
 - collective.feedback 1.1.2 -> 1.1.3
   - add a plone2volto url converter [lucabel]
+- rer.newsletter = 3.0.2
+  - It wasn't fixed before [cekk]
+  - Disable resource for Plone6 [cekk]
 
 ## 20240422-02
 - design.plone.contenttypes 6.2.3 -> 6.2.8
