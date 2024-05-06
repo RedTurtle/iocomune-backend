@@ -1,8 +1,38 @@
 # Changelog
 
 ## 2024????-01
+- collective.volto.enhancedlinks 1.1.0 -> 1.1.1
+  - prevent write-on-read [cekk]
+- update redturtle.prenotazioni 2.6.3 -> 2.6.5
+  - Package chore. [folix-01]
+  - Fix reminder send view. [folix-01]
+- collective.feedback 1.1.2 -> 1.1.3
+  - add a plone2volto url converter [lucabel]
 - Update redturtle.faq 1.0.1 -> 1.0.2
     - Serialize returned blocks. [cekk]
+
+## 20240422-02
+- design.plone.contenttypes 6.2.3 -> 6.2.8
+  - converted some file and image fields as blob fields [mamico]
+  - check-servizi: fixed check on relation title. [daniele]
+  - improved check on relation. [daniele]
+  - Fix change_news_type view; Taxonomy doesn't index values not present in the taxonomy vocabulary, so we had lot of old values not indexed and not listed as available type to change. [lucabel]
+  - Do not break News serialzier if tipologia_notizia attribute is missing. [cekk]
+  - Add start metadata to event summary serialization; useful when create event with children event: in items list we have subevents with missing start date [lucabel]
+
+- redturtle.volto 5.4.8 -> 5.4.9
+  - Limit event occurrences to 100. [mamico]
+  - Customize INameChooser adapter to check also alias ids and disallow to create contents that could override aliases. [cekk]
+  - Add flag in controlpanel to enable/disable INameChooser customization. [cekk]
+  - Exclude bg_color from transformed fields in deserializer. [cekk]
+  - Uninstall collective.volto.cookieconsent (deprecated). Will be removed from dependencies in next releases. [cekk]
+  - Add dependency to collective.volto.gdprcookie and install it by default. [cekk]
+
+## 20240422-01
+- design.plone.ioprenoto 1.2.4 -> 1.2.5
+  - Refactor rest service to simplify inheritance [lucabel]
+  - Add redturtle.prenotazioni’s notify_upcoming_bookings script to console_scripts (allows it to be available in the buildout). 
+    [folix-01]
 
 ## 20240416-01
 - Update redturtle.prenotazioni 2.6.1 -> 2.6.3
