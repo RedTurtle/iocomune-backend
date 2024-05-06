@@ -10,6 +10,11 @@
   - add a plone2volto url converter [lucabel]
 - collective.volto.gdprcookie 1.0.2 -> 1.0.3
   - Fix deserializer and save all data in registry. [cekk]
+- collective.volto.formsupport 2.6.2 -> 3.0.2
+  - Several changes..see changelog for details [cekk]
+  - rer.newsletter = 3.0.2
+  - It wasn't fixed before [cekk]
+  - Disable resource for Plone6 [cekk]
 
 ## 20240422-02
 - design.plone.contenttypes 6.2.3 -> 6.2.8
