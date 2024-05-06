@@ -3,6 +3,11 @@
 ## 2024????-01
 - collective.volto.enhancedlinks 1.1.0 -> 1.1.1
   - prevent write-on-read [cekk]
+- update redturtle.prenotazioni 2.6.3 -> 2.6.5
+  - Package chore. [folix-01]
+  - Fix reminder send view. [folix-01]
+- collective.feedback 1.1.2 -> 1.1.3
+  - add a plone2volto url converter [lucabel]
 - redturtle.voltoplugin.editablefooter 1.3.2 -> 1.3.3
   - Fix serializer/deserializer for footerTop blocks: use blocks handlers to fix data. [cekk]
 
