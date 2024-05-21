@@ -1,5 +1,13 @@
 # Changelog
 
+## 20240521-02
+- Update redturtle.faq 1.0.1 -> 1.0.2
+    - Serialize returned blocks. [cekk]
+- redturtle.voltoplugin.editablefooter 1.3.2 -> 1.3.3
+  - Fix serializer/deserializer for footerTop blocks: use blocks handlers to fix data. [cekk]
+- collective.volto.subsites 1.4.0 -> 1.5.0
+  - add versioning [cekk]
+
 ## 20240521-01
 - collective.volto.enhancedlinks 1.1.0 -> 1.1.1
   - prevent write-on-read [cekk]
@@ -8,12 +16,6 @@
   - Fix reminder send view. [folix-01]
 - collective.feedback 1.1.2 -> 1.1.3
   - add a plone2volto url converter [lucabel]
-- Update redturtle.faq 1.0.1 -> 1.0.2
-    - Serialize returned blocks. [cekk]
-- redturtle.voltoplugin.editablefooter 1.3.2 -> 1.3.3
-  - Fix serializer/deserializer for footerTop blocks: use blocks handlers to fix data. [cekk]
-- collective.volto.subsites 1.4.0 -> 1.5.0
-  - add versioning [cekk]
 - collective.volto.gdprcookie 1.0.2 -> 1.0.3
   - Fix deserializer and save all data in registry. [cekk]
 - collective.volto.formsupport 2.6.2 -> 3.0.2
