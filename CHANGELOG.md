@@ -1,6 +1,6 @@
 # Changelog
 
-## 2024????-01
+## 20240521-01
 - collective.volto.enhancedlinks 1.1.0 -> 1.1.1
   - prevent write-on-read [cekk]
 - update redturtle.prenotazioni 2.6.3 -> 2.6.5
@@ -10,6 +10,18 @@
   - add a plone2volto url converter [lucabel]
 - redturtle.voltoplugin.editablefooter 1.3.2 -> 1.3.3
   - Fix serializer/deserializer for footerTop blocks: use blocks handlers to fix data. [cekk]
+- collective.volto.subsites 1.4.0 -> 1.5.0
+  - add versioning [cekk]
+- collective.volto.gdprcookie 1.0.2 -> 1.0.3
+  - Fix deserializer and save all data in registry. [cekk]
+- collective.volto.formsupport 2.6.2 -> 3.0.2
+  - Several changes..see changelog for details [cekk]
+  - rer.newsletter = 3.0.2
+  - It wasn't fixed before [cekk]
+  - Disable resource for Plone6 [cekk]
+- design.plone.contenttypes 6.2.8 -> 6.2.9
+  - Add this folder "Altri Documenti" under "Persona pubblica" [lucabel]
+  - Code porting to work with both plone 6.0.10.x and 6.0.11 [lucabel]
 
 ## 20240422-02
 - design.plone.contenttypes 6.2.3 -> 6.2.8
