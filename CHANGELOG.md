@@ -1,6 +1,6 @@
 # Changelog
 
-## 2024????-01
+## 20240521-01
 - collective.volto.enhancedlinks 1.1.0 -> 1.1.1
   - prevent write-on-read [cekk]
 - update redturtle.prenotazioni 2.6.3 -> 2.6.5
