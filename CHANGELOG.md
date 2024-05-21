@@ -15,6 +15,9 @@
   - rer.newsletter = 3.0.2
   - It wasn't fixed before [cekk]
   - Disable resource for Plone6 [cekk]
+- design.plone.contenttypes 6.2.8 -> 6.2.9
+  - Add this folder "Altri Documenti" under "Persona pubblica" [lucabel]
+  - Code porting to work with both plone 6.0.10.x and 6.0.11 [lucabel]
 
 ## 20240422-02
 - design.plone.contenttypes 6.2.3 -> 6.2.8
