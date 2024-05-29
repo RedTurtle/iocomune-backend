@@ -1,5 +1,16 @@
 # Changelog
 
+## 20240529-01
+- update redturtle.prenotazioni 2.6.5 -> 2.7.0
+ - Workarounds for external integration: search with tinit- prefixed user, 
+   schema with some fields with only spaces [mamico]
+ - Write to history the booking notifications log [folix-01]
+ - Write to history if could not send booking notification [folix-01]
+ - Booking canceled message + wf states translations BREAKING CHANGE:
+   frontend uses booking_state_label insteat of booking_state, this change
+   of translations requires a new release of the frontend
+   (@redturtle/volto-io-prenoto >= 1.20.0) [folix-01]
+
 ## 20240521-02
 - Update redturtle.faq 1.0.1 -> 1.0.2
     - Serialize returned blocks. [cekk]
