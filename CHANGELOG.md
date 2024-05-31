@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Update redturtle.prenotazioni 2.7.0 -> 2.7.1 [folix-01]
+  - Hotfix missing permission [folix-01]
+
 - Fix xidera.prenotazioni version because there are several profiles that need it.
   [cekk]
 
