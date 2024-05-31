@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Fix xidera.prenotazioni version because there are several profiles that need it.
+  [cekk]
+
 ## 20240529-01
 - update redturtle.prenotazioni 2.6.5 -> 2.7.0
  - Workarounds for external integration: search with tinit- prefixed user, 
