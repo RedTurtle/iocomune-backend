@@ -4,9 +4,9 @@
 
 - Update redturtle.prenotazioni 2.7.0 -> 2.7.1 [folix-01]
   - Hotfix missing permission [folix-01]
-
 - Fix xidera.prenotazioni version because there are several profiles that need it.
   [cekk]
+- update design.plone.contenttypes from 6.2.9 -> 6.2.10 [lucabel]
 
 ## 20240529-01
 - update redturtle.prenotazioni 2.6.5 -> 2.7.0
