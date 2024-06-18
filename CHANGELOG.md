@@ -7,6 +7,8 @@
 - Fix xidera.prenotazioni version because there are several profiles that need it.
   [cekk]
 - update design.plone.contenttypes from 6.2.9 -> 6.2.10 [lucabel]
+- update redturtle.filesretriever 1.0.0 -> 1.0.1
+  - Better handle edge-cases in content-type ad disposition headers [cekk]
 
 ## 20240529-01
 - update redturtle.prenotazioni 2.6.5 -> 2.7.0
