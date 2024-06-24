@@ -1,6 +1,6 @@
 # Changelog
 
-## 20240611-02
+## 20240624-01
 - update redturtle.filesretriever 1.0.0 -> 1.0.1
   - Better handle edge-cases in content-type ad disposition headers [cekk]
 - update design.plone.contenttypes from 6.2.10 -> 6.2.11 [eikichi18]
