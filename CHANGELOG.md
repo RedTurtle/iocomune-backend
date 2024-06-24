@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 20240611-01
 
 - Update redturtle.prenotazioni 2.7.0 -> 2.7.1 [folix-01]
   - Hotfix missing permission [folix-01]
@@ -9,6 +9,7 @@
 - update design.plone.contenttypes from 6.2.9 -> 6.2.10 [lucabel]
 - update redturtle.filesretriever 1.0.0 -> 1.0.1
   - Better handle edge-cases in content-type ad disposition headers [cekk]
+- update design.plone.contenttypes from 6.2.10 -> 6.2.11 [eikichi18]
 
 ## 20240529-01
 - update redturtle.prenotazioni 2.6.5 -> 2.7.0
