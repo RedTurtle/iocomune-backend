@@ -1,5 +1,9 @@
 # Changelog
 
+## ?
+- Update redturtle.prenotazioni 2.7.3 -> 2.7.4
+  - @@bookings-export view. [folix-01]
+
 ## 20240624-01
 - update redturtle.filesretriever 1.0.0 -> 1.0.1
   - Better handle edge-cases in content-type ad disposition headers [cekk]
