@@ -1,5 +1,8 @@
 # Changelog
 
+## 20240624-03
+- update design.plone.contenttypes from 6.2.11 -> 6.2.12 [lucabel]
+
 ## 20240624-02
 - Update redturtle.prenotazioni 2.7.3 -> 2.7.4
   - @@bookings-export view. [folix-01]
