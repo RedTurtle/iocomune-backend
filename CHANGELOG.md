@@ -1,5 +1,240 @@
 # Changelog
 
+## 20240624-03
+- update design.plone.contenttypes from 6.2.11 -> 6.2.12 [lucabel]
+
+## 20240624-02
+- Update redturtle.prenotazioni 2.7.3 -> 2.7.4
+  - @@bookings-export view. [folix-01]
+
+## 20240624-01
+- update redturtle.filesretriever 1.0.0 -> 1.0.1
+  - Better handle edge-cases in content-type ad disposition headers [cekk]
+- update design.plone.contenttypes from 6.2.10 -> 6.2.11 [eikichi18]
+
+## 20240611-01
+
+- Update redturtle.prenotazioni 2.7.0 -> 2.7.1 [folix-01]
+  - Hotfix missing permission [folix-01]
+- Fix xidera.prenotazioni version because there are several profiles that need it.
+  [cekk]
+- update design.plone.contenttypes from 6.2.9 -> 6.2.10 [lucabel]
+
+## 20240529-01
+- update redturtle.prenotazioni 2.6.5 -> 2.7.0
+ - Workarounds for external integration: search with tinit- prefixed user, 
+   schema with some fields with only spaces [mamico]
+ - Write to history the booking notifications log [folix-01]
+ - Write to history if could not send booking notification [folix-01]
+ - Booking canceled message + wf states translations BREAKING CHANGE:
+   frontend uses booking_state_label insteat of booking_state, this change
+   of translations requires a new release of the frontend
+   (@redturtle/volto-io-prenoto >= 1.20.0) [folix-01]
+
+## 20240521-02
+- Update redturtle.faq 1.0.1 -> 1.0.2
+    - Serialize returned blocks. [cekk]
+- redturtle.voltoplugin.editablefooter 1.3.2 -> 1.3.3
+  - Fix serializer/deserializer for footerTop blocks: use blocks handlers to fix data. [cekk]
+- collective.volto.subsites 1.4.0 -> 1.5.0
+  - add versioning [cekk]
+
+## 20240521-01
+- collective.volto.enhancedlinks 1.1.0 -> 1.1.1
+  - prevent write-on-read [cekk]
+- update redturtle.prenotazioni 2.6.3 -> 2.6.5
+  - Package chore. [folix-01]
+  - Fix reminder send view. [folix-01]
+- collective.feedback 1.1.2 -> 1.1.3
+  - add a plone2volto url converter [lucabel]
+- collective.volto.gdprcookie 1.0.2 -> 1.0.3
+  - Fix deserializer and save all data in registry. [cekk]
+- collective.volto.formsupport 2.6.2 -> 3.0.2
+  - Several changes..see changelog for details [cekk]
+  - rer.newsletter = 3.0.2
+  - It wasn't fixed before [cekk]
+  - Disable resource for Plone6 [cekk]
+- design.plone.contenttypes 6.2.8 -> 6.2.9
+  - Add this folder "Altri Documenti" under "Persona pubblica" [lucabel]
+  - Code porting to work with both plone 6.0.10.x and 6.0.11 [lucabel]
+
+## 20240422-02
+- design.plone.contenttypes 6.2.3 -> 6.2.8
+  - converted some file and image fields as blob fields [mamico]
+  - check-servizi: fixed check on relation title. [daniele]
+  - improved check on relation. [daniele]
+  - Fix change_news_type view; Taxonomy doesn't index values not present in the taxonomy vocabulary, so we had lot of old values not indexed and not listed as available type to change. [lucabel]
+  - Do not break News serialzier if tipologia_notizia attribute is missing. [cekk]
+  - Add start metadata to event summary serialization; useful when create event with children event: in items list we have subevents with missing start date [lucabel]
+
+- redturtle.volto 5.4.8 -> 5.4.9
+  - Limit event occurrences to 100. [mamico]
+  - Customize INameChooser adapter to check also alias ids and disallow to create contents that could override aliases. [cekk]
+  - Add flag in controlpanel to enable/disable INameChooser customization. [cekk]
+  - Exclude bg_color from transformed fields in deserializer. [cekk]
+  - Uninstall collective.volto.cookieconsent (deprecated). Will be removed from dependencies in next releases. [cekk]
+  - Add dependency to collective.volto.gdprcookie and install it by default. [cekk]
+
+## 20240422-01
+- design.plone.ioprenoto 1.2.4 -> 1.2.5
+  - Refactor rest service to simplify inheritance [lucabel]
+  - Add redturtle.prenotazioni’s notify_upcoming_bookings script to console_scripts (allows it to be available in the buildout). 
+    [folix-01]
+
+## 20240416-01
+- Update redturtle.prenotazioni 2.6.1 -> 2.6.3
+    - avoid gate collision [mamico]
+    - Bypass notBeforeDays when using the @available-slots to find the first bookable slot(used by BookingManager). [folix-01]
+    - Fix day endpoint to show the available scheduling for the same day as start date. [folix-01]
+    - Manage the user's phone attribute in booking-schema [mamico]
+- Update design.plone.policy 5.0.7 -> 5.0.8
+  [folix-01]
+- Add collective.volto.slimheader version
+  [folix-01]
+- Update design.plone.contenttypes 6.2.2 -> 6.2.3
+   - Image are no longer required in venue [lucabel]
+
+- Update design.plone.policy 5.0.8 -> 5.0.9
+   - Fix test [lucabel]
+
+
+## 20240411-01
+
+- Update design.plone.ioprenoto 1.2.3 -> 1.2.4
+  b_size del vocabolario delle tipologie di prenotazione (usato per il pulsante
+  delle prenotazioni) a 200, il default era 25
+  [mamico]
+
+## 20240405-01
+
+- New dependency: collective.volto.gdprcookie
+  [cekk]
+- Upgrade collective.volto.enhancedlinks 1.0.0 -> 1.1.0
+  - Add tool to manage infos, removed memoize machinery [mamico]
+  
+## 20240402-01
+
+- Update redturtle.prenotazioni 2.5.2 -> 2.6.1
+  - Return empty data from the @day endpoint if requested date is out of PrenotazioniFolder range [folix-01]
+  - Fix double gate bug. [folix-01]
+  - first_available flag for the @available-slots endpoint. [folix-01]
+  - Fix double gate when it is repeated in more than one week table overrides. [folix-01
+
+## 20240319-02
+  - Upgrade collective.feedback 1.0.0 -> 1.1.2
+    - Fix typo in actions.xml permission. [cekk]
+    - 
+## 20240319-01
+
+- Update redturtle.prenotazioni 2.5.0 -> 2.5.2
+  - Fix rolemap [lucabel]
+  - Add manager notification on booking canceled [folix-01]
+  - Add the years range configuration to week table overrides. [folix-01]
+  - Bypass the today delete limit for the 'out-of-office' types. [folix-01]
+  - Change the booking notification flag label. [folix-01]
+
+- Update collective.feedback 1.0.0 -> 1.1.1
+  - Only managers can access deleted feedbacks.
+    [cekk]
+  - Allow all authenticated users to access @feedback endpoint.
+    The endpoint will return only feedbacks on objects that they can edit.
+    [cekk]
+  - Improve tests.
+    [cekk]
+  - Install souper.plone to have its control-panel in backend.
+    [cekk]
+  - Add `actions` infos in @feedback endpoint, to let the frontend know what the user can do.
+    [cekk]
+
+- redturtle.voltoplugin.editablefooter 1.1.2 -> 1.3.2
+  - Serie di release inutili ma che non si potevano cancellare. Andiamo avanti per restare allineati. [cekk]
+
+- update design.plone.contenttypes 6.2.0 -> 6.2.2
+  - Added check for blocks field in check_luoghi view [eikichi18]
+  - UnitaOrganizzativa.assessore_riferimento title internationalize. [folix-01]
+  - @@check-servizi: provides also the full list of servizi. [daniele]
+
+- update redturtle.volto 5.4.7 -> 5.4.8
+  - Do not try to convert strings in internal paths for form blocks. [cekk]
+  - Handle None values in link integrity blocks adapter. [cekk]
+  - Patch in @querystring-search that avoid to search through all the
+    site if there is an absolutePath criteria with non existing UID
+    and b_size==1. See #99 for more details. [cekk]
+
+- update design.plone.ioprenoto 1.2.2 -> 1.2.3
+  - Fix problem with DefaultJSONSummarySerializer hineritance in
+    prenotazioniFolder DefaultJSONSummarySerializer override. [lucabel]
+  - Add the plone.restapi>=9.6.0 constaint. [folix-01]
+
+## 20240306-03
+- Upgrade collective.purgebyid 1.2.0 -> 1.2.2 
+  - plone 6.0 / python 3.11, 3.12 support [mamico]
+
+## 20240306-02
+- Upgrade redturtle.volto 5.4.5 -> 5.4.6
+  - Added check if value is a dict before using get method. [eikichi18]
+
+## 20240306-01
+- Upgrade design.plone.contenttypes 6.1.14 -> 6.1.15
+- Upgrade redturtle.prenotazioni 2.4.9 -> 2.5.0
+
+## 20240305-02
+- Upgrade Plone 6.0.8 -> 6.0.10.1 [mamico]
+- Added pin for bravado (App IO) [mamico]
+
+## 20240305-01
+- Upgrade redturtle.volto 5.4.4 -> 5.4.5 and pick plone.restapi version to 9.6.0 (early it was undirectly picked to 9.1.2)
+
+## 20240222-01
+- Upgrade redturtle.prenotazioni 2.4.8 -> 2.4.9
+  - Improved check on fiscal code when booking considering max user limit. [daniele]
+
+## 20240220-01
+- Upgrade design.plone.contenttypes 6.1.13 -> 6.1.14
+  - Fix in @scadenziario endpoint: return future events if afterToday criteria is set. [cekk]
+  - Set base view to News Item, to do not break on Classic Plone. [cekk]
+  - Change description for field sede in UnitaOrganizzativa CT.
+  - Fixed typo in update_note field description. [eikichi18]
+
+- Upgrade redturtle.volto 5.4.3 -> 5.4.4
+  - Add adapters for link integrity for content-types with BlocksField fields. [cekk]
+  - Fix: occurrences indexing [mamico]
+
+## 20240216-01
+- Upgrade redturtle.prenotazioni 2.4.7 -> 2.4.8
+  - No cache per restapi available_slots, available_slots changes frequently and anonymous users need to see the updated data. [mamico]
+  - Remove acquisition when getting version_id in on_modify event handler. [cekk]
+
+## 20240212-02
+- Upgrade redturtle.prenotazioni 2.4.6 -> 2.4.7
+  - Permission for move bookings for booking managers [mamico]
+
+## 20240212-01
+- Upgrade redturtle.prenotazioni 2.4.5 -> 2.4.6
+  - Permission for move bookings for booking managers [mamico]
+  - Use the yaml file to configure the AppIO keys [folix-01]
+
+## 20240608-01
+- Upgrade design.plone.contenttypes 6.1.12 -> 6.1.13
+  - Handle missing show_dynamic_folders_in_footer in registry entry. [cekk]
+
+## 20240206-01
+- Upgrade design.plone.contenttypes 6.1.10 -> 6.1.12
+  - removed un-needed commit in upgrade-step [cekk]
+
+## 20240201-01
+- Upgrade redturtle.prenotazioni version to 2.4.5
+  - sort_on/sort_order in restapi bookings and xlsx [mamico]
+
+## 20240130-01
+- Upgrade redturtle.volto 5.4.3
+  - Upgrade step to remove all custom Googlebot rules from robots.txt [mamico]
+  - Fix: add range_start to function for calculate recurrences in the right way [eikichi18]
+
+## 20240129-01
+- Upgrade design.plone.ioprenoto 1.2.2
+  - Fix encoding booking_type vocab [mamico]
+
 ## 20240125-01
 - Upgrade redturtle.prenotazioni version to 2.4.4 [folix-01]
   - Update the sms notifications behaviour's field label [folix-01]
