@@ -1,5 +1,9 @@
 # Changelog
 
+## yyyymmdd-vv
+- upgrade to plone 6.0.11.1 [mamico]
+- update node/node.ext.ldap/node.ext.ugm [mamico]
+
 ## 20240624-03
 - update design.plone.contenttypes from 6.2.11 -> 6.2.12 [lucabel]
 
