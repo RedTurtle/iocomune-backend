@@ -3,6 +3,8 @@
 ## yyyymmdd-vv
 - upgrade to plone 6.0.11.1 [mamico]
 - update node/node.ext.ldap/node.ext.ugm [mamico]
+- dos_protection removed (there is a monkey in Products.CMFPlone that
+  fix the issue) [mamico]
 
 ## 20240624-03
 - update design.plone.contenttypes from 6.2.11 -> 6.2.12 [lucabel]
