@@ -1,5 +1,9 @@
 # Changelog
 
+## 20240710-01
+- update redturtle.volto 5.4.9 -> 5.5.0
+  - add depdendency with collective.volto.sitesettings [cekk]
+
 ## 20240624-03
 - update design.plone.contenttypes from 6.2.11 -> 6.2.12 [lucabel]
 
