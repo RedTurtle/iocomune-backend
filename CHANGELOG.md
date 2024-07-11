@@ -1,8 +1,10 @@
 # Changelog
 
-## 20240710-01
+<<<<<<< HEAD
+## 20240711-01
 - update redturtle.volto 5.4.9 -> 5.5.0
   - add depdendency with collective.volto.sitesettings [cekk]
+- update rer.customersatisfaction from 2.0.0 -> 2.2.4 [mamico]
 
 ## 20240624-03
 - update design.plone.contenttypes from 6.2.11 -> 6.2.12 [lucabel]
