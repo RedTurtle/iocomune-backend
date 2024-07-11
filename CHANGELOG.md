@@ -1,7 +1,7 @@
 # Changelog
 
 ## 20240711-02
-- update design.plone.contenttypes 6.2.12 -> 6.2.13 [cekk] 
+- update design.plone.contenttypes 6.2.12 -> 6.2.14 [cekk] 
 
 ## 20240711-01
 - update redturtle.volto 5.4.9 -> 5.5.0
