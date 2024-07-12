@@ -1,6 +1,13 @@
 # Changelog
 
-<<<<<<< HEAD
+## 20240712-01
+- update design.plone.contenttypes from 6.2.12 -> 6.2.14
+  - Fix security problems for bandit. [cekk]
+  - Fix `to_7306`` upgrade-step to be more specific on types configuration. [cekk]
+  - Set file_principale field as primary, so we call @@download on the content,
+    that file will be downloaded automatically. [cekk] 
+  - Override listing.pt from plone.app.contenttypes due to error rendering event [lucabel]
+
 ## 20240711-01
 - update redturtle.volto 5.4.9 -> 5.5.0
   - add depdendency with collective.volto.sitesettings [cekk]
