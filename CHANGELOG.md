@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024XXYY-01
+- update redturtle.volto 5.5.0 -> 5.5.1
+  - Allow to select which image miniature use in RSS
+
 ## 20240712-01
 - update design.plone.contenttypes from 6.2.12 -> 6.2.14
   - Fix security problems for bandit. [cekk]
