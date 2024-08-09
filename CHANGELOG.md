@@ -1,6 +1,6 @@
 # Changelog
 
-## 2024XXYY-01
+## 20240809-01
 - collective.volto.blocksfield 2.0.0 -> 2.1.0 [cekk]
   - Add slate compatibility
 
