@@ -1,8 +1,12 @@
 # Changelog
 
 ## 2024XXYY-01
+- collective.volto.blocksfield 2.0.0 -> 2.1.0 [cekk]
+  - Add slate compatibility
+
+## 20240723-01
 - update redturtle.volto 5.5.0 -> 5.5.1
-  - Allow to select which image miniature use in RSS
+  - Allow to select which image miniature use in RSS [lucabel]
 
 ## 20240712-01
 - update design.plone.contenttypes from 6.2.12 -> 6.2.14
