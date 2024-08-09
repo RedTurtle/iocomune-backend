@@ -1,5 +1,11 @@
 # Changelog
 
+## yyyymmdd-vv
+- upgrade to plone 6.0.11.1 [mamico]
+- update node/node.ext.ldap/node.ext.ugm [mamico]
+- dos_protection removed (there is a monkey in Products.CMFPlone that
+  fix the issue) [mamico]
+
 ## 2024XXYY-01
 - update redturtle.volto 5.5.0 -> 5.5.1
   - Allow to select which image miniature use in RSS
