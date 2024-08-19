@@ -1,5 +1,11 @@
 # Changelog
 
+## 20240819-01
+- design.plone.iocittadino 1.0.0b13 -> 1.0.0b14
+  - Multiple praticas support. [mamico]
+  - Setup tests. [mamico]
+  - Fix site logo in the email. [folix-01]
+
 ## 20240809-01
 - collective.volto.blocksfield 2.0.0 -> 2.1.0 [cekk]
   - Add slate compatibility
