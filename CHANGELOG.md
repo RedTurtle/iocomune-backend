@@ -1,5 +1,15 @@
 # Changelog
 
+##
+- redturtle.prenotazioni 2.7.4 -> 2.7.7
+  - 2.7.7 (2024-08-22)
+    - Bookings details help text in Tipologia prenotazione. [folix-01]
+  - 2.7.6 (2024-06-27)
+    - Add creator and creation date to bookings export [folix-01]
+    - Fix notify_about_confirm service in according to last updates. [folix-01]
+  - 2.7.5 (2024-06-26)
+    - Accept email as an tuple in booking schema get. [folix-01]
+
 ## 20240819-01
 - design.plone.iocittadino 1.0.0b13 -> 1.0.0b14
   - Multiple praticas support. [mamico]
