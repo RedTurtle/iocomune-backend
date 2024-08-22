@@ -1,6 +1,6 @@
 # Changelog
 
-##
+## 20240822-01
 - redturtle.prenotazioni 2.7.4 -> 2.7.7
   - 2.7.7 (2024-08-22)
     - Bookings details help text in Tipologia prenotazione. [folix-01]
