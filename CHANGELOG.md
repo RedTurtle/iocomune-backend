@@ -1,5 +1,13 @@
 # Changelog
 
+##
+- design.plone.iocittadino 1.0.0b14 -> 1.0.1
+  - 1.0.1 (2024-08-29)
+    - Add option to set a default operator that will be automatically assigned to newly created ones. [folix-01]
+    - Add pratica's next steps dates auto calculation. [folix-01]
+  - 1.0.0 (2024-08-27)
+    - Update user store ref [mamico]
+
 ## 20240822-01
 - redturtle.prenotazioni 2.7.4 -> 2.7.7
   - 2.7.7 (2024-08-22)
