@@ -7,7 +7,23 @@
     - Add pratica's next steps dates auto calculation. [folix-01]
   - 1.0.0 (2024-08-27)
     - Update user store ref [mamico]
-
+- design.plone.contentypes 6.2.14 -> 6.2.15
+  - Add design.plone.contenttypes.behavior.news_base behavior (news metadata, without blocks)
+    [mamico]
+  - Add folder creation (multimedia + allegati) for "ComunicatiStampa" CT (if exists)
+    [mamico]
+  - Add "Emolumenti a carico della finanza pubblica" to Persona
+    Add "Dichiarazioni di insussistenza e incompatibilità" to Persona
+    [lucabel]  
+- design.plone.policy 5.0.9 -> 5.0.10
+  - `search_sections` in IDesignPloneSettings has a new filed in each section:
+    `expandItems` that is a boolean to decide if the items of the section should
+    be expanded or not (default is True).
+    [mamico]
+  - Add a profile to limit addables on site root
+    [lucabel]
+  - Patch for collective.volto.formsupport
+    [eikichi18] 
 ## 20240822-01
 - redturtle.prenotazioni 2.7.4 -> 2.7.7
   - 2.7.7 (2024-08-22)
