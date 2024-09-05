@@ -1,6 +1,9 @@
 # Changelog
 
-## ????
+## 20240904-02
+- design.plone.polciy 5.0.10 -> 5.0.11
+ - fixed translate on form block patch [eikichi18]
+ - fixed check on saved value [eikichi18]
 
 - redturtle.volto 5.5.1 -> 5.5.2
   - Fix SummarySerializer for collection exporting Links [lucabel]
