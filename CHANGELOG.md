@@ -1,5 +1,10 @@
 # Changelog
 
+## ????
+
+- collective.taxonomy 3.0.1 => 3.1.2 [cekk]
+  - main fix is: Fix keywords comparison [mamico]
+
 ## 20240904-02
 - design.plone.polciy 5.0.10 -> 5.0.11
  - fixed translate on form block patch [eikichi18]
