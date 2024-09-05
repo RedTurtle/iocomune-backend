@@ -1,5 +1,13 @@
 # Changelog
 
+## ????
+
+- redturtle.volto 5.5.1 -> 5.5.2
+  - Fix SummarySerializer for collection exporting Links [lucabel]
+  - remove newsitem template override, use default dexterity view for newsitem in backend [mamico]
+  - Customize @@display-file to allow to download files with proper filename. [cekk]
+  - Add "type" to EXCLUDE_KEYS in blocks serializer/deserializer to not convert this slate attribute. [cekk]
+
 ## 20240904-01
 - design.plone.iocittadino 1.0.0b14 -> 1.0.1
   - 1.0.1 (2024-08-29)
