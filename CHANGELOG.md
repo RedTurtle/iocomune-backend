@@ -1,5 +1,10 @@
 # Changelog
 
+## 20240905-01
+- design.plone.contenttypes 6.2.15 -> 6.2.16
+ - change serializer for canale_digitale_link adding /login to URL when user is anon
+   [lucabel]
+
 ## 20240904-02
 - design.plone.polciy 5.0.10 -> 5.0.11
  - fixed translate on form block patch [eikichi18]
