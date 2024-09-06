@@ -1,6 +1,6 @@
 # Changelog
 
-## 20240905-01
+## 20240906-01
 - design.plone.contenttypes 6.2.15 -> 6.2.16
  - change serializer for canale_digitale_link adding /login to URL when user is anon
    [lucabel]
