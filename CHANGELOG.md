@@ -1,5 +1,11 @@
 # Changelog
 
+## 2024xxxx-01
+- redturtle.bandi 1.4.3 -> 1.4.6
+  - Add effective and modified date to retrieveContentsOfFolderDeepening data. [cekk]
+  - Added "tipologia_bando_label" metadata [daniele]
+  - Changed translation for states "Open" and "Closed". [daniele]
+
 ## 20240909-01
 - design.plone.contenttypes 6.2.15 -> 6.2.18
  - change serializer for canale_digitale_link adding /login to URL when user is anon
