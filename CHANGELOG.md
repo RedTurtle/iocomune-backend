@@ -1,8 +1,10 @@
 # Changelog
 
-## 20240906-01
-- design.plone.contenttypes 6.2.15 -> 6.2.16
+## 20240909-01
+- design.plone.contenttypes 6.2.15 -> 6.2.18
  - change serializer for canale_digitale_link adding /login to URL when user is anon
+- design.plone.iocittadino 1.0.1 -> 1.0.2
+ - add adapter for iocittadino canale_digitale_link custom serialization
    [lucabel]
 
 ## 20240904-02
