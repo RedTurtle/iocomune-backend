@@ -70,7 +70,6 @@
   - Add slate compatibility
 
 ## 20240723-01
->>>>>>> main
 - update redturtle.volto 5.5.0 -> 5.5.1
   - Allow to select which image miniature use in RSS [lucabel]
 
