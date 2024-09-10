@@ -1,14 +1,78 @@
 # Changelog
 
 ## yyyymmdd-vv
-- upgrade to plone 6.0.11.1 [mamico]
+- upgrade to plone 6.0.13 [mamico]
 - update node/node.ext.ldap/node.ext.ugm [mamico]
 - dos_protection removed (there is a monkey in Products.CMFPlone that
   fix the issue) [mamico]
 
-## 2024XXYY-01
+## 20240909-01
+- design.plone.contenttypes 6.2.15 -> 6.2.18
+ - change serializer for canale_digitale_link adding /login to URL when user is anon
+- design.plone.iocittadino 1.0.1 -> 1.0.2
+ - add adapter for iocittadino canale_digitale_link custom serialization
+   [lucabel]
+
+## 20240904-02
+- design.plone.polciy 5.0.10 -> 5.0.11
+ - fixed translate on form block patch [eikichi18]
+ - fixed check on saved value [eikichi18]
+
+- redturtle.volto 5.5.1 -> 5.5.2
+  - Fix SummarySerializer for collection exporting Links [lucabel]
+  - remove newsitem template override, use default dexterity view for newsitem in backend [mamico]
+  - Customize @@display-file to allow to download files with proper filename. [cekk]
+  - Add "type" to EXCLUDE_KEYS in blocks serializer/deserializer to not convert this slate attribute. [cekk]
+
+## 20240904-01
+- design.plone.iocittadino 1.0.0b14 -> 1.0.1
+  - 1.0.1 (2024-08-29)
+    - Add option to set a default operator that will be automatically assigned to newly created ones. [folix-01]
+    - Add pratica's next steps dates auto calculation. [folix-01]
+  - 1.0.0 (2024-08-27)
+    - Update user store ref [mamico]
+- design.plone.contentypes 6.2.14 -> 6.2.15
+  - Add design.plone.contenttypes.behavior.news_base behavior (news metadata, without blocks)
+    [mamico]
+  - Add folder creation (multimedia + allegati) for "ComunicatiStampa" CT (if exists)
+    [mamico]
+  - Add "Emolumenti a carico della finanza pubblica" to Persona
+    Add "Dichiarazioni di insussistenza e incompatibilità" to Persona
+    [lucabel]  
+- design.plone.policy 5.0.9 -> 5.0.10
+  - `search_sections` in IDesignPloneSettings has a new filed in each section:
+    `expandItems` that is a boolean to decide if the items of the section should
+    be expanded or not (default is True).
+    [mamico]
+  - Add a profile to limit addables on site root
+    [lucabel]
+  - Patch for collective.volto.formsupport
+    [eikichi18] 
+
+## 20240822-01
+- redturtle.prenotazioni 2.7.4 -> 2.7.7
+  - 2.7.7 (2024-08-22)
+    - Bookings details help text in Tipologia prenotazione. [folix-01]
+  - 2.7.6 (2024-06-27)
+    - Add creator and creation date to bookings export [folix-01]
+    - Fix notify_about_confirm service in according to last updates. [folix-01]
+  - 2.7.5 (2024-06-26)
+    - Accept email as an tuple in booking schema get. [folix-01]
+
+## 20240819-01
+- design.plone.iocittadino 1.0.0b13 -> 1.0.0b14
+  - Multiple praticas support. [mamico]
+  - Setup tests. [mamico]
+  - Fix site logo in the email. [folix-01]
+
+## 20240809-01
+- collective.volto.blocksfield 2.0.0 -> 2.1.0 [cekk]
+  - Add slate compatibility
+
+## 20240723-01
+>>>>>>> main
 - update redturtle.volto 5.5.0 -> 5.5.1
-  - Allow to select which image miniature use in RSS
+  - Allow to select which image miniature use in RSS [lucabel]
 
 ## 20240712-01
 - update design.plone.contenttypes from 6.2.12 -> 6.2.14
