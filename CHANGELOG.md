@@ -5,6 +5,10 @@
 - update node/node.ext.ldap/node.ext.ugm [mamico]
 - dos_protection removed (there is a monkey in Products.CMFPlone that
   fix the issue) [mamico]
+- plone.recipe.varnish 6.0.11 -> 6.0.13
+  - Add cookie-pass-not-exclude config. The default value has ++resource++zmi, which is needed for Zope 5.9+ (Plone 6.0.10+). [mamico]
+  - Use Varnish 6.0.13 LTS [mamico]
+  - Add vcl_synth options to insert arbitrary vcl. [mamico]
 
 ## 20240909-01
 - design.plone.contenttypes 6.2.15 -> 6.2.18
