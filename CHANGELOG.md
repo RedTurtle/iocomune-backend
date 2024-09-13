@@ -1,6 +1,8 @@
 # Changelog
 
-## XXXXXXXX-01
+## 
+- redturtle.prenotazioni 2.7.7 -> 2.7.8
+  - Remove csrf protection from send reminder endpoint. [folix-01]
 
 - plone.recipe.varnish 6.0.11 -> 6.0.13
   - Add cookie-pass-not-exclude config. The default value has ++resource++zmi, which is needed for Zope 5.9+ (Plone 6.0.10+). [mamico]
