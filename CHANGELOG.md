@@ -5,10 +5,17 @@
 - update node/node.ext.ldap/node.ext.ugm [mamico]
 - dos_protection removed (there is a monkey in Products.CMFPlone that
   fix the issue) [mamico]
+
+## 20240917-01
+- redturtle.prenotazioni 2.7.7 -> 2.7.8
+  - Remove csrf protection from send reminder endpoint. [folix-01]
 - plone.recipe.varnish 6.0.11 -> 6.0.13
   - Add cookie-pass-not-exclude config. The default value has ++resource++zmi, which is needed for Zope 5.9+ (Plone 6.0.10+). [mamico]
   - Use Varnish 6.0.13 LTS [mamico]
   - Add vcl_synth options to insert arbitrary vcl. [mamico]
+
+- design.plone.iocittadino 1.0.2 -> 1.0.3
+  - Email logo as link (Gmail compatibility). [folix-01] 
 
 ## 20240909-01
 - design.plone.contenttypes 6.2.15 -> 6.2.18
