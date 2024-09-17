@@ -1,6 +1,6 @@
 # Changelog
 
-## 
+## 20240917-01
 - redturtle.prenotazioni 2.7.7 -> 2.7.8
   - Remove csrf protection from send reminder endpoint. [folix-01]
 
