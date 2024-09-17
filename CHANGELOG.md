@@ -9,6 +9,9 @@
   - Use Varnish 6.0.13 LTS [mamico]
   - Add vcl_synth options to insert arbitrary vcl. [mamico]
 
+- design.plone.iocittadino 1.0.2 -> 1.0.3
+  - Email logo as link (Gmail compatibility). [folix-01] 
+
 ## 20240909-01
 - design.plone.contenttypes 6.2.15 -> 6.2.18
  - change serializer for canale_digitale_link adding /login to URL when user is anon
