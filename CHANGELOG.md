@@ -1,10 +1,14 @@
 # Changelog
 
 ## 2024xxxx-01
+- collective.taxonomy 3.0.1 => 3.1.2 [cekk]
+  - main fix is: Fix keywords comparison [mamico]
+  - 
 - redturtle.bandi 1.4.3 -> 1.4.6
   - Add effective and modified date to retrieveContentsOfFolderDeepening data. [cekk]
   - Added "tipologia_bando_label" metadata [daniele]
   - Changed translation for states "Open" and "Closed". [daniele]
+
 - design.plone.ioprenoto = 1.2.5 -> 1.2.6
   - Added more information in the /@booking/<bookingid> service (e.g. booking_folder, booking_address, booking_office), already present in the /@bookings?fullobjects=1 service. #41 These changes will be moved in the future from here to redturtle.prenotazioni 2.3.x [mamico]
 
@@ -19,6 +23,7 @@
 
 - design.plone.iocittadino 1.0.2 -> 1.0.3
   - Email logo as link (Gmail compatibility). [folix-01] 
+
 
 ## 20240909-01
 - design.plone.contenttypes 6.2.15 -> 6.2.18
