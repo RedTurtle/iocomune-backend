@@ -1,5 +1,10 @@
 # Changelog
 
+
+## 2024xxxx-01
+- design.plone.ioprenoto = 1.2.5 -> 1.2.6
+  - Added more information in the /@booking/<bookingid> service (e.g. booking_folder, booking_address, booking_office), already present in the /@bookings?fullobjects=1 service. #41 These changes will be moved in the future from here to redturtle.prenotazioni 2.3.x [mamico]
+
 ## 20240917-01
 - redturtle.prenotazioni 2.7.7 -> 2.7.8
   - Remove csrf protection from send reminder endpoint. [folix-01]
