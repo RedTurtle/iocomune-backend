@@ -5,11 +5,10 @@
 - update node/node.ext.ldap/node.ext.ugm [mamico]
 - dos_protection removed (there is a monkey in Products.CMFPlone that
   fix the issue) [mamico]
-
-## 2024xxxx-01
+  
 - collective.taxonomy 3.0.1 => 3.1.2 [cekk]
   - main fix is: Fix keywords comparison [mamico]
-  - 
+  
 - redturtle.bandi 1.4.3 -> 1.4.6
   - Add effective and modified date to retrieveContentsOfFolderDeepening data. [cekk]
   - Added "tipologia_bando_label" metadata [daniele]
