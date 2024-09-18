@@ -1,5 +1,11 @@
 # Changelog
 
+## yyyymmdd-vv
+- upgrade to plone 6.0.13 [mamico]
+- update node/node.ext.ldap/node.ext.ugm [mamico]
+- dos_protection removed (there is a monkey in Products.CMFPlone that
+  fix the issue) [mamico]
+
 ## 2024xxxx-01
 - collective.taxonomy 3.0.1 => 3.1.2 [cekk]
   - main fix is: Fix keywords comparison [mamico]
@@ -15,7 +21,6 @@
 ## 20240917-01
 - redturtle.prenotazioni 2.7.7 -> 2.7.8
   - Remove csrf protection from send reminder endpoint. [folix-01]
-
 - plone.recipe.varnish 6.0.11 -> 6.0.13
   - Add cookie-pass-not-exclude config. The default value has ++resource++zmi, which is needed for Zope 5.9+ (Plone 6.0.10+). [mamico]
   - Use Varnish 6.0.13 LTS [mamico]
