@@ -1,6 +1,6 @@
 # Changelog
 
-## yyyymmdd-vv
+## 20240919-02
 - upgrade to plone 6.0.13 [mamico]
 - update node/node.ext.ldap/node.ext.ugm [mamico]
 - dos_protection removed (there is a monkey in Products.CMFPlone that
