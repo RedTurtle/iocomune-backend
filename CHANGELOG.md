@@ -1,7 +1,7 @@
 # Changelog
 
 ## UNRELEASED
-- redturtle.volto 5.5.2 => 5.5.3
+- redturtle.volto 5.5.2 => 5.5.4
   - Add find-broken-links view [cekk]
 - design.plone.contenttypes 6.2.18 => 6.2.19
   - Add link to find-broken-links in utils view [cekk]
