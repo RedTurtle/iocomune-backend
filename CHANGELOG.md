@@ -1,5 +1,11 @@
 # Changelog
 
+## UNRELEASED
+- redturtle.volto 5.5.2 => 5.5.3
+  - Add find-broken-links view [cekk]
+- design.plone.contenttypes 6.2.18 => 6.2.19
+  - Add link to find-broken-links in utils view [cekk]
+
 ## 20240919-02
 - upgrade to plone 6.0.13 [mamico]
 - update node/node.ext.ldap/node.ext.ugm [mamico]
