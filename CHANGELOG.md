@@ -1,10 +1,14 @@
 # Changelog
 
-## UNRELEASED
+## 20240925-01
 - redturtle.volto 5.5.2 => 5.5.5
   - Add find-broken-links view [cekk]
 - design.plone.contenttypes 6.2.18 => 6.2.19
   - Add link to find-broken-links in utils view [cekk]
+- collective.taxonomy 3.1.2 => 3.0.1
+  pinned back to 3.0.1 due to conflict with
+  eea.api.taxonomy 1.5
+  [lucabel]
 
 ## 20240919-02
 - upgrade to plone 6.0.13 [mamico]
