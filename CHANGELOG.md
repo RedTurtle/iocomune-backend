@@ -1,7 +1,7 @@
 # Changelog
 
 ## Unreleased
-
+- collective.volto.formsupport 3.0.2 => 3.1.4 [cekk]
 - design.plone.iocittadino 1.0.3 => 1.0.4
   - Do not break @pratiche endpoint if there are some pratiche with missing pratica_model. Skip download link generation.
  [cekk]
