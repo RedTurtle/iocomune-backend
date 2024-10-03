@@ -2,6 +2,12 @@
 
 ## Unreleased
 - collective.volto.formsupport 3.0.2 => 3.1.4 [cekk]
+- design.plone.iocittadino 1.0.3 => 1.0.4
+  - Do not break @pratiche endpoint if there are some pratiche with missing pratica_model. Skip download link generation.
+ [cekk]
+  - Do not break @pratiche endpoint (RecordsData serializer) when a Pratica does not have a related Service. [cekk]
+  - Fix typo in permission checks: Manage Portal => Manage portal. [cekk]
+  - Fix typo in user_can_access: right permission name is "design.plone.iocittadino: Manage Blobs". [cekk]
 
 ## 20240925-01
 - redturtle.volto 5.5.2 => 5.5.5
