@@ -1,5 +1,8 @@
 # Changelog
 
+## Unreleased
+- collective.volto.formsupport 3.0.2 => 3.1.4 [cekk]
+
 ## 20240925-01
 - redturtle.volto 5.5.2 => 5.5.5
   - Add find-broken-links view [cekk]
