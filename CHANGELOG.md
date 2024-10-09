@@ -8,6 +8,8 @@
   - Do not break @pratiche endpoint (RecordsData serializer) when a Pratica does not have a related Service. [cekk]
   - Fix typo in permission checks: Manage Portal => Manage portal. [cekk]
   - Fix typo in user_can_access: right permission name is "design.plone.iocittadino: Manage Blobs". [cekk]
+- redturtle.prenotazioni 2.7.8 -> 2.7.9
+  - Booking additional fields. [folix-01]
 
 ## 20240925-01
 - redturtle.volto 5.5.2 => 5.5.5
