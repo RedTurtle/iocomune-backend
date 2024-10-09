@@ -10,6 +10,8 @@
   - Fix typo in user_can_access: right permission name is "design.plone.iocittadino: Manage Blobs". [cekk]
 - redturtle.prenotazioni 2.7.8 -> 2.7.9
   - Booking additional fields. [folix-01]
+- collective.volto.sitesettings 1.0.1 => 1.0.3
+  - Do not override site_title in schema: we use site_title_translated and then keep it in sync with site_title. [cekk]
 
 ## 20240925-01
 - redturtle.volto 5.5.2 => 5.5.5
