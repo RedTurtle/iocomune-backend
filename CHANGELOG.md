@@ -12,6 +12,12 @@
   - Booking additional fields. [folix-01]
 - collective.volto.sitesettings 1.0.1 => 1.0.3
   - Do not override site_title in schema: we use site_title_translated and then keep it in sync with site_title. [cekk]
+- design.plone.contenttypes 6.2.19 => 6.2.20
+  - Fix upgrade step [lucabel]
+  - Avoid acquisition problem in *onModify* event handler: now try to reindex children only if context is folderish [cekk]
+  - Add sort_on sortable_title to event_location, uo_location, ufficio_responsabile vocabularies [lucabel]
+- sentry-sdk 1.12.1 => 2.0.0 
+  - upgrade to works with new plone version due to plone.recipe.zope2instance >= 7.0.0 [lucabel]
 
 ## 20240925-01
 - redturtle.volto 5.5.2 => 5.5.5
