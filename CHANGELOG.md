@@ -1,5 +1,10 @@
 # Changelog
 
+## YYYYMMDD-NN
+- design.plone.ioprenoto = 1.2.6 -> 1.2.8
+  - fix for add/get booking withoud gate (xidera addon)
+    [mamico]
+
 ## 20241017-02
 - redturtle.volto 5.5.5 => 5.5.6
  - Remove dependency with collective.volto.cookieconsent. [cekk]
