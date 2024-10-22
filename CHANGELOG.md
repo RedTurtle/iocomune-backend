@@ -1,9 +1,11 @@
 # Changelog
 
-## YYYYMMDD-NN
+## 20241022-01
 - design.plone.ioprenoto = 1.2.6 -> 1.2.8
   - fix for add/get booking withoud gate (xidera addon)
     [mamico]
+- Fixed shippable collection = 3.0.2 -> 3.1.1
+  [eikichi18]
 
 ## 20241017-02
 - redturtle.volto 5.5.5 => 5.5.6
