@@ -4,7 +4,8 @@
 - design.plone.ioprenoto = 1.2.6 -> 1.2.8
   - fix for add/get booking withoud gate (xidera addon)
     [mamico]
-- Fixed shippable collection = 3.0.2 -> 3.1.1
+- rer.newsletter = 3.0.2 -> 3.1.1
+  - Fixed shippable collection 
   [eikichi18]
 
 ## 20241017-02
