@@ -1,5 +1,10 @@
 # Changelog
 
+## ????????-??
+- collective.volto.formsupport 3.1.4 => 3.1.5
+  - Fix otp verification logic: do not break if otp is not in POST call #72 
+    [cekk]
+
 ## 20241022-01
 - design.plone.ioprenoto = 1.2.6 -> 1.2.8
   - fix for add/get booking withoud gate (xidera addon)
