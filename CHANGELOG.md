@@ -1,7 +1,12 @@
 # Changelog
 
-## ????????-??
-- collective.volto.formsupport 3.1.4 => 3.1.5
+##
+
+- design.plone.iocittadino 1.0.4 -> 1.0.5
+  - Fixed radiogroup survey adapter.
+    [folix-01]
+
+- collective.volto.formsupport 3.1.4 -> 3.1.5
   - Fix otp verification logic: do not break if otp is not in POST call #72 
     [cekk]
 
