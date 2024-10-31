@@ -1,7 +1,6 @@
 # Changelog
 
-##
-
+## 20241031-01
 - design.plone.iocittadino 1.0.4 -> 1.0.5
   - Fixed radiogroup survey adapter.
     [folix-01]
