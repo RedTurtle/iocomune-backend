@@ -1,5 +1,14 @@
 # Changelog
 
+## 20241106-01
+- design.plone.iocittadino 1.0.5 -> 1.1.0
+  - Revisione dei messaggi inviati per inviare messaggio al cambio di stato (l'api prende anche messaggio
+    aggiuntivio e allegato) [mamico]
+  - Revisione dei testi dei messaggi inviati [nicola/mamico]
+  - Aggiunto campo nel modello pratica per gestire un etsto "firma" delle email inviate [mamico]
+  - Restyling pdf [mamico]
+  - Richiede volto-io-cittadiino >= 2.4.0 sul frontend
+
 ## 20241031-01
 - design.plone.iocittadino 1.0.4 -> 1.0.5
   - Fixed radiogroup survey adapter.
