@@ -1,5 +1,9 @@
 # Changelog
 
+## 20241112-01
+- design.plone.iocittadino 1.1.0 -> 1.1.2
+  - traduzioni + risolve bug introdotto in 1.0.5 [mamico]
+
 ## 20241106-01
 - design.plone.iocittadino 1.0.5 -> 1.1.0
   - Revisione dei messaggi inviati per inviare messaggio al cambio di stato (l'api prende anche messaggio
