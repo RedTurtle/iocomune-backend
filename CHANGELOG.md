@@ -1,7 +1,7 @@
 # Changelog
 
 ## ??
-- redturtle.volto 5.5.6 -> 5.6.0
+- redturtle.volto 5.5.6 -> 5.6.1
   - Add linkintegrity indexers for some custom blocks. [cekk]
 
 ## 20241112-01
