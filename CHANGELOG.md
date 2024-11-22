@@ -1,8 +1,13 @@
 # Changelog
 
-## ??
+## 20241122-01
 - redturtle.volto 5.5.6 -> 5.6.1
   - Add linkintegrity indexers for some custom blocks. [cekk]
+- design.plone.contenttypes 6.2.20 -> 6.2.23
+  - Fix tests: do not import collective.volto.cookieconsent. [cekk]
+  - Aggiunto indice per gestire correttamente i confronti rispetto alla data di inizio; start viene trattato in modo customizzato [lucabel]
+  - Override BandoView: in io-Comune we add new children on Folder Deepening content and we need to proper handle it [lucabel]
+  - update serializer for documento ct adding more information about modulo children [lucabel]
 
 ## 20241112-01
 - design.plone.iocittadino 1.1.0 -> 1.1.2
