@@ -1,5 +1,9 @@
 # Changelog
 
+## ??
+- redturtle.volto 5.5.6 -> 5.6.1
+  - Add linkintegrity indexers for some custom blocks. [cekk]
+
 ## 20241112-01
 - design.plone.iocittadino 1.1.0 -> 1.1.2
   - traduzioni + risolve bug introdotto in 1.0.5 [mamico]
