@@ -1,5 +1,14 @@
 # Changelog
 
+##
+- redturtle.prenotazioni 2.7.9 -> 2.8.0
+  - 2.8.0 (2024-11-26)
+    - Divide PrenotazioniFolder.week_table time choice by 5 minutes instead of 15. [folix-01]
+  - 2.7.10 (2024-11-22)
+    - Apply validity dates restrictions for the Bookings Manger if selected flag 'apply_date_restrictions_to_manager'. [folix-01]
+    - Fixed missing validity dates check during the booking creation. [folix-01]
+
+
 ## 20241126-01
 - design.plone.contenttypes 6.2.23 -> 6.2.24
   - Aggiunti i campi end e recurrence al serializer del summary dell'evento [eikichi18]
