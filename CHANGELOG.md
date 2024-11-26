@@ -1,5 +1,9 @@
 # Changelog
 
+## 20241126-01
+- design.plone.contenttypes 6.2.23 -> 6.2.24
+  - Aggiunti i campi end e recurrence al serializer del summary dell'evento [eikichi18]
+
 ## 20241122-01
 - redturtle.volto 5.5.6 -> 5.6.1
   - Add linkintegrity indexers for some custom blocks. [cekk]
