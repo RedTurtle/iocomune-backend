@@ -1,5 +1,11 @@
 # Changelog
 
+## 20241127-03
+- redturtle.prenotazioni 2.8.1 -> 2.8.2
+  - 2.8.2 (2024-11-27)
+    - Fix translation mechanism for exceptions. [folix-01]
+    - bookings-export remove default filter values. [folix-01]
+
 ## 20241127-02
 - redturtle.prenotazioni 2.8.0 -> 2.8.0
   - 2.8.1 (2024-11-27)
