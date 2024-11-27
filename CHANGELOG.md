@@ -1,5 +1,10 @@
 # Changelog
 
+##
+- redturtle.prenotazioni 2.8.0 -> 2.8.0
+  - 2.8.1 (2024-11-27)
+    - Extend bookings-export filters. [folix-01]
+
 ## 20241127-01
 - redturtle.prenotazioni 2.7.9 -> 2.8.0
   - 2.8.0 (2024-11-26)
