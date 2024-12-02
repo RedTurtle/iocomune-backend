@@ -1,9 +1,13 @@
 # Changelog
 
-##
-- redturtle.prenotazioni 2.8.2 -> 2.8.3
+## 20241202-01
+
+- redturtle.prenotazioni 2.8.2 -> 2.8.4
   - 2.8.3 (2024-11-28)
     - @bookings-export filters hotfix. [folix-01]
+  - 2.8.4 (2024-12-02)
+    - Change date validation order, if the validated day is vacation, it is not possibile to book. [folix-01]
+    - Lower log level for AppIO exceptions [folix-01]
 
 ## 20241127-03
 - redturtle.prenotazioni 2.8.1 -> 2.8.2
