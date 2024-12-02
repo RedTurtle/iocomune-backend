@@ -1,5 +1,10 @@
 # Changelog
 
+##
+- redturtle.prenotazioni 2.8.2 -> 2.8.3
+  - 2.8.3 (2024-11-28)
+    - @bookings-export filters hotfix. [folix-01]
+
 ## 20241127-03
 - redturtle.prenotazioni 2.8.1 -> 2.8.2
   - 2.8.2 (2024-11-27)
