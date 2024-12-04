@@ -1,7 +1,11 @@
 # Changelog
 
-## 20241202-01
+## 20241204-01
+- redturtle.volto 5.6.1 -> 5.5.7
+  - 5.5.7
+    - Downgrade per perdere il supporto all'integrità dei link nei blocchi slate [eikichi18]
 
+## 20241202-01
 - redturtle.prenotazioni 2.8.2 -> 2.8.4
   - 2.8.3 (2024-11-28)
     - @bookings-export filters hotfix. [folix-01]
@@ -16,7 +20,7 @@
     - bookings-export remove default filter values. [folix-01]
 
 ## 20241127-02
-- redturtle.prenotazioni 2.8.0 -> 2.8.0
+- redturtle.prenotazioni 2.8.0 -> 2.8.1
   - 2.8.1 (2024-11-27)
     - Extend bookings-export filters. [folix-01]
 
