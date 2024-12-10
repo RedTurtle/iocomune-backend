@@ -1,5 +1,11 @@
 # Changelog
 
+## ???
+- Remove eea.api.taxonomy dependency [cekk]
+- collective.taxonomy 3.0.1 => 3.1.5
+- design.plone.contenttypes 6.2.24 => 6.3.0
+- design.plone.policy 5.0.11 => 5.0.13
+
 ## 20241204-01
 - redturtle.volto 5.6.1 -> 5.5.7
   - 5.5.7
