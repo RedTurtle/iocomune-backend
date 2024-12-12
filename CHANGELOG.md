@@ -1,5 +1,9 @@
 # Changelog
 
+## 20241212-02
+- redturtle.volto 5.5.7 -> 5.5.8 [lucabel]
+  - update translations
+
 ## 20241212-01
 - Remove eea.api.taxonomy dependency [cekk]
   - collective.taxonomy 3.0.1 -> 3.1.5
