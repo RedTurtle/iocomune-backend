@@ -6,6 +6,7 @@
   - design.plone.contenttypes 6.2.24 -> 6.3.0
   - design.plone.policy 5.0.11 -> 5.0.13
 - collective.volto.blocksfield 2.1.0 -> 2.2.0 [cekk]
+- plone.app.locales 6.0.25 -> 6.0.26 [lucabel]
 
 
 ## 20241204-01
