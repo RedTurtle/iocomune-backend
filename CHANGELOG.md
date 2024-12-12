@@ -1,13 +1,23 @@
 # Changelog
 
-## ???
+## 20241212-01
 - Remove eea.api.taxonomy dependency [cekk]
   - collective.taxonomy 3.0.1 -> 3.1.5
   - design.plone.contenttypes 6.2.24 -> 6.3.0
   - design.plone.policy 5.0.11 -> 5.0.13
 - collective.volto.blocksfield 2.1.0 -> 2.2.0 [cekk]
-- plone.app.locales 6.0.25 -> 6.0.26 [lucabel]
-
+- Upgrade for translations [lucabel]
+ - plone.app.locales 6.0.25 -> 6.0.26 [lucabel]
+ - collective.volto.dropdownmenu 1.3.1 -> 1.3.2
+ - collective.volto.gdprcookie 1.0.3 -> 1.0.4
+ - collective.volto.secondarymenu 1.1.0 -> 1.1.1
+ - collective.volto.slimheader 1.0.1 -> 1.0.2
+ - collective.volto.socialsettings 0.2.1 -> 0.2.2 
+ - collective.volto.subfooter 1.1.0 -> 1.1.1
+ - collective.volto.subsites 1.5.0 -> 1.5.1
+ - redturtle.voltoplugin.editablefooter 1.3.3 -> 1.3.4
+ - redturtle.bandi 1.4.6 -> 1.4.7
+ - design.plone.contenttypes 6.3.0 -> 6.3.1
 
 ## 20241204-01
 - redturtle.volto 5.6.1 -> 5.5.7
