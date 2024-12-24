@@ -1,5 +1,10 @@
 # Changelog
 
+## 202501??-??
+
+- Plone 6.0.13 -> Plone 6.0.14 [mamico]
+  
+
 ## 20241106-01
 - design.plone.iocittadino 1.0.5 -> 1.1.0
   - Revisione dei messaggi inviati per inviare messaggio al cambio di stato (l'api prende anche messaggio
