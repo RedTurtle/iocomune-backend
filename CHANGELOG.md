@@ -4,6 +4,78 @@
 
 - Plone 6.0.13 -> Plone 6.0.14 [mamico]
   
+## 20241212-02
+- redturtle.volto 5.5.7 -> 5.5.8 [lucabel]
+  - update translations
+
+## 20241212-01
+- Remove eea.api.taxonomy dependency [cekk]
+  - collective.taxonomy 3.0.1 -> 3.1.5
+  - design.plone.contenttypes 6.2.24 -> 6.3.0
+  - design.plone.policy 5.0.11 -> 5.0.13
+- collective.volto.blocksfield 2.1.0 -> 2.2.0 [cekk]
+- Upgrade for translations [lucabel]
+ - plone.app.locales 6.0.25 -> 6.0.26 [lucabel]
+ - collective.volto.dropdownmenu 1.3.1 -> 1.3.2
+ - collective.volto.gdprcookie 1.0.3 -> 1.0.4
+ - collective.volto.secondarymenu 1.1.0 -> 1.1.1
+ - collective.volto.slimheader 1.0.1 -> 1.0.2
+ - collective.volto.socialsettings 0.2.1 -> 0.2.2 
+ - collective.volto.subfooter 1.1.0 -> 1.1.1
+ - collective.volto.subsites 1.5.0 -> 1.5.1
+ - redturtle.voltoplugin.editablefooter 1.3.3 -> 1.3.4
+ - redturtle.bandi 1.4.6 -> 1.4.7
+ - design.plone.contenttypes 6.3.0 -> 6.3.1
+
+## 20241204-01
+- redturtle.volto 5.6.1 -> 5.5.7
+  - 5.5.7
+    - Downgrade per perdere il supporto all'integrità dei link nei blocchi slate [eikichi18]
+
+## 20241202-01
+- redturtle.prenotazioni 2.8.2 -> 2.8.4
+  - 2.8.3 (2024-11-28)
+    - @bookings-export filters hotfix. [folix-01]
+  - 2.8.4 (2024-12-02)
+    - Change date validation order, if the validated day is vacation, it is not possibile to book. [folix-01]
+    - Lower log level for AppIO exceptions [folix-01]
+
+## 20241127-03
+- redturtle.prenotazioni 2.8.1 -> 2.8.2
+  - 2.8.2 (2024-11-27)
+    - Fix translation mechanism for exceptions. [folix-01]
+    - bookings-export remove default filter values. [folix-01]
+
+## 20241127-02
+- redturtle.prenotazioni 2.8.0 -> 2.8.1
+  - 2.8.1 (2024-11-27)
+    - Extend bookings-export filters. [folix-01]
+
+## 20241127-01
+- redturtle.prenotazioni 2.7.9 -> 2.8.0
+  - 2.8.0 (2024-11-26)
+    - Divide PrenotazioniFolder.week_table time choice by 5 minutes instead of 15. [folix-01]
+  - 2.7.10 (2024-11-22)
+    - Apply validity dates restrictions for the Bookings Manger if selected flag 'apply_date_restrictions_to_manager'. [folix-01]
+    - Fixed missing validity dates check during the booking creation. [folix-01]
+
+
+## 20241126-01
+- design.plone.contenttypes 6.2.23 -> 6.2.24
+  - Aggiunti i campi end e recurrence al serializer del summary dell'evento [eikichi18]
+
+## 20241122-01
+- redturtle.volto 5.5.6 -> 5.6.1
+  - Add linkintegrity indexers for some custom blocks. [cekk]
+- design.plone.contenttypes 6.2.20 -> 6.2.23
+  - Fix tests: do not import collective.volto.cookieconsent. [cekk]
+  - Aggiunto indice per gestire correttamente i confronti rispetto alla data di inizio; start viene trattato in modo customizzato [lucabel]
+  - Override BandoView: in io-Comune we add new children on Folder Deepening content and we need to proper handle it [lucabel]
+  - update serializer for documento ct adding more information about modulo children [lucabel]
+
+## 20241112-01
+- design.plone.iocittadino 1.1.0 -> 1.1.2
+  - traduzioni + risolve bug introdotto in 1.0.5 [mamico]
 
 ## 20241106-01
 - design.plone.iocittadino 1.0.5 -> 1.1.0
