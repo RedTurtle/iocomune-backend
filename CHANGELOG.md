@@ -3,6 +3,11 @@
 ## 202501??-??
 
 - Plone 6.0.13 -> Plone 6.0.14 [mamico]
+- collective.feedback 1.1.3 -> 1.1.5
+    - Feedbacks list update endpoint @@feedback-list. [folix-01]
+    - Add feedback update endpoint. [folix-01]
+    - Add read field to the comment. [folix-01]
+
   
 ## 20241212-02
 - redturtle.volto 5.5.7 -> 5.5.8 [lucabel]
