@@ -1,5 +1,9 @@
 # Changelog
 
+## YYYYMMDD-XX
+- pas.plugins.ldap 1.8.2 -> 1.8.3 [mamico]
+  - Fix: use exact_match for searchUsers/searchGroups in getRolesForPrincipal/getPropertiesForUser to avoid unexpected results
+
 ## 20241212-02
 - redturtle.volto 5.5.7 -> 5.5.8 [lucabel]
   - update translations
