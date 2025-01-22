@@ -3,6 +3,8 @@
 ## YYYYMMDD-XX
 - pas.plugins.ldap 1.8.2 -> 1.8.3 [mamico]
   - Fix: use exact_match for searchUsers/searchGroups in getRolesForPrincipal/getPropertiesForUser to avoid unexpected results
+- design.plone.ioprenoto 1.2.8 -> 1.2.9
+  - update rolemap [cekk]
 
 ## 20241212-02
 - redturtle.volto 5.5.7 -> 5.5.8 [lucabel]
