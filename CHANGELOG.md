@@ -1,6 +1,6 @@
 # Changelog
 
-## YYYYMMDD-XX
+## 20252201-02
 - pas.plugins.ldap 1.8.2 -> 1.8.3 [mamico]
   - Fix: use exact_match for searchUsers/searchGroups in getRolesForPrincipal/getPropertiesForUser to avoid unexpected results
 - design.plone.ioprenoto 1.2.8 -> 1.2.9
