@@ -1,6 +1,6 @@
 # Changelog
 
-## 20250129-XX
+## 20250129-02
 - redturtle.prenotazioni 2.8.4 -> 2.8.6 [cekk]
   - Add also fiscalcode to stringinterp variables. [cekk]
   - Add booking code as qrcode attachment in email messages [mamico]
