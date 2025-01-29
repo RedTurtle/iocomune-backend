@@ -1,5 +1,10 @@
 # Changelog
 
+## 20250129-XX
+- redturtle.prenotazioni 2.8.4 -> 2.8.6 [cekk]
+  - Add also fiscalcode to stringinterp variables. [cekk]
+  - Add booking code as qrcode attachment in email messages [mamico]
+
 ## 20250129-01
 - Plone 6.0.13 -> Plone 6.0.14 [mamico]
 - collective.feedback 1.1.3 -> 1.1.5
