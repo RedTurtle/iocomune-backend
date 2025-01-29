@@ -1,13 +1,17 @@
 # Changelog
 
-## 202501??-??
-
+## 20250129-01
 - Plone 6.0.13 -> Plone 6.0.14 [mamico]
 - collective.feedback 1.1.3 -> 1.1.5
     - Feedbacks list update endpoint @@feedback-list. [folix-01]
     - Add feedback update endpoint. [folix-01]
     - Add read field to the comment. [folix-01]
-
+- design.plone.iocittadino 1.1.2 -> 1.1.5
+    - Forwarding pratica change state event to the message add method
+      in order to handle events on the message itself
+      [lucabel]
+    - Add protocollo chiusura to pdf pratica
+      [lucabel]
   
 ## 20252201-02
 - pas.plugins.ldap 1.8.2 -> 1.8.3 [mamico]
