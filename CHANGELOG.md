@@ -1,5 +1,14 @@
 # Changelog
 
+## 202501??-??
+
+- Plone 6.0.13 -> Plone 6.0.14 [mamico]
+- collective.feedback 1.1.3 -> 1.1.5
+    - Feedbacks list update endpoint @@feedback-list. [folix-01]
+    - Add feedback update endpoint. [folix-01]
+    - Add read field to the comment. [folix-01]
+
+  
 ## 20252201-02
 - pas.plugins.ldap 1.8.2 -> 1.8.3 [mamico]
   - Fix: use exact_match for searchUsers/searchGroups in getRolesForPrincipal/getPropertiesForUser to avoid unexpected results
