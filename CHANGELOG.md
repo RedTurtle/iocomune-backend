@@ -1,5 +1,9 @@
 # Changelog
 
+## ????
+- collective.volto.sitesettings 1.0.3 -> 1.0.4
+  - Add absolute_url method in registry-images view for compatibility with plone.namedfile >= 6.4.0. [cekk]
+
 ## 20250129-02
 - redturtle.prenotazioni 2.8.4 -> 2.8.6 [cekk]
   - Add also fiscalcode to stringinterp variables. [cekk]
