@@ -4,6 +4,16 @@
 - collective.volto.sitesettings 1.0.3 -> 1.0.4
   - Add absolute_url method in registry-images view for compatibility with plone.namedfile >= 6.4.0. [cekk]
 
+## 20250206-01
+- design.plone.policy 5.0.13 -> 5.0.14 [eikichi18]
+  - Fix volto.formsupport path to not alter returned data on POST (#74). [cekk]
+- design.plone.contenttypes 6.3.0 -> 6.3.2 [eikichi18]
+  - Update it translations [lucabel]
+  - Removed moduli limitation on Documento CT serializer. [eikichi18]
+  - Fix sorting in @scadenziario-day endpoint. [folix-01]
+  - add SEO behavior to File [mamico]
+  - Added the metadata preview_caption and image_caption. An upgrade step is not necessary because the metadata will primarily be used for new content. [mamico] 
+
 ## 20250129-02
 - redturtle.prenotazioni 2.8.4 -> 2.8.6 [cekk]
   - Add also fiscalcode to stringinterp variables. [cekk]
@@ -53,8 +63,7 @@
 
 ## 20241204-01
 - redturtle.volto 5.6.1 -> 5.5.7
-  - 5.5.7
-    - Downgrade per perdere il supporto all'integrità dei link nei blocchi slate [eikichi18]
+  - Downgrade to lose support to linkintegrity check in slate's block [eikichi18]
 
 ## 20241202-01
 - redturtle.prenotazioni 2.8.2 -> 2.8.4
