@@ -1,5 +1,8 @@
 # Changelog
 
+## ????
+- collective.volto.sitesettings 1.0.3 -> 1.0.4
+  - Add absolute_url method in registry-images view for compatibility with plone.namedfile >= 6.4.0. [cekk]
 
 ## 20250206-01
 - design.plone.policy 5.0.13 -> 5.0.14 [eikichi18]
