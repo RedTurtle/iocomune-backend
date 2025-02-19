@@ -1,5 +1,12 @@
 # Changelog
 
+## YYYYMMDD-VV
+- design.plone.iocittadino 1.1.5 -> 1.2.0
+  - TODO: quando si porta questo su ioComune va valutato se mettere nella release.md di iocittadino
+    le migliorie sul pdf e sulle notifiche email
+  - molte modifiche relative alla formattazione delle mail e del pdf (vedere changelog) [mamico]
+  - modifiche per la gestione del protocollo in uscita [lucabel]
+
 ## 20250211-01
 - collective.volto.sitesettings 1.0.3 -> 1.0.4
   - Add absolute_url method in registry-images view for compatibility with plone.namedfile >= 6.4.0. [cekk]
