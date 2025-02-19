@@ -1,0 +1,31 @@
+name: Create requirements.txt for dependabot
+
+on:
+  push:
+
+jobs:
+  build:
+    name: requirements.txt
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Build
+        run: |
+          cd docker
+          python create-constraints.py constraints.cfg ../dependabot/requirements.txt
+      - name: Commit and push changes
+          git add dependabot/requirements.txt
+          git commit -m "Auto-generate file at $(date)" || exit 0
+          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref_name }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}          
