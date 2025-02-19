@@ -29,7 +29,7 @@ jobs:
       - name: Commit and push changes
         run: |
           git config --global user.email "info@redturtle.it"
-         git config --global user.name "RedTurtle CI BOT"
+          git config --global user.name "RedTurtle CI BOT"
           git add dependabot/requirements.txt
           git commit -m "Auto-generate file at $(date)" || exit 0
           git push https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref_name }}
