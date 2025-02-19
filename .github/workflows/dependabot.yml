@@ -25,6 +25,8 @@ jobs:
           python create-constraints.py constraints.cfg ../dependabot/requirements.txt
       - name: Commit and push changes
         run: |
+          git config --global user.email "info@redturtle.it"
+          git config --global user.name "RedTurtle CI BOT"
           git add dependabot/requirements.txt
           git commit -m "Auto-generate file at $(date)" || exit 0
           git push https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref_name }}
