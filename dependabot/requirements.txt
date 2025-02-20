@@ -163,7 +163,7 @@ five.customerize==3.0.0
 five.globalrequest==99.1
 five.intid==2.0.0
 five.localsitemanager==4.0
-fonttools==4.39.3
+fonttools==4.56.0
 fqdn==1.5.1
 furl==2.1.3
 furo==2024.8.6
