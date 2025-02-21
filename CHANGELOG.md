@@ -1,5 +1,14 @@
 # Changelog
 
+## XXX
+- design.plone.contenttypes 6.3.2 -> 6.3.3
+  - dependency with redturtle.bandi >= 1.5.0 [cekk]
+- redturtle.bandi 1.4.7 -> 1.5.0
+  - [BREAKING..NEED UPGRADE-STEP] Do not use key/value pairs in tipologia_bando and destinatari.
+  [cekk]
+  - Refactor retrieveContentsOfFolderDeepening to be more pluggable and use hooks for content-types based additional data.
+  [cell]
+
 ## 20250211-01
 - collective.volto.sitesettings 1.0.3 -> 1.0.4
   - Add absolute_url method in registry-images view for compatibility with plone.namedfile >= 6.4.0. [cekk]
