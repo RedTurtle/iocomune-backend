@@ -1,11 +1,13 @@
 # Changelog
 
-## YYYYMMDD-VV
+## 202502XX-01
 - plone.restapi 9.9.0 -> 9.10.0
   https://github.com/plone/plone.restapi/blob/main/CHANGES.rst#9100-2025-01-27
   (in particolare problema di mimetype, che genera errori nell'endpoint navigation quando vengono
   usati file come pdf firmati, e lockinfo che generea errori se il servizio ldap non performa
   correttamente)
+- design.plone.contenttypes 6.3.2 -> 6.3.2.1 
+  - Change max number of related assessore_riferimento from 1 to 2 [lucabel]
 
 ## 20250211-01
 - collective.volto.sitesettings 1.0.3 -> 1.0.4
