@@ -1,11 +1,13 @@
 # Changelog
 
-## YYYYMMDD-VV
+## 202502XX-01
 - design.plone.iocittadino 1.1.5 -> 1.2.0
   - TODO: quando si porta questo su ioComune va valutato se mettere nella release.md di iocittadino
     le migliorie sul pdf e sulle notifiche email
   - molte modifiche relative alla formattazione delle mail e del pdf (vedere changelog) [mamico]
   - modifiche per la gestione del protocollo in uscita [lucabel]
+- design.plone.contenttypes 6.3.2 -> 6.3.2.1 
+  - Change max number of related assessore_riferimento from 1 to 2 [lucabel]
 
 ## 20250211-01
 - collective.volto.sitesettings 1.0.3 -> 1.0.4
