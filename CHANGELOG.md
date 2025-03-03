@@ -1,11 +1,23 @@
 # Changelog
 
-## 202502XX-01
+##
 - design.plone.iocittadino 1.1.5 -> 1.2.0
   - TODO: quando si porta questo su ioComune va valutato se mettere nella release.md di iocittadino
     le migliorie sul pdf e sulle notifiche email
   - molte modifiche relative alla formattazione delle mail e del pdf (vedere changelog) [mamico]
   - modifiche per la gestione del protocollo in uscita [lucabel]
+- plone.restapi 9.9.0 -> 9.10.0
+  https://github.com/plone/plone.restapi/blob/main/CHANGES.rst#9100-2025-01-27
+  (in particolare problema di mimetype, che genera errori nell'endpoint navigation quando vengono
+  usati file come pdf firmati, e lockinfo che generea errori se il servizio ldap non performa
+  correttamente)
+- design.plone.contenttypes 6.3.2 -> 6.3.3
+  - dependency with redturtle.bandi >= 1.5.0 [cekk]
+- redturtle.bandi 1.4.7 -> 1.5.0
+  - [BREAKING..NEED UPGRADE-STEP] Do not use key/value pairs in tipologia_bando and destinatari.
+  [cekk]
+  - Refactor retrieveContentsOfFolderDeepening to be more pluggable and use hooks for content-types based additional data.
+  [cekk]
 - design.plone.contenttypes 6.3.2 -> 6.3.2.1 
   - Change max number of related assessore_riferimento from 1 to 2 [lucabel]
 - collective.feedback 1.1.5 -> 1.2.0
