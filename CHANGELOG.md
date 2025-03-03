@@ -1,6 +1,11 @@
 # Changelog
 
 ##
+- design.plone.iocittadino 1.1.5 -> 1.2.0
+  - TODO: quando si porta questo su ioComune va valutato se mettere nella release.md di iocittadino
+    le migliorie sul pdf e sulle notifiche email
+  - molte modifiche relative alla formattazione delle mail e del pdf (vedere changelog) [mamico]
+  - modifiche per la gestione del protocollo in uscita [lucabel]
 - plone.restapi 9.9.0 -> 9.10.0
   https://github.com/plone/plone.restapi/blob/main/CHANGES.rst#9100-2025-01-27
   (in particolare problema di mimetype, che genera errori nell'endpoint navigation quando vengono
