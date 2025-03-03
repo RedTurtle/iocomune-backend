@@ -7,7 +7,11 @@
   - [BREAKING..NEED UPGRADE-STEP] Do not use key/value pairs in tipologia_bando and destinatari.
   [cekk]
   - Refactor retrieveContentsOfFolderDeepening to be more pluggable and use hooks for content-types based additional data.
-  [cell]
+  [cekk]
+- design.plone.contenttypes 6.3.2 -> 6.3.2.1 
+  - Change max number of related assessore_riferimento from 1 to 2 [lucabel]
+- collective.feedback 1.1.5 -> 1.2.0
+  - Add feature to give feedback to view without context [eikichi18]
 
 ## 20250211-01
 - collective.volto.sitesettings 1.0.3 -> 1.0.4
