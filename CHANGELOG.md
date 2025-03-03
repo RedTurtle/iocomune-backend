@@ -1,6 +1,13 @@
 # Changelog
 
-## 202502XX-01
+## XXX
+- design.plone.contenttypes 6.3.2 -> 6.3.3
+  - dependency with redturtle.bandi >= 1.5.0 [cekk]
+- redturtle.bandi 1.4.7 -> 1.5.0
+  - [BREAKING..NEED UPGRADE-STEP] Do not use key/value pairs in tipologia_bando and destinatari.
+  [cekk]
+  - Refactor retrieveContentsOfFolderDeepening to be more pluggable and use hooks for content-types based additional data.
+  [cekk]
 - design.plone.contenttypes 6.3.2 -> 6.3.2.1 
   - Change max number of related assessore_riferimento from 1 to 2 [lucabel]
 - collective.feedback 1.1.5 -> 1.2.0
