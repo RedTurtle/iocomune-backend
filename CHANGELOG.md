@@ -1,6 +1,6 @@
 # Changelog
 
-##
+## 20250303-01
 - design.plone.iocittadino 1.1.5 -> 1.2.0
   - TODO: quando si porta questo su ioComune va valutato se mettere nella release.md di iocittadino
     le migliorie sul pdf e sulle notifiche email
