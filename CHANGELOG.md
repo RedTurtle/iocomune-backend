@@ -1,5 +1,11 @@
 # Changelog
 
+## 20250305-01
+- design.plone.iocittadino 1.2.0 -> 1.2.1
+- design.plone.ioprenoto 1.2.9 -> 1.2.10
+  gestione onceonly ioprenoto (campi email e telefono vengono mantenuti se l'utente è autenticato
+  e iocittadino attivo)
+
 ## 20250303-01
 - design.plone.iocittadino 1.1.5 -> 1.2.0
   - TODO: quando si porta questo su ioComune va valutato se mettere nella release.md di iocittadino
