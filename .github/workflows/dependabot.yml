@@ -23,14 +23,6 @@ jobs:
         run: |
           cd docker
           python create-constraints.py constraints.cfg ../dependabot/requirements.txt
-<<<<<<< HEAD
-      - name: Commit and push changes
-          git add dependabot/requirements.txt
-          git commit -m "Auto-generate file at $(date)" || exit 0
-          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref_name }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}          
-=======
 # TODO: fix commit permissions https://github.com/ossf/scorecard-action/blob/main/docs/authentication/fine-grained-auth-token.md#authentication-with-fine-grained-pat-optional
 #      - name: Commit and push changes
 #        run: |
@@ -41,4 +33,3 @@ jobs:
 #          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref_name }}
 #        env:
 #          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}          
->>>>>>> main
