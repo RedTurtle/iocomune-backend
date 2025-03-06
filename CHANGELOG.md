@@ -7,7 +7,9 @@
   - Added an adapter (IDataAdapter) to allow information to be added as a return value to the form-data expander. This allows addons that integrate information to be added rather than overwriting the expander each time. [mamico]
   - Add FormSubmittedEvent to handle the new compiled forms. [folix-01]
   - Add PostAdapter to predispose the customization of data handling by other add-ons. [folix-01]
-
+- design.plone.policy 5.0.14 -> 5.0.15 [cekk]
+  - Align formsupport patches with collective.volto.formsupport >= 3.2.0. [cekk]
+  - 
 ## 20250303-01
 - design.plone.iocittadino 1.1.5 -> 1.2.0
   - TODO: quando si porta questo su ioComune va valutato se mettere nella release.md di iocittadino
