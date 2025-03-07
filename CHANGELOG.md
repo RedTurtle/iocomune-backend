@@ -1,5 +1,16 @@
 # Changelog
 
+## 2025????
+- collective.volto.formsupport 3.1.5 -> 3.2.2
+  - Format list values in format_fields as comma separated strings to improve readability on email messages. [cekk]
+  - Adapt email subject templating functionality to different value types. [folix-01]
+  - Added an adapter (IDataAdapter) to allow information to be added as a return value to the form-data expander. This allows addons that integrate information to be added rather than overwriting the expander each time. [mamico]
+  - Add FormSubmittedEvent to handle the new compiled forms. [folix-01]
+  - Add PostAdapter to predispose the customization of data handling by other add-ons. [folix-01]
+- design.plone.policy 5.0.14 -> 5.0.15 [cekk]
+  - Align formsupport patches with collective.volto.formsupport >= 3.2.0. [cekk]
+  - 
+
 ## 20250305-01
 - design.plone.iocittadino 1.2.0 -> 1.2.1
 - design.plone.ioprenoto 1.2.9 -> 1.2.10
