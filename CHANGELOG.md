@@ -1,6 +1,6 @@
 # Changelog
 
-## 2025????
+## 20250307-01
 - collective.volto.formsupport 3.1.5 -> 3.2.2
   - Format list values in format_fields as comma separated strings to improve readability on email messages. [cekk]
   - Adapt email subject templating functionality to different value types. [folix-01]
@@ -9,7 +9,10 @@
   - Add PostAdapter to predispose the customization of data handling by other add-ons. [folix-01]
 - design.plone.policy 5.0.14 -> 5.0.15 [cekk]
   - Align formsupport patches with collective.volto.formsupport >= 3.2.0. [cekk]
-  - 
+- design.plone.contenttypes 6.3.3 -> 6.3.4
+  - Added download xlsx of users in design-utils [mamico]
+  - Change number of related assessore_riferimento [lucabel]
+  - Add File to CT Documento but hide it from volto add menu [lucabel] 
 
 ## 20250305-01
 - design.plone.iocittadino 1.2.0 -> 1.2.1
