@@ -1,6 +1,6 @@
 # Changelog
 
-## 20250307-01
+## 20250307-02
 - collective.volto.formsupport 3.2.2 -> 3.2.3
   - Add current form columns to CSV export event if field are empty and export obsolete fields ordered after current ones.
     [folix-01]
