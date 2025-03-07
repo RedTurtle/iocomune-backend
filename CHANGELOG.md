@@ -1,6 +1,12 @@
 # Changelog
 
 ## 20250307-01
+- collective.volto.formsupport 3.2.2 -> 3.2.3
+  - Add current form columns to CSV export event if field are empty and export obsolete fields ordered after current ones.
+    [folix-01]
+
+
+## 20250307-01
 - collective.volto.formsupport 3.1.5 -> 3.2.2
   - Format list values in format_fields as comma separated strings to improve readability on email messages. [cekk]
   - Adapt email subject templating functionality to different value types. [folix-01]
