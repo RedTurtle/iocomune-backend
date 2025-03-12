@@ -1,5 +1,9 @@
 # Changelog
 
+## ???
+- redturtle.bandi 1.5.0 -> 1.5.1
+  - Fix upgrade-step to not broke on missing values. [cekk]
+
 ## 20250310-01
 - plone.autoinclude 2.0.1
   [pnicolli]
