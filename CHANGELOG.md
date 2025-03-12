@@ -1,5 +1,39 @@
 # Changelog
 
+## 20250312-01
+- redturtle.bandi 1.5.0 -> 1.5.1
+  - Fix upgrade-step to not broke on missing values. [cekk]
+
+## 20250310-01
+- plone.autoinclude 2.0.1
+  [pnicolli]
+
+## 20250307-02
+- collective.volto.formsupport 3.2.2 -> 3.2.3
+  - Add current form columns to CSV export event if field are empty and export obsolete fields ordered after current ones.
+    [folix-01]
+
+
+## 20250307-01
+- collective.volto.formsupport 3.1.5 -> 3.2.2
+  - Format list values in format_fields as comma separated strings to improve readability on email messages. [cekk]
+  - Adapt email subject templating functionality to different value types. [folix-01]
+  - Added an adapter (IDataAdapter) to allow information to be added as a return value to the form-data expander. This allows addons that integrate information to be added rather than overwriting the expander each time. [mamico]
+  - Add FormSubmittedEvent to handle the new compiled forms. [folix-01]
+  - Add PostAdapter to predispose the customization of data handling by other add-ons. [folix-01]
+- design.plone.policy 5.0.14 -> 5.0.15 [cekk]
+  - Align formsupport patches with collective.volto.formsupport >= 3.2.0. [cekk]
+- design.plone.contenttypes 6.3.3 -> 6.3.4
+  - Added download xlsx of users in design-utils [mamico]
+  - Change number of related assessore_riferimento [lucabel]
+  - Add File to CT Documento but hide it from volto add menu [lucabel] 
+
+## 20250305-01
+- design.plone.iocittadino 1.2.0 -> 1.2.1
+- design.plone.ioprenoto 1.2.9 -> 1.2.10
+  gestione onceonly ioprenoto (campi email e telefono vengono mantenuti se l'utente è autenticato
+  e iocittadino attivo)
+
 ## 20250303-01
 - design.plone.iocittadino 1.1.5 -> 1.2.0
   - TODO: quando si porta questo su ioComune va valutato se mettere nella release.md di iocittadino
