@@ -1,5 +1,10 @@
 # Changelog
 
+## YYYYMMDD-VV
+- pas.plugins.jwt 1.0a4 -> 1.0.2
+  - gestione ruolo Citizen [mamico]
+  - aggiuntoa gestione chiave asimmetrica [mamico]
+
 ## 20250312-01
 - redturtle.bandi 1.5.0 -> 1.5.1
   - Fix upgrade-step to not broke on missing values. [cekk]
