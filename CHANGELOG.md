@@ -1,5 +1,9 @@
 # Changelog
 
+## ???
+- redturtle.bandi 1.5.1 -> 1.6.0
+  - Add new criteria for bando_state. [folix-01]
+
 ## 20250312-01
 - redturtle.bandi 1.5.0 -> 1.5.1
   - Fix upgrade-step to not broke on missing values. [cekk]
