@@ -1,7 +1,7 @@
 # Changelog
 
 ## YYYYMMDD-VV
-- pin delle versioni di oidc, precedentemente pinnate sulle singole instalalzioen che lo usano
+- pin delle versioni di oidc, precedentemente pinnate sulle singole installazioni che lo usano
 
 ## 20250312-01
 - redturtle.bandi 1.5.0 -> 1.5.1
