@@ -2,7 +2,7 @@
 
 
 ## 20250314-01
-- redturtle.bandi 1.7.1 -> 1.7.1
+- collective.geolocationbehavior 1.7.1 -> 1.7.2
   - Updated collective.geolocationbehavior version to fix translation in geolocation. [daniele]
 
 ## 20250312-01
