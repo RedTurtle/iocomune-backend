@@ -1,5 +1,7 @@
 # Changelog
 
+## YYYYMMDD-VV
+- pin delle versioni di oidc, precedentemente pinnate sulle singole installazioni che lo usano
 
 ## 20250314-01
 - collective.geolocationbehavior 1.7.1 -> 1.7.2
