@@ -1,5 +1,8 @@
 # Changelog
 
+## ???
+- redturtle.bandi 1.5.1 -> 1.6.0
+  - Add new criteria for bando_state. [folix-01]
 
 ## 20250314-01
 - collective.geolocationbehavior 1.7.1 -> 1.7.2
