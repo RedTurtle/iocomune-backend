@@ -2,6 +2,9 @@
 
 ## YYYYMMDD-VV
 - pin delle versioni di oidc, precedentemente pinnate sulle singole installazioni che lo usano
+- pas.plugins.jwt 1.0a4 -> 1.0.2
+  - gestione ruolo Citizen [mamico]
+  - aggiuntoa gestione chiave asimmetrica [mamico]
 
 ## 20250314-01
 - collective.geolocationbehavior 1.7.1 -> 1.7.2
