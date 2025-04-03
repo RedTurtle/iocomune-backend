@@ -1,6 +1,6 @@
 # Changelog
 
-## YYYYMMDD-VV
+## 20250403-01
 - redturtle.bandi 1.5.1 -> 1.6.0
   - Add new criteria for bando_state. [folix-01]
 - pin delle versioni di oidc, precedentemente pinnate sulle singole installazioni che lo usano
