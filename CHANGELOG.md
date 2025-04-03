@@ -5,6 +5,8 @@
 - pas.plugins.jwt 1.0a4 -> 1.0.2
   - gestione ruolo Citizen [mamico]
   - aggiuntoa gestione chiave asimmetrica [mamico]
+- redturtle.filesretriever 1.0.1 -> 1.0.3
+  - Add custom Cipher adapter for requests session to allow download files from servers with old/wrong ssl certs. [cekk]
 
 ## 20250314-01
 - collective.geolocationbehavior 1.7.1 -> 1.7.2
