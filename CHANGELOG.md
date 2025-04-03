@@ -1,5 +1,14 @@
 # Changelog
 
+## YYYYMMDD-VV
+- design.plone.contenttypes 6.3.4 -> 6.3.5
+  - Fix upgrade step; we can't update types due to customer customizations; we need to fix single parts of type profiles [lucabel]
+  - Remove limit to "assessore_di_riferimento" in UO [lucabel]
+  - Add upgrade-step to add missing metadata for image captions. [cekk]
+  - Add "data fine effettiva" for events, to order listing correctly [lucabel]
+  - Fix typo in Venue serializer that didn't return the right history version. [cekk]
+  - Add "Emolumenti a carico della finanza pubblica" to Persona Add "Dichiarazioni di insussistenza e incompatibilità" to Persona [lucabel]
+
 ## 20250403-01
 - redturtle.bandi 1.5.1 -> 1.6.0
   - Add new criteria for bando_state. [folix-01]
