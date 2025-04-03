@@ -1,8 +1,12 @@
 # Changelog
 
-## ???
+## YYYYMMDD-VV
 - redturtle.bandi 1.5.1 -> 1.6.0
   - Add new criteria for bando_state. [folix-01]
+- pin delle versioni di oidc, precedentemente pinnate sulle singole installazioni che lo usano
+- pas.plugins.jwt 1.0a4 -> 1.0.2
+  - gestione ruolo Citizen [mamico]
+  - aggiuntoa gestione chiave asimmetrica [mamico]
 
 ## 20250314-01
 - collective.geolocationbehavior 1.7.1 -> 1.7.2
@@ -20,7 +24,6 @@
 - collective.volto.formsupport 3.2.2 -> 3.2.3
   - Add current form columns to CSV export event if field are empty and export obsolete fields ordered after current ones.
     [folix-01]
-
 
 ## 20250307-01
 - collective.volto.formsupport 3.1.5 -> 3.2.2
