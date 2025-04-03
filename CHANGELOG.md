@@ -1,6 +1,7 @@
 # Changelog
 
 ## YYYYMMDD-VV
+- pin delle versioni di oidc, precedentemente pinnate sulle singole installazioni che lo usano
 - pas.plugins.jwt 1.0a4 -> 1.0.2
   - gestione ruolo Citizen [mamico]
   - aggiuntoa gestione chiave asimmetrica [mamico]
