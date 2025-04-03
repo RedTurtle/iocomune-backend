@@ -1,6 +1,6 @@
 # Changelog
 
-## YYYYMMDD-VV
+## 20250403-02
 - design.plone.contenttypes 6.3.4 -> 6.3.5
   - Fix upgrade step; we can't update types due to customer customizations; we need to fix single parts of type profiles [lucabel]
   - Remove limit to "assessore_di_riferimento" in UO [lucabel]
