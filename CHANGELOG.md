@@ -1,6 +1,6 @@
 # Changelog
 
-## YYYYMMDD-VV
+## 20250403-03
 - collective.volto.sitesettings 1.0.4 -> 1.0.5
   - Add option to hide title. [cekk]
 
