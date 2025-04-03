@@ -1,5 +1,9 @@
 # Changelog
 
+## YYYYMMDD-VV
+- collective.volto.sitesettings 1.0.4 -> 1.0.5
+  - Add option to hide title. [cekk]
+
 ## 20250403-02
 - design.plone.contenttypes 6.3.4 -> 6.3.5
   - Fix upgrade step; we can't update types due to customer customizations; we need to fix single parts of type profiles [lucabel]
