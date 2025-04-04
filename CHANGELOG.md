@@ -1,5 +1,9 @@
 # Changelog
 
+## YYYYMMDD-VV
+- redturtle.volto 5.5.8 -> 5.5.9
+  - Make sure that the teaser block is not handled by the GenericResolveUIDDeserializer/Serializer. [lucabel]
+
 ## 20250403-03
 - collective.volto.sitesettings 1.0.4 -> 1.0.5
   - Add option to hide title. [cekk]
