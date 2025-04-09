@@ -1,6 +1,6 @@
 # Changelog
 
-## YYYYMMDD-VV
+## 20250409-01
 - redturtle.volto 5.5.8 -> 5.5.9
   - Make sure that the teaser block is not handled by the GenericResolveUIDDeserializer/Serializer. [lucabel]
 - design.plone.contenttypes 6.3.5 -> 6.3.6
