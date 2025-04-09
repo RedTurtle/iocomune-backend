@@ -382,7 +382,7 @@ qrcode==8.0
 readme-renderer==44.0
 redturtle.bandi==1.4.7
 redturtle.faq==1.0.2
-redturtle.filesretriever==1.0.1
+redturtle.filesretriever==1.0.3
 redturtle.pasldap==1.0.0a2
 redturtle.prenotazioni==2.8.6
 redturtle.rssservice==2.2.0
