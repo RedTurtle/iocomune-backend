@@ -3,6 +3,8 @@
 ## YYYYMMDD-VV
 - redturtle.volto 5.5.8 -> 5.5.9
   - Make sure that the teaser block is not handled by the GenericResolveUIDDeserializer/Serializer. [lucabel]
+- design.plone.contenttypes 6.3.5 -> 6.3.6
+  - FIx upgrade step to upgrade persona ct [lucabel]
 
 ## 20250403-03
 - collective.volto.sitesettings 1.0.4 -> 1.0.5
