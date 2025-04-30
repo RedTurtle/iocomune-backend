@@ -1,5 +1,19 @@
 # Changelog
 
+## YYYYMMDD-VV
+- design.plone.iocittadino 1.2.1 -> 1.2.2
+  - Migliorata gestisce file nel report
+    [mamico]
+  - Implementa tipologia campo dropdown nei report pdf
+    [mamico]
+  - Convert pratica_model in str for json serialization.
+    [cekk]
+  - Extend praticas history + add it to serialized pratica data.
+    [folix-01]
+  - workaround: il vocabolario degli operatori non si rompe a fronte di eventuali disservizi (ad esempio
+    LDAP che non risponde)
+    [mamico]
+
 ## 20250409-01
 - redturtle.volto 5.5.8 -> 5.5.9
   - Make sure that the teaser block is not handled by the GenericResolveUIDDeserializer/Serializer. [lucabel]
