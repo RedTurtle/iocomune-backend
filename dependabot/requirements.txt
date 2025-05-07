@@ -150,7 +150,7 @@ dataflake.wsgi.bjoern==2.0
 decorator==5.1.1
 defusedxml==0.7.1
 design.plone.contenttypes==6.3.6
-design.plone.iocittadino==1.2.2
+design.plone.iocittadino==1.2.3
 design.plone.ioprenoto==1.2.10
 design.plone.policy==5.0.15
 diazo==2.0.2
