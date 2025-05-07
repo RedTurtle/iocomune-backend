@@ -1,7 +1,7 @@
 # Changelog
 
 ## YYYYMMDD-VV
-- design.plone.iocittadino 1.2.1 -> 1.2.2
+- design.plone.iocittadino 1.2.1 -> 1.2.3
   - Migliorata gestisce file nel report
     [mamico]
   - Implementa tipologia campo dropdown nei report pdf
@@ -13,6 +13,11 @@
   - workaround: il vocabolario degli operatori non si rompe a fronte di eventuali disservizi (ad esempio
     LDAP che non risponde)
     [mamico]
+- Fix serilizzazione blob di campi non più presenti nello schema
+  [mamico]
+- Fix record eventi history legacy
+  [mamico]
+
 
 ## 20250409-01
 - redturtle.volto 5.5.8 -> 5.5.9
