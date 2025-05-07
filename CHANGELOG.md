@@ -1,6 +1,6 @@
 # Changelog
 
-## YYYYMMDD-VV
+## 20250507-01
 - design.plone.iocittadino 1.2.1 -> 1.2.3
   - Migliorata gestisce file nel report
     [mamico]
