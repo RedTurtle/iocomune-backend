@@ -13,10 +13,10 @@
   - workaround: il vocabolario degli operatori non si rompe a fronte di eventuali disservizi (ad esempio
     LDAP che non risponde)
     [mamico]
-- Fix serilizzazione blob di campi non più presenti nello schema
-  [mamico]
-- Fix record eventi history legacy
-  [mamico]
+  - Fix serilizzazione blob di campi non più presenti nello schema
+    [ mamico]
+  - Fix record eventi history legacy
+    [mamico]
 
 
 ## 20250409-01
