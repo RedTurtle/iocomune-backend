@@ -1,5 +1,13 @@
 # Changelog
 
+## 20250509-01
+- redturtle.volto 5.5.9 -> 5.5.10
+  - Fissato problema con ricerca eventi. c'è un override di querystring-search
+    che sovrascrive la ricerca eventie cambia date timezon aware in utc.
+    questo lo deve fare solo restapi quando serializza. l'effetto è che una ricerca
+    per start date today@00:00 diventa start = today-1@22:00 
+    [lucabel]
+
 ## 20250507-01
 - design.plone.iocittadino 1.2.1 -> 1.2.3
   - Migliorata gestisce file nel report
