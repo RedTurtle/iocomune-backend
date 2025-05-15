@@ -1,5 +1,10 @@
 # Changelog
 
+## 2025???
+- redturtle.prenotazioni 2.8.6 -> 2.8.8
+  - Fix get_busy_slots_in_period method to handle also borderline bookings (for example that starts inside a slot, but ends after). [cekk]
+  - @bookings endpoint returns 400 if no search parameters are passed. [folix-01]
+
 ## 20250509-01
 - redturtle.volto 5.5.9 -> 5.5.10
   - Fissato problema con ricerca eventi. c'è un override di querystring-search
