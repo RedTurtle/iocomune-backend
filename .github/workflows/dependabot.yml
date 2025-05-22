@@ -1,10 +1,13 @@
 name: Create requirements.txt for dependabot
 
+permissions:
+  contents: write
+
 on:
   push:
      # TODO: fix commit permissions https://github.com/ossf/scorecard-action/blob/main/docs/authentication/fine-grained-auth-token.md#authentication-with-fine-grained-pat-optional
      # main:
-     pull_request:
+    pull_request:
 
 jobs:
   build:
