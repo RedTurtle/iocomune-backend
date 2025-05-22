@@ -1,5 +1,10 @@
 name: Update gh docker image and triggers
 
+permissions:
+  contents: read
+  packages: write
+  actions: read
+
 on:
   # Triggers the workflow on releases
   push:
