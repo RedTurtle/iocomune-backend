@@ -1,5 +1,11 @@
 # Changelog
 
+## YYYYMMDD-VV
+- design.plone.iocittadino 1.2.3 -> 1.2.4
+  - Fix: gestione date nell'history e nel report pdf, nel serializzatore della history forzato, anche in retrocompatibilità
+    per tornare la data in iso senza millisecondi
+    [mamico]
+
 ## 20250515-01
 - redturtle.prenotazioni 2.8.6 -> 2.8.8
   - Fix get_busy_slots_in_period method to handle also borderline bookings (for example that starts inside a slot, but ends after). [cekk]
