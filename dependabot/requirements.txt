@@ -190,6 +190,10 @@ imagesize==1.4.1
 importlib-metadata==8.5.0
 importlib-resources==6.4.5
 incremental==24.7.2
+iocittadino.pagamenti.base==1.0.7
+iocittadino.pagamenti.nextstep==1.0.3
+iocittadino.protocollo.maggioli==1.0.12
+iocittadino.protocollo.maggiolitest==1.0.2
 isodate==0.6.1
 isoduration==20.11.0
 iw.rejectanonymous==1.2.7
