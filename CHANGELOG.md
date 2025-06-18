@@ -5,6 +5,8 @@
   - Fix: gestione date nell'history e nel report pdf, nel serializzatore della history forzato, anche in retrocompatibilità
     per tornare la data in iso senza millisecondi
     [mamico]
+- Add protocolli and payments version fix.
+  [cekk]
 
 ## 20250515-01
 - redturtle.prenotazioni 2.8.6 -> 2.8.8
