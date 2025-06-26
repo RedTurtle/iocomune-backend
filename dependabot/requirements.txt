@@ -160,6 +160,7 @@ emailcompat32crlf==1.0.3
 et-xmlfile==1.1.0
 exceptiongroup==1.2.2
 experimental.gracefulblobmissing==2.0
+experimental.noacquisition==1.0.0b10
 fancycompleter==0.9.1
 feedparser==6.0.11
 filelock==3.16.1
