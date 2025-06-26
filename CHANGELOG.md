@@ -1,6 +1,6 @@
 # Changelog
 
-## YYYYMMDD-VV
+## 202506-26-01
 - design.plone.iocittadino 1.2.3 -> 1.2.4
   - Fix: gestione date nell'history e nel report pdf, nel serializzatore della history forzato, anche in retrocompatibilità
     per tornare la data in iso senza millisecondi
