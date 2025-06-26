@@ -7,6 +7,7 @@
     [mamico]
 - Add protocolli and payments version fix.
   [cekk]
+- experimental.noacquisition = 1.0.0b10
 
 ## 20250515-01
 - redturtle.prenotazioni 2.8.6 -> 2.8.8
