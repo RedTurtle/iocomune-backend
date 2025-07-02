@@ -1,5 +1,20 @@
 # Changelog
 
+## 202507XX--01
+- redturtle.volto 5.5.10 -> 5.5.12
+ - fix not search
+   [mamico]
+ - Fix rss feed image selection, now it uses the correct field for preview_image. 
+   [mamico]
+ - Handle sort_on also when using AdvancedQuery. 
+   [cekk]
+ - Remove z3c.jbot compatibility and customize templates in standard-way.
+   [cekk]
+ - Force indexing subjects in SearchableText with ICategorization to keep the old Plone functionality (remove this when the official pr is merged). 
+   [cekk]
+
+
+
 ## 202506-26-01
 - design.plone.iocittadino 1.2.3 -> 1.2.4
   - Fix: gestione date nell'history e nel report pdf, nel serializzatore della history forzato, anche in retrocompatibilità
