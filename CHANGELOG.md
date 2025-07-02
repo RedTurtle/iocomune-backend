@@ -18,6 +18,8 @@
   - Fix: gestione date nell'history e nel report pdf, nel serializzatore della history forzato, anche in retrocompatibilità
     per tornare la data in iso senza millisecondi
     [mamico]
+- Add protocolli and payments version fix.
+  [cekk]
 - experimental.noacquisition = 1.0.0b10
 
 ## 20250515-01
