@@ -13,8 +13,6 @@
  - Force indexing subjects in SearchableText with ICategorization to keep the old Plone functionality (remove this when the official pr is merged). 
    [cekk]
 
-
-
 ## 202506-26-01
 - design.plone.iocittadino 1.2.3 -> 1.2.4
   - Fix: gestione date nell'history e nel report pdf, nel serializzatore della history forzato, anche in retrocompatibilità
