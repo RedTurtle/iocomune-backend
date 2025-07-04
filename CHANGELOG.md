@@ -1,6 +1,10 @@
 # Changelog
 
-## 202507XX--01
+## 20250704--01
+- design.plone.policy 5.0.16 -> 5.0.17
+ - Fix exclude_from_nav index value for initial setup contents. [folix-01]
+
+## 20250702--01
 - redturtle.volto 5.5.10 -> 5.5.12
  - fix not search
    [mamico]
