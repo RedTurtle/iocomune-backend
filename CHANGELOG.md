@@ -6,6 +6,8 @@
 - collective.taskqueue2 1.0a1
 - iocittadino.protocollo.maggioli 1.0.12 -> 1.0.13
   - fix for async call [lucabel]
+- iocittadino.pagamenti.base 1.0.7 -> 1.0.8
+  - introduce async flow after payment [lucabel]
     
 ## 20250704--01
 - design.plone.policy 5.0.16 -> 5.0.17
