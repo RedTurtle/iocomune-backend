@@ -1,6 +1,6 @@
 # Changelog
 
-## 202507XX-07-01
+## 20250708-01
 - design.plone.iocittadino 1.2.4 -> 1.2.5
   -  fix for async call [lucabel]
 - collective.taskqueue2 1.0a1
