@@ -1,5 +1,12 @@
 # Changelog
 
+## 20250708--01
+- design.plone.iocittadino 1.2.4 -> 1.2.5
+  -  fix for async call [lucabel]
+- collective.taskqueue2 1.0a1
+- iocittadino.protocollo.maggioli 1.0.12 -> 1.0.13
+  - fix for async call [lucabel]
+    
 ## 20250704--01
 - design.plone.policy 5.0.16 -> 5.0.17
  - Fix exclude_from_nav index value for initial setup contents. [folix-01]
