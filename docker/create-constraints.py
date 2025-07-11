@@ -37,6 +37,14 @@ config = buildout.Buildout(config_file, [])
 # Note: this works like a dictionary, but is a class 'zc.buildout.buildout.Options'.
 versions = config.versions
 
+# remove duplicated entries
+uniq = {}
+for (package, version) in versions.items():
+    if package.lower() in uniq and version.split(".") < uniq[package.lower()].split("."):
+        continue
+    uniq[package.lower()] = version
+versions = uniq
+
 with open(constraints_file, "w") as cfile:
     cfile.write("# File created by {}\n".format(__file__))
     cfile.write("# Constraints parsed from {}\n".format(config_file))
