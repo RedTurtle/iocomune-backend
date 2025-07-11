@@ -1,9 +1,104 @@
 # Changelog
 
-## YYYYMMDD-VV
+## 20250711-01
+- iocittadino.pagamenti.base 1.0.7 -> 1.0.9
+ - fix zpretty
+
+## 20250708-01
+- design.plone.iocittadino 1.2.4 -> 1.2.5
+  -  fix for async call [lucabel]
+- collective.taskqueue2 1.0a1
+- iocittadino.protocollo.maggioli 1.0.12 -> 1.0.13
+  - fix for async call [lucabel]
+- iocittadino.pagamenti.base 1.0.7 -> 1.0.8
+  - introduce async flow after payment [lucabel]
+    
+## 20250704--01
+- design.plone.policy 5.0.16 -> 5.0.17
+ - Fix exclude_from_nav index value for initial setup contents. [folix-01]
+
+## 20250702--01
+- redturtle.volto 5.5.10 -> 5.5.12
+ - fix not search
+   [mamico]
+ - Fix rss feed image selection, now it uses the correct field for preview_image. 
+   [mamico]
+ - Handle sort_on also when using AdvancedQuery. 
+   [cekk]
+ - Remove z3c.jbot compatibility and customize templates in standard-way.
+   [cekk]
+ - Force indexing subjects in SearchableText with ICategorization to keep the old Plone functionality (remove this when the official pr is merged). 
+   [cekk]
+
+## 202506-26-01
+- design.plone.iocittadino 1.2.3 -> 1.2.4
+  - Fix: gestione date nell'history e nel report pdf, nel serializzatore della history forzato, anche in retrocompatibilità
+    per tornare la data in iso senza millisecondi
+    [mamico]
+- Add protocolli and payments version fix.
+  [cekk]
+- experimental.noacquisition = 1.0.0b10
+
+## 20250515-01
+- redturtle.prenotazioni 2.8.6 -> 2.8.8
+  - Fix get_busy_slots_in_period method to handle also borderline bookings (for example that starts inside a slot, but ends after). [cekk]
+  - @bookings endpoint returns 400 if no search parameters are passed. [folix-01]
+
+## 20250509-01
+- redturtle.volto 5.5.9 -> 5.5.10
+  - Fissato problema con ricerca eventi. c'è un override di querystring-search
+    che sovrascrive la ricerca eventie cambia date timezon aware in utc.
+    questo lo deve fare solo restapi quando serializza. l'effetto è che una ricerca
+    per start date today@00:00 diventa start = today-1@22:00 
+    [lucabel]
+
+## 20250507-01
+- design.plone.iocittadino 1.2.1 -> 1.2.3
+  - Migliorata gestisce file nel report
+    [mamico]
+  - Implementa tipologia campo dropdown nei report pdf
+    [mamico]
+  - Convert pratica_model in str for json serialization.
+    [cekk]
+  - Extend praticas history + add it to serialized pratica data.
+    [folix-01]
+  - workaround: il vocabolario degli operatori non si rompe a fronte di eventuali disservizi (ad esempio
+    LDAP che non risponde)
+    [mamico]
+  - Fix serilizzazione blob di campi non più presenti nello schema
+    [ mamico]
+  - Fix record eventi history legacy
+    [mamico]
+
+
+## 20250409-01
+- redturtle.volto 5.5.8 -> 5.5.9
+  - Make sure that the teaser block is not handled by the GenericResolveUIDDeserializer/Serializer. [lucabel]
+- design.plone.contenttypes 6.3.5 -> 6.3.6
+  - FIx upgrade step to upgrade persona ct [lucabel]
+
+## 20250403-03
+- collective.volto.sitesettings 1.0.4 -> 1.0.5
+  - Add option to hide title. [cekk]
+
+## 20250403-02
+- design.plone.contenttypes 6.3.4 -> 6.3.5
+  - Fix upgrade step; we can't update types due to customer customizations; we need to fix single parts of type profiles [lucabel]
+  - Remove limit to "assessore_di_riferimento" in UO [lucabel]
+  - Add upgrade-step to add missing metadata for image captions. [cekk]
+  - Add "data fine effettiva" for events, to order listing correctly [lucabel]
+  - Fix typo in Venue serializer that didn't return the right history version. [cekk]
+  - Add "Emolumenti a carico della finanza pubblica" to Persona Add "Dichiarazioni di insussistenza e incompatibilità" to Persona [lucabel]
+
+## 20250403-01
+- redturtle.bandi 1.5.1 -> 1.6.0
+  - Add new criteria for bando_state. [folix-01]
+- pin delle versioni di oidc, precedentemente pinnate sulle singole installazioni che lo usano
 - pas.plugins.jwt 1.0a4 -> 1.0.2
   - gestione ruolo Citizen [mamico]
   - aggiuntoa gestione chiave asimmetrica [mamico]
+- redturtle.filesretriever 1.0.1 -> 1.0.3
+  - Add custom Cipher adapter for requests session to allow download files from servers with old/wrong ssl certs. [cekk]
 
 ## 20250314-01
 - collective.geolocationbehavior 1.7.1 -> 1.7.2
@@ -21,7 +116,6 @@
 - collective.volto.formsupport 3.2.2 -> 3.2.3
   - Add current form columns to CSV export event if field are empty and export obsolete fields ordered after current ones.
     [folix-01]
-
 
 ## 20250307-01
 - collective.volto.formsupport 3.1.5 -> 3.2.2
