@@ -1,5 +1,8 @@
 # Changelog
 
+## YYYYMMDD-XX
+- aggiornato relstorage 3 a relstorage 4 (nessun cambiamento rilevante indicato)
+
 ## 20250515-01
 - redturtle.prenotazioni 2.8.6 -> 2.8.8
   - Fix get_busy_slots_in_period method to handle also borderline bookings (for example that starts inside a slot, but ends after). [cekk]
