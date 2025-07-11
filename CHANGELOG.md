@@ -1,5 +1,9 @@
 # Changelog
 
+## 20250711-01
+- iocittadino.pagamenti.base 1.0.7 -> 1.0.9
+ - fix zpretty
+
 ## 20250708-01
 - design.plone.iocittadino 1.2.4 -> 1.2.5
   -  fix for async call [lucabel]
