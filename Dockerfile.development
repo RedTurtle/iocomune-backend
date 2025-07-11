@@ -1,10 +1,10 @@
-FROM plone/plone-backend:6.1.0
+FROM plone/plone-backend:6.1.2
 COPY docker/create-constraints.py docker/constraints.cfg docker/requirements.txt requirements-development.txt mx.ini /app/
 
 
 COPY versions.cfg /
 
-RUN pip install -r https://dist.plone.org/release/6.1.0/requirements.txt ${PIP_PARAMS} && \
+RUN pip install -r https://dist.plone.org/release/6.1.2/requirements.txt ${PIP_PARAMS} && \
     python create-constraints.py constraints.cfg constraints.txt && \
     ./bin/pip install mxdev && \
     ./bin/mxdev -c mx.ini && \
