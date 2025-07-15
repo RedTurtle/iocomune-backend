@@ -1,6 +1,10 @@
 # Changelog
 
 ## 20250711-01
+- iocittadino.pagamenti.base 1.0.9 -> 1.0.11
+  - fix async payment 
+
+## 20250711-01
 - iocittadino.pagamenti.base 1.0.7 -> 1.0.9
  - fix zpretty
 
