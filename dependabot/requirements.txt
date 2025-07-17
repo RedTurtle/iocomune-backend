@@ -62,7 +62,7 @@ PySocks==1.7.1
 PyYAML==6.0.1
 Pygments==2.18.0
 Record==4.1
-RelStorage==3.5.0
+RelStorage==4.1.1
 RestrictedPython==7.4
 SecretStorage==3.3.3
 Sphinx==8.1.3
@@ -251,7 +251,7 @@ pdbpp==0.10.3
 pdfkit==1.0.0
 pep440==0.1.2
 pep517==0.13.1
-perfmetrics==3.3.0
+perfmetrics==4.1.0
 persistent==6.1
 piexif==1.1.3
 pip==24.3.1
@@ -367,7 +367,7 @@ plumber==1.7
 progress==1.6
 prompt-toolkit==3.0.48
 psutil==5.9.5
-psycopg2==2.9.6
+psycopg2==2.9.10
 py==1.11.0
 pyOpenSSL==24.3.0
 pyasn1==0.5.0

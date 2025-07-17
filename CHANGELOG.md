@@ -1,5 +1,8 @@
 # Changelog
 
+## YYYYMMDD-XX
+- aggiornato relstorage 3 a relstorage 4 (nessun cambiamento rilevante indicato)
+
 ## 20250711-01
 - iocittadino.pagamenti.base 1.0.9 -> 1.0.11
   - fix async payment 
