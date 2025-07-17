@@ -1,5 +1,10 @@
 name: Update gh docker image and triggers
 
+permissions:
+  contents: read
+  packages: write
+  actions: read
+
 on:
   # Triggers the workflow on releases
   push:
@@ -55,28 +60,28 @@ jobs:
           tags: ${{ env.IMAGE_ID }}:${{ env.VERSION }}
           platforms: linux/amd64,linux/arm64
 
-      - name: Deploy to rancher # io-comune-test
-        if: github.ref == 'main'
-        uses: redturtle/rancher-deploy-action@v0.2.0
-        with:
-          host: ${{ secrets.RANCHER_HOST }} # organization
-          api-username: ${{ secrets.RANCHER_API_USERNAME }} # organization
-          api-password: ${{ secrets.RANCHER_API_PASSWORD }} # organization
-          cluster-id: ${{ secrets.RANCHER_CLUSTER_ID }} # organization
-          project-id: ${{ secrets.RANCHER_PROJECT_ID }} # organization
-          namespace: ${{ secrets.RANCHER_NAMESPACE }}
-          workload: ${{ secrets.RANCHER_WORKLOAD }}
-          image: ${{ env.IMAGE_ID }}:${{ env.VERSION }}
-          slack-hook-url: ${{ secrets.RANCHER_SLACK_HOOK_URL }}
+      # - name: Deploy to rancher # io-comune-test
+      #   if: github.ref == 'main'
+      #   uses: redturtle/rancher-deploy-action@v0.2.0
+      #   with:
+      #     host: ${{ secrets.RANCHER_HOST }} # organization
+      #     api-username: ${{ secrets.RANCHER_API_USERNAME }} # organization
+      #     api-password: ${{ secrets.RANCHER_API_PASSWORD }} # organization
+      #     cluster-id: ${{ secrets.RANCHER_CLUSTER_ID }} # organization
+      #     project-id: ${{ secrets.RANCHER_PROJECT_ID }} # organization
+      #     namespace: ${{ secrets.RANCHER_NAMESPACE }}
+      #     workload: ${{ secrets.RANCHER_WORKLOAD }}
+      #     image: ${{ env.IMAGE_ID }}:${{ env.VERSION }}
+      #     slack-hook-url: ${{ secrets.RANCHER_SLACK_HOOK_URL }}
 
-      - name: Trigger job
-        if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
-        run: |
-          curl --fail --request POST \
-          --form token=${{ secrets.TOKEN }} \
-          --form ref=main \
-          --form "variables[GITHUB_TAG]=${{ env.VERSION }}" \
-          "https://gitlab.com/api/v4/projects/${{ secrets.PROJECT_ID }}/trigger/pipeline"
+      # - name: Trigger job
+      #   if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
+      #   run: |
+      #     curl --fail --request POST \
+      #     --form token=${{ secrets.TOKEN }} \
+      #     --form ref=main \
+      #     --form "variables[GITHUB_TAG]=${{ env.VERSION }}" \
+      #     "https://gitlab.com/api/v4/projects/${{ secrets.PROJECT_ID }}/trigger/pipeline"
 
   build-acceptance-image:
     name: Build docker image for acceptance tests

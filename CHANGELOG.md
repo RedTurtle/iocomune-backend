@@ -3,6 +3,49 @@
 ## YYYYMMDD-XX
 - aggiornato relstorage 3 a relstorage 4 (nessun cambiamento rilevante indicato)
 
+## 20250711-01
+- iocittadino.pagamenti.base 1.0.9 -> 1.0.11
+  - fix async payment 
+
+## 20250711-01
+- iocittadino.pagamenti.base 1.0.7 -> 1.0.9
+ - fix zpretty
+
+## 20250708-01
+- design.plone.iocittadino 1.2.4 -> 1.2.5
+  -  fix for async call [lucabel]
+- collective.taskqueue2 1.0a1
+- iocittadino.protocollo.maggioli 1.0.12 -> 1.0.13
+  - fix for async call [lucabel]
+- iocittadino.pagamenti.base 1.0.7 -> 1.0.8
+  - introduce async flow after payment [lucabel]
+    
+## 20250704--01
+- design.plone.policy 5.0.16 -> 5.0.17
+ - Fix exclude_from_nav index value for initial setup contents. [folix-01]
+
+## 20250702--01
+- redturtle.volto 5.5.10 -> 5.5.12
+ - fix not search
+   [mamico]
+ - Fix rss feed image selection, now it uses the correct field for preview_image. 
+   [mamico]
+ - Handle sort_on also when using AdvancedQuery. 
+   [cekk]
+ - Remove z3c.jbot compatibility and customize templates in standard-way.
+   [cekk]
+ - Force indexing subjects in SearchableText with ICategorization to keep the old Plone functionality (remove this when the official pr is merged). 
+   [cekk]
+
+## 202506-26-01
+- design.plone.iocittadino 1.2.3 -> 1.2.4
+  - Fix: gestione date nell'history e nel report pdf, nel serializzatore della history forzato, anche in retrocompatibilità
+    per tornare la data in iso senza millisecondi
+    [mamico]
+- Add protocolli and payments version fix.
+  [cekk]
+- experimental.noacquisition = 1.0.0b10
+
 ## 20250515-01
 - redturtle.prenotazioni 2.8.6 -> 2.8.8
   - Fix get_busy_slots_in_period method to handle also borderline bookings (for example that starts inside a slot, but ends after). [cekk]
