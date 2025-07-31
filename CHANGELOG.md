@@ -1,5 +1,11 @@
 # Changelog
 
+## 20250731-01
+- design.plone.contenttypes 6.3.6 -> 6.3.9
+ - Fix operator order in condition in summary for apertura_bando [mamico]
+ - Do not break serializers if there is not tipologia_notizia taxonomy utility. [cekk]
+ - Search and listing blocks / table variant - added field properties in the column in the serializer [pnicolli]
+
 ## 20250711-01
 - iocittadino.pagamenti.base 1.0.9 -> 1.0.11
   - fix async payment 
