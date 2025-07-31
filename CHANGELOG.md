@@ -1,6 +1,6 @@
 # Changelog
 
-## 20250731-01
+## 20250731-02
 - design.plone.contenttypes 6.3.6 -> 6.3.9
  - Fix operator order in condition in summary for apertura_bando [mamico]
  - Do not break serializers if there is not tipologia_notizia taxonomy utility. [cekk]
