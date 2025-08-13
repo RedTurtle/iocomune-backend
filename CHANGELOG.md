@@ -1,5 +1,9 @@
 # Changelog
 
+## 20250813-01
+- iocittadino.protocollo.maggioli = 1.0.13 -> 1.0.15a2
+ - Send date as timestamp. [folix-01]
+
 ## 20250731-02
 - design.plone.contenttypes 6.3.6 -> 6.3.9
  - Fix operator order in condition in summary for apertura_bando [mamico]
