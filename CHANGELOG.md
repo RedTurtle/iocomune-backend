@@ -1,5 +1,9 @@
 # Changelog
 
+## 20250820-01
+- design.plone.contenttypes 6.3.9 -> 6.3.10
+  - Add CIG to Bando ct [lucabel]
+
 ## 20250813-01
 - iocittadino.protocollo.maggioli = 1.0.13 -> 1.0.15a2
  - Send date as timestamp. [folix-01]
