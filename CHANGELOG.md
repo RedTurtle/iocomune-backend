@@ -1,5 +1,13 @@
 # Changelog
 
+## 2025xxxx-01
+- collective.volto.formsupport 3.2.3 -> 3.3.0
+  - BREAKING CHANGE: these new features needs volto-form-block >= v3.13.0. [mamico]
+  - Save attachments as blobfile in the storage adapter, add a view to download them, returns attachment info in the restapi @form-data endpoint. [mamico]
+  - Fix: if there are multiple forms on a page, each csv button downloads the record of all the forms, now if there is a block_id parameter, the csv is filtered on that. [mamico]
+  - Subject templating [folix-01]
+  - Do not set values in __init__ in SubmitPost because the user there is not already set and can lead to problems. [cekk]
+
 ## 20250820-01
 - design.plone.contenttypes 6.3.9 -> 6.3.10
   - Add CIG to Bando ct [lucabel]
