@@ -1,5 +1,9 @@
 # Changelog
 
+## 20250903-01
+- iocittadino.protocollo.maggioli 1.0.15a2 -> 1.0.15
+  - fix date timestap format [lucabel]
+
 ## 20250822-01
 - collective.volto.formsupport 3.2.3 -> 3.3.0
   - BREAKING CHANGE: these new features needs volto-form-block >= v3.13.0. [mamico]
