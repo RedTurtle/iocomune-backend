@@ -1,6 +1,6 @@
 # Changelog
 
-## YYYYMMDD-VV
+## 20250916-01
 - plone.restapi 9.10.0 => 9.15.2
   - fix teaser serialize (https://github.com/plone/plone.restapi/issues/1911) and more https://pypi.org/project/plone.restapi/ [mamico]
 - redturtle.filesretriever 1.0.3 => 1.0.4
