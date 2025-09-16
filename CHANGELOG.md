@@ -1,5 +1,9 @@
 # Changelog
 
+## YYYYMMDD-VV
+- plone.restapi 9.10.0 => 9.15.2
+  - fix teaser serialize (https://github.com/plone/plone.restapi/issues/1911) and more https://pypi.org/project/plone.restapi/ [mamico]
+
 ## 20250903-01
 - iocittadino.protocollo.maggioli 1.0.15a2 -> 1.0.15
   - fix date timestap format [lucabel]
