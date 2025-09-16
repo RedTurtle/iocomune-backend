@@ -3,6 +3,36 @@
 ## YYYYMMDD-XX
 - aggiornato relstorage 3 a relstorage 4 (nessun cambiamento rilevante indicato)
 
+## YYYYMMDD-VV
+- plone.restapi 9.10.0 => 9.15.2
+  - fix teaser serialize (https://github.com/plone/plone.restapi/issues/1911) and more https://pypi.org/project/plone.restapi/ [mamico]
+
+## 20250903-01
+- iocittadino.protocollo.maggioli 1.0.15a2 -> 1.0.15
+  - fix date timestap format [lucabel]
+
+## 20250822-01
+- collective.volto.formsupport 3.2.3 -> 3.3.0
+  - BREAKING CHANGE: these new features needs volto-form-block >= v3.13.0. [mamico]
+  - Save attachments as blobfile in the storage adapter, add a view to download them, returns attachment info in the restapi @form-data endpoint. [mamico]
+  - Fix: if there are multiple forms on a page, each csv button downloads the record of all the forms, now if there is a block_id parameter, the csv is filtered on that. [mamico]
+  - Subject templating [folix-01]
+  - Do not set values in __init__ in SubmitPost because the user there is not already set and can lead to problems. [cekk]
+
+## 20250820-01
+- design.plone.contenttypes 6.3.9 -> 6.3.10
+  - Add CIG to Bando ct [lucabel]
+
+## 20250813-01
+- iocittadino.protocollo.maggioli = 1.0.13 -> 1.0.15a2
+ - Send date as timestamp. [folix-01]
+
+## 20250731-02
+- design.plone.contenttypes 6.3.6 -> 6.3.9
+ - Fix operator order in condition in summary for apertura_bando [mamico]
+ - Do not break serializers if there is not tipologia_notizia taxonomy utility. [cekk]
+ - Search and listing blocks / table variant - added field properties in the column in the serializer [pnicolli]
+
 ## 20250711-01
 - iocittadino.pagamenti.base 1.0.9 -> 1.0.11
   - fix async payment 
