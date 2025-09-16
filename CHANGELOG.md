@@ -1,5 +1,8 @@
 # Changelog
 
+## YYYYMMDD-XX
+- aggiornato relstorage 3 a relstorage 4 (nessun cambiamento rilevante indicato)
+
 ## YYYYMMDD-VV
 - plone.restapi 9.10.0 => 9.15.2
   - fix teaser serialize (https://github.com/plone/plone.restapi/issues/1911) and more https://pypi.org/project/plone.restapi/ [mamico]
