@@ -1,6 +1,9 @@
 # Changelog
 
 ## 20250925-01
+- redturtle.volto 5.5.12 -> 5.5.13
+  - Set a default view for Plone Site different by default_view because in plone.restapi 9.15.2 is exposed and we don't need it      
+         because it broke agid layout.  
 - design.plone.iocittadino 1.2.5 -> 1.2.7
   - Feat: gestione gruppi operatori. Campo "elenco operatori sulla form, se si selezionano degli oepratori, le pratiche associate alla form le vedono solo quegli operatori (attenzione non sono implementati al momento controlli di sicurezza ma solo di visibilità); quando si assegna una pratica si assegna solo agli operatori abilitati per quella pratica (questo avviene direttamente sul FE)
   [mamico]
