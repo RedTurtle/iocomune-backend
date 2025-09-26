@@ -22,7 +22,7 @@ MultiMapping==5.0
 Paste==3.10.1
 PasteDeploy==3.1.0
 Persistence==5.1
-Pillow==11.0.0
+Pillow==11.3.0
 Plone==6.0.14
 Products.BTreeFolder2==5.1
 Products.CMFCore==3.6
