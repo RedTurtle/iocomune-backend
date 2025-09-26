@@ -408,7 +408,7 @@ redturtle.prenotazioni==2.8.8
 redturtle.rssservice==2.2.0
 redturtle.scale==1.0a2
 redturtle.unitaterritoriali==1.0.1
-redturtle.volto==5.5.12
+redturtle.volto==5.5.13
 redturtle.voltoplugin.editablefooter==1.3.4
 referencing==0.35.1
 repoze.catalog==0.9.0
