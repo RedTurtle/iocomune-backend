@@ -1,5 +1,5 @@
 # Changelog
-- design.plone.iocittadino 1.2.7 -> 1.2.8
+- design.plone.iocittadino 1.2.7 -> 1.2.9
   - fix export csv [mamico]
 
 ## 20250925-01
