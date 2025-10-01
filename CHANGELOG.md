@@ -1,8 +1,8 @@
 # Changelog
-- design.plone.iocittadino 1.2.7 -> 1.2.9
-  - fix export csv [mamico]
 
 ## 2025-xx-xx
+- design.plone.iocittadino 1.2.7 -> 1.2.9
+  - fix export csv [mamico]
 - iocittadino.protocollo.maggioli 1.0.15 -> 1.0.19
    - gestione allegati multipli [lucabel]
 
