@@ -1,5 +1,9 @@
 # Changelog
 
+## 2025-xx-xx
+- iocittadino.protocollo.maggioli 1.0.15 -> 1.0.19
+   - gestione allegati multipli [lucabel]
+
 ## 20250925-01
 - redturtle.volto 5.5.12 -> 5.5.13
   - Set a default view for Plone Site different by default_view because in plone.restapi 9.15.2 is exposed and we don't need it      
