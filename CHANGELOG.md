@@ -1,4 +1,6 @@
 # Changelog
+- design.plone.iocittadino 1.2.7 -> 1.2.9
+  - fix export csv [mamico]
 
 ## 2025-xx-xx
 - iocittadino.protocollo.maggioli 1.0.15 -> 1.0.19
@@ -7,18 +9,13 @@
 ## 20250925-01
 - redturtle.volto 5.5.12 -> 5.5.13
   - Set a default view for Plone Site different by default_view because in plone.restapi 9.15.2 is exposed and we don't need it      
-         because it broke agid layout.  
+         because it broke agid layout.  [cekk]
 - design.plone.iocittadino 1.2.5 -> 1.2.7
-  - Feat: gestione gruppi operatori. Campo "elenco operatori sulla form, se si selezionano degli oepratori, le pratiche associate alla form le vedono solo quegli operatori (attenzione non sono implementati al momento controlli di sicurezza ma solo di visibilità); quando si assegna una pratica si assegna solo agli operatori abilitati per quella pratica (questo avviene direttamente sul FE)
-  [mamico]
-  - Feat: aggiunto controlpanel (plone)
-  [mamico]
-  - Feat: aggiunto upload pratiche in csv
-  [mamico]
-  - handle field type text with input type date in pratica report
-  [lucabel]
-  - Let pratiche to be deassigned.
-  [daniele]
+  - Feat: gestione gruppi operatori. Campo "elenco operatori sulla form, se si selezionano degli oepratori, le pratiche associate alla form le vedono solo quegli operatori (attenzione non sono implementati al momento controlli di sicurezza ma solo di visibilità); quando si assegna una pratica si assegna solo agli operatori abilitati per quella pratica (questo avviene direttamente sul FE) [mamico]
+  - Feat: aggiunto controlpanel (plone) [mamico]
+  - Feat: aggiunto upload pratiche in csv [mamico]
+  - handle field type text with input type date in pratica report [lucabel]
+  - Let pratiche to be deassigned. [daniele]
 
 ## 20250916-01
 - plone.restapi 9.10.0 => 9.15.2
