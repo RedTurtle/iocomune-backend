@@ -5,6 +5,9 @@
   - fix export csv [mamico]
 - iocittadino.protocollo.maggioli 1.0.15 -> 1.0.19
    - gestione allegati multipli [lucabel]
+- design.plone.contenttypes 6.3.10 -> 6.3.11
+   - Remove ufficiostampa dependencies. [cekk]
+   - data_inizio_incarico is no longer required in incarico [sabrina-bongiovanni]
 
 ## 20250925-01
 - redturtle.volto 5.5.12 -> 5.5.13
