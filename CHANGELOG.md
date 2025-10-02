@@ -8,6 +8,10 @@
 - design.plone.contenttypes 6.3.10 -> 6.3.11
    - Remove ufficiostampa dependencies. [cekk]
    - data_inizio_incarico is no longer required in incarico [sabrina-bongiovanni]
+- collective.volto.contactsblock = 1.0.1
+   - introduce collective.volto.contactsblock
+- design.plone.policy 5.0.16 -> 5.0.17
+   - install collective.volto.contactsblock as dependency
 
 ## 20250925-01
 - redturtle.volto 5.5.12 -> 5.5.13
