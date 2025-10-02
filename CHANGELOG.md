@@ -1,6 +1,6 @@
 # Changelog
 
-## 2025-xx-xx
+## 20251002-01
 - design.plone.iocittadino 1.2.7 -> 1.2.9
   - fix export csv [mamico]
 - iocittadino.protocollo.maggioli 1.0.15 -> 1.0.19
