@@ -11,7 +11,8 @@
 - collective.volto.contactsblock = 1.0.1
    - introduce collective.volto.contactsblock
 - design.plone.policy 5.0.16 -> 5.0.17
-   - install collective.volto.contactsblock as dependency
+   - install collective.volto.contactsblock as dependency [roman/luca]
+   - formsupport 3.3.0 compatibility  [mauro]
 
 ## 20250925-01
 - redturtle.volto 5.5.12 -> 5.5.13
