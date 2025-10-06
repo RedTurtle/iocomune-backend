@@ -1,5 +1,9 @@
 # Changelog
 
+## 20251007-01
+- design.plone.contenttypes 6.3.11 -> 6.3.12
+  - Update incarichi_persona label [lucabel]
+
 ## 20251002-01
 - design.plone.iocittadino 1.2.7 -> 1.2.9
   - fix export csv [mamico]
