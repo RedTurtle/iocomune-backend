@@ -110,6 +110,7 @@ collective.exportimport==1.10
 collective.feedback==1.2.0
 collective.geolocationbehavior==1.7.2
 collective.honeypot==2.1
+collective.instancebehavior==0.5
 collective.monkeypatcher==1.2.2
 collective.purgebyid==1.2.2
 collective.recipe.backup==4.2.0
@@ -125,8 +126,8 @@ collective.taxonomy==3.1.5
 collective.tiles.collection==2.0.0
 collective.venue==4.1
 collective.volto.blocksfield==2.2.0
-collective.volto.cookieconsent==1.1.1
 collective.volto.contactsblock==1.0.1
+collective.volto.cookieconsent==1.1.1
 collective.volto.dropdownmenu==1.3.2
 collective.volto.enhancedlinks==1.1.1
 collective.volto.formsupport==3.3.0
@@ -155,7 +156,7 @@ defusedxml==0.7.1
 design.plone.contenttypes==6.3.12
 design.plone.iocittadino==1.2.9
 design.plone.ioprenoto==1.2.10
-design.plone.policy==5.0.17
+design.plone.policy==5.0.18
 diazo==2.0.2
 distro==1.9.0
 docutils==0.21.2
@@ -402,6 +403,7 @@ python-memcached==1.59
 pytz==2024.2
 qrcode==8.0
 readme-renderer==44.0
+redturtle.auditlog==1.0.0
 redturtle.bandi==1.6.0
 redturtle.faq==1.0.2
 redturtle.filesretriever==1.0.4
