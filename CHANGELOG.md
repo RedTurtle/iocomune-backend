@@ -1,5 +1,9 @@
 # Changelog
 
+## 20251007-02
+- design.plone.policy = 5.0.17 -> 5.0.18
+  - Fix formsupport 3.3.0 compatibility (in add patch). [cekk]
+
 ## 20251007-01
 - design.plone.contenttypes 6.3.11 -> 6.3.12
   - Update incarichi_persona label [lucabel]
