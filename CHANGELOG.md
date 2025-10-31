@@ -1,5 +1,9 @@
 # Changelog
 
+## 20251031-02
+- design.plone.contenttypes 6.3.13 -> 6.3.14
+  - Fix check_uo to properly check empty rich text in competenze [lucabel]
+
 ## 20251031-01
 - design.plone.contenttypes 6.3.12 -> 6.3.13
   - Fix check_notizie to properly check empty rich text in descrizione_estesa [lucabel]
