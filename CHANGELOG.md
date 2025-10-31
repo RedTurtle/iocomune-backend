@@ -1,5 +1,11 @@
 # Changelog
 
+## 20251031-01
+- design.plone.contenttypes 6.3.12 -> 6.3.13
+  - Fix check_notizie to properly check empty rich text in descrizione_estesa [lucabel]
+  - Fix check_luoghi to properly check empty rich text in modalita_accesso [lucabel]
+  - Fix check_eventi to properly check empty rich text in prezzo [lucabel]
+
 ## 20251007-02
 - design.plone.policy = 5.0.17 -> 5.0.18
   - Fix formsupport 3.3.0 compatibility (in add patch). [cekk]
