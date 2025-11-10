@@ -1,7 +1,10 @@
 # Changelog
 
+## 20251110-02
+- design.plone.externallogin = 1.0.6 [lucabel]
+
 ## 20251110-01
-- design.plone.externallogin = 1.0.5
+- design.plone.externallogin = 1.0.5 [lucabel]
 
 ## 20251031-02
 - design.plone.contenttypes 6.3.13 -> 6.3.14
