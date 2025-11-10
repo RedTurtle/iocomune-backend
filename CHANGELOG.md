@@ -1,6 +1,6 @@
 # Changelog
 
-## 20251031-02
+## 20251110-01
 - design.plone.externallogin = 1.0.5
 
 ## 20251031-02
