@@ -1,6 +1,9 @@
 # Changelog
 
 ## 20251031-02
+- design.plone.externallogin = 1.0.5
+
+## 20251031-02
 - design.plone.contenttypes 6.3.13 -> 6.3.14
   - Fix check_uo to properly check empty rich text in competenze [lucabel]
 

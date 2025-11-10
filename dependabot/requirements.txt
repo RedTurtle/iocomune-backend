@@ -155,6 +155,7 @@ decorator==5.1.1
 defusedcsv==3.0.0
 defusedxml==0.7.1
 design.plone.contenttypes==6.3.14
+design.plone.externallogin==1.0.5
 design.plone.iocittadino==1.2.9
 design.plone.ioprenoto==1.2.10
 design.plone.policy==5.0.18
