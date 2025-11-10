@@ -183,7 +183,7 @@ furo==2024.8.6
 future==1.0.0
 geographiclib==1.50
 geopy==1.21.0
-gitdb==4.0.11
+gitdb==4.0.12
 grpcio-tools==1.66.2
 gunicorn==23.0.0
 h11==0.14.0
