@@ -1,8 +1,10 @@
 # Changelog
 
-## YYYYMMDD-VV
+## 20251117-01
 - pas.plugins.jwt 1.0.2 -> 1.0.3
   - gestione parametro destUrl (Anthesi) [mamico]
+- design.plone.policy 5.0.18 -> 5.0.19 [mauro]
+  - refactoring monkeypatch formsupport
 
 ## 20251110-02
 - design.plone.externallogin = 1.0.6 [lucabel]

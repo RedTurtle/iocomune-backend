@@ -158,7 +158,7 @@ design.plone.contenttypes==6.3.14
 design.plone.externallogin==1.0.6
 design.plone.iocittadino==1.2.9
 design.plone.ioprenoto==1.2.10
-design.plone.policy==5.0.18
+design.plone.policy==5.0.19
 diazo==2.0.2
 distro==1.9.0
 docutils==0.21.2
