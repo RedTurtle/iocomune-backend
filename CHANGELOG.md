@@ -1,5 +1,9 @@
 # Changelog
 
+## YYYYMMDD-VV
+- pas.plugins.jwt 1.0.2 -> 1.0.3
+  - gestione parametro destUrl (Anthesi) [mamico]
+
 ## 20251110-02
 - design.plone.externallogin = 1.0.6 [lucabel]
 
