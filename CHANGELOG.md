@@ -1,5 +1,15 @@
 # Changelog
 
+## 20251118-01
+- design.plone.iocittadino 1.2.9 -> 1.3.0
+  - Separata gestione dei blob in un attributo __blobs__ del record soup,
+    in modo da semplificare la serializzazione dei dati, anche nelle casistiche
+    più complesse [mamico]
+  - adapter per paneldynamic [mamico]
+  - scartati dal pdf i panel che non haanno dati [mamico]
+  - Fix: get pratiche per cittadino se sono ddefiniti deggli operatori non tornava mai nulla
+    [mamico]
+
 ## 20251117-01
 - pas.plugins.jwt 1.0.2 -> 1.0.3
   - gestione parametro destUrl (Anthesi) [mamico]
