@@ -1,5 +1,8 @@
 # Changelog
 
+## XXXXXXXX-01
+- redturtle.volto 5.5.x -> 5.9.4
+
 ## 20251118-01
 - design.plone.iocittadino 1.2.9 -> 1.3.0
   - Separata gestione dei blob in un attributo __blobs__ del record soup,
