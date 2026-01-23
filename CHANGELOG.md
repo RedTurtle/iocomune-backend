@@ -1,5 +1,20 @@
 # Changelog
 
+## 20260123-01
+- redturtle.voltoplugin.editablefooter 1.3.4 -> 2.0.0
+ - Update permission settings to allow site administrators to access the control panel
+ [thesaintsimon]
+- collective.volto.subfooter 1.1.1 -> 2.0.0
+ - Update permission settings to allow site administrators to access the control panel
+ [thesaintsimon]
+- collective.volto.secondarymenu 1.1.1 -> 2.0.0
+ - Update permission settings to allow site administrators to access the control panel
+ [thesaintsimon]
+- collective.volto.slimheader 1.0.2 -> 2.0.0
+ - Update permission settings to allow site administrators to access the control panel
+ [thesaintsimon]
+
+
 ## 20251118-01
 - design.plone.iocittadino 1.2.9 -> 1.3.0
   - Separata gestione dei blob in un attributo __blobs__ del record soup,
