@@ -1,5 +1,11 @@
 # Changelog
 
+## XXX
+- collective.volto.formsupport 3.3.0 -> 3.3.2
+  - Fix csv export: always insert fixed_columns as latest ones. [cekk]
+- design.plone.policy 5.0.19 -> 5.0.20
+  - Convert formsupport patches into overrides [cekk]
+
 ## 20260123-01
 - redturtle.voltoplugin.editablefooter 1.3.4 -> 2.0.0
  - Update permission settings to allow site administrators to access the control panel
