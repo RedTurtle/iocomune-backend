@@ -5,6 +5,9 @@
   - Fix csv export: always insert fixed_columns as latest ones. [cekk]
 - design.plone.policy 5.0.19 -> 5.0.20
   - Convert formsupport patches into overrides [cekk]
+- design.plone.contenttypes 6.3.14 -> 6.3.15
+  - Avoid showing items inside cartella modulistica if omitted from navigation. [daniele]
+  - Add linkintegrity support for canale_digitale_link field in Servizio CT. [cekk]
 
 ## 20260123-01
 - redturtle.voltoplugin.editablefooter 1.3.4 -> 2.0.0
