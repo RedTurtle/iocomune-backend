@@ -8,6 +8,8 @@
 - design.plone.contenttypes 6.3.14 -> 6.3.15
   - Avoid showing items inside cartella modulistica if omitted from navigation. [daniele]
   - Add linkintegrity support for canale_digitale_link field in Servizio CT. [cekk]
+- redturtle.volto 5.5.13 -> 5.9.3
+  - See changelog, too many versions [cekk]
 
 ## 20260123-01
 - redturtle.voltoplugin.editablefooter 1.3.4 -> 2.0.0
