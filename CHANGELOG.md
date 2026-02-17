@@ -2,10 +2,99 @@
 
 ## YYYYMMDD-XX
 - aggiornato relstorage 3 a relstorage 4 (nessun cambiamento rilevante indicato)
+- collective.volto.formsupport 3.3.0 -> 3.3.2
+  - Fix csv export: always insert fixed_columns as latest ones. [cekk]
+- design.plone.policy 5.0.19 -> 5.0.20
+  - Convert formsupport patches into overrides [cekk]
+- design.plone.contenttypes 6.3.14 -> 6.3.15
+  - Avoid showing items inside cartella modulistica if omitted from navigation. [daniele]
+  - Add linkintegrity support for canale_digitale_link field in Servizio CT. [cekk]
 
-## YYYYMMDD-VV
+## 20260123-01
+- redturtle.voltoplugin.editablefooter 1.3.4 -> 2.0.0
+ - Update permission settings to allow site administrators to access the control panel
+ [thesaintsimon]
+- collective.volto.subfooter 1.1.1 -> 2.0.0
+ - Update permission settings to allow site administrators to access the control panel
+ [thesaintsimon]
+- collective.volto.secondarymenu 1.1.1 -> 2.0.0
+ - Update permission settings to allow site administrators to access the control panel
+ [thesaintsimon]
+- collective.volto.slimheader 1.0.2 -> 2.0.0
+ - Update permission settings to allow site administrators to access the control panel
+ [thesaintsimon]
+
+
+## 20251118-01
+- design.plone.iocittadino 1.2.9 -> 1.3.0
+  - Separata gestione dei blob in un attributo __blobs__ del record soup,
+    in modo da semplificare la serializzazione dei dati, anche nelle casistiche
+    più complesse [mamico]
+  - adapter per paneldynamic [mamico]
+  - scartati dal pdf i panel che non haanno dati [mamico]
+  - Fix: get pratiche per cittadino se sono ddefiniti deggli operatori non tornava mai nulla
+    [mamico]
+
+## 20251117-01
+- pas.plugins.jwt 1.0.2 -> 1.0.3
+  - gestione parametro destUrl (Anthesi) [mamico]
+- design.plone.policy 5.0.18 -> 5.0.19 [mauro]
+  - refactoring monkeypatch formsupport
+
+## 20251110-02
+- design.plone.externallogin = 1.0.6 [lucabel]
+
+## 20251110-01
+- design.plone.externallogin = 1.0.5 [lucabel]
+
+## 20251031-02
+- design.plone.contenttypes 6.3.13 -> 6.3.14
+  - Fix check_uo to properly check empty rich text in competenze [lucabel]
+
+## 20251031-01
+- design.plone.contenttypes 6.3.12 -> 6.3.13
+  - Fix check_notizie to properly check empty rich text in descrizione_estesa [lucabel]
+  - Fix check_luoghi to properly check empty rich text in modalita_accesso [lucabel]
+  - Fix check_eventi to properly check empty rich text in prezzo [lucabel]
+
+## 20251007-02
+- design.plone.policy = 5.0.17 -> 5.0.18
+  - Fix formsupport 3.3.0 compatibility (in add patch). [cekk]
+
+## 20251007-01
+- design.plone.contenttypes 6.3.11 -> 6.3.12
+  - Update incarichi_persona label [lucabel]
+
+## 20251002-01
+- design.plone.iocittadino 1.2.7 -> 1.2.9
+  - fix export csv [mamico]
+- iocittadino.protocollo.maggioli 1.0.15 -> 1.0.19
+   - gestione allegati multipli [lucabel]
+- design.plone.contenttypes 6.3.10 -> 6.3.11
+   - Remove ufficiostampa dependencies. [cekk]
+   - data_inizio_incarico is no longer required in incarico [sabrina-bongiovanni]
+- collective.volto.contactsblock = 1.0.1
+   - introduce collective.volto.contactsblock
+- design.plone.policy 5.0.16 -> 5.0.17
+   - install collective.volto.contactsblock as dependency [roman/luca]
+   - formsupport 3.3.0 compatibility  [mauro]
+
+## 20250925-01
+- redturtle.volto 5.5.12 -> 5.5.13
+  - Set a default view for Plone Site different by default_view because in plone.restapi 9.15.2 is exposed and we don't need it      
+         because it broke agid layout.  [cekk]
+- design.plone.iocittadino 1.2.5 -> 1.2.7
+  - Feat: gestione gruppi operatori. Campo "elenco operatori sulla form, se si selezionano degli oepratori, le pratiche associate alla form le vedono solo quegli operatori (attenzione non sono implementati al momento controlli di sicurezza ma solo di visibilità); quando si assegna una pratica si assegna solo agli operatori abilitati per quella pratica (questo avviene direttamente sul FE) [mamico]
+  - Feat: aggiunto controlpanel (plone) [mamico]
+  - Feat: aggiunto upload pratiche in csv [mamico]
+  - handle field type text with input type date in pratica report [lucabel]
+  - Let pratiche to be deassigned. [daniele]
+
+## 20250916-01
 - plone.restapi 9.10.0 => 9.15.2
   - fix teaser serialize (https://github.com/plone/plone.restapi/issues/1911) and more https://pypi.org/project/plone.restapi/ [mamico]
+- redturtle.filesretriever 1.0.3 => 1.0.4
+  - Handle relative links in html pages. [cekk]
 
 ## 20250903-01
 - iocittadino.protocollo.maggioli 1.0.15a2 -> 1.0.15
