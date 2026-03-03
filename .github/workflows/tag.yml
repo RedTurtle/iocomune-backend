@@ -1,4 +1,6 @@
 name: Update version
+permissions:
+  contents: write
 
 # on:
 #   create:

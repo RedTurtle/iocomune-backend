@@ -1,7 +1,31 @@
 # Changelog
 
-## XXXXXXXX-01
+## XXX
+- collective.volto.formsupport 3.3.0 -> 3.3.2
+  - Fix csv export: always insert fixed_columns as latest ones. [cekk]
+- design.plone.policy 5.0.19 -> 5.0.20
+  - Convert formsupport patches into overrides [cekk]
+- design.plone.contenttypes 6.3.14 -> 6.3.15
+  - Avoid showing items inside cartella modulistica if omitted from navigation. [daniele]
+  - Add linkintegrity support for canale_digitale_link field in Servizio CT. [cekk]
+- Products.isurlinportal = 2.1.0 - security fix [mamico]
 - redturtle.volto 5.5.x -> 5.9.4
+  - Major upgrade after draftjs migration. [cekk]
+
+## 20260123-01
+- redturtle.voltoplugin.editablefooter 1.3.4 -> 2.0.0
+ - Update permission settings to allow site administrators to access the control panel
+ [thesaintsimon]
+- collective.volto.subfooter 1.1.1 -> 2.0.0
+ - Update permission settings to allow site administrators to access the control panel
+ [thesaintsimon]
+- collective.volto.secondarymenu 1.1.1 -> 2.0.0
+ - Update permission settings to allow site administrators to access the control panel
+ [thesaintsimon]
+- collective.volto.slimheader 1.0.2 -> 2.0.0
+ - Update permission settings to allow site administrators to access the control panel
+ [thesaintsimon]
+
 
 ## 20251118-01
 - design.plone.iocittadino 1.2.9 -> 1.3.0
