@@ -9,6 +9,8 @@
   - Avoid showing items inside cartella modulistica if omitted from navigation. [daniele]
   - Add linkintegrity support for canale_digitale_link field in Servizio CT. [cekk]
 - Products.isurlinportal = 2.1.0 - security fix [mamico]
+- redturtle.volto 5.5.x -> 5.9.4
+  - Major upgrade after draftjs migration. [cekk]
 
 ## 20260123-01
 - redturtle.voltoplugin.editablefooter 1.3.4 -> 2.0.0
