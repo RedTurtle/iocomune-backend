@@ -52,7 +52,7 @@ Products.StandardCacheManagers==5.0
 Products.ZCatalog==7.1
 Products.ZMIntrospection==1.3
 Products.ZopeVersionControl==4.1
-Products.isurlinportal==2.0.3
+Products.isurlinportal==2.1.0
 Products.statusmessages==5.0.6
 Products.validation==3.0.1
 PyGithub==2.5.0
