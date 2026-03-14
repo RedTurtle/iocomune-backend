@@ -30,6 +30,7 @@ jobs:
           cd docker
           python create-constraints.py constraints.cfg ../dependabot/requirements.txt
       - name: Build SBOM
+        run: |
           pip install sbom4python==0.12.5
           sbom4python --requirement dependabot/requirements.txt --sbom spdx --format json --output sbom.spdx.json
       - name: Commit and push changes
