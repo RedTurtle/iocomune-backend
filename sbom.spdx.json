@@ -6,12 +6,20 @@
     "creators": [
       "Tool: sbom4python-0.12.5"
     ],
+<<<<<<< HEAD
     "created": "2026-03-14T10:54:13Z",
+=======
+    "created": "2026-03-14T11:08:32Z",
+>>>>>>> main
     "licenseListVersion": "3.28.0"
   },
   "name": "Python-dependabot/requirements.txt",
   "dataLicense": "CC0-1.0",
+<<<<<<< HEAD
   "documentNamespace": "http://spdx.org/spdxdocs/Python-dependabot/requirements.txt-210c9ea7-0651-4d5e-ae90-c6c70c5d945e",
+=======
+  "documentNamespace": "http://spdx.org/spdxdocs/Python-dependabot/requirements.txt-637a10eb-60d1-4484-be57-4b3c2a9d74cc",
+>>>>>>> main
   "packages": [
     {
       "SPDXID": "SPDXRef-1-AccessControl",
