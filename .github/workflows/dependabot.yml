@@ -25,15 +25,19 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-      - name: Build
+      - name: Build requirements.txt
         run: |
           cd docker
           python create-constraints.py constraints.cfg ../dependabot/requirements.txt
+      - name: Build SBOM
+        run: |
+          pip install sbom4python==0.12.5
+          sbom4python --requirement dependabot/requirements.txt --sbom spdx --format json --output sbom.spdx.json
       - name: Commit and push changes
         run: |
           git config --global user.email "info@redturtle.it"
           git config --global user.name "RedTurtle CI BOT"
-          git add dependabot/requirements.txt
+          git add dependabot/requirements.txt sbom.spdx.json
           git commit -m "Auto-generate file at $(date)" || exit 0
           git push https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref_name }}
         env:
