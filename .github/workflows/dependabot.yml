@@ -4,11 +4,9 @@ permissions:
   contents: write
 
 on:
-  push:
-     # TODO: fix commit permissions https://github.com/ossf/scorecard-action/blob/main/docs/authentication/fine-grained-auth-token.md#authentication-with-fine-grained-pat-optional
-     # main:
-    pull_request:
-
+  pull_request:
+    branches:
+      - main
 jobs:
   build:
     name: requirements.txt
@@ -29,7 +27,14 @@ jobs:
         run: |
           cd docker
           python create-constraints.py constraints.cfg ../dependabot/requirements.txt
+      - name: Check for changes
+        id: git-check
+        run: |
+          if [ -n "$(git status --porcelain dependabot/requirements.txt)" ]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
       - name: Build SBOM
+        if: steps.git-check.outputs.changed == 'true'
         run: |
           pip install sbom4python==0.12.5
           sbom4python --requirement dependabot/requirements.txt --sbom spdx --format json --output sbom.spdx.json
