@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -43,7 +45,11 @@ jobs:
           git config --global user.email "info@redturtle.it"
           git config --global user.name "RedTurtle CI BOT"
           git add dependabot/requirements.txt sbom.spdx.json
-          git commit -m "Auto-generate file at $(date)" || exit 0
-          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref_name }}
+          if ! git diff --cached --quiet; then
+            git commit -m "Auto-generate file at $(date)" || exit 0
+            git push https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:refs/heads/${{ github.head_ref }}
+          else
+            echo "Nothing to commit"
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
