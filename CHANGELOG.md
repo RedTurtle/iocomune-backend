@@ -1,6 +1,7 @@
 # Changelog
 
-## XXX
+## YYYYMMDD-XX
+- aggiornato relstorage 3 a relstorage 4 (nessun cambiamento rilevante indicato)
 - collective.volto.formsupport 3.3.0 -> 3.3.2
   - Fix csv export: always insert fixed_columns as latest ones. [cekk]
 - design.plone.policy 5.0.19 -> 5.0.20
