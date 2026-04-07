@@ -10,6 +10,8 @@
   - Add linkintegrity support for canale_digitale_link field in Servizio CT. [cekk]
   - Modulo: mime_type is now indexed as the mime type of file_principale (the main attached file). The to_7321 upgrade step re-aligns the catalog index and refreshes stale portal_enhancedlinks cache entries for existing Modulo objects. [TheSaintSimon]
 - Products.isurlinportal = 2.1.0 - security fix [mamico]
+- redturtle.volto 5.5.x -> 5.9.4
+  - Major upgrade after draftjs migration. [cekk]
 - design.plone.iosegnalo = 1.0.5 [lucabel]
 
 ## 20260123-01
