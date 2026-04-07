@@ -7,6 +7,11 @@ on:
   pull_request:
     branches:
       - main
+
+concurrency:
+  group: requirements-${{ github.head_ref }}
+  cancel-in-progress: false
+  
 jobs:
   build:
     name: requirements.txt
@@ -45,11 +50,7 @@ jobs:
           git config --global user.email "info@redturtle.it"
           git config --global user.name "RedTurtle CI BOT"
           git add dependabot/requirements.txt sbom.spdx.json
-          if ! git diff --cached --quiet; then
-            git commit -m "Auto-generate file at $(date)" || exit 0
-            git push https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:refs/heads/${{ github.head_ref }}
-          else
-            echo "Nothing to commit"
-          fi
+          git commit -m "Auto-generate file at $(date)" || exit 0
+          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:refs/heads/${{ github.ref_name }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
