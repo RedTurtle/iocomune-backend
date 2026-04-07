@@ -10,6 +10,10 @@ on:
     tags:
     - '*'
 
+concurrency:
+  group: tag-update-${{ github.ref }}
+  cancel-in-progress: false
+  
 jobs:
   update_file:
     runs-on: ubuntu-latest
