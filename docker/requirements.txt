@@ -1,3 +1,4 @@
 Plone
 design.plone.policy
-relstorage[postgresql]
+# TODO: l'immagine ha dei prerequisti (libpsql, python-dev, ... per ora lasciamo senza)
+# relstorage[postgresql]
