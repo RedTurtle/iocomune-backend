@@ -1,7 +1,7 @@
 # Changelog
 
 ## 20260407-01
-- design.plone.iocittadino 1.3.0 -> 1.3.2
+- design.plone.iocittadino 1.3.0 -> 1.3.3
   - Implementati flag per disabilitare invio notifiche email alla creazione di una pratica per operatore/cittadino [mamico]
   - Implementato Addon per creazione F24 IMU [mamico]
   - Implementa notifiche su App IO per iocittadino. Riutilizza codice su redturtle.prenotazioni, ... [mamico]
