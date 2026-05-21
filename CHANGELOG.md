@@ -1,5 +1,9 @@
 # Changelog
 
+## ???
+- design.plone.policy 5.0.20 -> 5.0.21
+  - Renamed "Descrizione" into "Descrizione breve" [fedevancin]
+
 ## 20260407-01
 - collective.volto.formsupport 3.3.0 -> 3.3.2
   - Fix csv export: always insert fixed_columns as latest ones. [cekk]
