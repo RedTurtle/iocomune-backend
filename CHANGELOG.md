@@ -1,5 +1,9 @@
 # Changelog
 
+## ???
+- design.plone.policy 5.0.20 -> 5.0.21
+  - Renamed "Descrizione" into "Descrizione breve" [fedevancin]
+
 ## 20260407-01
 - design.plone.iocittadino 1.3.0 -> 1.3.3
   - Implementati flag per disabilitare invio notifiche email alla creazione di una pratica per operatore/cittadino [mamico]
