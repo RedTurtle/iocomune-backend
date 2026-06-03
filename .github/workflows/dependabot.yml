@@ -49,6 +49,8 @@ jobs:
           git config --global user.name "RedTurtle CI BOT"
           git add dependabot/requirements.txt sbom.spdx.json
           git commit -m "Auto-generate file at $(date)" || exit 0
-          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:refs/heads/${{ github.ref_name }}
+          git pull --rebase "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "${HEAD_REF}"
+          git push "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:refs/heads/${HEAD_REF}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          HEAD_REF: ${{ github.head_ref }}
