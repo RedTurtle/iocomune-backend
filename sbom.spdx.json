@@ -6,12 +6,12 @@
     "creators": [
       "Tool: sbom4python-0.12.5"
     ],
-    "created": "2026-05-29T16:47:03Z",
+    "created": "2026-06-03T23:07:06Z",
     "licenseListVersion": "3.28.0"
   },
   "name": "Python-dependabot/requirements.txt",
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "http://spdx.org/spdxdocs/Python-dependabot/requirements.txt-0b4d00f0-c7a9-4365-aa59-22ab09f1a5e1",
+  "documentNamespace": "http://spdx.org/spdxdocs/Python-dependabot/requirements.txt-d2b60c21-f159-4495-9d1f-fee6eeae8292",
   "packages": [
     {
       "SPDXID": "SPDXRef-1-AccessControl",
@@ -2157,7 +2157,6 @@
       "downloadLocation": "https://pypi.org/project/RestrictedPython/7.4/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
-      "homepage": "https://github.com/zopefoundation/RestrictedPython",
       "checksums": [
         {
           "algorithm": "SHA256",
@@ -5254,10 +5253,10 @@
     {
       "SPDXID": "SPDXRef-157-design.plone.iocittadino",
       "name": "design.plone.iocittadino",
-      "versionInfo": "1.3.0",
+      "versionInfo": "1.3.4",
       "primaryPackagePurpose": "APPLICATION",
       "supplier": "NOASSERTION",
-      "downloadLocation": "https://pypi.org/project/design.plone.iocittadino/1.3.0/#files",
+      "downloadLocation": "https://pypi.org/project/design.plone.iocittadino/1.3.4/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
       "licenseConcluded": "NOASSERTION",
@@ -5268,7 +5267,7 @@
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
-          "referenceLocator": "pkg:pypi/design.plone.iocittadino@1.3.0"
+          "referenceLocator": "pkg:pypi/design.plone.iocittadino@1.3.4"
         }
       ]
     },
@@ -6226,7 +6225,7 @@
       "name": "gunicorn",
       "versionInfo": "23.0.0",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "NOASSERTION",
+      "supplier": "Person: Benoit Chesneau",
       "downloadLocation": "https://pypi.org/project/gunicorn/23.0.0/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
@@ -6247,6 +6246,11 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/gunicorn@23.0.0"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:benoit_chesneau:gunicorn:23.0.0:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -7272,7 +7276,7 @@
       "name": "legacy-cgi",
       "versionInfo": "2.6.1",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "NOASSERTION",
+      "supplier": "Person: Jack Rosenthal",
       "downloadLocation": "https://pypi.org/project/legacy-cgi/2.6.1/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
@@ -7292,6 +7296,11 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/legacy-cgi@2.6.1"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:jack_rosenthal:legacy-cgi:2.6.1:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -10973,7 +10982,7 @@
       "downloadLocation": "https://pypi.org/project/plone.jsonserializer/0.9.11/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
-      "homepage": "https://github.com/pyrenees/plone.jsonserializer/",
+      "homepage": "https://github.com/plone/plone.jsonserializer/",
       "checksums": [
         {
           "algorithm": "SHA256",
@@ -12802,7 +12811,7 @@
       "name": "pydantic",
       "versionInfo": "2.10.2",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Person: Pydantic (hello@pydantic.dev)",
+      "supplier": "NOASSERTION",
       "downloadLocation": "https://pypi.org/project/pydantic/2.10.2/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
@@ -12823,11 +12832,6 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/pydantic@2.10.2"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:pydantic:pydantic:2.10.2:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -16093,7 +16097,6 @@
       "name": "urllib3",
       "versionInfo": "2.2.3",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "NOASSERTION",
       "downloadLocation": "https://pypi.org/project/urllib3/2.2.3/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
@@ -16113,6 +16116,11 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/urllib3@2.2.3"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a::urllib3:2.2.3:*:*:*:*:*:*:*"
         }
       ]
     },
