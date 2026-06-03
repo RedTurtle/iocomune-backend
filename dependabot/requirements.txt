@@ -62,13 +62,8 @@ PySocks==1.7.1
 PyYAML==6.0.1
 Pygments==2.19.1
 Record==4.1
-<<<<<<< HEAD
-RelStorage==3.5.0
-RestrictedPython==8.0
-=======
 RelStorage==4.2.0
-RestrictedPython==7.4
->>>>>>> main
+RestrictedPython==8.0
 SecretStorage==3.3.3
 Sphinx==8.1.3
 Unidecode==1.3.8
@@ -164,13 +159,8 @@ design.plone.externallogin==1.0.6
 design.plone.iocittadino==1.3.0
 design.plone.ioprenoto==1.2.10
 design.plone.iosegnalo==1.0.5
-<<<<<<< HEAD
-design.plone.policy==5.0.20
-diazo==2.0.3
-=======
 design.plone.policy==5.0.21
-diazo==2.0.2
->>>>>>> main
+diazo==2.0.3
 distro==1.9.0
 docutils==0.21.2
 docxcompose==1.4.0
@@ -195,7 +185,7 @@ future==1.0.0
 geographiclib==1.50
 geopy==1.21.0
 gitdb==4.0.11
-grpcio-tools==1.66.2
+grpcio-tools==1.70.0
 gunicorn==23.0.0
 h11==0.16.0
 haufe.requestmonitoring==0.6.0
