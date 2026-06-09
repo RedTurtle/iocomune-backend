@@ -62,13 +62,8 @@ PySocks==1.7.1
 PyYAML==6.0.1
 Pygments==2.19.1
 Record==4.1
-<<<<<<< HEAD
-RelStorage==3.5.0
-RestrictedPython==8.0
-=======
 RelStorage==4.2.0
-RestrictedPython==7.4
->>>>>>> main
+RestrictedPython==8.0
 SecretStorage==3.3.3
 Sphinx==8.1.3
 Unidecode==1.3.8
@@ -164,13 +159,8 @@ design.plone.externallogin==1.0.6
 design.plone.iocittadino==1.3.0
 design.plone.ioprenoto==1.2.10
 design.plone.iosegnalo==1.0.5
-<<<<<<< HEAD
-design.plone.policy==5.0.20
-diazo==2.0.3
-=======
 design.plone.policy==5.0.21
-diazo==2.0.2
->>>>>>> main
+diazo==2.0.3
 distro==1.9.0
 docutils==0.21.2
 docxcompose==1.4.0
@@ -195,7 +185,7 @@ future==1.0.0
 geographiclib==1.50
 geopy==1.21.0
 gitdb==4.0.11
-grpcio-tools==1.66.2
+grpcio-tools==1.70.0
 gunicorn==23.0.0
 h11==0.16.0
 haufe.requestmonitoring==0.6.0
@@ -299,17 +289,6 @@ plone.app.lockingbehavior==2.0.2
 plone.app.mosaic==3.1.5
 plone.app.multilingual==7.0.6
 plone.app.portlets==5.0.7
-<<<<<<< HEAD
-plone.app.querystring==2.1.2
-plone.app.redirector==3.0.3
-plone.app.registry==2.0.5
-plone.app.relationfield==3.0.5
-plone.app.robotframework==2.1.3
-plone.app.standardtiles==3.1.4
-plone.app.testing==7.1.0
-plone.app.textfield==2.0.2
-plone.app.theming==5.0.11
-=======
 plone.app.querystring==2.1.3
 plone.app.redirector==3.0.4
 plone.app.registry==2.0.6
@@ -317,9 +296,8 @@ plone.app.relationfield==3.0.6
 plone.app.robotframework==2.1.5
 plone.app.standardtiles==3.2.1
 plone.app.testing==7.1.1
-plone.app.textfield==2.0.1
+plone.app.textfield==2.0.2
 plone.app.theming==5.0.12
->>>>>>> plone_6015
 plone.app.tiles==4.0.1
 plone.app.upgrade==3.2.0
 plone.app.users==3.1.1
@@ -371,13 +349,8 @@ plone.releaser==2.4.1
 plone.reload==4.0.0
 plone.resource==3.0.2
 plone.resourceeditor==4.0.1
-<<<<<<< HEAD
-plone.rest==4.1.3
-plone.restapi==9.15.6
-=======
 plone.rest==5.0.0
-plone.restapi==9.15.2
->>>>>>> plone_6015
+plone.restapi==9.15.6
 plone.rfc822==3.0.1
 plone.scale==4.1.4
 plone.schema==2.0.2
