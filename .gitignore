@@ -10,6 +10,7 @@ pyvenv.cfg
 /lib64
 /parts
 /var
+/eggs
 /src/*
 Pipfile*
 .python-version
