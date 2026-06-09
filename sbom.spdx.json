@@ -6,20 +6,12 @@
     "creators": [
       "Tool: sbom4python-0.12.5"
     ],
-<<<<<<< HEAD
-    "created": "2026-06-03T23:11:51Z",
-=======
-    "created": "2026-06-09T16:47:02Z",
->>>>>>> main
+    "created": "2026-06-09T17:21:25Z",
     "licenseListVersion": "3.28.0"
   },
   "name": "Python-dependabot/requirements.txt",
   "dataLicense": "CC0-1.0",
-<<<<<<< HEAD
-  "documentNamespace": "http://spdx.org/spdxdocs/Python-dependabot/requirements.txt-8d0d5c22-1f08-4310-9315-01c4fb281b5c",
-=======
-  "documentNamespace": "http://spdx.org/spdxdocs/Python-dependabot/requirements.txt-e489c679-031d-4720-8df9-f16ae4e69002",
->>>>>>> main
+  "documentNamespace": "http://spdx.org/spdxdocs/Python-dependabot/requirements.txt-b93a851e-add5-4e2a-b12a-e4451b22ad7f",
   "packages": [
     {
       "SPDXID": "SPDXRef-1-AccessControl",
@@ -3469,33 +3461,19 @@
       "name": "collective.MockMailHost",
       "versionInfo": "3.0.0",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Person: Collective",
+      "supplier": "NOASSERTION",
       "downloadLocation": "https://pypi.org/project/collective.MockMailHost/3.0.0/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
-      "homepage": "https://github.com/collective/collective.mockmailhost",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "a008be95e6e85afff75310156cde30462b20435a1223d0ca791bc6962a61118d"
-        }
-      ],
-      "licenseConcluded": "GPL-2.0-only",
+      "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "NOASSERTION",
-      "licenseComments": "collective.MockMailHost declares GPL which is not currently a valid SPDX License identifier or expression.",
       "copyrightText": "NOASSERTION",
-      "summary": "Used for integration testing with Plone",
-      "releaseDate": "2024-04-23T16:22:29Z",
+      "releaseDate": "2024-11-20T21:23:36Z",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/collective.MockMailHost@3.0.0"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:collective:collective.MockMailHost:3.0.0:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -7295,11 +7273,7 @@
       "versionInfo": "2.6.2",
       "primaryPackagePurpose": "APPLICATION",
       "supplier": "Person: Jack Rosenthal",
-<<<<<<< HEAD
       "downloadLocation": "https://pypi.org/project/legacy-cgi/2.6.2/#files",
-=======
-      "downloadLocation": "https://pypi.org/project/legacy-cgi/2.6.1/#files",
->>>>>>> main
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
       "checksums": [
@@ -7317,20 +7291,12 @@
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
-<<<<<<< HEAD
           "referenceLocator": "pkg:pypi/legacy-cgi@2.6.2"
-=======
-          "referenceLocator": "pkg:pypi/legacy-cgi@2.6.1"
->>>>>>> main
         },
         {
           "referenceCategory": "SECURITY",
           "referenceType": "cpe23Type",
-<<<<<<< HEAD
           "referenceLocator": "cpe:2.3:a:jack_rosenthal:legacy-cgi:2.6.2:*:*:*:*:*:*:*"
-=======
-          "referenceLocator": "cpe:2.3:a:jack_rosenthal:legacy-cgi:2.6.1:*:*:*:*:*:*:*"
->>>>>>> main
         }
       ]
     },
@@ -8923,33 +8889,19 @@
       "name": "plone.app.contentlisting",
       "versionInfo": "3.0.5",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Person: Plone Foundation",
+      "supplier": "NOASSERTION",
       "downloadLocation": "https://pypi.org/project/plone.app.contentlisting/3.0.5/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
-      "homepage": "https://pypi.org/project/plone.app.contentlisting",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "b220264820e655edbb08f0f4ea236dc2500e9f11524a782abebc8b8aac5245d7"
-        }
-      ],
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "NOASSERTION",
-      "licenseComments": "plone.app.contentlisting declares GPL version 2 which is not currently a valid SPDX License identifier or expression.",
       "copyrightText": "NOASSERTION",
-      "summary": "Listing of content for the Plone CMS",
-      "releaseDate": "2024-04-16T19:32:11Z",
+      "releaseDate": "2025-02-06T18:00:33Z",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/plone.app.contentlisting@3.0.5"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:plone_foundation:plone.app.contentlisting:3.0.5:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -9895,7 +9847,7 @@
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "NOASSERTION",
       "copyrightText": "NOASSERTION",
-      "releaseDate": "2024-07-31T10:28:22Z",
+      "releaseDate": "2025-01-24T10:54:47Z",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
@@ -12822,7 +12774,7 @@
       "name": "pydantic",
       "versionInfo": "2.10.2",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "NOASSERTION",
+      "supplier": "Person: Pydantic (hello@pydantic.dev)",
       "downloadLocation": "https://pypi.org/project/pydantic/2.10.2/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
@@ -12843,6 +12795,11 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/pydantic@2.10.2"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:pydantic:pydantic:2.10.2:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -16113,11 +16070,7 @@
       "name": "urllib3",
       "versionInfo": "2.3.0",
       "primaryPackagePurpose": "APPLICATION",
-<<<<<<< HEAD
       "downloadLocation": "https://pypi.org/project/urllib3/2.3.0/#files",
-=======
-      "downloadLocation": "https://pypi.org/project/urllib3/2.2.3/#files",
->>>>>>> main
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
       "checksums": [
@@ -16135,20 +16088,12 @@
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
-<<<<<<< HEAD
           "referenceLocator": "pkg:pypi/urllib3@2.3.0"
-=======
-          "referenceLocator": "pkg:pypi/urllib3@2.2.3"
->>>>>>> main
         },
         {
           "referenceCategory": "SECURITY",
           "referenceType": "cpe23Type",
-<<<<<<< HEAD
           "referenceLocator": "cpe:2.3:a::urllib3:2.3.0:*:*:*:*:*:*:*"
-=======
-          "referenceLocator": "cpe:2.3:a::urllib3:2.2.3:*:*:*:*:*:*:*"
->>>>>>> main
         }
       ]
     },
