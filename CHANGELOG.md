@@ -1,6 +1,7 @@
 # Changelog
 
 ## YYYYMMDD-XX
+- Plone 6.0.15
 - aggiornato relstorage 3 a relstorage 4 (nessun cambiamento rilevante indicato)
 - design.plone.policy 5.0.20 -> 5.0.21
   - Renamed "Descrizione" into "Descrizione breve" [fedevancin]
