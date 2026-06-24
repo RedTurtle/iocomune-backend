@@ -63,7 +63,7 @@ PyYAML==6.0.1
 Pygments==2.19.1
 Record==4.1
 RelStorage==4.2.0
-RestrictedPython==8.0
+RestrictedPython==8.3
 SecretStorage==3.3.3
 Sphinx==8.1.3
 Unidecode==1.3.8
@@ -271,13 +271,13 @@ plone.app.content==4.1.9
 plone.app.contentlisting==3.0.5
 plone.app.contentmenu==3.0.7
 plone.app.contentrules==5.0.6
-plone.app.contenttypes==3.0.11
+plone.app.contenttypes==3.0.12
 plone.app.customerize==2.0.2
 plone.app.debugtoolbar==1.4.0
-plone.app.dexterity==3.2.2
+plone.app.dexterity==3.2.3
 plone.app.discussion==4.1.5
 plone.app.drafts==2.0.0
-plone.app.event==5.2.1
+plone.app.event==5.2.4
 plone.app.i18n==4.0.1
 plone.app.intid==2.0.0
 plone.app.iterate==5.0.5
@@ -288,7 +288,7 @@ plone.app.locales==6.0.30
 plone.app.lockingbehavior==2.0.2
 plone.app.mosaic==3.1.5
 plone.app.multilingual==7.0.6
-plone.app.portlets==5.0.7
+plone.app.portlets==5.0.8
 plone.app.querystring==2.1.3
 plone.app.redirector==3.0.4
 plone.app.registry==2.0.6
@@ -415,7 +415,7 @@ redturtle.prenotazioni==2.8.8
 redturtle.rssservice==2.2.0
 redturtle.scale==1.0a2
 redturtle.unitaterritoriali==1.0.1
-redturtle.volto==5.5.13
+redturtle.volto==5.9.4
 redturtle.voltoplugin.editablefooter==2.0.0
 referencing==0.35.1
 repoze.catalog==0.9.0
