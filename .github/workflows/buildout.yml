@@ -28,7 +28,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           # XXX: update setuptools for https://github.com/pypa/setuptools/pull/4856/files
-          pip install setuptools==75.8.2
+          pip install setuptools==75.8.2 zc.buildout==4.1.10
       - name: Build
         run: |
           buildout -t 2

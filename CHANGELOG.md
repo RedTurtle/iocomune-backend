@@ -1,5 +1,18 @@
 # Changelog
 
+## 20260625-01
+- aggiornato relstorage 3 a relstorage 4 (nessun cambiamento rilevante indicato)
+- design.plone.policy 5.0.20 -> 5.0.21
+  - Renamed "Descrizione" into "Descrizione breve" [fedevancin]
+- Security upgrades
+  - grpcio-tools = 1.66.2
+    # https://community.plone.org/t/security-vulnerability-announcement-plone-app-textfield-and-plone-restapi/23050
+  - plone.app.textfield = 2.0.2 
+  - plone.restapi = 9.15.6
+  - fix versioni per https://community.plone.org/t/plone-security-fixes-20260623/23085
+- [BREAKING CHANGE] redturtle.volto 5.5.13 => 5.9.5 [cekk]
+  - Ripristinata ultima versione di redturtle.volto. Ci sono diverse cose nuove e upgrade-step.
+
 ## 20260407-01
 - collective.volto.formsupport 3.3.0 -> 3.3.2
   - Fix csv export: always insert fixed_columns as latest ones. [cekk]
@@ -10,6 +23,8 @@
   - Add linkintegrity support for canale_digitale_link field in Servizio CT. [cekk]
   - Modulo: mime_type is now indexed as the mime type of file_principale (the main attached file). The to_7321 upgrade step re-aligns the catalog index and refreshes stale portal_enhancedlinks cache entries for existing Modulo objects. [TheSaintSimon]
 - Products.isurlinportal = 2.1.0 - security fix [mamico]
+- redturtle.volto 5.5.x -> 5.9.4
+  - Major upgrade after draftjs migration. [cekk]
 - design.plone.iosegnalo = 1.0.5 [lucabel]
 
 ## 20260123-01
