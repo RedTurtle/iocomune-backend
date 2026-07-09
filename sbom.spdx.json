@@ -6,12 +6,12 @@
     "creators": [
       "Tool: sbom4python-0.12.5"
     ],
-    "created": "2026-06-23T16:02:29Z",
+    "created": "2026-07-09T16:07:15Z",
     "licenseListVersion": "3.28.0"
   },
   "name": "Python-dependabot/requirements.txt",
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "http://spdx.org/spdxdocs/Python-dependabot/requirements.txt-8399c407-c582-4448-98e0-5b6e54b39690",
+  "documentNamespace": "http://spdx.org/spdxdocs/Python-dependabot/requirements.txt-152dc51e-3b18-4173-bef8-0b058d429402",
   "packages": [
     {
       "SPDXID": "SPDXRef-1-AccessControl",
@@ -289,32 +289,19 @@
       "name": "DateTime",
       "versionInfo": "5.5",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Person: Zope",
+      "supplier": "NOASSERTION",
       "downloadLocation": "https://pypi.org/project/DateTime/5.5/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
-      "homepage": "https://github.com/zopefoundation/DateTime",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "0abf6c51cb4ba7cee775ca46ccc727f3afdde463be28dbbe8803631fefd4a120"
-        }
-      ],
-      "licenseConcluded": "ZPL-2.1",
-      "licenseDeclared": "ZPL-2.1",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
       "copyrightText": "NOASSERTION",
-      "summary": "This package provides a DateTime data type, as known from Zope. Unless you need to communicate with Zope APIs, you're probably better off using Python's built-in datetime module.",
-      "releaseDate": "2024-03-21T07:26:47Z",
+      "releaseDate": "2024-01-18T14:36:30Z",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/DateTime@5.5"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:zope:DateTime:5.5:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -1925,7 +1912,7 @@
       "name": "PyJWT",
       "versionInfo": "2.8.0",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Person: Jose Padilla (hello@jpadilla.com)",
+      "supplier": "NOASSERTION",
       "downloadLocation": "https://pypi.org/project/PyJWT/2.8.0/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
@@ -1946,11 +1933,6 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/PyJWT@2.8.0"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:jose_padilla:PyJWT:2.8.0:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -1993,7 +1975,7 @@
       "name": "PySocks",
       "versionInfo": "1.7.1",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Person: Anorov",
+      "supplier": "NOASSERTION",
       "downloadLocation": "https://pypi.org/project/PySocks/1.7.1/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
@@ -2015,11 +1997,6 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/PySocks@1.7.1"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:anorov:PySocks:1.7.1:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -2674,7 +2651,7 @@
       "name": "argcomplete",
       "versionInfo": "3.5.2",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "NOASSERTION",
+      "supplier": "Person: Andrey Kislyuk",
       "downloadLocation": "https://pypi.org/project/argcomplete/3.5.2/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
@@ -2696,6 +2673,11 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/argcomplete@3.5.2"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:andrey_kislyuk:argcomplete:3.5.2:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -2739,7 +2721,7 @@
       "name": "arrow",
       "versionInfo": "1.2.3",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "NOASSERTION",
+      "supplier": "Person: Arrow",
       "downloadLocation": "https://pypi.org/project/arrow/1.2.3/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
@@ -2760,6 +2742,11 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/arrow@1.2.3"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:arrow:arrow:1.2.3:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -2910,19 +2897,10 @@
       "downloadLocation": "https://pypi.org/project/bda.cache/1.3.0/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
-      "homepage": "https://svn.plone.org/svn/collective/bda.cache",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "969424ee1cd8b5fe2a159cb72598b8b711eb0b924e688b0b17a3716cec56cbf1"
-        }
-      ],
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "NOASSERTION",
-      "licenseComments": "bda.cache declares GPL: GNU General Public Licence which is not currently a valid SPDX License identifier or expression.",
       "copyrightText": "NOASSERTION",
-      "summary": "Simple caching infrastructure.",
-      "releaseDate": "2019-02-05T21:23:07Z",
+      "releaseDate": "2024-05-28T17:01:53Z",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
@@ -4718,33 +4696,19 @@
       "name": "collective.volto.subsites",
       "versionInfo": "1.5.1",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Person: Collective",
+      "supplier": "NOASSERTION",
       "downloadLocation": "https://pypi.org/project/collective.volto.subsites/1.5.1/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
-      "homepage": "https://github.com/collective/collective.volto.subsites",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "276b96a0e1241dac51defc4645568517535ac0899221c3e01137bf54bfdae506"
-        }
-      ],
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "NOASSERTION",
-      "licenseComments": "collective.volto.subsites declares GPL version 2 which is not currently a valid SPDX License identifier or expression.",
       "copyrightText": "NOASSERTION",
-      "summary": "Add Subsite content-type for Volto",
-      "releaseDate": "2024-12-12T14:16:39Z",
+      "releaseDate": "2026-01-23T14:40:43Z",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/collective.volto.subsites@1.5.1"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:collective:collective.volto.subsites:1.5.1:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -6575,7 +6539,7 @@
       "name": "ijson",
       "versionInfo": "3.1.4",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Organization: The International Centre for Radio Astronomy Research",
+      "supplier": "NOASSERTION",
       "downloadLocation": "https://pypi.org/project/ijson/3.1.4/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
@@ -6596,11 +6560,6 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/ijson@3.1.4"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:the_international_centre_for_radio_astronomy_research:ijson:3.1.4:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -6784,10 +6743,10 @@
     {
       "SPDXID": "SPDXRef-204-iocittadino.protocollo.maggioli",
       "name": "iocittadino.protocollo.maggioli",
-      "versionInfo": "1.0.19",
+      "versionInfo": "1.0.20",
       "primaryPackagePurpose": "APPLICATION",
       "supplier": "NOASSERTION",
-      "downloadLocation": "https://pypi.org/project/iocittadino.protocollo.maggioli/1.0.19/#files",
+      "downloadLocation": "https://pypi.org/project/iocittadino.protocollo.maggioli/1.0.20/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
       "licenseConcluded": "NOASSERTION",
@@ -6798,7 +6757,7 @@
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
-          "referenceLocator": "pkg:pypi/iocittadino.protocollo.maggioli@1.0.19"
+          "referenceLocator": "pkg:pypi/iocittadino.protocollo.maggioli@1.0.20"
         }
       ]
     },
@@ -7393,7 +7352,7 @@
       "name": "lxml",
       "versionInfo": "5.3.0",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Person: lxml",
+      "supplier": "NOASSERTION",
       "downloadLocation": "https://pypi.org/project/lxml/5.3.0/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
@@ -7414,11 +7373,6 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/lxml@5.3.0"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:lxml:lxml:5.3.0:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -9022,19 +8976,33 @@
       "name": "plone.app.contenttypes",
       "versionInfo": "3.0.12",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "NOASSERTION",
+      "supplier": "Person: Plone Foundation",
       "downloadLocation": "https://pypi.org/project/plone.app.contenttypes/3.0.12/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
-      "licenseConcluded": "NOASSERTION",
+      "homepage": "https://github.com/plone/plone.app.contenttypes",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4b0a0e1a57be65483323196795e59492d93174e3cae0077e3d37e00099a73706"
+        }
+      ],
+      "licenseConcluded": "GPL-2.0-only",
       "licenseDeclared": "NOASSERTION",
+      "licenseComments": "plone.app.contenttypes declares GPL which is not currently a valid SPDX License identifier or expression.",
       "copyrightText": "NOASSERTION",
-      "releaseDate": "2024-11-25T15:09:01Z",
+      "summary": "Default content types for Plone based on Dexterity",
+      "releaseDate": "2026-06-23T12:39:43Z",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/plone.app.contenttypes@3.0.12"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:plone_foundation:plone.app.contenttypes:3.0.12:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -9113,19 +9081,33 @@
       "name": "plone.app.dexterity",
       "versionInfo": "3.2.3",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "NOASSERTION",
+      "supplier": "Person: Plone Foundation",
       "downloadLocation": "https://pypi.org/project/plone.app.dexterity/3.2.3/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
-      "licenseConcluded": "NOASSERTION",
+      "homepage": "http://plone.org/products/dexterity",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2ed134a642bd2e40a3c2e5fa9af488161874d6be6be2bafc41c2083967ead04d"
+        }
+      ],
+      "licenseConcluded": "GPL-2.0-only",
       "licenseDeclared": "NOASSERTION",
+      "licenseComments": "plone.app.dexterity declares GPL which is not currently a valid SPDX License identifier or expression.",
       "copyrightText": "NOASSERTION",
-      "releaseDate": "2024-03-19T21:53:22Z",
+      "summary": "Dexterity is a content type framework for CMF applications, with particular emphasis on Plone. It can be viewed as an alternative to Archetypes that is more light-weight and modular.",
+      "releaseDate": "2026-06-23T12:36:43Z",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/plone.app.dexterity@3.2.3"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:plone_foundation:plone.app.dexterity:3.2.3:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -9199,19 +9181,33 @@
       "name": "plone.app.event",
       "versionInfo": "5.2.4",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "NOASSERTION",
+      "supplier": "Person: Plone Foundation",
       "downloadLocation": "https://pypi.org/project/plone.app.event/5.2.4/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
+      "homepage": "https://github.com/plone/plone.app.event",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e846d1e67f34934a089ddfef8d020f23103ebad4f6de30b2c9a29b7120eea234"
+        }
+      ],
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "NOASSERTION",
+      "licenseComments": "plone.app.event declares GPL version 2 which is not currently a valid SPDX License identifier or expression.",
       "copyrightText": "NOASSERTION",
-      "releaseDate": "2022-07-22T10:47:31Z",
+      "summary": "The Plone calendar framework",
+      "releaseDate": "2026-06-23T12:31:47Z",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/plone.app.event@5.2.4"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:plone_foundation:plone.app.event:5.2.4:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -9385,33 +9381,19 @@
       "name": "plone.app.linkintegrity",
       "versionInfo": "4.0.6",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Person: Plone Foundation",
+      "supplier": "NOASSERTION",
       "downloadLocation": "https://pypi.org/project/plone.app.linkintegrity/4.0.6/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
-      "homepage": "https://github.com/plone/plone.app.linkintegrity",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "d3fea0d05fe5bf5fb0d34428d1596d92884af87f2d2528d96520e592e73dd838"
-        }
-      ],
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "NOASSERTION",
-      "licenseComments": "plone.app.linkintegrity declares GPL version 2 which is not currently a valid SPDX License identifier or expression.",
       "copyrightText": "NOASSERTION",
-      "summary": "Manage link integrity in Plone.",
-      "releaseDate": "2024-06-13T19:02:33Z",
+      "releaseDate": "2024-12-16T22:17:40Z",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/plone.app.linkintegrity@4.0.6"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:plone_foundation:plone.app.linkintegrity:4.0.6:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -11167,9 +11149,8 @@
           "checksumValue": "6c663c625c9441d153dae279e2de707cf13c4a024a4e369fd961f66b8e42cc8f"
         }
       ],
-      "licenseConcluded": "NOASSERTION",
-      "licenseDeclared": "NOASSERTION",
-      "licenseComments": "plone.patternslib declares GPL version 2 which is not currently a valid SPDX License identifier or expression.",
+      "licenseConcluded": "GPL-2.0-only",
+      "licenseDeclared": "GPL-2.0-only",
       "copyrightText": "NOASSERTION",
       "summary": "An add-on to make Patternslib available to Plone.",
       "releaseDate": "2023-02-02T12:19:37Z",
@@ -12400,7 +12381,7 @@
       "name": "progress",
       "versionInfo": "1.6",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "NOASSERTION",
+      "supplier": "Person: Georgios Verigakis",
       "downloadLocation": "https://pypi.org/project/progress/1.6/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
@@ -12421,6 +12402,11 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/progress@1.6"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:georgios_verigakis:progress:1.6:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -13897,35 +13883,21 @@
     {
       "SPDXID": "SPDXRef-416-redturtle.volto",
       "name": "redturtle.volto",
-      "versionInfo": "5.5.13",
+      "versionInfo": "5.9.5",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Person: RedTurtle (info@redturtle.it)",
-      "downloadLocation": "https://pypi.org/project/redturtle.volto/5.5.13/#files",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "https://pypi.org/project/redturtle.volto/5.9.5/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
-      "homepage": "https://github.com/collective/redturtle.volto",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "efdb8db2792e5df541349a8911487b06f218454b4eba34641fba2607a72fae17"
-        }
-      ],
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "NOASSERTION",
-      "licenseComments": "redturtle.volto declares GPL version 2 which is not currently a valid SPDX License identifier or expression.",
       "copyrightText": "NOASSERTION",
-      "summary": "Helper package to setup a RedTurtle's Plone site ready to work with Volto.",
-      "releaseDate": "2025-09-26T08:21:32Z",
+      "releaseDate": "2024-03-12T11:02:45Z",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
-          "referenceLocator": "pkg:pypi/redturtle.volto@5.5.13"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:redturtle:redturtle.volto:5.5.13:*:*:*:*:*:*:*"
+          "referenceLocator": "pkg:pypi/redturtle.volto@5.9.5"
         }
       ]
     },
@@ -14238,8 +14210,7 @@
         }
       ],
       "licenseConcluded": "Apache-2.0",
-      "licenseDeclared": "NOASSERTION",
-      "licenseComments": "responses declares Apache 2.0 which is not currently a valid SPDX License identifier or expression.",
+      "licenseDeclared": "Apache-2.0",
       "copyrightText": "NOASSERTION",
       "summary": "A utility library for mocking out the `requests` Python library.",
       "releaseDate": "2024-06-14T16:32:55Z",
@@ -15677,7 +15648,7 @@
       "name": "toml",
       "versionInfo": "0.10.2",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "NOASSERTION",
+      "supplier": "Person: Will Pearson (uiri00@gmail.com)",
       "downloadLocation": "https://pypi.org/project/toml/0.10.2/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
@@ -15698,6 +15669,11 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/toml@0.10.2"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:will_pearson:toml:0.10.2:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -15706,7 +15682,7 @@
       "name": "tomli",
       "versionInfo": "2.0.2",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Person: Taneli Hukkinen",
+      "supplier": "NOASSERTION",
       "downloadLocation": "https://pypi.org/project/tomli/2.0.2/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
@@ -15727,11 +15703,6 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/tomli@2.0.2"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:taneli_hukkinen:tomli:2.0.2:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -17486,9 +17457,8 @@
           "checksumValue": "f6cdbb15a125838144135176182e42d5b04eaae467df9d7b1e77ac24dd4d6266"
         }
       ],
-      "licenseConcluded": "GPL-2.0-only",
-      "licenseDeclared": "NOASSERTION",
-      "licenseComments": "zest.releaser declares gpl-2.0 which is not currently a valid SPDX License identifier or expression.",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
       "copyrightText": "NOASSERTION",
       "summary": "Software releasing made easy and repeatable",
       "releaseDate": "2024-06-16T19:02:29Z",
@@ -18447,32 +18417,19 @@
       "name": "zope.i18n",
       "versionInfo": "5.2",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Person: Zope",
+      "supplier": "NOASSERTION",
       "downloadLocation": "https://pypi.org/project/zope.i18n/5.2/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
-      "homepage": "https://github.com/zopefoundation/zope.i18n",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "229856993ed0ad5ed7b5e1b3b4f3e5d872087d90df69e0c8eabd2058c636a083"
-        }
-      ],
-      "licenseConcluded": "ZPL-2.1",
-      "licenseDeclared": "ZPL-2.1",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
       "copyrightText": "NOASSERTION",
-      "summary": "Zope Internationalization Support",
-      "releaseDate": "2024-09-27T06:54:50Z",
+      "releaseDate": "2024-09-17T06:36:35Z",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/zope.i18n@5.2"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:zope:zope.i18n:5.2:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -18885,16 +18842,14 @@
       "downloadLocation": "https://pypi.org/project/zope.publisher/7.1/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
-      "homepage": "https://github.com/zopefoundation/zope.publisher",
       "checksums": [
         {
           "algorithm": "SHA256",
           "checksumValue": "26b933a36a6fe692a38c817389ce392fa983fcd01bf538e2abe29aaf07a6396c"
         }
       ],
-      "licenseConcluded": "NOASSERTION",
-      "licenseDeclared": "NOASSERTION",
-      "licenseComments": "zope.publisher declares ZPL 2.1 which is not currently a valid SPDX License identifier or expression.",
+      "licenseConcluded": "ZPL-2.1",
+      "licenseDeclared": "ZPL-2.1",
       "copyrightText": "NOASSERTION",
       "summary": "The Zope publisher publishes Python objects on the web.",
       "releaseDate": "2024-09-27T06:48:02Z",
@@ -19292,7 +19247,6 @@
       "downloadLocation": "https://pypi.org/project/zope.testing/5.0.1/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
-      "homepage": "https://github.com/zopefoundation/zope.testing",
       "checksums": [
         {
           "algorithm": "SHA256",

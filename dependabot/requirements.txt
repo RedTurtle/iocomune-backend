@@ -203,7 +203,7 @@ importlib-resources==6.4.5
 incremental==24.7.2
 iocittadino.pagamenti.base==1.0.11
 iocittadino.pagamenti.nextstep==1.0.3
-iocittadino.protocollo.maggioli==1.0.19
+iocittadino.protocollo.maggioli==1.0.20
 iocittadino.protocollo.maggiolitest==1.0.2
 isodate==0.6.1
 isoduration==20.11.0
@@ -415,7 +415,7 @@ redturtle.prenotazioni==2.8.8
 redturtle.rssservice==2.2.0
 redturtle.scale==1.0a2
 redturtle.unitaterritoriali==1.0.1
-redturtle.volto==5.9.4
+redturtle.volto==5.9.5
 redturtle.voltoplugin.editablefooter==2.0.0
 referencing==0.35.1
 repoze.catalog==0.9.0
