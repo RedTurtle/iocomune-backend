@@ -1,5 +1,12 @@
 # Changelog
 
+## UNRELEASED
+- [BREAKING CHANGE] Plone 6.0.15 (richiede upgrade-step di Plone) [mamico]
+- iocittadino.protocollo.maggioli 1.0.19 -> 1.0.20
+  - Gestione mail con iocittadino
+    Gestione date in formato diverso dallo standard
+    [lucabel]
+
 ## 20260625-01
 - aggiornato relstorage 3 a relstorage 4 (nessun cambiamento rilevante indicato)
 - design.plone.policy 5.0.20 -> 5.0.21
