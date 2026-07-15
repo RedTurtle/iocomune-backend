@@ -1,5 +1,9 @@
 # Changelog
 
+## 20260715-02
+- design.plone.contenttypes 6.3.16 -> 6.3.17
+  - Refactor and bugfixes of @scadenziario endpoint [fedevancin]
+
 ## 20260715-01
 - [BREAKING CHANGE] Plone 6.0.15 (richiede upgrade-step di Plone) [mamico]
 - iocittadino.protocollo.maggioli 1.0.19 -> 1.0.20
