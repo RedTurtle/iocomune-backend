@@ -6,6 +6,7 @@
   - Gestione mail con iocittadino
     Gestione date in formato diverso dallo standard
     [lucabel]
+- Aggiunto fix di versione per rer.linkmap = 1.0.7 [cekk]
 
 ## 20260625-01
 - aggiornato relstorage 3 a relstorage 4 (nessun cambiamento rilevante indicato)
