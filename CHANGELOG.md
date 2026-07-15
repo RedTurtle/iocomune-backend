@@ -1,12 +1,23 @@
 # Changelog
 
-## 20260715-01
+## UNRELEASED
+- [BREAKING CHANGE] Plone 6.0.15 (richiede upgrade-step di Plone) [mamico]
+- iocittadino.protocollo.maggioli 1.0.19 -> 1.0.20
+  - Gestione mail con iocittadino
+    Gestione date in formato diverso dallo standard
+    [lucabel]
 - Aggiunto fix di versione per rer.linkmap = 1.0.7 [cekk]
 
 ## 20260625-01
 - aggiornato relstorage 3 a relstorage 4 (nessun cambiamento rilevante indicato)
 - design.plone.policy 5.0.20 -> 5.0.21
   - Renamed "Descrizione" into "Descrizione breve" [fedevancin]
+- design.plone.iocittadino 1.3.0 -> 1.3.3
+  - Implementati flag per disabilitare invio notifiche email alla creazione di una pratica per operatore/cittadino [mamico]
+  - Implementato Addon per creazione F24 IMU [mamico]
+  - Implementa notifiche su App IO per iocittadino. Riutilizza codice su redturtle.prenotazioni, ... [mamico]
+  - Fix Pratiche digitali: gruppo di campi dinamico NON viene registrato nella ricevuta pdf [mamico]
+  - Send mail to operatori if errors occurr when sending pratiche [daniele]
 - Security upgrades
   - grpcio-tools = 1.66.2
     # https://community.plone.org/t/security-vulnerability-announcement-plone-app-textfield-and-plone-restapi/23050
