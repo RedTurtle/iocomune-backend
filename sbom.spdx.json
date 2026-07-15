@@ -6,12 +6,12 @@
     "creators": [
       "Tool: sbom4python-0.12.5"
     ],
-    "created": "2026-06-23T16:02:29Z",
+    "created": "2026-07-15T08:15:57Z",
     "licenseListVersion": "3.28.0"
   },
   "name": "Python-dependabot/requirements.txt",
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "http://spdx.org/spdxdocs/Python-dependabot/requirements.txt-8399c407-c582-4448-98e0-5b6e54b39690",
+  "documentNamespace": "http://spdx.org/spdxdocs/Python-dependabot/requirements.txt-c01f21aa-e585-4d60-8803-2b5d6505ec59",
   "packages": [
     {
       "SPDXID": "SPDXRef-1-AccessControl",
@@ -2674,7 +2674,7 @@
       "name": "argcomplete",
       "versionInfo": "3.5.2",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "NOASSERTION",
+      "supplier": "Person: Andrey Kislyuk",
       "downloadLocation": "https://pypi.org/project/argcomplete/3.5.2/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
@@ -2696,6 +2696,11 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/argcomplete@3.5.2"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:andrey_kislyuk:argcomplete:3.5.2:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -2739,7 +2744,7 @@
       "name": "arrow",
       "versionInfo": "1.2.3",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "NOASSERTION",
+      "supplier": "Person: Arrow",
       "downloadLocation": "https://pypi.org/project/arrow/1.2.3/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
@@ -2760,6 +2765,11 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/arrow@1.2.3"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:arrow:arrow:1.2.3:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -6575,7 +6585,7 @@
       "name": "ijson",
       "versionInfo": "3.1.4",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Organization: The International Centre for Radio Astronomy Research",
+      "supplier": "NOASSERTION",
       "downloadLocation": "https://pypi.org/project/ijson/3.1.4/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
@@ -6596,11 +6606,6 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/ijson@3.1.4"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:the_international_centre_for_radio_astronomy_research:ijson:3.1.4:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -7393,7 +7398,7 @@
       "name": "lxml",
       "versionInfo": "5.3.0",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Person: lxml",
+      "supplier": "NOASSERTION",
       "downloadLocation": "https://pypi.org/project/lxml/5.3.0/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
@@ -7414,11 +7419,6 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/lxml@5.3.0"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:lxml:lxml:5.3.0:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -9022,19 +9022,33 @@
       "name": "plone.app.contenttypes",
       "versionInfo": "3.0.12",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "NOASSERTION",
+      "supplier": "Person: Plone Foundation",
       "downloadLocation": "https://pypi.org/project/plone.app.contenttypes/3.0.12/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
-      "licenseConcluded": "NOASSERTION",
+      "homepage": "https://github.com/plone/plone.app.contenttypes",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4b0a0e1a57be65483323196795e59492d93174e3cae0077e3d37e00099a73706"
+        }
+      ],
+      "licenseConcluded": "GPL-2.0-only",
       "licenseDeclared": "NOASSERTION",
+      "licenseComments": "plone.app.contenttypes declares GPL which is not currently a valid SPDX License identifier or expression.",
       "copyrightText": "NOASSERTION",
-      "releaseDate": "2024-11-25T15:09:01Z",
+      "summary": "Default content types for Plone based on Dexterity",
+      "releaseDate": "2026-06-23T12:39:43Z",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/plone.app.contenttypes@3.0.12"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:plone_foundation:plone.app.contenttypes:3.0.12:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -9113,19 +9127,33 @@
       "name": "plone.app.dexterity",
       "versionInfo": "3.2.3",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "NOASSERTION",
+      "supplier": "Person: Plone Foundation",
       "downloadLocation": "https://pypi.org/project/plone.app.dexterity/3.2.3/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
-      "licenseConcluded": "NOASSERTION",
+      "homepage": "http://plone.org/products/dexterity",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2ed134a642bd2e40a3c2e5fa9af488161874d6be6be2bafc41c2083967ead04d"
+        }
+      ],
+      "licenseConcluded": "GPL-2.0-only",
       "licenseDeclared": "NOASSERTION",
+      "licenseComments": "plone.app.dexterity declares GPL which is not currently a valid SPDX License identifier or expression.",
       "copyrightText": "NOASSERTION",
-      "releaseDate": "2024-03-19T21:53:22Z",
+      "summary": "Dexterity is a content type framework for CMF applications, with particular emphasis on Plone. It can be viewed as an alternative to Archetypes that is more light-weight and modular.",
+      "releaseDate": "2026-06-23T12:36:43Z",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/plone.app.dexterity@3.2.3"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:plone_foundation:plone.app.dexterity:3.2.3:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -9199,19 +9227,33 @@
       "name": "plone.app.event",
       "versionInfo": "5.2.4",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "NOASSERTION",
+      "supplier": "Person: Plone Foundation",
       "downloadLocation": "https://pypi.org/project/plone.app.event/5.2.4/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
+      "homepage": "https://github.com/plone/plone.app.event",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e846d1e67f34934a089ddfef8d020f23103ebad4f6de30b2c9a29b7120eea234"
+        }
+      ],
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "NOASSERTION",
+      "licenseComments": "plone.app.event declares GPL version 2 which is not currently a valid SPDX License identifier or expression.",
       "copyrightText": "NOASSERTION",
-      "releaseDate": "2022-07-22T10:47:31Z",
+      "summary": "The Plone calendar framework",
+      "releaseDate": "2026-06-23T12:31:47Z",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/plone.app.event@5.2.4"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:plone_foundation:plone.app.event:5.2.4:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -11167,9 +11209,8 @@
           "checksumValue": "6c663c625c9441d153dae279e2de707cf13c4a024a4e369fd961f66b8e42cc8f"
         }
       ],
-      "licenseConcluded": "NOASSERTION",
-      "licenseDeclared": "NOASSERTION",
-      "licenseComments": "plone.patternslib declares GPL version 2 which is not currently a valid SPDX License identifier or expression.",
+      "licenseConcluded": "GPL-2.0-only",
+      "licenseDeclared": "GPL-2.0-only",
       "copyrightText": "NOASSERTION",
       "summary": "An add-on to make Patternslib available to Plone.",
       "releaseDate": "2023-02-02T12:19:37Z",
@@ -12400,7 +12441,7 @@
       "name": "progress",
       "versionInfo": "1.6",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "NOASSERTION",
+      "supplier": "Person: Georgios Verigakis",
       "downloadLocation": "https://pypi.org/project/progress/1.6/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
@@ -12421,6 +12462,11 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/progress@1.6"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:georgios_verigakis:progress:1.6:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -12774,7 +12820,7 @@
       "name": "pydantic",
       "versionInfo": "2.10.2",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Person: Pydantic (hello@pydantic.dev)",
+      "supplier": "NOASSERTION",
       "downloadLocation": "https://pypi.org/project/pydantic/2.10.2/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
@@ -12795,11 +12841,6 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/pydantic@2.10.2"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:pydantic:pydantic:2.10.2:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -13897,35 +13938,21 @@
     {
       "SPDXID": "SPDXRef-416-redturtle.volto",
       "name": "redturtle.volto",
-      "versionInfo": "5.5.13",
+      "versionInfo": "5.9.5",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Person: RedTurtle (info@redturtle.it)",
-      "downloadLocation": "https://pypi.org/project/redturtle.volto/5.5.13/#files",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "https://pypi.org/project/redturtle.volto/5.9.5/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
-      "homepage": "https://github.com/collective/redturtle.volto",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "efdb8db2792e5df541349a8911487b06f218454b4eba34641fba2607a72fae17"
-        }
-      ],
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "NOASSERTION",
-      "licenseComments": "redturtle.volto declares GPL version 2 which is not currently a valid SPDX License identifier or expression.",
       "copyrightText": "NOASSERTION",
-      "summary": "Helper package to setup a RedTurtle's Plone site ready to work with Volto.",
-      "releaseDate": "2025-09-26T08:21:32Z",
+      "releaseDate": "2024-03-12T11:02:45Z",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
-          "referenceLocator": "pkg:pypi/redturtle.volto@5.5.13"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:redturtle:redturtle.volto:5.5.13:*:*:*:*:*:*:*"
+          "referenceLocator": "pkg:pypi/redturtle.volto@5.9.5"
         }
       ]
     },
@@ -14187,7 +14214,37 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-425-rer.newsletter",
+      "SPDXID": "SPDXRef-425-rer.linkmap",
+      "name": "rer.linkmap",
+      "versionInfo": "1.0.7",
+      "primaryPackagePurpose": "APPLICATION",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "https://pypi.org/project/rer.linkmap/1.0.7/#files",
+      "filesAnalyzed": false,
+      "packageFileName": "dependabot/requirements.txt",
+      "homepage": "https://github.com/collective/rer.linkmap",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9f80efd3deac1eda9879a33ff6e7a930002acd838c96296e38537205b65ecba8"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "licenseComments": "rer.linkmap declares GPL version 2 which is not currently a valid SPDX License identifier or expression.",
+      "copyrightText": "NOASSERTION",
+      "summary": "Amministrazione Trasparente link map",
+      "releaseDate": "2026-06-25T14:49:07Z",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/rer.linkmap@1.0.7"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-426-rer.newsletter",
       "name": "rer.newsletter",
       "versionInfo": "3.1.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -14222,7 +14279,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-426-responses",
+      "SPDXID": "SPDXRef-427-responses",
       "name": "responses",
       "versionInfo": "0.25.3",
       "primaryPackagePurpose": "APPLICATION",
@@ -14238,8 +14295,7 @@
         }
       ],
       "licenseConcluded": "Apache-2.0",
-      "licenseDeclared": "NOASSERTION",
-      "licenseComments": "responses declares Apache 2.0 which is not currently a valid SPDX License identifier or expression.",
+      "licenseDeclared": "Apache-2.0",
       "copyrightText": "NOASSERTION",
       "summary": "A utility library for mocking out the `requests` Python library.",
       "releaseDate": "2024-06-14T16:32:55Z",
@@ -14257,7 +14313,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-427-rfc3339-validator",
+      "SPDXID": "SPDXRef-428-rfc3339-validator",
       "name": "rfc3339-validator",
       "versionInfo": "0.1.4",
       "primaryPackagePurpose": "APPLICATION",
@@ -14287,7 +14343,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-428-rfc3986",
+      "SPDXID": "SPDXRef-429-rfc3986",
       "name": "rfc3986",
       "versionInfo": "2.0.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -14322,7 +14378,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-429-rfc3987",
+      "SPDXID": "SPDXRef-430-rfc3987",
       "name": "rfc3987",
       "versionInfo": "1.3.8",
       "primaryPackagePurpose": "APPLICATION",
@@ -14357,7 +14413,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-430-rich",
+      "SPDXID": "SPDXRef-431-rich",
       "name": "rich",
       "versionInfo": "13.9.4",
       "primaryPackagePurpose": "APPLICATION",
@@ -14391,7 +14447,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-431-robotframework",
+      "SPDXID": "SPDXRef-432-robotframework",
       "name": "robotframework",
       "versionInfo": "6.0.2",
       "primaryPackagePurpose": "APPLICATION",
@@ -14426,7 +14482,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-432-robotframework-assertion-engine",
+      "SPDXID": "SPDXRef-433-robotframework-assertion-engine",
       "name": "robotframework-assertion-engine",
       "versionInfo": "3.0.3",
       "primaryPackagePurpose": "APPLICATION",
@@ -14460,7 +14516,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-433-robotframework-browser",
+      "SPDXID": "SPDXRef-434-robotframework-browser",
       "name": "robotframework-browser",
       "versionInfo": "18.9.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -14494,7 +14550,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-434-robotframework-debuglibrary",
+      "SPDXID": "SPDXRef-435-robotframework-debuglibrary",
       "name": "robotframework-debuglibrary",
       "versionInfo": "2.5.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -14524,7 +14580,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-435-robotframework-lsp",
+      "SPDXID": "SPDXRef-436-robotframework-lsp",
       "name": "robotframework-lsp",
       "versionInfo": "1.10.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -14558,7 +14614,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-436-robotframework-pythonlibcore",
+      "SPDXID": "SPDXRef-437-robotframework-pythonlibcore",
       "name": "robotframework-pythonlibcore",
       "versionInfo": "4.4.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -14592,7 +14648,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-437-robotframework-selenium2library",
+      "SPDXID": "SPDXRef-438-robotframework-selenium2library",
       "name": "robotframework-selenium2library",
       "versionInfo": "3.0.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -14627,7 +14683,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-438-robotframework-selenium2screenshots",
+      "SPDXID": "SPDXRef-439-robotframework-selenium2screenshots",
       "name": "robotframework-selenium2screenshots",
       "versionInfo": "0.8.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -14662,7 +14718,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-439-robotframework-seleniumlibrary",
+      "SPDXID": "SPDXRef-440-robotframework-seleniumlibrary",
       "name": "robotframework-seleniumlibrary",
       "versionInfo": "6.1.3",
       "primaryPackagePurpose": "APPLICATION",
@@ -14697,7 +14753,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-440-robotframework-seleniumtestability",
+      "SPDXID": "SPDXRef-441-robotframework-seleniumtestability",
       "name": "robotframework-seleniumtestability",
       "versionInfo": "2.1.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -14732,7 +14788,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-441-robotsuite",
+      "SPDXID": "SPDXRef-442-robotsuite",
       "name": "robotsuite",
       "versionInfo": "2.3.2",
       "primaryPackagePurpose": "APPLICATION",
@@ -14765,7 +14821,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-442-roman",
+      "SPDXID": "SPDXRef-443-roman",
       "name": "roman",
       "versionInfo": "4.2",
       "primaryPackagePurpose": "APPLICATION",
@@ -14799,7 +14855,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-443-rpds-py",
+      "SPDXID": "SPDXRef-444-rpds-py",
       "name": "rpds-py",
       "versionInfo": "0.22.3",
       "primaryPackagePurpose": "APPLICATION",
@@ -14828,7 +14884,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-444-sbom4python",
+      "SPDXID": "SPDXRef-445-sbom4python",
       "name": "sbom4python",
       "versionInfo": "0.12.5",
       "primaryPackagePurpose": "APPLICATION",
@@ -14862,7 +14918,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-445-seedir",
+      "SPDXID": "SPDXRef-446-seedir",
       "name": "seedir",
       "versionInfo": "0.5.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -14896,7 +14952,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-446-selenium",
+      "SPDXID": "SPDXRef-447-selenium",
       "name": "selenium",
       "versionInfo": "4.9.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -14930,7 +14986,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-447-sentry-sdk",
+      "SPDXID": "SPDXRef-448-sentry-sdk",
       "name": "sentry-sdk",
       "versionInfo": "2.0.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -14964,7 +15020,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-448-sgmllib3k",
+      "SPDXID": "SPDXRef-449-sgmllib3k",
       "name": "sgmllib3k",
       "versionInfo": "1.0.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -14994,7 +15050,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-449-simplejson",
+      "SPDXID": "SPDXRef-450-simplejson",
       "name": "simplejson",
       "versionInfo": "3.19.3",
       "primaryPackagePurpose": "APPLICATION",
@@ -15028,7 +15084,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-450-six",
+      "SPDXID": "SPDXRef-451-six",
       "name": "six",
       "versionInfo": "1.16.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -15062,7 +15118,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-451-smmap",
+      "SPDXID": "SPDXRef-452-smmap",
       "name": "smmap",
       "versionInfo": "5.0.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -15096,7 +15152,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-452-sniffio",
+      "SPDXID": "SPDXRef-453-sniffio",
       "name": "sniffio",
       "versionInfo": "1.3.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -15130,7 +15186,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-453-snowballstemmer",
+      "SPDXID": "SPDXRef-454-snowballstemmer",
       "name": "snowballstemmer",
       "versionInfo": "2.2.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -15164,7 +15220,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-454-sortedcontainers",
+      "SPDXID": "SPDXRef-455-sortedcontainers",
       "name": "sortedcontainers",
       "versionInfo": "2.4.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -15199,7 +15255,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-455-souper",
+      "SPDXID": "SPDXRef-456-souper",
       "name": "souper",
       "versionInfo": "1.1.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -15234,7 +15290,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-456-souper.plone",
+      "SPDXID": "SPDXRef-457-souper.plone",
       "name": "souper.plone",
       "versionInfo": "1.3.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -15269,7 +15325,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-457-soupsieve",
+      "SPDXID": "SPDXRef-458-soupsieve",
       "name": "soupsieve",
       "versionInfo": "2.6",
       "primaryPackagePurpose": "APPLICATION",
@@ -15303,7 +15359,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-458-sphinx-basic-ng",
+      "SPDXID": "SPDXRef-459-sphinx-basic-ng",
       "name": "sphinx-basic-ng",
       "versionInfo": "1.0.0b2",
       "primaryPackagePurpose": "APPLICATION",
@@ -15333,7 +15389,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-459-sphinxcontrib-applehelp",
+      "SPDXID": "SPDXRef-460-sphinxcontrib-applehelp",
       "name": "sphinxcontrib-applehelp",
       "versionInfo": "2.0.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -15363,7 +15419,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-460-sphinxcontrib-devhelp",
+      "SPDXID": "SPDXRef-461-sphinxcontrib-devhelp",
       "name": "sphinxcontrib-devhelp",
       "versionInfo": "2.0.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -15398,7 +15454,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-461-sphinxcontrib-htmlhelp",
+      "SPDXID": "SPDXRef-462-sphinxcontrib-htmlhelp",
       "name": "sphinxcontrib-htmlhelp",
       "versionInfo": "2.1.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -15433,7 +15489,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-462-sphinxcontrib-jsmath",
+      "SPDXID": "SPDXRef-463-sphinxcontrib-jsmath",
       "name": "sphinxcontrib-jsmath",
       "versionInfo": "1.0.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -15463,7 +15519,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-463-sphinxcontrib-qthelp",
+      "SPDXID": "SPDXRef-464-sphinxcontrib-qthelp",
       "name": "sphinxcontrib-qthelp",
       "versionInfo": "2.0.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -15498,7 +15554,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-464-sphinxcontrib-serializinghtml",
+      "SPDXID": "SPDXRef-465-sphinxcontrib-serializinghtml",
       "name": "sphinxcontrib-serializinghtml",
       "versionInfo": "2.0.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -15533,7 +15589,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-465-stdlib-list",
+      "SPDXID": "SPDXRef-466-stdlib-list",
       "name": "stdlib-list",
       "versionInfo": "0.11.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -15568,7 +15624,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-466-swagger-spec-validator",
+      "SPDXID": "SPDXRef-467-swagger-spec-validator",
       "name": "swagger-spec-validator",
       "versionInfo": "3.0.3",
       "primaryPackagePurpose": "APPLICATION",
@@ -15603,7 +15659,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-467-tempstorage",
+      "SPDXID": "SPDXRef-468-tempstorage",
       "name": "tempstorage",
       "versionInfo": "6.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -15638,7 +15694,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-468-tinycss2",
+      "SPDXID": "SPDXRef-469-tinycss2",
       "name": "tinycss2",
       "versionInfo": "1.2.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -15673,11 +15729,11 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-469-toml",
+      "SPDXID": "SPDXRef-470-toml",
       "name": "toml",
       "versionInfo": "0.10.2",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "NOASSERTION",
+      "supplier": "Person: Will Pearson (uiri00@gmail.com)",
       "downloadLocation": "https://pypi.org/project/toml/0.10.2/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
@@ -15698,15 +15754,20 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/toml@0.10.2"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:will_pearson:toml:0.10.2:*:*:*:*:*:*:*"
         }
       ]
     },
     {
-      "SPDXID": "SPDXRef-470-tomli",
+      "SPDXID": "SPDXRef-471-tomli",
       "name": "tomli",
       "versionInfo": "2.0.2",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Person: Taneli Hukkinen",
+      "supplier": "NOASSERTION",
       "downloadLocation": "https://pypi.org/project/tomli/2.0.2/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
@@ -15727,16 +15788,11 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/tomli@2.0.2"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:taneli_hukkinen:tomli:2.0.2:*:*:*:*:*:*:*"
         }
       ]
     },
     {
-      "SPDXID": "SPDXRef-471-towncrier",
+      "SPDXID": "SPDXRef-472-towncrier",
       "name": "towncrier",
       "versionInfo": "24.8.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -15769,7 +15825,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-472-transaction",
+      "SPDXID": "SPDXRef-473-transaction",
       "name": "transaction",
       "versionInfo": "5.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -15802,7 +15858,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-473-trio",
+      "SPDXID": "SPDXRef-474-trio",
       "name": "trio",
       "versionInfo": "0.27.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -15836,7 +15892,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-474-trio-websocket",
+      "SPDXID": "SPDXRef-475-trio-websocket",
       "name": "trio-websocket",
       "versionInfo": "0.11.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -15871,7 +15927,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-475-trove-classifiers",
+      "SPDXID": "SPDXRef-476-trove-classifiers",
       "name": "trove-classifiers",
       "versionInfo": "2024.10.21.16",
       "primaryPackagePurpose": "APPLICATION",
@@ -15906,7 +15962,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-476-twine",
+      "SPDXID": "SPDXRef-477-twine",
       "name": "twine",
       "versionInfo": "5.1.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -15940,7 +15996,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-477-types-PyYAML",
+      "SPDXID": "SPDXRef-478-types-PyYAML",
       "name": "types-PyYAML",
       "versionInfo": "6.0.12.10",
       "primaryPackagePurpose": "APPLICATION",
@@ -15974,7 +16030,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-478-types-toml",
+      "SPDXID": "SPDXRef-479-types-toml",
       "name": "types-toml",
       "versionInfo": "0.10.8.5",
       "primaryPackagePurpose": "APPLICATION",
@@ -16008,7 +16064,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-479-typing-extensions",
+      "SPDXID": "SPDXRef-480-typing-extensions",
       "name": "typing-extensions",
       "versionInfo": "4.12.2",
       "primaryPackagePurpose": "APPLICATION",
@@ -16042,7 +16098,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-480-uri-template",
+      "SPDXID": "SPDXRef-481-uri-template",
       "name": "uri-template",
       "versionInfo": "1.2.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -16064,7 +16120,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-481-urllib3",
+      "SPDXID": "SPDXRef-482-urllib3",
       "name": "urllib3",
       "versionInfo": "2.2.3",
       "primaryPackagePurpose": "APPLICATION",
@@ -16096,7 +16152,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-482-urllib3-secure-extra",
+      "SPDXID": "SPDXRef-483-urllib3-secure-extra",
       "name": "urllib3-secure-extra",
       "versionInfo": "0.1.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -16129,7 +16185,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-483-wadllib",
+      "SPDXID": "SPDXRef-484-wadllib",
       "name": "wadllib",
       "versionInfo": "2.0.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -16159,7 +16215,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-484-waitress",
+      "SPDXID": "SPDXRef-485-waitress",
       "name": "waitress",
       "versionInfo": "3.0.2",
       "primaryPackagePurpose": "APPLICATION",
@@ -16194,7 +16250,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-485-watchdog",
+      "SPDXID": "SPDXRef-486-watchdog",
       "name": "watchdog",
       "versionInfo": "6.0.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -16228,7 +16284,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-486-wcwidth",
+      "SPDXID": "SPDXRef-487-wcwidth",
       "name": "wcwidth",
       "versionInfo": "0.2.13",
       "primaryPackagePurpose": "APPLICATION",
@@ -16262,7 +16318,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-487-weasyprint",
+      "SPDXID": "SPDXRef-488-weasyprint",
       "name": "weasyprint",
       "versionInfo": "58.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -16297,7 +16353,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-488-webcolors",
+      "SPDXID": "SPDXRef-489-webcolors",
       "name": "webcolors",
       "versionInfo": "1.13",
       "primaryPackagePurpose": "APPLICATION",
@@ -16325,7 +16381,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-489-webencodings",
+      "SPDXID": "SPDXRef-490-webencodings",
       "name": "webencodings",
       "versionInfo": "0.5.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -16360,7 +16416,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-490-webresource",
+      "SPDXID": "SPDXRef-491-webresource",
       "name": "webresource",
       "versionInfo": "1.2",
       "primaryPackagePurpose": "APPLICATION",
@@ -16394,7 +16450,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-491-wheel",
+      "SPDXID": "SPDXRef-492-wheel",
       "name": "wheel",
       "versionInfo": "0.45.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -16427,7 +16483,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-492-wmctrl",
+      "SPDXID": "SPDXRef-493-wmctrl",
       "name": "wmctrl",
       "versionInfo": "0.5",
       "primaryPackagePurpose": "APPLICATION",
@@ -16461,7 +16517,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-493-wrapt",
+      "SPDXID": "SPDXRef-494-wrapt",
       "name": "wrapt",
       "versionInfo": "1.17.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -16495,7 +16551,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-494-wsproto",
+      "SPDXID": "SPDXRef-495-wsproto",
       "name": "wsproto",
       "versionInfo": "1.2.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -16529,7 +16585,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-495-xidera.prenotazioni",
+      "SPDXID": "SPDXRef-496-xidera.prenotazioni",
       "name": "xidera.prenotazioni",
       "versionInfo": "1.0.2",
       "primaryPackagePurpose": "APPLICATION",
@@ -16550,7 +16606,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-496-yafowil",
+      "SPDXID": "SPDXRef-497-yafowil",
       "name": "yafowil",
       "versionInfo": "3.1.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -16584,7 +16640,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-497-yafowil.bootstrap",
+      "SPDXID": "SPDXRef-498-yafowil.bootstrap",
       "name": "yafowil.bootstrap",
       "versionInfo": "2.0.0a2",
       "primaryPackagePurpose": "APPLICATION",
@@ -16618,7 +16674,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-498-yafowil.plone",
+      "SPDXID": "SPDXRef-499-yafowil.plone",
       "name": "yafowil.plone",
       "versionInfo": "5.0.0a2",
       "primaryPackagePurpose": "APPLICATION",
@@ -16653,7 +16709,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-499-yafowil.widget.array",
+      "SPDXID": "SPDXRef-500-yafowil.widget.array",
       "name": "yafowil.widget.array",
       "versionInfo": "1.7",
       "primaryPackagePurpose": "APPLICATION",
@@ -16687,7 +16743,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-500-yafowil.widget.dict",
+      "SPDXID": "SPDXRef-501-yafowil.widget.dict",
       "name": "yafowil.widget.dict",
       "versionInfo": "1.8",
       "primaryPackagePurpose": "APPLICATION",
@@ -16716,7 +16772,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-501-yafowil.yaml",
+      "SPDXID": "SPDXRef-502-yafowil.yaml",
       "name": "yafowil.yaml",
       "versionInfo": "2.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -16750,7 +16806,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-502-z3c.caching",
+      "SPDXID": "SPDXRef-503-z3c.caching",
       "name": "z3c.caching",
       "versionInfo": "3.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -16785,7 +16841,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-503-z3c.checkversions",
+      "SPDXID": "SPDXRef-504-z3c.checkversions",
       "name": "z3c.checkversions",
       "versionInfo": "2.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -16819,7 +16875,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-504-z3c.dependencychecker",
+      "SPDXID": "SPDXRef-505-z3c.dependencychecker",
       "name": "z3c.dependencychecker",
       "versionInfo": "2.15",
       "primaryPackagePurpose": "APPLICATION",
@@ -16854,7 +16910,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-505-z3c.form",
+      "SPDXID": "SPDXRef-506-z3c.form",
       "name": "z3c.form",
       "versionInfo": "5.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -16888,7 +16944,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-506-z3c.formwidget.query",
+      "SPDXID": "SPDXRef-507-z3c.formwidget.query",
       "name": "z3c.formwidget.query",
       "versionInfo": "2.0.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -16922,7 +16978,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-507-z3c.jbot",
+      "SPDXID": "SPDXRef-508-z3c.jbot",
       "name": "z3c.jbot",
       "versionInfo": "2.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -16956,7 +17012,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-508-z3c.objpath",
+      "SPDXID": "SPDXRef-509-z3c.objpath",
       "name": "z3c.objpath",
       "versionInfo": "2.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -16991,7 +17047,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-509-z3c.pt",
+      "SPDXID": "SPDXRef-510-z3c.pt",
       "name": "z3c.pt",
       "versionInfo": "4.4",
       "primaryPackagePurpose": "APPLICATION",
@@ -17026,7 +17082,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-510-z3c.recipe.usercrontab",
+      "SPDXID": "SPDXRef-511-z3c.recipe.usercrontab",
       "name": "z3c.recipe.usercrontab",
       "versionInfo": "1.5",
       "primaryPackagePurpose": "APPLICATION",
@@ -17061,7 +17117,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-511-z3c.relationfield",
+      "SPDXID": "SPDXRef-512-z3c.relationfield",
       "name": "z3c.relationfield",
       "versionInfo": "2.0.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -17095,7 +17151,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-512-z3c.unconfigure",
+      "SPDXID": "SPDXRef-513-z3c.unconfigure",
       "name": "z3c.unconfigure",
       "versionInfo": "2.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -17130,7 +17186,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-513-z3c.zcmlhook",
+      "SPDXID": "SPDXRef-514-z3c.zcmlhook",
       "name": "z3c.zcmlhook",
       "versionInfo": "2.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -17165,7 +17221,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-514-zExceptions",
+      "SPDXID": "SPDXRef-515-zExceptions",
       "name": "zExceptions",
       "versionInfo": "5.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -17199,7 +17255,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-515-zc.lockfile",
+      "SPDXID": "SPDXRef-516-zc.lockfile",
       "name": "zc.lockfile",
       "versionInfo": "3.0.post1",
       "primaryPackagePurpose": "APPLICATION",
@@ -17233,7 +17289,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-516-zc.recipe.cmmi",
+      "SPDXID": "SPDXRef-517-zc.recipe.cmmi",
       "name": "zc.recipe.cmmi",
       "versionInfo": "3.0.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -17267,7 +17323,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-517-zc.recipe.egg",
+      "SPDXID": "SPDXRef-518-zc.recipe.egg",
       "name": "zc.recipe.egg",
       "versionInfo": "2.0.7",
       "primaryPackagePurpose": "APPLICATION",
@@ -17302,7 +17358,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-518-zc.recipe.testrunner",
+      "SPDXID": "SPDXRef-519-zc.recipe.testrunner",
       "name": "zc.recipe.testrunner",
       "versionInfo": "3.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -17335,7 +17391,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-519-zc.relation",
+      "SPDXID": "SPDXRef-520-zc.relation",
       "name": "zc.relation",
       "versionInfo": "2.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -17369,7 +17425,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-520-zdaemon",
+      "SPDXID": "SPDXRef-521-zdaemon",
       "name": "zdaemon",
       "versionInfo": "5.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -17404,7 +17460,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-521-zeep",
+      "SPDXID": "SPDXRef-522-zeep",
       "name": "zeep",
       "versionInfo": "4.2.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -17437,7 +17493,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-522-zest.pocompile",
+      "SPDXID": "SPDXRef-523-zest.pocompile",
       "name": "zest.pocompile",
       "versionInfo": "2.0.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -17472,7 +17528,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-523-zest.releaser",
+      "SPDXID": "SPDXRef-524-zest.releaser",
       "name": "zest.releaser",
       "versionInfo": "9.2.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -17486,9 +17542,8 @@
           "checksumValue": "f6cdbb15a125838144135176182e42d5b04eaae467df9d7b1e77ac24dd4d6266"
         }
       ],
-      "licenseConcluded": "GPL-2.0-only",
-      "licenseDeclared": "NOASSERTION",
-      "licenseComments": "zest.releaser declares gpl-2.0 which is not currently a valid SPDX License identifier or expression.",
+      "licenseConcluded": "GPL-2.0-or-later",
+      "licenseDeclared": "GPL-2.0-or-later",
       "copyrightText": "NOASSERTION",
       "summary": "Software releasing made easy and repeatable",
       "releaseDate": "2024-06-16T19:02:29Z",
@@ -17506,7 +17561,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-524-zestreleaser.towncrier",
+      "SPDXID": "SPDXRef-525-zestreleaser.towncrier",
       "name": "zestreleaser.towncrier",
       "versionInfo": "1.3.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -17541,7 +17596,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-525-zipp",
+      "SPDXID": "SPDXRef-526-zipp",
       "name": "zipp",
       "versionInfo": "3.20.2",
       "primaryPackagePurpose": "APPLICATION",
@@ -17574,40 +17629,28 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-526-zodbpickle",
+      "SPDXID": "SPDXRef-527-zodbpickle",
       "name": "zodbpickle",
       "versionInfo": "4.1.1",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Person: Zope",
+      "supplier": "NOASSERTION",
       "downloadLocation": "https://pypi.org/project/zodbpickle/4.1.1/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "dfc0c915ef1499dd0603970f5c1102c6bd7eb7b6ac46434b29a6d840bf027248"
-        }
-      ],
-      "licenseConcluded": "ZPL-2.1",
-      "licenseDeclared": "ZPL-2.1",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
       "copyrightText": "NOASSERTION",
-      "summary": "Fork of Python 3 pickle module",
       "releaseDate": "2024-10-02T07:19:03Z",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/zodbpickle@4.1.1"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:zope:zodbpickle:4.1.1:*:*:*:*:*:*:*"
         }
       ]
     },
     {
-      "SPDXID": "SPDXRef-527-zodbupdate",
+      "SPDXID": "SPDXRef-528-zodbupdate",
       "name": "zodbupdate",
       "versionInfo": "2.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -17641,7 +17684,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-528-zodbverify",
+      "SPDXID": "SPDXRef-529-zodbverify",
       "name": "zodbverify",
       "versionInfo": "1.2.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -17676,7 +17719,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-529-zope.annotation",
+      "SPDXID": "SPDXRef-530-zope.annotation",
       "name": "zope.annotation",
       "versionInfo": "5.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -17710,7 +17753,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-530-zope.app.locales",
+      "SPDXID": "SPDXRef-531-zope.app.locales",
       "name": "zope.app.locales",
       "versionInfo": "5.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -17744,7 +17787,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-531-zope.browser",
+      "SPDXID": "SPDXRef-532-zope.browser",
       "name": "zope.browser",
       "versionInfo": "3.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -17778,7 +17821,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-532-zope.browsermenu",
+      "SPDXID": "SPDXRef-533-zope.browsermenu",
       "name": "zope.browsermenu",
       "versionInfo": "5.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -17812,7 +17855,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-533-zope.browserpage",
+      "SPDXID": "SPDXRef-534-zope.browserpage",
       "name": "zope.browserpage",
       "versionInfo": "5.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -17846,7 +17889,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-534-zope.browserresource",
+      "SPDXID": "SPDXRef-535-zope.browserresource",
       "name": "zope.browserresource",
       "versionInfo": "5.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -17880,7 +17923,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-535-zope.cachedescriptors",
+      "SPDXID": "SPDXRef-536-zope.cachedescriptors",
       "name": "zope.cachedescriptors",
       "versionInfo": "5.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -17914,7 +17957,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-536-zope.component",
+      "SPDXID": "SPDXRef-537-zope.component",
       "name": "zope.component",
       "versionInfo": "6.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -17947,7 +17990,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-537-zope.componentvocabulary",
+      "SPDXID": "SPDXRef-538-zope.componentvocabulary",
       "name": "zope.componentvocabulary",
       "versionInfo": "2.3.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -17976,7 +18019,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-538-zope.configuration",
+      "SPDXID": "SPDXRef-539-zope.configuration",
       "name": "zope.configuration",
       "versionInfo": "6.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -18009,7 +18052,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-539-zope.container",
+      "SPDXID": "SPDXRef-540-zope.container",
       "name": "zope.container",
       "versionInfo": "6.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -18038,7 +18081,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-540-zope.contentprovider",
+      "SPDXID": "SPDXRef-541-zope.contentprovider",
       "name": "zope.contentprovider",
       "versionInfo": "6.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -18072,7 +18115,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-541-zope.contenttype",
+      "SPDXID": "SPDXRef-542-zope.contenttype",
       "name": "zope.contenttype",
       "versionInfo": "5.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -18106,7 +18149,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-542-zope.copy",
+      "SPDXID": "SPDXRef-543-zope.copy",
       "name": "zope.copy",
       "versionInfo": "5.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -18140,7 +18183,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-543-zope.datetime",
+      "SPDXID": "SPDXRef-544-zope.datetime",
       "name": "zope.datetime",
       "versionInfo": "5.0.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -18174,7 +18217,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-544-zope.deferredimport",
+      "SPDXID": "SPDXRef-545-zope.deferredimport",
       "name": "zope.deferredimport",
       "versionInfo": "5.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -18207,7 +18250,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-545-zope.deprecation",
+      "SPDXID": "SPDXRef-546-zope.deprecation",
       "name": "zope.deprecation",
       "versionInfo": "5.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -18241,7 +18284,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-546-zope.dottedname",
+      "SPDXID": "SPDXRef-547-zope.dottedname",
       "name": "zope.dottedname",
       "versionInfo": "6.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -18274,7 +18317,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-547-zope.event",
+      "SPDXID": "SPDXRef-548-zope.event",
       "name": "zope.event",
       "versionInfo": "5.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -18307,7 +18350,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-548-zope.exceptions",
+      "SPDXID": "SPDXRef-549-zope.exceptions",
       "name": "zope.exceptions",
       "versionInfo": "5.2",
       "primaryPackagePurpose": "APPLICATION",
@@ -18341,7 +18384,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-549-zope.filerepresentation",
+      "SPDXID": "SPDXRef-550-zope.filerepresentation",
       "name": "zope.filerepresentation",
       "versionInfo": "6.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -18375,7 +18418,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-550-zope.globalrequest",
+      "SPDXID": "SPDXRef-551-zope.globalrequest",
       "name": "zope.globalrequest",
       "versionInfo": "2.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -18410,7 +18453,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-551-zope.hookable",
+      "SPDXID": "SPDXRef-552-zope.hookable",
       "name": "zope.hookable",
       "versionInfo": "7.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -18443,7 +18486,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-552-zope.i18n",
+      "SPDXID": "SPDXRef-553-zope.i18n",
       "name": "zope.i18n",
       "versionInfo": "5.2",
       "primaryPackagePurpose": "APPLICATION",
@@ -18477,7 +18520,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-553-zope.i18nmessageid",
+      "SPDXID": "SPDXRef-554-zope.i18nmessageid",
       "name": "zope.i18nmessageid",
       "versionInfo": "7.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -18510,7 +18553,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-554-zope.index",
+      "SPDXID": "SPDXRef-555-zope.index",
       "name": "zope.index",
       "versionInfo": "5.2.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -18543,7 +18586,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-555-zope.interface",
+      "SPDXID": "SPDXRef-556-zope.interface",
       "name": "zope.interface",
       "versionInfo": "7.1.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -18576,7 +18619,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-556-zope.intid",
+      "SPDXID": "SPDXRef-557-zope.intid",
       "name": "zope.intid",
       "versionInfo": "5.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -18610,7 +18653,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-557-zope.keyreference",
+      "SPDXID": "SPDXRef-558-zope.keyreference",
       "name": "zope.keyreference",
       "versionInfo": "6.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -18644,7 +18687,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-558-zope.lifecycleevent",
+      "SPDXID": "SPDXRef-559-zope.lifecycleevent",
       "name": "zope.lifecycleevent",
       "versionInfo": "5.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -18678,7 +18721,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-559-zope.location",
+      "SPDXID": "SPDXRef-560-zope.location",
       "name": "zope.location",
       "versionInfo": "5.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -18712,7 +18755,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-560-zope.mkzeoinstance",
+      "SPDXID": "SPDXRef-561-zope.mkzeoinstance",
       "name": "zope.mkzeoinstance",
       "versionInfo": "5.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -18747,7 +18790,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-561-zope.pagetemplate",
+      "SPDXID": "SPDXRef-562-zope.pagetemplate",
       "name": "zope.pagetemplate",
       "versionInfo": "5.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -18781,7 +18824,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-562-zope.processlifetime",
+      "SPDXID": "SPDXRef-563-zope.processlifetime",
       "name": "zope.processlifetime",
       "versionInfo": "3.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -18815,7 +18858,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-563-zope.proxy",
+      "SPDXID": "SPDXRef-564-zope.proxy",
       "name": "zope.proxy",
       "versionInfo": "6.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -18843,7 +18886,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-564-zope.ptresource",
+      "SPDXID": "SPDXRef-565-zope.ptresource",
       "name": "zope.ptresource",
       "versionInfo": "5.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -18877,7 +18920,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-565-zope.publisher",
+      "SPDXID": "SPDXRef-566-zope.publisher",
       "name": "zope.publisher",
       "versionInfo": "7.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -18885,16 +18928,14 @@
       "downloadLocation": "https://pypi.org/project/zope.publisher/7.1/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
-      "homepage": "https://github.com/zopefoundation/zope.publisher",
       "checksums": [
         {
           "algorithm": "SHA256",
           "checksumValue": "26b933a36a6fe692a38c817389ce392fa983fcd01bf538e2abe29aaf07a6396c"
         }
       ],
-      "licenseConcluded": "NOASSERTION",
-      "licenseDeclared": "NOASSERTION",
-      "licenseComments": "zope.publisher declares ZPL 2.1 which is not currently a valid SPDX License identifier or expression.",
+      "licenseConcluded": "ZPL-2.1",
+      "licenseDeclared": "ZPL-2.1",
       "copyrightText": "NOASSERTION",
       "summary": "The Zope publisher publishes Python objects on the web.",
       "releaseDate": "2024-09-27T06:48:02Z",
@@ -18912,7 +18953,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-566-zope.ramcache",
+      "SPDXID": "SPDXRef-567-zope.ramcache",
       "name": "zope.ramcache",
       "versionInfo": "3.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -18946,7 +18987,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-567-zope.schema",
+      "SPDXID": "SPDXRef-568-zope.schema",
       "name": "zope.schema",
       "versionInfo": "7.0.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -18980,7 +19021,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-568-zope.security",
+      "SPDXID": "SPDXRef-569-zope.security",
       "name": "zope.security",
       "versionInfo": "7.3",
       "primaryPackagePurpose": "APPLICATION",
@@ -19013,7 +19054,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-569-zope.sendmail",
+      "SPDXID": "SPDXRef-570-zope.sendmail",
       "name": "zope.sendmail",
       "versionInfo": "6.2",
       "primaryPackagePurpose": "APPLICATION",
@@ -19046,7 +19087,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-570-zope.sequencesort",
+      "SPDXID": "SPDXRef-571-zope.sequencesort",
       "name": "zope.sequencesort",
       "versionInfo": "5.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -19080,7 +19121,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-571-zope.site",
+      "SPDXID": "SPDXRef-572-zope.site",
       "name": "zope.site",
       "versionInfo": "5.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -19114,7 +19155,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-572-zope.size",
+      "SPDXID": "SPDXRef-573-zope.size",
       "name": "zope.size",
       "versionInfo": "5.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -19148,7 +19189,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-573-zope.structuredtext",
+      "SPDXID": "SPDXRef-574-zope.structuredtext",
       "name": "zope.structuredtext",
       "versionInfo": "5.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -19182,7 +19223,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-574-zope.tal",
+      "SPDXID": "SPDXRef-575-zope.tal",
       "name": "zope.tal",
       "versionInfo": "5.0.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -19216,7 +19257,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-575-zope.tales",
+      "SPDXID": "SPDXRef-576-zope.tales",
       "name": "zope.tales",
       "versionInfo": "6.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -19250,7 +19291,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-576-zope.testbrowser",
+      "SPDXID": "SPDXRef-577-zope.testbrowser",
       "name": "zope.testbrowser",
       "versionInfo": "7.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -19284,7 +19325,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-577-zope.testing",
+      "SPDXID": "SPDXRef-578-zope.testing",
       "name": "zope.testing",
       "versionInfo": "5.0.1",
       "primaryPackagePurpose": "APPLICATION",
@@ -19292,7 +19333,6 @@
       "downloadLocation": "https://pypi.org/project/zope.testing/5.0.1/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/requirements.txt",
-      "homepage": "https://github.com/zopefoundation/zope.testing",
       "checksums": [
         {
           "algorithm": "SHA256",
@@ -19318,7 +19358,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-578-zope.testrunner",
+      "SPDXID": "SPDXRef-579-zope.testrunner",
       "name": "zope.testrunner",
       "versionInfo": "6.6",
       "primaryPackagePurpose": "APPLICATION",
@@ -19352,7 +19392,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-579-zope.traversing",
+      "SPDXID": "SPDXRef-580-zope.traversing",
       "name": "zope.traversing",
       "versionInfo": "5.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -19386,7 +19426,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-580-zope.viewlet",
+      "SPDXID": "SPDXRef-581-zope.viewlet",
       "name": "zope.viewlet",
       "versionInfo": "5.0",
       "primaryPackagePurpose": "APPLICATION",
@@ -19420,7 +19460,7 @@
       ]
     },
     {
-      "SPDXID": "SPDXRef-581-zopfli",
+      "SPDXID": "SPDXRef-582-zopfli",
       "name": "zopfli",
       "versionInfo": "0.2.2",
       "primaryPackagePurpose": "APPLICATION",
@@ -21577,787 +21617,792 @@
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-425-rer.newsletter",
+      "relatedSpdxElement": "SPDXRef-425-rer.linkmap",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-426-responses",
+      "relatedSpdxElement": "SPDXRef-426-rer.newsletter",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-427-rfc3339-validator",
+      "relatedSpdxElement": "SPDXRef-427-responses",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-428-rfc3986",
+      "relatedSpdxElement": "SPDXRef-428-rfc3339-validator",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-429-rfc3987",
+      "relatedSpdxElement": "SPDXRef-429-rfc3986",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-430-rich",
+      "relatedSpdxElement": "SPDXRef-430-rfc3987",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-431-robotframework",
+      "relatedSpdxElement": "SPDXRef-431-rich",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-432-robotframework-assertion-engine",
+      "relatedSpdxElement": "SPDXRef-432-robotframework",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-433-robotframework-browser",
+      "relatedSpdxElement": "SPDXRef-433-robotframework-assertion-engine",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-434-robotframework-debuglibrary",
+      "relatedSpdxElement": "SPDXRef-434-robotframework-browser",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-435-robotframework-lsp",
+      "relatedSpdxElement": "SPDXRef-435-robotframework-debuglibrary",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-436-robotframework-pythonlibcore",
+      "relatedSpdxElement": "SPDXRef-436-robotframework-lsp",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-437-robotframework-selenium2library",
+      "relatedSpdxElement": "SPDXRef-437-robotframework-pythonlibcore",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-438-robotframework-selenium2screenshots",
+      "relatedSpdxElement": "SPDXRef-438-robotframework-selenium2library",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-439-robotframework-seleniumlibrary",
+      "relatedSpdxElement": "SPDXRef-439-robotframework-selenium2screenshots",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-440-robotframework-seleniumtestability",
+      "relatedSpdxElement": "SPDXRef-440-robotframework-seleniumlibrary",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-441-robotsuite",
+      "relatedSpdxElement": "SPDXRef-441-robotframework-seleniumtestability",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-442-roman",
+      "relatedSpdxElement": "SPDXRef-442-robotsuite",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-443-rpds-py",
+      "relatedSpdxElement": "SPDXRef-443-roman",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-444-sbom4python",
+      "relatedSpdxElement": "SPDXRef-444-rpds-py",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-445-seedir",
+      "relatedSpdxElement": "SPDXRef-445-sbom4python",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-446-selenium",
+      "relatedSpdxElement": "SPDXRef-446-seedir",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-447-sentry-sdk",
+      "relatedSpdxElement": "SPDXRef-447-selenium",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-448-sgmllib3k",
+      "relatedSpdxElement": "SPDXRef-448-sentry-sdk",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-449-simplejson",
+      "relatedSpdxElement": "SPDXRef-449-sgmllib3k",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-450-six",
+      "relatedSpdxElement": "SPDXRef-450-simplejson",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-451-smmap",
+      "relatedSpdxElement": "SPDXRef-451-six",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-452-sniffio",
+      "relatedSpdxElement": "SPDXRef-452-smmap",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-453-snowballstemmer",
+      "relatedSpdxElement": "SPDXRef-453-sniffio",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-454-sortedcontainers",
+      "relatedSpdxElement": "SPDXRef-454-snowballstemmer",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-455-souper",
+      "relatedSpdxElement": "SPDXRef-455-sortedcontainers",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-456-souper.plone",
+      "relatedSpdxElement": "SPDXRef-456-souper",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-457-soupsieve",
+      "relatedSpdxElement": "SPDXRef-457-souper.plone",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-458-sphinx-basic-ng",
+      "relatedSpdxElement": "SPDXRef-458-soupsieve",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-459-sphinxcontrib-applehelp",
+      "relatedSpdxElement": "SPDXRef-459-sphinx-basic-ng",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-460-sphinxcontrib-devhelp",
+      "relatedSpdxElement": "SPDXRef-460-sphinxcontrib-applehelp",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-461-sphinxcontrib-htmlhelp",
+      "relatedSpdxElement": "SPDXRef-461-sphinxcontrib-devhelp",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-462-sphinxcontrib-jsmath",
+      "relatedSpdxElement": "SPDXRef-462-sphinxcontrib-htmlhelp",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-463-sphinxcontrib-qthelp",
+      "relatedSpdxElement": "SPDXRef-463-sphinxcontrib-jsmath",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-464-sphinxcontrib-serializinghtml",
+      "relatedSpdxElement": "SPDXRef-464-sphinxcontrib-qthelp",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-465-stdlib-list",
+      "relatedSpdxElement": "SPDXRef-465-sphinxcontrib-serializinghtml",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-466-swagger-spec-validator",
+      "relatedSpdxElement": "SPDXRef-466-stdlib-list",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-467-tempstorage",
+      "relatedSpdxElement": "SPDXRef-467-swagger-spec-validator",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-468-tinycss2",
+      "relatedSpdxElement": "SPDXRef-468-tempstorage",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-469-toml",
+      "relatedSpdxElement": "SPDXRef-469-tinycss2",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-470-tomli",
+      "relatedSpdxElement": "SPDXRef-470-toml",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-471-towncrier",
+      "relatedSpdxElement": "SPDXRef-471-tomli",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-472-transaction",
+      "relatedSpdxElement": "SPDXRef-472-towncrier",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-473-trio",
+      "relatedSpdxElement": "SPDXRef-473-transaction",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-474-trio-websocket",
+      "relatedSpdxElement": "SPDXRef-474-trio",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-475-trove-classifiers",
+      "relatedSpdxElement": "SPDXRef-475-trio-websocket",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-476-twine",
+      "relatedSpdxElement": "SPDXRef-476-trove-classifiers",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-477-types-PyYAML",
+      "relatedSpdxElement": "SPDXRef-477-twine",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-478-types-toml",
+      "relatedSpdxElement": "SPDXRef-478-types-PyYAML",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-479-typing-extensions",
+      "relatedSpdxElement": "SPDXRef-479-types-toml",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-480-uri-template",
+      "relatedSpdxElement": "SPDXRef-480-typing-extensions",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-481-urllib3",
+      "relatedSpdxElement": "SPDXRef-481-uri-template",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-482-urllib3-secure-extra",
+      "relatedSpdxElement": "SPDXRef-482-urllib3",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-483-wadllib",
+      "relatedSpdxElement": "SPDXRef-483-urllib3-secure-extra",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-484-waitress",
+      "relatedSpdxElement": "SPDXRef-484-wadllib",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-485-watchdog",
+      "relatedSpdxElement": "SPDXRef-485-waitress",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-486-wcwidth",
+      "relatedSpdxElement": "SPDXRef-486-watchdog",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-487-weasyprint",
+      "relatedSpdxElement": "SPDXRef-487-wcwidth",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-488-webcolors",
+      "relatedSpdxElement": "SPDXRef-488-weasyprint",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-489-webencodings",
+      "relatedSpdxElement": "SPDXRef-489-webcolors",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-490-webresource",
+      "relatedSpdxElement": "SPDXRef-490-webencodings",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-491-wheel",
+      "relatedSpdxElement": "SPDXRef-491-webresource",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-492-wmctrl",
+      "relatedSpdxElement": "SPDXRef-492-wheel",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-493-wrapt",
+      "relatedSpdxElement": "SPDXRef-493-wmctrl",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-494-wsproto",
+      "relatedSpdxElement": "SPDXRef-494-wrapt",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-495-xidera.prenotazioni",
+      "relatedSpdxElement": "SPDXRef-495-wsproto",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-496-yafowil",
+      "relatedSpdxElement": "SPDXRef-496-xidera.prenotazioni",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-497-yafowil.bootstrap",
+      "relatedSpdxElement": "SPDXRef-497-yafowil",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-498-yafowil.plone",
+      "relatedSpdxElement": "SPDXRef-498-yafowil.bootstrap",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-499-yafowil.widget.array",
+      "relatedSpdxElement": "SPDXRef-499-yafowil.plone",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-500-yafowil.widget.dict",
+      "relatedSpdxElement": "SPDXRef-500-yafowil.widget.array",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-501-yafowil.yaml",
+      "relatedSpdxElement": "SPDXRef-501-yafowil.widget.dict",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-502-z3c.caching",
+      "relatedSpdxElement": "SPDXRef-502-yafowil.yaml",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-503-z3c.checkversions",
+      "relatedSpdxElement": "SPDXRef-503-z3c.caching",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-504-z3c.dependencychecker",
+      "relatedSpdxElement": "SPDXRef-504-z3c.checkversions",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-505-z3c.form",
+      "relatedSpdxElement": "SPDXRef-505-z3c.dependencychecker",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-506-z3c.formwidget.query",
+      "relatedSpdxElement": "SPDXRef-506-z3c.form",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-507-z3c.jbot",
+      "relatedSpdxElement": "SPDXRef-507-z3c.formwidget.query",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-508-z3c.objpath",
+      "relatedSpdxElement": "SPDXRef-508-z3c.jbot",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-509-z3c.pt",
+      "relatedSpdxElement": "SPDXRef-509-z3c.objpath",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-510-z3c.recipe.usercrontab",
+      "relatedSpdxElement": "SPDXRef-510-z3c.pt",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-511-z3c.relationfield",
+      "relatedSpdxElement": "SPDXRef-511-z3c.recipe.usercrontab",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-512-z3c.unconfigure",
+      "relatedSpdxElement": "SPDXRef-512-z3c.relationfield",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-513-z3c.zcmlhook",
+      "relatedSpdxElement": "SPDXRef-513-z3c.unconfigure",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-514-zExceptions",
+      "relatedSpdxElement": "SPDXRef-514-z3c.zcmlhook",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-515-zc.lockfile",
+      "relatedSpdxElement": "SPDXRef-515-zExceptions",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-516-zc.recipe.cmmi",
+      "relatedSpdxElement": "SPDXRef-516-zc.lockfile",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-517-zc.recipe.egg",
+      "relatedSpdxElement": "SPDXRef-517-zc.recipe.cmmi",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-518-zc.recipe.testrunner",
+      "relatedSpdxElement": "SPDXRef-518-zc.recipe.egg",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-519-zc.relation",
+      "relatedSpdxElement": "SPDXRef-519-zc.recipe.testrunner",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-520-zdaemon",
+      "relatedSpdxElement": "SPDXRef-520-zc.relation",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-521-zeep",
+      "relatedSpdxElement": "SPDXRef-521-zdaemon",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-522-zest.pocompile",
+      "relatedSpdxElement": "SPDXRef-522-zeep",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-523-zest.releaser",
+      "relatedSpdxElement": "SPDXRef-523-zest.pocompile",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-524-zestreleaser.towncrier",
+      "relatedSpdxElement": "SPDXRef-524-zest.releaser",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-525-zipp",
+      "relatedSpdxElement": "SPDXRef-525-zestreleaser.towncrier",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-526-zodbpickle",
+      "relatedSpdxElement": "SPDXRef-526-zipp",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-527-zodbupdate",
+      "relatedSpdxElement": "SPDXRef-527-zodbpickle",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-528-zodbverify",
+      "relatedSpdxElement": "SPDXRef-528-zodbupdate",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-529-zope.annotation",
+      "relatedSpdxElement": "SPDXRef-529-zodbverify",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-530-zope.app.locales",
+      "relatedSpdxElement": "SPDXRef-530-zope.annotation",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-531-zope.browser",
+      "relatedSpdxElement": "SPDXRef-531-zope.app.locales",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-532-zope.browsermenu",
+      "relatedSpdxElement": "SPDXRef-532-zope.browser",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-533-zope.browserpage",
+      "relatedSpdxElement": "SPDXRef-533-zope.browsermenu",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-534-zope.browserresource",
+      "relatedSpdxElement": "SPDXRef-534-zope.browserpage",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-535-zope.cachedescriptors",
+      "relatedSpdxElement": "SPDXRef-535-zope.browserresource",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-536-zope.component",
+      "relatedSpdxElement": "SPDXRef-536-zope.cachedescriptors",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-537-zope.componentvocabulary",
+      "relatedSpdxElement": "SPDXRef-537-zope.component",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-538-zope.configuration",
+      "relatedSpdxElement": "SPDXRef-538-zope.componentvocabulary",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-539-zope.container",
+      "relatedSpdxElement": "SPDXRef-539-zope.configuration",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-540-zope.contentprovider",
+      "relatedSpdxElement": "SPDXRef-540-zope.container",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-541-zope.contenttype",
+      "relatedSpdxElement": "SPDXRef-541-zope.contentprovider",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-542-zope.copy",
+      "relatedSpdxElement": "SPDXRef-542-zope.contenttype",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-543-zope.datetime",
+      "relatedSpdxElement": "SPDXRef-543-zope.copy",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-544-zope.deferredimport",
+      "relatedSpdxElement": "SPDXRef-544-zope.datetime",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-545-zope.deprecation",
+      "relatedSpdxElement": "SPDXRef-545-zope.deferredimport",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-546-zope.dottedname",
+      "relatedSpdxElement": "SPDXRef-546-zope.deprecation",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-547-zope.event",
+      "relatedSpdxElement": "SPDXRef-547-zope.dottedname",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-548-zope.exceptions",
+      "relatedSpdxElement": "SPDXRef-548-zope.event",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-549-zope.filerepresentation",
+      "relatedSpdxElement": "SPDXRef-549-zope.exceptions",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-550-zope.globalrequest",
+      "relatedSpdxElement": "SPDXRef-550-zope.filerepresentation",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-551-zope.hookable",
+      "relatedSpdxElement": "SPDXRef-551-zope.globalrequest",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-552-zope.i18n",
+      "relatedSpdxElement": "SPDXRef-552-zope.hookable",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-553-zope.i18nmessageid",
+      "relatedSpdxElement": "SPDXRef-553-zope.i18n",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-554-zope.index",
+      "relatedSpdxElement": "SPDXRef-554-zope.i18nmessageid",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-555-zope.interface",
+      "relatedSpdxElement": "SPDXRef-555-zope.index",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-556-zope.intid",
+      "relatedSpdxElement": "SPDXRef-556-zope.interface",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-557-zope.keyreference",
+      "relatedSpdxElement": "SPDXRef-557-zope.intid",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-558-zope.lifecycleevent",
+      "relatedSpdxElement": "SPDXRef-558-zope.keyreference",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-559-zope.location",
+      "relatedSpdxElement": "SPDXRef-559-zope.lifecycleevent",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-560-zope.mkzeoinstance",
+      "relatedSpdxElement": "SPDXRef-560-zope.location",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-561-zope.pagetemplate",
+      "relatedSpdxElement": "SPDXRef-561-zope.mkzeoinstance",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-562-zope.processlifetime",
+      "relatedSpdxElement": "SPDXRef-562-zope.pagetemplate",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-563-zope.proxy",
+      "relatedSpdxElement": "SPDXRef-563-zope.processlifetime",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-564-zope.ptresource",
+      "relatedSpdxElement": "SPDXRef-564-zope.proxy",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-565-zope.publisher",
+      "relatedSpdxElement": "SPDXRef-565-zope.ptresource",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-566-zope.ramcache",
+      "relatedSpdxElement": "SPDXRef-566-zope.publisher",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-567-zope.schema",
+      "relatedSpdxElement": "SPDXRef-567-zope.ramcache",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-568-zope.security",
+      "relatedSpdxElement": "SPDXRef-568-zope.schema",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-569-zope.sendmail",
+      "relatedSpdxElement": "SPDXRef-569-zope.security",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-570-zope.sequencesort",
+      "relatedSpdxElement": "SPDXRef-570-zope.sendmail",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-571-zope.site",
+      "relatedSpdxElement": "SPDXRef-571-zope.sequencesort",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-572-zope.size",
+      "relatedSpdxElement": "SPDXRef-572-zope.site",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-573-zope.structuredtext",
+      "relatedSpdxElement": "SPDXRef-573-zope.size",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-574-zope.tal",
+      "relatedSpdxElement": "SPDXRef-574-zope.structuredtext",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-575-zope.tales",
+      "relatedSpdxElement": "SPDXRef-575-zope.tal",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-576-zope.testbrowser",
+      "relatedSpdxElement": "SPDXRef-576-zope.tales",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-577-zope.testing",
+      "relatedSpdxElement": "SPDXRef-577-zope.testbrowser",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-578-zope.testrunner",
+      "relatedSpdxElement": "SPDXRef-578-zope.testing",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-579-zope.traversing",
+      "relatedSpdxElement": "SPDXRef-579-zope.testrunner",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-580-zope.viewlet",
+      "relatedSpdxElement": "SPDXRef-580-zope.traversing",
       "relationshipType": "DESCRIBES"
     },
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
-      "relatedSpdxElement": "SPDXRef-581-zopfli",
+      "relatedSpdxElement": "SPDXRef-581-zope.viewlet",
+      "relationshipType": "DESCRIBES"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-582-zopfli",
       "relationshipType": "DESCRIBES"
     }
   ]
