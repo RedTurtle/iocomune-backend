@@ -7,8 +7,6 @@
     Gestione date in formato diverso dallo standard
     [lucabel]
 - Aggiunto fix di versione per rer.linkmap = 1.0.7 [cekk]
-- design.plone.contenttypes 6.3.16 -> 6.3.17
-  - fix a @scadenziario issue with recurrences [fedevancin]
   
 ## 20260625-01
 - aggiornato relstorage 3 a relstorage 4 (nessun cambiamento rilevante indicato)
