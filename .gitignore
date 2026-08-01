@@ -14,3 +14,6 @@ pyvenv.cfg
 /src/*
 Pipfile*
 .python-version
+
+# cache locale dei generatori (make clean-cache per svuotarla)
+.cache/
