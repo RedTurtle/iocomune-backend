@@ -37,6 +37,27 @@ config = buildout.Buildout(config_file, [])
 # Note: this works like a dictionary, but is a class 'zc.buildout.buildout.Options'.
 versions = config.versions
 
+# pip normalizza i nomi dei pacchetti, quindi due grafie diverse della stessa chiave
+# ("jinja2" e "Jinja2") con versioni diverse producono un constraints che pip rifiuta.
+# zc.buildout non lo segnala, quindi lo intercettiamo qui.
+spellings = {}
+for package, version in versions.items():
+    spellings.setdefault(package.lower(), {}).setdefault(version, []).append(package)
+conflicts = {name: found for name, found in spellings.items() if len(found) > 1}
+if conflicts:
+    for name, found in sorted(conflicts.items()):
+        print(
+            "ERROR: {} è pinnato con versioni diverse: {}".format(
+                name,
+                ", ".join(
+                    "{}={}".format(p, v)
+                    for v, packages in sorted(found.items())
+                    for p in packages
+                ),
+            )
+        )
+    sys.exit(1)
+
 with open(constraints_file, "w") as cfile:
     cfile.write("# File created by {}\n".format(__file__))
     cfile.write("# Constraints parsed from {}\n".format(config_file))

@@ -18,8 +18,17 @@ on:
 
 jobs:
   build-image:
-    name: Build docker image
+    name: Build docker image Plone ${{ matrix.line }}
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # la linea di default riceve anche il tag senza suffisso, per compatibilità
+        include:
+          - line: "60"
+            default: true
+          - line: "61"
+          - line: "62"
 
     steps:
       - name: Checkout Repository
@@ -52,12 +61,27 @@ jobs:
         run: echo "VERSION=${{ github.ref_name }}" >> "$GITHUB_ENV"
         if: github.event_name != 'pull_request'
 
+      - name: Resolve Plone version and tags
+        run: |
+          # la versione Plone si legge dal cfg della linea: unica fonte di verità
+          PV=$(grep -oE 'dist\.plone\.org/release/[0-9.]+/versions\.cfg' plone${{ matrix.line }}.cfg \
+               | head -1 | cut -d/ -f3)
+          echo "PLONE_VERSION=$PV" >> "$GITHUB_ENV"
+          TAGS="$IMAGE_ID:$VERSION-plone${{ matrix.line }}"
+          if [ "${{ matrix.default }}" = "true" ]; then
+            TAGS="$TAGS,$IMAGE_ID:$VERSION"
+          fi
+          echo "TAGS=$TAGS" >> "$GITHUB_ENV"
+
       - name: Build and push container image
         uses: docker/build-push-action@ca877d9245402d1537745e0e356eab47c3520991  # v6.13.0
         with:
           context: .
           push: true
-          tags: ${{ env.IMAGE_ID }}:${{ env.VERSION }}
+          build-args: |
+            PLONE_VERSION=${{ env.PLONE_VERSION }}
+            PLONE_LINE=${{ matrix.line }}
+          tags: ${{ env.TAGS }}
           platforms: linux/amd64,linux/arm64
 
       # - name: Deploy to rancher # io-comune-test
@@ -84,8 +108,16 @@ jobs:
       #     "https://gitlab.com/api/v4/projects/${{ secrets.PROJECT_ID }}/trigger/pipeline"
 
   build-acceptance-image:
-    name: Build docker image for acceptance tests
+    name: Build acceptance image Plone ${{ matrix.line }}
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - line: "60"
+            default: true
+          - line: "61"
+          - line: "62"
 
     steps:
       - name: Checkout Repository
@@ -119,11 +151,25 @@ jobs:
         run: echo "VERSION=${{ github.ref_name }}" >> "$GITHUB_ENV"
         if: github.event_name != 'pull_request'
 
+      - name: Resolve Plone version and tags
+        run: |
+          PV=$(grep -oE 'dist\.plone\.org/release/[0-9.]+/versions\.cfg' plone${{ matrix.line }}.cfg \
+               | head -1 | cut -d/ -f3)
+          echo "PLONE_VERSION=$PV" >> "$GITHUB_ENV"
+          TAGS="$IMAGE_ID:$VERSION-plone${{ matrix.line }}"
+          if [ "${{ matrix.default }}" = "true" ]; then
+            TAGS="$TAGS,$IMAGE_ID:$VERSION"
+          fi
+          echo "TAGS=$TAGS" >> "$GITHUB_ENV"
+
       - name: Build and push container image
         uses: docker/build-push-action@ca877d9245402d1537745e0e356eab47c3520991  # v6.13.0
         with:
           context: .
           file: ./Dockerfile.acceptance
           push: true
-          tags: ${{ env.IMAGE_ID }}:${{ env.VERSION }}
+          build-args: |
+            PLONE_VERSION=${{ env.PLONE_VERSION }}
+            PLONE_LINE=${{ matrix.line }}
+          tags: ${{ env.TAGS }}
           platforms: linux/amd64,linux/arm64

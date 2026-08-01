@@ -1,11 +1,16 @@
-FROM plone/plone-backend:6.0.15
-COPY docker/create-constraints.py docker/constraints.cfg docker/requirements.txt requirements-development.txt mx.ini /app/
+ARG PLONE_VERSION=6.0.15
+FROM plone/plone-backend:${PLONE_VERSION}
+ARG PLONE_VERSION
+# PLONE_LINE sceglie quale docker/constraintsXX.cfg usare: 60, 61 oppure 62
+ARG PLONE_LINE=60
 
+COPY docker/create-constraints.py docker/requirements.txt requirements-development.txt mx.ini /app/
+COPY versions.cfg plone60.cfg plone61.cfg plone62.cfg /dist/
+COPY versions/ /dist/versions/
+COPY docker/constraints60.cfg docker/constraints61.cfg docker/constraints62.cfg /dist/docker/
 
-COPY versions.cfg /
-
-RUN pip install -r https://dist.plone.org/release/6.0.15/requirements.txt ${PIP_PARAMS} && \
-    python create-constraints.py constraints.cfg constraints.txt && \
+RUN pip install -r https://dist.plone.org/release/${PLONE_VERSION}/requirements.txt ${PIP_PARAMS} && \
+    python /app/create-constraints.py /dist/docker/constraints${PLONE_LINE}.cfg /app/constraints.txt && \
     ./bin/pip install mxdev && \
     ./bin/mxdev -c mx.ini && \
     ./bin/pip install --ignore-requires-python -r requirements-mxdev.txt ${PIP_PARAMS} && \

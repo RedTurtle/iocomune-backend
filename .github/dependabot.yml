@@ -2,10 +2,23 @@
 # package ecosystems to update and where the package manifests are located.
 # Please see the documentation for all configuration options:
 # https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+#
+# I requirements.txt sotto dependabot/ sono GENERATI dal workflow dependabot.yml a partire
+# da docker/constraintsXX.cfg: una directory per linea Plone, perché dependabot vuole una
+# voce "updates" per manifest. Un bump va poi portato a mano nel versions/*.cfg condiviso
+# (o in ploneXX.cfg se è specifico di quella linea), altrimenti il workflow lo riscrive.
 
 version: 2
 updates:
   - package-ecosystem: "pip" # See documentation for possible values
-    directory: "/dependabot" # Location of package manifests
+    directory: "/dependabot/plone60" # Location of package manifests
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "pip"
+    directory: "/dependabot/plone61"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "pip"
+    directory: "/dependabot/plone62"
     schedule:
       interval: "daily"

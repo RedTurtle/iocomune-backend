@@ -1,5 +1,25 @@
 # Changelog
 
+## unreleased
+- Supporto a tre linee Plone dallo stesso tag: `plone60.cfg` (6.0.15), `plone61.cfg` (6.1.5) e
+  `plone62.cfg` (6.2.1, sperimentale). I pin dei prodotti sono ora in file condivisi sotto
+  `versions/` e si modificano una volta sola; nei `ploneXX.cfg` restano solo i pin specifici di
+  quella linea Plone. [mamico]
+  - **Migrazione**: `versions.cfg` continua a funzionare ed è un alias di `plone60.cfg`, quindi i
+    buildout esistenti non richiedono modifiche. Chi vuole passare a 6.1/6.2 estende direttamente
+    `plone61.cfg` / `plone62.cfg`.
+  - **Attenzione**: `versions.cfg` ora include altri file con path relativi, quindi va **esteso via
+    URL** e non copiato isolato nel proprio repository.
+  - Immagini docker pubblicate una per linea, con i tag `<tag>-plone60/-plone61/-plone62`; il tag
+    senza suffisso resta come alias della linea di default (6.0).
+  - Rimosso il pin `jinja2 = 3.1.5`: era un duplicato case-variant di `Jinja2` già pinnato dalle
+    release Plone e su 6.1/6.2 avrebbe prodotto un constraint in conflitto. `create-constraints.py`
+    ora fallisce se il caso si ripresenta.
+  - Rimossi i pin `PyYAML`, `furl` e `typing-extensions`, più vecchi o uguali a quelli distribuiti
+    dalle release.
+  - `dependabot/requirements.txt` e `sbom.spdx.json` sostituiti da un artefatto per linea:
+    `dependabot/ploneXX/requirements.txt` e `sbom/ploneXX.spdx.json`.
+
 ## 20260715-02
 - design.plone.contenttypes 6.3.16 -> 6.3.17
   - Refactor and bugfixes of @scadenziario endpoint [fedevancin]

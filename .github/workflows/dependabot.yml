@@ -32,24 +32,31 @@ jobs:
           pip install -r requirements.txt
       - name: Build requirements.txt
         run: |
-          cd docker
-          python create-constraints.py constraints.cfg ../dependabot/requirements.txt
+          for l in 60 61 62; do
+            mkdir -p dependabot/plone$l
+            python docker/create-constraints.py \
+                   docker/constraints$l.cfg dependabot/plone$l/requirements.txt
+          done
       - name: Check for changes
         id: git-check
         run: |
-          if [ -n "$(git status --porcelain dependabot/requirements.txt)" ]; then
+          if [ -n "$(git status --porcelain dependabot)" ]; then
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
       - name: Build SBOM
         if: steps.git-check.outputs.changed == 'true'
         run: |
           pip install sbom4python==0.12.5
-          sbom4python --requirement dependabot/requirements.txt --sbom spdx --format json --output sbom.spdx.json
+          mkdir -p sbom
+          for l in 60 61 62; do
+            sbom4python --requirement dependabot/plone$l/requirements.txt \
+                        --sbom spdx --format json --output sbom/plone$l.spdx.json
+          done
       - name: Commit and push changes
         run: |
           git config --global user.email "info@redturtle.it"
           git config --global user.name "RedTurtle CI BOT"
-          git add dependabot/requirements.txt sbom.spdx.json
+          git add dependabot sbom
           git commit -m "Auto-generate file at $(date)" || exit 0
           git pull --rebase "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "${HEAD_REF}"
           git push "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:refs/heads/${HEAD_REF}"
