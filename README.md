@@ -110,6 +110,19 @@ valore diverso — tipicamente perché la release di Plone ne distribuisce già 
 `collective.z3cform.datagridfield` è 3.0.1 sulla 6.0, 3.0.5 sulla 6.1 e 4.0.2 sulla 6.2, quindi vive
 nei tre `ploneXX.cfg` e non nel file condiviso.
 
+**Un pacchetto, un file**: lo stesso egg non deve comparire in due file di `versions/`. Buildout non
+segnalerebbe nulla — a seconda dell'ordine degli `extends` vincerebbe l'uno o l'altro — quindi il
+caso è intercettato da un controllo apposito, che fallisce anche quando le due versioni coincidono:
+
+```bash
+make lint     # scripts/lint-versions.sh, lo stesso che gira in CI
+```
+
+Il confronto usa i nomi normalizzati come fa pip (PEP 503: maiuscole e `-` `_` `.` equivalenti), così
+cadono nella rete anche grafie diverse dello stesso pacchetto. Un pin presente sia in un file
+condiviso sia nella `[versions]` di un `ploneXX.cfg` non viene invece segnalato: quello è l'override
+per-linea, ed è voluto.
+
 Due vincoli tecnici di buildout da tenere presenti:
 
 - negli `extends` **non** funziona la sostituzione `${sezione:chiave}`: la versione Plone va scritta

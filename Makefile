@@ -16,8 +16,13 @@ EXTRA_PINS_62 =
 PYTHON ?= 3.11
 
 help:
+	@echo "make lint                # controlli sui file di versions/"
 	@echo "make buildout [LINE=60|61|62] [PYTHON=3.11|3.12]"
 	@echo "make dependabot-update"
+
+# stessi controlli eseguiti dalla CI
+lint:
+	scripts/lint-versions.sh
 
 buildout:
 	rm -rf bin lib
