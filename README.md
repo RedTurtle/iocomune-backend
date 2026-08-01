@@ -179,10 +179,14 @@ make dependabot-update    # requirements
 make sbom-update          # SBOM
 ```
 
-Entrambi i target girano **dentro un container** (`python:3.11-slim`): serve solo docker, non
-il python o il virtualenv locale. La CI usa esattamente gli stessi comandi, quindi l'output è
-identico ovunque e nei file non finiscono path della macchina che li ha prodotti (un check in CI
-lo verifica).
+Entrambi i target girano **dentro un container** (`docker/Dockerfile.generator`, cioè
+`python:3.11-slim` più `libmagic1` che serve a sbom4python): serve solo docker, non il python o il
+virtualenv locale. La CI usa esattamente gli stessi comandi, quindi l'output è identico ovunque e
+nei file non finiscono path della macchina che li ha prodotti (un check in CI lo verifica).
+
+Venv, wheel di pip e cfg remoti di buildout sono tenuti in `.cache/` (ignorata da git e
+ripristinata in CI): la prima esecuzione richiede circa un minuto, le successive una dozzina di
+secondi. `make clean-cache` la svuota.
 
 **Nelle PR i file vengono solo verificati**: se sono obsoleti il job `requirements.txt` fallisce e
 commenta la PR con il diff e il comando da lanciare. Il commit automatico avviene solo su push a

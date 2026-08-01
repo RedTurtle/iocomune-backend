@@ -18,15 +18,32 @@ PYTHON ?= 3.11
 # i file generati e versionati (dependabot/, sbom/) si producono SEMPRE dentro un
 # container: stesso comando in locale e in CI, nessuna dipendenza dal python o dal
 # virtualenv della macchina, e nessun path locale che finisce nei file
-GENERATOR_IMAGE ?= python:3.11-slim
-DOCKER_RUN = docker run --rm -v "$(CURDIR)":/repo -w /repo \
-	    -u "$$(id -u):$$(id -g)" -e HOME=/tmp $(GENERATOR_IMAGE) sh -c
+GENERATOR_IMAGE ?= iocomune-generator
+# cache riusata tra le run (e ripristinata in CI): venv, wheel scaricate da pip e cfg
+# remoti di buildout. Gli extends puntano a release immutabili, quindi cacharli e' sicuro.
+CACHE_DIR ?= $(CURDIR)/.cache
+DOCKER_RUN = mkdir -p "$(CACHE_DIR)" && docker run --rm \
+	    -v "$(CURDIR)":/repo -w /repo -v "$(CACHE_DIR)":/cache \
+	    -u "$$(id -u):$$(id -g)" -e HOME=/tmp \
+	    -e PIP_CACHE_DIR=/cache/pip -e BUILDOUT_EXTENDS_CACHE=/cache/buildout-extends \
+	    $(GENERATOR_IMAGE) sh -c
+
+# crea il venv nella cache solo se manca o se non e' utilizzabile (es. cache ripristinata
+# da un'immagine con un python diverso); pip install e' comunque rapido quando i requisiti
+# sono gia' soddisfatti e le wheel sono in cache
+VENV_SETUP = { /cache/venv/bin/python -c "" 2>/dev/null || rm -rf /cache/venv; }; \
+	    test -x /cache/venv/bin/python || python -m venv /cache/venv
 
 help:
-	@echo "make lint                # controlli sui file di versions/"
+	@echo "make lint                # controlli su versions/ e sui file generati"
 	@echo "make buildout [LINE=60|61|62] [PYTHON=3.11|3.12]"
 	@echo "make dependabot-update   # rigenera dependabot/ (in docker)"
 	@echo "make sbom-update         # rigenera sbom/ (in docker)"
+	@echo "make clean-cache         # svuota la cache del generatore"
+
+# la layer cache di docker rende questo target istantaneo dopo la prima volta
+generator-image:
+	@docker build -q -t $(GENERATOR_IMAGE) -f docker/Dockerfile.generator docker/ >/dev/null
 
 # stessi controlli eseguiti dalla CI
 lint:
@@ -42,22 +59,25 @@ buildout:
 	bin/buildout -c development$(LINE).cfg -N
 
 # rigenera i requirements versionati; la CI delle PR verifica che siano allineati
-dependabot-update:
+dependabot-update: generator-image
 	$(DOCKER_RUN) 'set -e; \
-	    python -m venv /tmp/venv; \
-	    /tmp/venv/bin/pip install --quiet --no-cache-dir -r requirements.txt; \
+	    $(VENV_SETUP); \
+	    /cache/venv/bin/pip install --quiet -r requirements.txt; \
 	    for l in 60 61 62; do \
 	        mkdir -p dependabot/plone$$l; \
-	        /tmp/venv/bin/python docker/create-constraints.py \
+	        /cache/venv/bin/python docker/create-constraints.py \
 	            docker/constraints$$l.cfg dependabot/plone$$l/requirements.txt; \
 	    done'
 
-sbom-update:
+sbom-update: generator-image
 	$(DOCKER_RUN) 'set -e; \
-	    python -m venv /tmp/venv; \
-	    /tmp/venv/bin/pip install --quiet --no-cache-dir sbom4python==0.12.5; \
+	    $(VENV_SETUP); \
+	    /cache/venv/bin/pip install --quiet sbom4python==0.12.5; \
 	    mkdir -p sbom; \
 	    for l in 60 61 62; do \
-	        /tmp/venv/bin/sbom4python --requirement dependabot/plone$$l/requirements.txt \
+	        /cache/venv/bin/sbom4python --requirement dependabot/plone$$l/requirements.txt \
 	            --sbom spdx --format json --output sbom/plone$$l.spdx.json; \
 	    done'
+
+clean-cache:
+	rm -rf "$(CACHE_DIR)"

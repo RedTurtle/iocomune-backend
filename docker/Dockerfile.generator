@@ -1,0 +1,11 @@
+# Immagine usata da "make dependabot-update" / "make sbom-update" per produrre i file
+# versionati in dependabot/ e sbom/. Serve a rendere la generazione identica in locale e
+# in CI, senza dipendere dal python della macchina.
+#
+# libmagic1 e' richiesta da sbom4python (via python-magic): sui runner GitHub c'e' di
+# sistema, nelle immagini python:*-slim no.
+FROM python:3.11-slim
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends libmagic1 \
+    && rm -rf /var/lib/apt/lists/*

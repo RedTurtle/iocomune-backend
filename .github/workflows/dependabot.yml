@@ -34,6 +34,12 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: ${{ github.head_ref }}
+      - name: Restore generator cache
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: generator-${{ hashFiles('Makefile', 'docker/Dockerfile.generator', 'requirements*.txt', 'plone6*.cfg', 'docker/constraints*.cfg') }}
+          restore-keys: generator-
       - name: Regenerate requirements
         run: make dependabot-update
       - name: Check that the committed files are up to date
@@ -86,6 +92,12 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+      - name: Restore generator cache
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: generator-${{ hashFiles('Makefile', 'docker/Dockerfile.generator', 'requirements*.txt', 'plone6*.cfg', 'docker/constraints*.cfg') }}
+          restore-keys: generator-
       - name: Build requirements.txt
         run: make dependabot-update
       - name: Check for changes
