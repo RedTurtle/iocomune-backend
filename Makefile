@@ -5,16 +5,23 @@ LINE ?= 60
 
 # XXX: solo sulla 6.0, per https://github.com/pypa/setuptools/pull/4856/files
 EXTRA_PINS_60 = setuptools==75.8.2 zc.buildout==4.1.10
-EXTRA_PINS_61 =
+# zope.interface 8 usa i native namespace: con buildout gli egg stanno in path separati
+# e il namespace "zope" non si compone. horse-with-no-namespace va installato con pip nel
+# venv (NON da buildout). Sulla 6.2 arriva già dal requirements della release.
+EXTRA_PINS_61 = horse-with-no-namespace
 EXTRA_PINS_62 =
 
+# la CI prova tutte le linee sia con 3.11 sia con 3.12; in locale si usa 3.11 salvo
+# override esplicito (make buildout LINE=62 PYTHON=3.12)
+PYTHON ?= 3.11
+
 help:
-	@echo "make buildout [LINE=60|61|62]"
+	@echo "make buildout [LINE=60|61|62] [PYTHON=3.11|3.12]"
 	@echo "make dependabot-update"
 
 buildout:
 	rm -rf bin lib
-	pyenv local 3.11
+	pyenv local $(PYTHON)
 	python -m venv .
 	bin/pip install -r requirements$(LINE).txt
 	@test -z "$(EXTRA_PINS_$(LINE))" || bin/python -m pip install $(EXTRA_PINS_$(LINE))

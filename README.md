@@ -6,11 +6,14 @@ Lo stesso tag serve **tre linee Plone**: 6.0, 6.1 e 6.2.
 
 ## Quale file estendere
 
-| Linea | File da estendere | Versione Plone |
-|-------|-------------------|----------------|
-| 6.0   | `plone60.cfg`     | 6.0.15         |
-| 6.1   | `plone61.cfg`     | 6.1.5          |
-| 6.2   | `plone62.cfg`     | 6.2.1 (sperimentale) |
+| Linea | File da estendere | Versione Plone | Python minimo | Python supportati |
+|-------|-------------------|----------------|---------------|-------------------|
+| 6.0   | `plone60.cfg`     | 6.0.15         | **3.9**       | 3.9 → 3.13        |
+| 6.1   | `plone61.cfg`     | 6.1.5          | **3.10**      | 3.10 → 3.13       |
+| 6.2   | `plone62.cfg`     | 6.2.1 (sperimentale) | **3.10** | 3.10 → 3.14    |
+
+Minimo e supportati sono quelli dichiarati da `Products.CMFPlone` per la versione pinnata.
+La CI esegue il buildout di **tutte e tre le linee sia con Python 3.11 sia con 3.12**.
 
 `versions.cfg` esiste ancora ed è un **alias della linea di default (6.0)**: i buildout che lo
 estendono già oggi continuano a funzionare senza modifiche. I progetti nuovi conviene che estendano
@@ -43,13 +46,25 @@ bin/buildout
 Per lavorare su una linea diversa dalla default si usa il `make` con `LINE`:
 
 ```bash
-make buildout LINE=61
+make buildout LINE=61              # opzionale: PYTHON=3.12
 # equivalente a: bin/pip install -r requirements61.txt && bin/buildout -c development61.cfg
 ```
 
 > Cambiando linea **va ricreato il venv**: ogni release Plone richiede una `zc.buildout` diversa
 > (4.1.4 per la 6.0, 4.2.0 per la 6.1, 5.2.0 per la 6.2), che arriva dal `requirementsXX.txt`
-> della release stessa. Il target `make buildout` lo ricrea da solo.
+> della release stessa, e cambia anche la versione di Python. Il target `make buildout` fa
+> entrambe le cose da solo (`pyenv local` + venv nuovo).
+
+### zope.interface 8 e i namespace package
+
+Dalla 6.1 `zope.interface` usa i [native namespace package](https://peps.python.org/pep-0420/).
+Con buildout gli egg finiscono in path separati, il namespace `zope` non si compone e l'istanza
+muore con `ModuleNotFoundError: No module named 'zope.interface'`. La soluzione è
+[horse-with-no-namespace](https://pypi.org/project/horse-with-no-namespace/), che **va installato
+con pip nello stesso virtualenv di zc.buildout, non da buildout** (altrimenti il suo `.pth` non
+viene caricato). Sulla 6.2 arriva già dal `requirements.txt` della release; sulla 6.1 lo
+aggiungiamo noi (vedi `EXTRA_PINS_61` nel Makefile e la matrice in `buildout.yml`).
+Il percorso docker non è interessato: lì pip installa tutto in un unico `site-packages`.
 
 O il docker compose::
 

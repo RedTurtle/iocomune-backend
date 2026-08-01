@@ -22,12 +22,17 @@ jobs:
           test -z "$dups" || { echo "pin duplicati in versions/: $dups"; exit 1; }
 
   build:
-    name: Buildout Plone ${{ matrix.plone }}
+    name: Buildout Plone ${{ matrix.plone }} py${{ matrix.python }}
     runs-on: ubuntu-latest
     continue-on-error: ${{ matrix.experimental || false }}
     strategy:
       fail-fast: false
       matrix:
+        # tutte e tre le linee su entrambi i Python: 3.11 e 3.12 sono supportati da tutte
+        line: ["60", "61", "62"]
+        python: ["3.11", "3.12"]
+        # gli include aggiungono i campi alle combinazioni con la stessa "line",
+        # senza generarne di nuove
         include:
           - line: "60"
             plone: "6.0.15"
@@ -35,7 +40,11 @@ jobs:
             extra_pins: "setuptools==75.8.2 zc.buildout==4.1.10"
           - line: "61"
             plone: "6.1.5"
-            extra_pins: ""
+            # zope.interface 8 usa i native namespace: con buildout gli egg stanno in path
+            # separati e il namespace "zope" non si compone. horse-with-no-namespace va
+            # installato con pip nel venv (NON da buildout). Sulla 6.2 arriva già dal
+            # requirements della release.
+            extra_pins: "horse-with-no-namespace"
             experimental: true
           - line: "62"
             plone: "6.2.1"
@@ -51,7 +60,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.11"
+          python-version: ${{ matrix.python }}
       - name: Check that the line files agree on the Plone version
         run: |
           got=$(grep -hoE '6\.[0-9]+\.[0-9]+' \
