@@ -11,6 +11,7 @@ zc.buildout needs to be importable in that python.
 from zc.buildout import buildout
 
 import os
+import re
 import sys
 
 
@@ -37,12 +38,14 @@ config = buildout.Buildout(config_file, [])
 # Note: this works like a dictionary, but is a class 'zc.buildout.buildout.Options'.
 versions = config.versions
 
-# pip normalizza i nomi dei pacchetti, quindi due grafie diverse della stessa chiave
-# ("jinja2" e "Jinja2") con versioni diverse producono un constraints che pip rifiuta.
+# pip normalizza i nomi dei pacchetti (PEP 503: maiuscole e [-_.] equivalenti), quindi
+# due grafie diverse della stessa chiave ("jinja2" e "Jinja2", "zope.interface" e
+# "zope-interface") con versioni diverse producono un constraints che pip rifiuta.
 # zc.buildout non lo segnala, quindi lo intercettiamo qui.
 spellings = {}
 for package, version in versions.items():
-    spellings.setdefault(package.lower(), {}).setdefault(version, []).append(package)
+    canonical = re.sub(r"[-_.]+", "-", package).lower()
+    spellings.setdefault(canonical, {}).setdefault(version, []).append(package)
 conflicts = {name: found for name, found in spellings.items() if len(found) > 1}
 if conflicts:
     for name, found in sorted(conflicts.items()):
