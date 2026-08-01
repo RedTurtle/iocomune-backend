@@ -1,5 +1,5 @@
-# File created by /home/runner/work/iocomune-backend/iocomune-backend/docker/create-constraints.py
-# Constraints parsed from /home/runner/work/iocomune-backend/iocomune-backend/docker/constraints62.cfg
+# File created by create-constraints.py
+# Constraints parsed from constraints62.cfg
 AccessControl==7.3
 Acquisition==6.2
 AuthEncoding==6.0

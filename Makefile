@@ -15,14 +15,23 @@ EXTRA_PINS_62 =
 # override esplicito (make buildout LINE=62 PYTHON=3.12)
 PYTHON ?= 3.11
 
+# i file generati e versionati (dependabot/, sbom/) si producono SEMPRE dentro un
+# container: stesso comando in locale e in CI, nessuna dipendenza dal python o dal
+# virtualenv della macchina, e nessun path locale che finisce nei file
+GENERATOR_IMAGE ?= python:3.11-slim
+DOCKER_RUN = docker run --rm -v "$(CURDIR)":/repo -w /repo \
+	    -u "$$(id -u):$$(id -g)" -e HOME=/tmp $(GENERATOR_IMAGE) sh -c
+
 help:
 	@echo "make lint                # controlli sui file di versions/"
 	@echo "make buildout [LINE=60|61|62] [PYTHON=3.11|3.12]"
-	@echo "make dependabot-update"
+	@echo "make dependabot-update   # rigenera dependabot/ (in docker)"
+	@echo "make sbom-update         # rigenera sbom/ (in docker)"
 
 # stessi controlli eseguiti dalla CI
 lint:
 	scripts/lint-versions.sh
+	scripts/lint-generated.sh
 
 buildout:
 	rm -rf bin lib
@@ -32,9 +41,23 @@ buildout:
 	@test -z "$(EXTRA_PINS_$(LINE))" || bin/python -m pip install $(EXTRA_PINS_$(LINE))
 	bin/buildout -c development$(LINE).cfg -N
 
-dependabot-update: docker/bin/python
-	for l in 60 61 62; do \
-	    mkdir -p dependabot/plone$$l; \
-	    cd docker && bin/python create-constraints.py constraints$$l.cfg ../dependabot/plone$$l/requirements.txt; \
-	    cd ..; \
-	done
+# rigenera i requirements versionati; la CI delle PR verifica che siano allineati
+dependabot-update:
+	$(DOCKER_RUN) 'set -e; \
+	    python -m venv /tmp/venv; \
+	    /tmp/venv/bin/pip install --quiet --no-cache-dir -r requirements.txt; \
+	    for l in 60 61 62; do \
+	        mkdir -p dependabot/plone$$l; \
+	        /tmp/venv/bin/python docker/create-constraints.py \
+	            docker/constraints$$l.cfg dependabot/plone$$l/requirements.txt; \
+	    done'
+
+sbom-update:
+	$(DOCKER_RUN) 'set -e; \
+	    python -m venv /tmp/venv; \
+	    /tmp/venv/bin/pip install --quiet --no-cache-dir sbom4python==0.12.5; \
+	    mkdir -p sbom; \
+	    for l in 60 61 62; do \
+	        /tmp/venv/bin/sbom4python --requirement dependabot/plone$$l/requirements.txt \
+	            --sbom spdx --format json --output sbom/plone$$l.spdx.json; \
+	    done'

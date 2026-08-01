@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
-      - name: No duplicated pins across the shared files
+      - name: Lint
         run: make lint
 
   build:

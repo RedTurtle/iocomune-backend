@@ -62,8 +62,10 @@ if conflicts:
     sys.exit(1)
 
 with open(constraints_file, "w") as cfile:
-    cfile.write("# File created by {}\n".format(__file__))
-    cfile.write("# Constraints parsed from {}\n".format(config_file))
+    # solo i basename: il file è versionato e va rigenerato identico su qualsiasi
+    # macchina, altrimenti il confronto in CI vede sempre un diff sull'header
+    cfile.write("# File created by {}\n".format(os.path.basename(__file__)))
+    cfile.write("# Constraints parsed from {}\n".format(os.path.basename(config_file)))
     for package, version in sorted(versions.items()):
         if package in DENYLIST:
             print("Ignoring blacklisted package {}".format(package))
