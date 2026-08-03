@@ -172,14 +172,16 @@ Questi file sono **generati**, non vanno modificati a mano:
 - `dependabot/plone60/requirements.txt`, `dependabot/plone61/...`, `dependabot/plone62/...`
 - `sbom/plone60.spdx.json`, `sbom/plone61.spdx.json`, `sbom/plone62.spdx.json`
 
-Si rigenerano con:
+Dopo aver toccato un pin vanno rigenerati **entrambi**:
 
 ```bash
-make dependabot-update    # requirements
-make sbom-update          # SBOM
+make generated-update
 ```
 
-Entrambi i target girano **dentro un container** (`docker/Dockerfile.generator`, cioè
+Se serve, ci sono anche i due target singoli `make dependabot-update` (solo i requirements) e
+`make sbom-update` (solo gli SBOM).
+
+I target girano **dentro un container** (`docker/Dockerfile.generator`, cioè
 `python:3.11-slim` più `libmagic1` che serve a sbom4python): serve solo docker, non il python o il
 virtualenv locale. La CI usa esattamente gli stessi comandi, quindi l'output è identico ovunque e
 nei file non finiscono path della macchina che li ha prodotti (un check in CI lo verifica).

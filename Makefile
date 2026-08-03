@@ -37,8 +37,9 @@ VENV_SETUP = { /cache/venv/bin/python -c "" 2>/dev/null || rm -rf /cache/venv; }
 help:
 	@echo "make lint                # controlli su versions/ e sui file generati"
 	@echo "make buildout [LINE=60|61|62] [PYTHON=3.11|3.12]"
-	@echo "make dependabot-update   # rigenera dependabot/ (in docker)"
-	@echo "make sbom-update         # rigenera sbom/ (in docker)"
+	@echo "make generated-update    # rigenera dependabot/ e sbom/ (in docker)"
+	@echo "make dependabot-update   # solo dependabot/"
+	@echo "make sbom-update         # solo sbom/"
 	@echo "make clean-cache         # svuota la cache del generatore"
 
 # la layer cache di docker rende questo target istantaneo dopo la prima volta
@@ -57,6 +58,9 @@ buildout:
 	bin/pip install -r requirements$(LINE).txt
 	@test -z "$(EXTRA_PINS_$(LINE))" || bin/python -m pip install $(EXTRA_PINS_$(LINE))
 	bin/buildout -c development$(LINE).cfg -N
+
+# dopo aver toccato un pin vanno rigenerati entrambi gli artefatti versionati
+generated-update: dependabot-update sbom-update
 
 # rigenera i requirements versionati; la CI delle PR verifica che siano allineati
 dependabot-update: generator-image

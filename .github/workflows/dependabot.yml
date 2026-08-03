@@ -5,8 +5,8 @@ name: Create requirements.txt for dependabot
 # non ri-triggera i workflow: l'head della PR restava senza i check veri e la PR sembrava
 # verde anche con la CI rossa. La rigenerazione con commit avviene solo su push a main.
 #
-# La generazione passa sempre da "make dependabot-update" / "make sbom-update", che
-# girano in un container: stesso identico comando in locale e qui.
+# La generazione passa sempre dai target del Makefile ("make generated-update" e i due
+# singoli), che girano in un container: stesso identico comando in locale e qui.
 
 on:
   pull_request:
@@ -64,13 +64,16 @@ jobs:
         run: |
           {
             echo "<!-- generated-files-check -->"
-            echo "### I requirements generati non sono aggiornati"
+            echo "### I file generati non sono aggiornati"
             echo
             echo 'Rigenerali e committali (serve solo docker):'
             echo
             echo '```bash'
-            echo 'make dependabot-update'
+            echo 'make generated-update'
             echo '```'
+            echo
+            echo "Rigenera sia \`dependabot/\` sia \`sbom/\`: qui sotto sono elencate solo le"
+            echo "differenze sui requirements, ma vanno aggiornati entrambi."
             echo
             echo "<details><summary>Differenze rilevate</summary>"
             echo
