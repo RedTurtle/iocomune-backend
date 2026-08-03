@@ -22,7 +22,8 @@ if [ -n "$hits" ]; then
     report_error "path locali nei file generati"
     echo "$hits"
     echo
-    echo "Rigenerali con 'make generated-update'."
+    echo "Rigenerali con 'make dependabot-update', o 'make generated-update' se"
+    echo "il path compare in sbom/."
     exit 1
 fi
 

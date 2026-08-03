@@ -64,16 +64,15 @@ jobs:
         run: |
           {
             echo "<!-- generated-files-check -->"
-            echo "### I file generati non sono aggiornati"
+            echo "### I requirements generati non sono aggiornati"
             echo
             echo 'Rigenerali e committali (serve solo docker):'
             echo
             echo '```bash'
-            echo 'make generated-update'
+            echo 'make dependabot-update'
             echo '```'
             echo
-            echo "Rigenera sia \`dependabot/\` sia \`sbom/\`: qui sotto sono elencate solo le"
-            echo "differenze sui requirements, ma vanno aggiornati entrambi."
+            echo "Gli SBOM non servono qui: li rigenera il workflow al merge su \`main\`."
             echo
             echo "<details><summary>Differenze rilevate</summary>"
             echo

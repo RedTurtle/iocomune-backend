@@ -172,14 +172,15 @@ Questi file sono **generati**, non vanno modificati a mano:
 - `dependabot/plone60/requirements.txt`, `dependabot/plone61/...`, `dependabot/plone62/...`
 - `sbom/plone60.spdx.json`, `sbom/plone61.spdx.json`, `sbom/plone62.spdx.json`
 
-Dopo aver toccato un pin vanno rigenerati **entrambi**:
+Dopo aver toccato un pin, nella PR basta rigenerare i requirements — **gli SBOM li rigenera il
+workflow al merge su `main`**:
 
 ```bash
-make generated-update
+make dependabot-update
 ```
 
-Se serve, ci sono anche i due target singoli `make dependabot-update` (solo i requirements) e
-`make sbom-update` (solo gli SBOM).
+Ci sono poi `make sbom-update` (solo gli SBOM) e `make generated-update`, che li rigenera entrambi
+quando serve allinearli a mano.
 
 I target girano **dentro un container** (`docker/Dockerfile.generator`, cioè
 `python:3.11-slim` più `libmagic1` che serve a sbom4python): serve solo docker, non il python o il
