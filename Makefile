@@ -77,11 +77,7 @@ sbom-update: generator-image
 	$(DOCKER_RUN) 'set -e; \
 	    $(VENV_SETUP); \
 	    /cache/venv/bin/pip install --quiet sbom4python==0.12.5; \
-	    mkdir -p sbom; \
-	    for l in 60 61 62; do \
-	        /cache/venv/bin/sbom4python --requirement dependabot/plone$$l/requirements.txt \
-	            --sbom spdx --format json --output sbom/plone$$l.spdx.json; \
-	    done'
+	    scripts/sbom-update.sh'
 
 clean-cache:
 	rm -rf "$(CACHE_DIR)"
