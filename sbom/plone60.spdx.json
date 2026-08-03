@@ -6,12 +6,12 @@
     "creators": [
       "Tool: sbom4python-0.12.5"
     ],
-    "created": "2026-08-01T09:56:46Z",
+    "created": "2026-08-03T05:00:35Z",
     "licenseListVersion": "3.28.0"
   },
   "name": "Python-dependabot/plone60/requirements.txt",
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "http://spdx.org/spdxdocs/Python-dependabot/plone60/requirements.txt-cb057c6f-dd60-406e-ad04-f140267eb966",
+  "documentNamespace": "http://spdx.org/spdxdocs/Python-dependabot/plone60/requirements.txt-c563ffee-edeb-4028-837c-786d2f1eb75a",
   "packages": [
     {
       "SPDXID": "SPDXRef-1-AccessControl",
@@ -756,34 +756,34 @@
     {
       "SPDXID": "SPDXRef-23-Pillow",
       "name": "Pillow",
-      "versionInfo": "11.0.0",
+      "versionInfo": "11.3.0",
       "primaryPackagePurpose": "APPLICATION",
       "supplier": "Person: Pillow (aclark@python-pillow.org)",
-      "downloadLocation": "https://pypi.org/project/Pillow/11.0.0/#files",
+      "downloadLocation": "https://pypi.org/project/Pillow/11.3.0/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/plone60/requirements.txt",
       "homepage": "https://python-pillow.github.io",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "6619654954dc4936fcff82db8eb6401d3159ec6be81e33c6000dfd76ae189947"
+          "checksumValue": "1b9c17fd4ace828b3003dfd1e30bff24863e0eb59b535e8f80194d9cc7ecf860"
         }
       ],
       "licenseConcluded": "MIT-CMU",
       "licenseDeclared": "MIT-CMU",
       "copyrightText": "NOASSERTION",
       "summary": "Python Imaging Library (fork)",
-      "releaseDate": "2024-10-15T14:21:49Z",
+      "releaseDate": "2025-07-01T09:13:39Z",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
-          "referenceLocator": "pkg:pypi/Pillow@11.0.0"
+          "referenceLocator": "pkg:pypi/Pillow@11.3.0"
         },
         {
           "referenceCategory": "SECURITY",
           "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:pillow:Pillow:11.0.0:*:*:*:*:*:*:*"
+          "referenceLocator": "cpe:2.3:a:pillow:Pillow:11.3.0:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -1993,7 +1993,7 @@
       "name": "PySocks",
       "versionInfo": "1.7.1",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Person: Anorov",
+      "supplier": "NOASSERTION",
       "downloadLocation": "https://pypi.org/project/PySocks/1.7.1/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/plone60/requirements.txt",
@@ -2015,11 +2015,6 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/PySocks@1.7.1"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:anorov:PySocks:1.7.1:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -2651,8 +2646,7 @@
         }
       ],
       "licenseConcluded": "MIT",
-      "licenseDeclared": "NOASSERTION",
-      "licenseComments": "annotated-types declares MIT License which is not currently a valid SPDX License identifier or expression.",
+      "licenseDeclared": "MIT",
       "copyrightText": "NOASSERTION",
       "summary": "Reusable constraint types to use with typing.Annotated",
       "releaseDate": "2024-05-20T21:33:24Z",
