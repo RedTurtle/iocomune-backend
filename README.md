@@ -182,14 +182,21 @@ make dependabot-update
 Ci sono poi `make sbom-update` (solo gli SBOM) e `make generated-update`, che li rigenera entrambi
 quando serve allinearli a mano.
 
-I target girano **dentro un container** (`docker/Dockerfile.generator`, cioè
-`python:3.11-slim` più `libmagic1` che serve a sbom4python): serve solo docker, non il python o il
-virtualenv locale. La CI usa esattamente gli stessi comandi, quindi l'output è identico ovunque e
-nei file non finiscono path della macchina che li ha prodotti (un check in CI lo verifica).
+I target girano **dentro un container** (`docker/Dockerfile.generator`): serve solo docker, non il
+python o il virtualenv locale. La CI usa esattamente gli stessi comandi, quindi l'output è identico
+ovunque e nei file non finiscono path della macchina che li ha prodotti (un check in CI lo verifica).
 
-Venv, wheel di pip e cfg remoti di buildout sono tenuti in `.cache/` (ignorata da git e
-ripristinata in CI): la prima esecuzione richiede circa un minuto, le successive una dozzina di
-secondi. `make clean-cache` la svuota.
+Gli SBOM sono generati con [syft](https://github.com/anchore/syft): legge i requirements offline
+(nessuna chiamata di rete per nome/versione/purl) e usa la rete solo per arricchire le licenze
+(`SYFT_PYTHON_SEARCH_REMOTE_LICENSES`), con una cache persistente per pacchetto — un bump di uno o
+due pin richiede quindi solo qualche secondo di rete, non l'intera rigenerazione. In precedenza si
+usava `sbom4python`, che per ogni pacchetto lanciava `pip show` più una query a PyPI: con ~600 pin
+costava da 1,5 a oltre 10 minuti a linea secondo la rete, contro pochi secondi di syft a cache calda.
+Lo script precedente resta commentato in `scripts/sbom-update.sh` per un eventuale ripristino.
+
+Venv, wheel di pip, cfg remoti di buildout e cache delle licenze di syft sono tenuti in `.cache/`
+(ignorata da git e ripristinata in CI): la prima esecuzione richiede alcuni minuti (soprattutto per
+l'arricchimento licenze), le successive pochi secondi. `make clean-cache` la svuota.
 
 **Nelle PR i file vengono solo verificati**: se sono obsoleti il job `requirements.txt` fallisce e
 commenta la PR con il diff e il comando da lanciare. Il commit automatico avviene solo su push a

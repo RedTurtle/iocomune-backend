@@ -2,10 +2,14 @@
 # versionati in dependabot/ e sbom/. Serve a rendere la generazione identica in locale e
 # in CI, senza dipendere dal python della macchina.
 #
-# libmagic1 e' richiesta da sbom4python (via python-magic): sui runner GitHub c'e' di
-# sistema, nelle immagini python:*-slim no.
+# libmagic1 non e' piu' richiesta (era per sbom4python, sostituito da syft), ma la
+# lasciamo se in futuro serve reintrodurre sbom4python (vedi scripts/sbom-update.sh).
 FROM python:3.11-slim
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends libmagic1 \
     && rm -rf /var/lib/apt/lists/*
+
+# syft genera gli SBOM: legge i requirements.txt senza bisogno di un venv installato.
+# Pinnato come tutto il resto in questo repo, non ":latest".
+COPY --from=anchore/syft:v1.50.0 /syft /usr/local/bin/syft

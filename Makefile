@@ -19,13 +19,16 @@ PYTHON ?= 3.11
 # container: stesso comando in locale e in CI, nessuna dipendenza dal python o dal
 # virtualenv della macchina, e nessun path locale che finisce nei file
 GENERATOR_IMAGE ?= iocomune-generator
-# cache riusata tra le run (e ripristinata in CI): venv, wheel scaricate da pip e cfg
-# remoti di buildout. Gli extends puntano a release immutabili, quindi cacharli e' sicuro.
+# cache riusata tra le run (e ripristinata in CI): venv, wheel scaricate da pip, cfg
+# remoti di buildout (gli extends puntano a release immutabili, quindi cacharli e'
+# sicuro) e metadati di syft per l'arricchimento delle licenze (un file per pacchetto,
+# TTL 7 giorni: un bump di 1-2 pin risolve dalla rete solo quei pochi pacchetti).
 CACHE_DIR ?= $(CURDIR)/.cache
 DOCKER_RUN = mkdir -p "$(CACHE_DIR)" && docker run --rm \
 	    -v "$(CURDIR)":/repo -w /repo -v "$(CACHE_DIR)":/cache \
 	    -u "$$(id -u):$$(id -g)" -e HOME=/tmp \
 	    -e PIP_CACHE_DIR=/cache/pip -e BUILDOUT_EXTENDS_CACHE=/cache/buildout-extends \
+	    -e SYFT_CACHE_DIR=/cache/syft -e SYFT_PYTHON_SEARCH_REMOTE_LICENSES=true \
 	    $(GENERATOR_IMAGE) sh -c
 
 # crea il venv nella cache solo se manca o se non e' utilizzabile (es. cache ripristinata
@@ -74,10 +77,7 @@ dependabot-update: generator-image
 	    done'
 
 sbom-update: generator-image
-	$(DOCKER_RUN) 'set -e; \
-	    $(VENV_SETUP); \
-	    /cache/venv/bin/pip install --quiet sbom4python==0.12.5; \
-	    scripts/sbom-update.sh'
+	$(DOCKER_RUN) 'set -e; scripts/sbom-update.sh'
 
 clean-cache:
 	rm -rf "$(CACHE_DIR)"
