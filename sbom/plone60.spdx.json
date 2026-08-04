@@ -6,12 +6,12 @@
     "creators": [
       "Tool: sbom4python-0.12.5"
     ],
-    "created": "2026-08-01T09:56:46Z",
+    "created": "2026-08-04T07:24:13Z",
     "licenseListVersion": "3.28.0"
   },
   "name": "Python-dependabot/plone60/requirements.txt",
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "http://spdx.org/spdxdocs/Python-dependabot/plone60/requirements.txt-cb057c6f-dd60-406e-ad04-f140267eb966",
+  "documentNamespace": "http://spdx.org/spdxdocs/Python-dependabot/plone60/requirements.txt-8e0babe7-7b71-41c8-a475-516cc7ad50bd",
   "packages": [
     {
       "SPDXID": "SPDXRef-1-AccessControl",
@@ -1993,7 +1993,7 @@
       "name": "PySocks",
       "versionInfo": "1.7.1",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Person: Anorov",
+      "supplier": "NOASSERTION",
       "downloadLocation": "https://pypi.org/project/PySocks/1.7.1/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/plone60/requirements.txt",
@@ -2015,11 +2015,6 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/PySocks@1.7.1"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:anorov:PySocks:1.7.1:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -2639,33 +2634,19 @@
       "name": "annotated-types",
       "versionInfo": "0.7.0",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Person: types",
+      "supplier": "NOASSERTION",
       "downloadLocation": "https://pypi.org/project/annotated-types/0.7.0/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/plone60/requirements.txt",
-      "homepage": "https://github.com/annotated-types/annotated-types",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "1f02e8b43a8fbbc3f3e0d4f0f4bfc8131bcb4eebe8849b8e5c773f3a1c582a53"
-        }
-      ],
-      "licenseConcluded": "MIT",
+      "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "NOASSERTION",
-      "licenseComments": "annotated-types declares MIT License which is not currently a valid SPDX License identifier or expression.",
       "copyrightText": "NOASSERTION",
-      "summary": "Reusable constraint types to use with typing.Annotated",
-      "releaseDate": "2024-05-20T21:33:24Z",
+      "releaseDate": "2024-07-26T18:15:02Z",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/annotated-types@0.7.0"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:types:annotated-types:0.7.0:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -6606,7 +6587,7 @@
       "name": "ijson",
       "versionInfo": "3.1.4",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "NOASSERTION",
+      "supplier": "Organization: The International Centre for Radio Astronomy Research",
       "downloadLocation": "https://pypi.org/project/ijson/3.1.4/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/plone60/requirements.txt",
@@ -6627,6 +6608,11 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/ijson@3.1.4"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:the_international_centre_for_radio_astronomy_research:ijson:3.1.4:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -14585,32 +14571,19 @@
       "name": "robotframework-lsp",
       "versionInfo": "1.10.1",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Person: Robocorp",
+      "supplier": "NOASSERTION",
       "downloadLocation": "https://pypi.org/project/robotframework-lsp/1.10.1/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/plone60/requirements.txt",
-      "homepage": "https://github.com/robocorp/robotframework-lsp",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "cfbee0488588a1f9884e4ed6b1cfcce405399edc114281f30c26e95e1302efa2"
-        }
-      ],
-      "licenseConcluded": "Apache-2.0",
-      "licenseDeclared": "Apache-2.0",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
       "copyrightText": "NOASSERTION",
-      "summary": "Language Server Protocol implementation for Robot Framework",
-      "releaseDate": "2023-04-27T18:23:25Z",
+      "releaseDate": "2024-01-12T09:29:08Z",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/robotframework-lsp@1.10.1"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:robocorp:robotframework-lsp:1.10.1:*:*:*:*:*:*:*"
         }
       ]
     },
