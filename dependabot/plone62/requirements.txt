@@ -181,7 +181,7 @@ five.customerize==4.1
 five.globalrequest==99.1
 five.intid==3.1.0
 five.localsitemanager==5.0
-fonttools==4.56.0
+fonttools==4.63.0
 fqdn==1.5.1
 furl==2.1.4
 furo==2025.12.19
