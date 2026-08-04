@@ -165,7 +165,7 @@ design.plone.iosegnalo==1.0.5
 design.plone.policy==5.0.21
 diazo==2.0.6
 distro==1.9.0
-docutils==0.22.4
+docutils==0.23
 docxcompose==1.4.0
 docxtpl==0.20.0
 emailcompat32crlf==1.0.3
