@@ -6,12 +6,12 @@
     "creators": [
       "Tool: sbom4python-0.12.5"
     ],
-    "created": "2026-08-01T09:56:46Z",
+    "created": "2026-08-04T07:25:42Z",
     "licenseListVersion": "3.28.0"
   },
   "name": "Python-dependabot/plone60/requirements.txt",
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "http://spdx.org/spdxdocs/Python-dependabot/plone60/requirements.txt-cb057c6f-dd60-406e-ad04-f140267eb966",
+  "documentNamespace": "http://spdx.org/spdxdocs/Python-dependabot/plone60/requirements.txt-bd33ead6-a4a7-4f91-8ab3-c3841525b95f",
   "packages": [
     {
       "SPDXID": "SPDXRef-1-AccessControl",
@@ -1993,7 +1993,7 @@
       "name": "PySocks",
       "versionInfo": "1.7.1",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Person: Anorov",
+      "supplier": "NOASSERTION",
       "downloadLocation": "https://pypi.org/project/PySocks/1.7.1/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/plone60/requirements.txt",
@@ -2015,11 +2015,6 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/PySocks@1.7.1"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:anorov:PySocks:1.7.1:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -2651,8 +2646,7 @@
         }
       ],
       "licenseConcluded": "MIT",
-      "licenseDeclared": "NOASSERTION",
-      "licenseComments": "annotated-types declares MIT License which is not currently a valid SPDX License identifier or expression.",
+      "licenseDeclared": "MIT",
       "copyrightText": "NOASSERTION",
       "summary": "Reusable constraint types to use with typing.Annotated",
       "releaseDate": "2024-05-20T21:33:24Z",
@@ -6606,7 +6600,7 @@
       "name": "ijson",
       "versionInfo": "3.1.4",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "NOASSERTION",
+      "supplier": "Organization: The International Centre for Radio Astronomy Research",
       "downloadLocation": "https://pypi.org/project/ijson/3.1.4/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/plone60/requirements.txt",
@@ -6627,6 +6621,11 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/ijson@3.1.4"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:the_international_centre_for_radio_astronomy_research:ijson:3.1.4:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -11949,33 +11948,19 @@
       "name": "plone.staticresources",
       "versionInfo": "2.1.17",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Person: Plone Foundation",
+      "supplier": "NOASSERTION",
       "downloadLocation": "https://pypi.org/project/plone.staticresources/2.1.17/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/plone60/requirements.txt",
-      "homepage": "https://github.com/plone/plone.staticresources",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "24c2d0c66ddc64dfb40fdb79f4dc773970fbe7cb0f502e10c4f51816d50fb39d"
-        }
-      ],
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "NOASSERTION",
-      "licenseComments": "plone.staticresources declares GPL version 2 which is not currently a valid SPDX License identifier or expression.",
       "copyrightText": "NOASSERTION",
-      "summary": "Static resources for Plone",
-      "releaseDate": "2024-12-18T12:46:33Z",
+      "releaseDate": "2023-09-08T09:30:45Z",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/plone.staticresources@2.1.17"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:plone_foundation:plone.staticresources:2.1.17:*:*:*:*:*:*:*"
         }
       ]
     },
