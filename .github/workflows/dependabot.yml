@@ -1,7 +1,7 @@
 name: Create requirements.txt for dependabot
 
 permissions:
-  contents: write
+  contents: read
 
 on:
   pull_request:
@@ -16,12 +16,14 @@ jobs:
   build:
     name: requirements.txt
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
-          ref: ${{ github.head_ref }}
+          ref: ${{ github.event.pull_request.head.sha }}
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -53,6 +55,7 @@ jobs:
                         --sbom spdx --format json --output sbom/plone$l.spdx.json
           done
       - name: Commit and push changes
+        if: github.event.pull_request.head.repo.full_name == github.repository
         run: |
           git config --global user.email "info@redturtle.it"
           git config --global user.name "RedTurtle CI BOT"
