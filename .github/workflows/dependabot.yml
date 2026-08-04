@@ -49,6 +49,16 @@ jobs:
             echo "i file generati sono aggiornati"
             exit 0
           fi
+          echo "::error::I requirements in dependabot/ non sono aggiornati. Esegui 'make dependabot-update' e committa il risultato."
+          {
+            echo '### I requirements generati non sono aggiornati'
+            echo
+            echo "Esegui \`make dependabot-update\` e committa il risultato."
+            echo
+            echo '```diff'
+            git diff -- dependabot | head -200
+            echo '```'
+          } | tee -a "$GITHUB_STEP_SUMMARY"
           {
             echo 'diff<<PATCH_EOF'
             git diff -- dependabot | head -200
