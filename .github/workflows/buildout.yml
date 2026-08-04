@@ -9,9 +9,44 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
-    name: Buildout
+  lint:
+    name: Lint versions
     runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+      - name: No duplicated pins across the shared files
+        run: make lint
+
+  build:
+    name: Buildout Plone ${{ matrix.plone }} py${{ matrix.python }}
+    runs-on: ubuntu-latest
+    continue-on-error: ${{ matrix.experimental || false }}
+    strategy:
+      fail-fast: false
+      matrix:
+        # tutte e tre le linee su entrambi i Python: 3.11 e 3.12 sono supportati da tutte
+        line: ["60", "61", "62"]
+        python: ["3.11", "3.12"]
+        # gli include aggiungono i campi alle combinazioni con la stessa "line",
+        # senza generarne di nuove
+        include:
+          - line: "60"
+            plone: "6.0.15"
+            # XXX: solo sulla 6.0, per https://github.com/pypa/setuptools/pull/4856/files
+            extra_pins: "setuptools==75.8.2 zc.buildout==4.1.10"
+          - line: "61"
+            plone: "6.1.5"
+            # zope.interface 8 usa i native namespace: con buildout gli egg stanno in path
+            # separati e il namespace "zope" non si compone. horse-with-no-namespace va
+            # installato con pip nel venv (NON da buildout). Sulla 6.2 arriva già dal
+            # requirements della release.
+            extra_pins: "horse-with-no-namespace"
+            experimental: true
+          - line: "62"
+            plone: "6.2.1"
+            extra_pins: ""
+            experimental: true
 
     steps:
       - name: Checkout Repository
@@ -22,16 +57,22 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.11"
+          python-version: ${{ matrix.python }}
+      - name: Check that the line files agree on the Plone version
+        run: |
+          got=$(grep -hoE '6\.[0-9]+\.[0-9]+' \
+                  plone${{ matrix.line }}.cfg \
+                  requirements${{ matrix.line }}.txt \
+                  development${{ matrix.line }}.cfg | sort -u)
+          test "$got" = "${{ matrix.plone }}"
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          # XXX: update setuptools for https://github.com/pypa/setuptools/pull/4856/files
-          pip install setuptools==75.8.2 zc.buildout==4.1.10
+          pip install -r requirements${{ matrix.line }}.txt
+          if [ -n "${{ matrix.extra_pins }}" ]; then pip install ${{ matrix.extra_pins }}; fi
       - name: Build
         run: |
-          buildout -t 2
+          buildout -c development${{ matrix.line }}.cfg -t 2
       - name: c.r.plonesite
         run: |
           echo "from plone import api; print(api.portal.get().getId())" | bin/instance -OPlone debug
