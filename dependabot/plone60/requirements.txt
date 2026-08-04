@@ -380,7 +380,7 @@ pyasn1==0.5.0
 pyasn1-modules==0.3.0
 pycountry==19.8.18
 pycparser==2.22
-pycryptodomex==3.11.0
+pycryptodomex==3.23.0
 pydantic==2.10.2
 pydantic-settings==2.6.1
 pydyf==0.6.0
