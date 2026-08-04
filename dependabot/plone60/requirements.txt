@@ -32,7 +32,7 @@ Products.CMFEditions==4.0.5
 Products.CMFPlacefulWorkflow==3.0.5
 Products.CMFPlone==6.0.15
 Products.CMFUid==4.2
-Products.DCWorkflow==4.0
+Products.DCWorkflow==3.0
 Products.DateRecurringIndex==3.0.1
 Products.ExtendedPathIndex==4.0.1
 Products.ExternalMethod==6.0

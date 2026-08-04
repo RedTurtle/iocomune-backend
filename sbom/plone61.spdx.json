@@ -6,12 +6,12 @@
     "creators": [
       "Tool: sbom4python-0.12.5"
     ],
-    "created": "2026-08-01T09:58:14Z",
+    "created": "2026-08-04T07:16:26Z",
     "licenseListVersion": "3.28.0"
   },
   "name": "Python-dependabot/plone61/requirements.txt",
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "http://spdx.org/spdxdocs/Python-dependabot/plone61/requirements.txt-3ac0d0c6-7556-440d-aa74-b8c38bd6d5ff",
+  "documentNamespace": "http://spdx.org/spdxdocs/Python-dependabot/plone61/requirements.txt-bb3d93b6-2625-4ea7-83b6-d802c731a7a7",
   "packages": [
     {
       "SPDXID": "SPDXRef-1-AccessControl",
@@ -2027,7 +2027,7 @@
       "name": "PySocks",
       "versionInfo": "1.7.1",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Person: Anorov",
+      "supplier": "NOASSERTION",
       "downloadLocation": "https://pypi.org/project/PySocks/1.7.1/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/plone61/requirements.txt",
@@ -2049,11 +2049,6 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/PySocks@1.7.1"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:anorov:PySocks:1.7.1:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -2719,8 +2714,7 @@
         }
       ],
       "licenseConcluded": "MIT",
-      "licenseDeclared": "NOASSERTION",
-      "licenseComments": "annotated-types declares MIT License which is not currently a valid SPDX License identifier or expression.",
+      "licenseDeclared": "MIT",
       "copyrightText": "NOASSERTION",
       "summary": "Reusable constraint types to use with typing.Annotated",
       "releaseDate": "2024-05-20T21:33:24Z",
@@ -4286,33 +4280,19 @@
       "name": "collective.tiles.collection",
       "versionInfo": "2.0.0",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Person: Collective",
+      "supplier": "NOASSERTION",
       "downloadLocation": "https://pypi.org/project/collective.tiles.collection/2.0.0/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/plone61/requirements.txt",
-      "homepage": "https://pypi.org/project/collective.tiles.collection/",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "e51f0c464f17878218ab7ed289ca78b8d6c055eb9c6b1d492fe577133848b3e1"
-        }
-      ],
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "NOASSERTION",
-      "licenseComments": "collective.tiles.collection declares GPL version 2 which is not currently a valid SPDX License identifier or expression.",
       "copyrightText": "NOASSERTION",
-      "summary": "A tile that shows a set of collection results with a customizable layout",
-      "releaseDate": "2022-09-14T16:42:09Z",
+      "releaseDate": "2024-11-05T10:14:12Z",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/collective.tiles.collection@2.0.0"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:collective:collective.tiles.collection:2.0.0:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -6788,7 +6768,7 @@
       "name": "ijson",
       "versionInfo": "3.1.4",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "NOASSERTION",
+      "supplier": "Organization: The International Centre for Radio Astronomy Research",
       "downloadLocation": "https://pypi.org/project/ijson/3.1.4/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/plone61/requirements.txt",
@@ -6809,6 +6789,11 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/ijson@3.1.4"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:the_international_centre_for_radio_astronomy_research:ijson:3.1.4:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -14730,32 +14715,19 @@
       "name": "responses",
       "versionInfo": "0.26.0",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Person: Sentry (support@sentry.io)",
+      "supplier": "NOASSERTION",
       "downloadLocation": "https://pypi.org/project/responses/0.26.0/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/plone61/requirements.txt",
-      "homepage": "https://github.com/getsentry/responses",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "03ec4409088cd5c66b71ecbbbd27fe2c58ddfad801c66203457b3e6a04868c37"
-        }
-      ],
-      "licenseConcluded": "Apache-2.0",
-      "licenseDeclared": "Apache-2.0",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
       "copyrightText": "NOASSERTION",
-      "summary": "A utility library for mocking out the `requests` Python library.",
-      "releaseDate": "2026-02-19T14:38:03Z",
+      "releaseDate": "2024-10-22T09:14:57Z",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/responses@0.26.0"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:sentry:responses:0.26.0:*:*:*:*:*:*:*"
         }
       ]
     },
