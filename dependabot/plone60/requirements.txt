@@ -526,7 +526,7 @@ zest.pocompile==2.0.0
 zest.releaser==9.5.0
 zestreleaser.towncrier==1.3.0
 zipp==3.21.0
-zodbpickle==4.4
+zodbpickle==4.1.1
 zodbupdate==2.0
 zodbverify==1.2.0
 zope.annotation==5.0
