@@ -1,6 +1,8 @@
 # Changelog
 
 ## unreleased
+- collective.volto.socialsettings 0.2.2 -> 0.2.3
+  - permessi controlpanel [simone]
 - Supporto a tre linee Plone dallo stesso tag: `plone60.cfg` (6.0.15), `plone61.cfg` (6.1.5) e
   `plone62.cfg` (6.2.1, sperimentale). I pin dei prodotti sono ora in file condivisi sotto
   `versions/` e si modificano una volta sola; nei `ploneXX.cfg` restano solo i pin specifici di
