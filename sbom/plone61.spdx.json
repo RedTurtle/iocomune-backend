@@ -6,12 +6,12 @@
     "creators": [
       "Tool: sbom4python-0.12.5"
     ],
-    "created": "2026-08-01T09:58:14Z",
+    "created": "2026-08-04T07:27:00Z",
     "licenseListVersion": "3.28.0"
   },
   "name": "Python-dependabot/plone61/requirements.txt",
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "http://spdx.org/spdxdocs/Python-dependabot/plone61/requirements.txt-3ac0d0c6-7556-440d-aa74-b8c38bd6d5ff",
+  "documentNamespace": "http://spdx.org/spdxdocs/Python-dependabot/plone61/requirements.txt-5540807b-1902-4b90-865c-3f09d9756929",
   "packages": [
     {
       "SPDXID": "SPDXRef-1-AccessControl",
@@ -2027,7 +2027,7 @@
       "name": "PySocks",
       "versionInfo": "1.7.1",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "Person: Anorov",
+      "supplier": "NOASSERTION",
       "downloadLocation": "https://pypi.org/project/PySocks/1.7.1/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/plone61/requirements.txt",
@@ -2049,11 +2049,6 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/PySocks@1.7.1"
-        },
-        {
-          "referenceCategory": "SECURITY",
-          "referenceType": "cpe23Type",
-          "referenceLocator": "cpe:2.3:a:anorov:PySocks:1.7.1:*:*:*:*:*:*:*"
         }
       ]
     },
@@ -2719,8 +2714,7 @@
         }
       ],
       "licenseConcluded": "MIT",
-      "licenseDeclared": "NOASSERTION",
-      "licenseComments": "annotated-types declares MIT License which is not currently a valid SPDX License identifier or expression.",
+      "licenseDeclared": "MIT",
       "copyrightText": "NOASSERTION",
       "summary": "Reusable constraint types to use with typing.Annotated",
       "releaseDate": "2024-05-20T21:33:24Z",
@@ -6788,7 +6782,7 @@
       "name": "ijson",
       "versionInfo": "3.1.4",
       "primaryPackagePurpose": "APPLICATION",
-      "supplier": "NOASSERTION",
+      "supplier": "Organization: The International Centre for Radio Astronomy Research",
       "downloadLocation": "https://pypi.org/project/ijson/3.1.4/#files",
       "filesAnalyzed": false,
       "packageFileName": "dependabot/plone61/requirements.txt",
@@ -6809,6 +6803,11 @@
           "referenceCategory": "PACKAGE-MANAGER",
           "referenceType": "purl",
           "referenceLocator": "pkg:pypi/ijson@3.1.4"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:the_international_centre_for_radio_astronomy_research:ijson:3.1.4:*:*:*:*:*:*:*"
         }
       ]
     },
