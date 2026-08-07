@@ -1,5 +1,5 @@
-# File created by /home/runner/work/iocomune-backend/iocomune-backend/docker/create-constraints.py
-# Constraints parsed from /home/runner/work/iocomune-backend/iocomune-backend/docker/constraints60.cfg
+# File created by create-constraints.py
+# Constraints parsed from constraints60.cfg
 AccessControl==7.2
 Acquisition==6.1
 AuthEncoding==6.0
@@ -22,7 +22,7 @@ MultiMapping==5.0
 Paste==3.10.1
 PasteDeploy==3.1.0
 Persistence==5.1
-Pillow==11.0.0
+Pillow==11.3.0
 Plone==6.0.15
 Products.BTreeFolder2==5.1
 Products.CMFCore==3.7
@@ -151,7 +151,7 @@ cryptography==44.0.0
 cssselect==1.2.0
 cssselect2==0.7.0
 cssutils==2.11.0
-dataflake.wsgi.bjoern==2.0
+dataflake.wsgi.bjoern==2.2
 decorator==5.1.1
 defusedcsv==3.0.0
 defusedxml==0.7.1

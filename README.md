@@ -167,15 +167,46 @@ Verrà creata un'immagine chiamata `nome_del_branch_development` (dove nome_del_
 
 # File generati
 
-Questi file sono **prodotti dalla CI**, non vanno modificati a mano:
+Questi file sono **generati**, non vanno modificati a mano:
 
 - `dependabot/plone60/requirements.txt`, `dependabot/plone61/...`, `dependabot/plone62/...`
 - `sbom/plone60.spdx.json`, `sbom/plone61.spdx.json`, `sbom/plone62.spdx.json`
 
+Dopo aver toccato un pin, nella PR basta rigenerare i requirements — **gli SBOM li rigenera il
+workflow al merge su `main`**:
+
+```bash
+make dependabot-update
+```
+
+Ci sono poi `make sbom-update` (solo gli SBOM) e `make generated-update`, che li rigenera entrambi
+quando serve allinearli a mano.
+
+I target girano **dentro un container** (`docker/Dockerfile.generator`): serve solo docker, non il
+python o il virtualenv locale. La CI usa esattamente gli stessi comandi, quindi l'output è identico
+ovunque e nei file non finiscono path della macchina che li ha prodotti (un check in CI lo verifica).
+
+Gli SBOM sono generati con [syft](https://github.com/anchore/syft): legge i requirements offline
+(nessuna chiamata di rete per nome/versione/purl) e usa la rete solo per arricchire le licenze
+(`SYFT_PYTHON_SEARCH_REMOTE_LICENSES`), con una cache persistente per pacchetto — un bump di uno o
+due pin richiede quindi solo qualche secondo di rete, non l'intera rigenerazione. In precedenza si
+usava `sbom4python`, che per ogni pacchetto lanciava `pip show` più una query a PyPI: con ~600 pin
+costava da 1,5 a oltre 10 minuti a linea secondo la rete, contro pochi secondi di syft a cache calda.
+Lo script precedente resta commentato in `scripts/sbom-update.sh` per un eventuale ripristino.
+
+Venv, wheel di pip, cfg remoti di buildout e cache delle licenze di syft sono tenuti in `.cache/`
+(ignorata da git e ripristinata in CI): la prima esecuzione richiede alcuni minuti (soprattutto per
+l'arricchimento licenze), le successive pochi secondi. `make clean-cache` la svuota.
+
+**Nelle PR i file vengono solo verificati**: se sono obsoleti il job `requirements.txt` fallisce e
+commenta la PR con il diff e il comando da lanciare. Il commit automatico avviene solo su push a
+`main` — nelle PR non lo facciamo più perché un commit fatto con `GITHUB_TOKEN` non ri-triggera i
+workflow, e l'head della PR restava senza i check veri facendola sembrare verde anche con la CI
+rossa.
+
 Dependabot apre le PR su questi file, uno stream per linea: **lo stesso bump può quindi generare
 fino a tre PR**. La modifica va poi riportata a mano nel `versions/*.cfg` condiviso (o nel
-`ploneXX.cfg` se riguarda una sola linea), altrimenti al giro successivo il workflow rigenera il file
-e la perde.
+`ploneXX.cfg` se riguarda una sola linea), altrimenti al giro successivo la rigenerazione la perde.
 
 # Quando fare un nuovo tag
 

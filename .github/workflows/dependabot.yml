@@ -1,42 +1,117 @@
 name: Create requirements.txt for dependabot
 
-permissions:
-  contents: write
+# Nelle PR i file generati vengono solo VERIFICATI: se sono obsoleti il job fallisce e
+# commenta la PR. Non committiamo piu' nelle PR perche' un commit fatto con GITHUB_TOKEN
+# non ri-triggera i workflow: l'head della PR restava senza i check veri e la PR sembrava
+# verde anche con la CI rossa. La rigenerazione con commit avviene solo su push a main.
+#
+# La generazione passa sempre dai target del Makefile ("make generated-update" e i due
+# singoli), che girano in un container: stesso identico comando in locale e qui.
 
 on:
   pull_request:
     branches:
       - main
+  push:
+    branches:
+      - main
 
 concurrency:
-  group: requirements-${{ github.head_ref }}
+  group: requirements-${{ github.head_ref || github.ref_name }}
   cancel-in-progress: false
-  
+
 jobs:
-  build:
+  verify:
     name: requirements.txt
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
           ref: ${{ github.head_ref }}
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Restore generator cache
+        uses: actions/cache@v4
         with:
-          python-version: "3.11"
-      - name: Install dependencies
+          path: .cache
+          key: generator-${{ hashFiles('Makefile', 'docker/Dockerfile.generator', 'requirements*.txt', 'plone6*.cfg', 'docker/constraints*.cfg') }}
+          restore-keys: generator-
+      - name: Regenerate requirements
+        run: make dependabot-update
+      - name: Check that the committed files are up to date
+        id: check
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          if git diff --quiet -- dependabot; then
+            echo "i file generati sono aggiornati"
+            exit 0
+          fi
+          echo "::error::I requirements in dependabot/ non sono aggiornati. Esegui 'make dependabot-update' e committa il risultato."
+          {
+            echo '### I requirements generati non sono aggiornati'
+            echo
+            echo "Esegui \`make dependabot-update\` e committa il risultato."
+            echo
+            echo '```diff'
+            git diff -- dependabot | head -200
+            echo '```'
+          } | tee -a "$GITHUB_STEP_SUMMARY"
+          {
+            echo 'diff<<PATCH_EOF'
+            git diff -- dependabot | head -200
+            echo 'PATCH_EOF'
+          } >> "$GITHUB_OUTPUT"
+          exit 1
+      - name: Comment on the PR
+        if: failure() && steps.check.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR: ${{ github.event.pull_request.number }}
+          PATCH: ${{ steps.check.outputs.diff }}
+        run: |
+          {
+            echo "<!-- generated-files-check -->"
+            echo "### I requirements generati non sono aggiornati"
+            echo
+            echo 'Rigenerali e committali (serve solo docker):'
+            echo
+            echo '```bash'
+            echo 'make dependabot-update'
+            echo '```'
+            echo
+            echo "Gli SBOM non servono qui: li rigenera il workflow al merge su \`main\`."
+            echo
+            echo "<details><summary>Differenze rilevate</summary>"
+            echo
+            echo '```diff'
+            echo "$PATCH"
+            echo '```'
+            echo
+            echo "</details>"
+          } > comment.md
+          gh pr comment "$PR" --body-file comment.md --edit-last --create-if-none
+
+  generate:
+    name: Regenerate and commit
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+      - name: Restore generator cache
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: generator-${{ hashFiles('Makefile', 'docker/Dockerfile.generator', 'requirements*.txt', 'plone6*.cfg', 'docker/constraints*.cfg') }}
+          restore-keys: generator-
       - name: Build requirements.txt
-        run: |
-          for l in 60 61 62; do
-            mkdir -p dependabot/plone$l
-            python docker/create-constraints.py \
-                   docker/constraints$l.cfg dependabot/plone$l/requirements.txt
-          done
+        run: make dependabot-update
       - name: Check for changes
         id: git-check
         run: |
@@ -45,21 +120,14 @@ jobs:
           fi
       - name: Build SBOM
         if: steps.git-check.outputs.changed == 'true'
-        run: |
-          pip install sbom4python==0.12.5
-          mkdir -p sbom
-          for l in 60 61 62; do
-            sbom4python --requirement dependabot/plone$l/requirements.txt \
-                        --sbom spdx --format json --output sbom/plone$l.spdx.json
-          done
+        run: make sbom-update
       - name: Commit and push changes
         run: |
           git config --global user.email "info@redturtle.it"
           git config --global user.name "RedTurtle CI BOT"
           git add dependabot sbom
           git commit -m "Auto-generate file at $(date)" || exit 0
-          git pull --rebase "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "${HEAD_REF}"
-          git push "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:refs/heads/${HEAD_REF}"
+          git pull --rebase "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" main
+          git push "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:refs/heads/main"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          HEAD_REF: ${{ github.head_ref }}

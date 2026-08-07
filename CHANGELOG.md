@@ -5,6 +5,7 @@
   - permessi controlpanel [simone]
 - collective.volto.stickyblocks 1.0.0 -> 1.0.1
   - permessi controlpanel [mamico]
+- [plone60] Pillow 11.0.0 -> 11.3.0 [mamico]
 - Supporto a tre linee Plone dallo stesso tag: `plone60.cfg` (6.0.15), `plone61.cfg` (6.1.5) e
   `plone62.cfg` (6.2.1, sperimentale). I pin dei prodotti sono ora in file condivisi sotto
   `versions/` e si modificano una volta sola; nei `ploneXX.cfg` restano solo i pin specifici di
