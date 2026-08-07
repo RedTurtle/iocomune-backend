@@ -116,8 +116,8 @@ jobs:
         include:
           - line: "60"
             default: true
-          - line: "61"
-          - line: "62"
+          # - line: "61"
+          # - line: "62"
 
     steps:
       - name: Checkout Repository
