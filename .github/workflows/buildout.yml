@@ -42,11 +42,11 @@ jobs:
             # installato con pip nel venv (NON da buildout). Sulla 6.2 arriva già dal
             # requirements della release.
             extra_pins: "horse-with-no-namespace"
-            experimental: true
+            # experimental: true
           - line: "62"
             plone: "6.2.1"
-            extra_pins: ""
-            experimental: true
+            extra_pins: "horse-with-no-namespace"
+            # experimental: true
 
     steps:
       - name: Checkout Repository
