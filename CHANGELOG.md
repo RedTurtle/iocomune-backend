@@ -1,10 +1,11 @@
 # Changelog
 
-## unreleased
+## YYYYMMDD-NN
 - collective.volto.socialsettings 0.2.2 -> 0.2.3
   - permessi controlpanel [simone]
 - collective.volto.stickyblocks 1.0.0 -> 1.0.1
   - permessi controlpanel [mamico]
+- mr.developer 2.0.2 -> 2.1.0 aggiunge attributo subpath per monorepo be+fe [mamico]
 
 ## 20260812-01
 - [plone60] Pillow 11.0.0 -> 11.3.0 [mamico]

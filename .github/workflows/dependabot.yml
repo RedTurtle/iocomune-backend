@@ -31,7 +31,7 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
         with:
           ref: ${{ github.head_ref }}
       - name: Restore generator cache
@@ -103,7 +103,7 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
       - name: Restore generator cache
         uses: actions/cache@v4
         with:
