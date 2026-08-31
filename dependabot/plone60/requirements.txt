@@ -230,7 +230,7 @@ mdurl==0.1.2
 mock==5.1.0
 monotonic==1.6
 more-itertools==10.5.0
-mr.developer==2.0.2
+mr.developer==2.1.0
 msgpack==1.1.0
 multipart==1.2.1
 mxdev==4.0.3

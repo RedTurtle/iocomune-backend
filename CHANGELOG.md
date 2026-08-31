@@ -1,5 +1,8 @@
 # Changelog
 
+## YYYYMMDD-NN
+- mr.developer 2.0.2 -> 2.1.0 aggiunge attributo subpath per monorepo be+fe [mamico]
+
 ## 20260812-01
 - [plone60] Pillow 11.0.0 -> 11.3.0 [mamico]
 - Supporto a tre linee Plone dallo stesso tag: `plone60.cfg` (6.0.15), `plone61.cfg` (6.1.5) e
