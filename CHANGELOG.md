@@ -1,6 +1,13 @@
 # Changelog
 
 ## YYYYMMDD-VV
+- redturtle.volto 5.9.5 -> 5.9.7
+  - log send mail [mamico]
+  - Serve a minimal standalone 404 page for HTML requests that hit the backend directly instead of Volto, overriding Plone's themed error page and disabling the site theme so it renders even when the frontend/theme assets are unreachable. The page text is translatable (Italian translation included). [fedevancin]
+  - overrides max_occurences with environment [mamico]
+  - Security fix: use api.content.get instead of restrictedTraverse in RelationChoiceFieldDeserializer to prevent type confusion via path/URL resolution [mamico]
+  - Configuring with plone.meta 2.x [mamico]
+  - Require Python >= 3.9 (Plone 6.0 does not support Python 3.8 anymore) and drop the unused Products.PortalTransforms requirement. [mamico]
 - experimental.noacquisition 1.0.* => 1.1.0b1 supporto plone 6.2 [mamico]
 
 ## 20260901-01
