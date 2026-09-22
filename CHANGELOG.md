@@ -1,5 +1,8 @@
 # Changelog
 
+## YYYYMMDD-VV
+- experimental.noacquisition 1.0.* => 1.1.0b1 supporto plone 6.2 [mamico]
+
 ## 20260901-01
 - https://community.plone.org/t/plone-security-fixes-20260831/23193 (plone.restapi + plone.autoform) [mamico]
 - mr.developer 2.0.2 -> 2.1.0 aggiunge attributo subpath per monorepo be+fe [mamico]
