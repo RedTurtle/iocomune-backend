@@ -1,6 +1,10 @@
 # Changelog
 
-## YYYYMMDD-VV
+## YYYYMMDD-NN
+- collective.volto.socialsettings 0.2.2 -> 0.2.3
+  - permessi controlpanel [simone]
+- collective.volto.stickyblocks 1.0.0 -> 1.0.1
+  - permessi controlpanel [mamico]
 - experimental.noacquisition 1.0.* => 1.1.0b1 supporto plone 6.2 [mamico]
 
 ## 20260901-01
