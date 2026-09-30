@@ -1,6 +1,10 @@
 # Changelog
 
-## YYYYMMDD-VV
+## YYYYMMDD-NN
+- collective.volto.socialsettings 0.2.2 -> 0.2.3
+  - permessi controlpanel [simone]
+- collective.volto.stickyblocks 1.0.0 -> 1.0.1
+  - permessi controlpanel [mamico]
 - redturtle.volto 5.9.5 -> 5.9.7
   - log send mail [mamico]
   - Serve a minimal standalone 404 page for HTML requests that hit the backend directly instead of Volto, overriding Plone's themed error page and disabling the site theme so it renders even when the frontend/theme assets are unreachable. The page text is translatable (Italian translation included). [fedevancin]
