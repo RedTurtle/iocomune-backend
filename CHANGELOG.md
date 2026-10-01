@@ -14,6 +14,8 @@
   - Require Python >= 3.9 (Plone 6.0 does not support Python 3.8 anymore) and drop the unused Products.PortalTransforms requirement. [mamico]
 - experimental.noacquisition 1.0.* => 1.1.0b1 supporto plone 6.2 [mamico]
 - upgrade fonttools for plone 6.2 [mamico]
+- design.plone.contenttypes 6.3.17 -> 6.3.18
+  - Fix @scadenziario-day endpoint to return preview image properly. [daniele]
 
 ## 20260901-01
 - https://community.plone.org/t/plone-security-fixes-20260831/23193 (plone.restapi + plone.autoform) [mamico]
