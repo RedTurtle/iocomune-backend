@@ -16,6 +16,7 @@
 - upgrade fonttools for plone 6.2 [mamico]
 - design.plone.contenttypes 6.3.17 -> 6.3.18
   - Fix @scadenziario-day endpoint to return preview image properly. [daniele]
+- redturtle.volto 5.9.7 -> 5.9.8 [fedevancin]
 
 ## 20260901-01
 - https://community.plone.org/t/plone-security-fixes-20260831/23193 (plone.restapi + plone.autoform) [mamico]
