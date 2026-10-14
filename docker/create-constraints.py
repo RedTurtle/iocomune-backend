@@ -31,7 +31,17 @@ config_file = sys.argv[1]
 config_file = os.path.realpath(config_file)
 constraints_file = sys.argv[2]
 constraints_file = os.path.realpath(os.path.join(os.getcwd(), constraints_file))
-config = buildout.Buildout(config_file, [])
+
+# Con BUILDOUT_EXTENDS_CACHE i cfg remoti vengono riusati tra le esecuzioni invece di
+# essere riscaricati ogni volta. Gli extends puntano a release immutabili
+# (dist.plone.org/release/X.Y.Z/...), quindi la cache non puo' servire dati stale.
+options = []
+extends_cache = os.environ.get("BUILDOUT_EXTENDS_CACHE")
+if extends_cache:
+    os.makedirs(extends_cache, exist_ok=True)
+    options.append(("buildout", "extends-cache", extends_cache))
+
+config = buildout.Buildout(config_file, options)
 
 # Get the constraints from the version pins.
 # Nice: the versions get set directly on the config.
@@ -62,8 +72,10 @@ if conflicts:
     sys.exit(1)
 
 with open(constraints_file, "w") as cfile:
-    cfile.write("# File created by {}\n".format(__file__))
-    cfile.write("# Constraints parsed from {}\n".format(config_file))
+    # solo i basename: il file è versionato e va rigenerato identico su qualsiasi
+    # macchina, altrimenti il confronto in CI vede sempre un diff sull'header
+    cfile.write("# File created by {}\n".format(os.path.basename(__file__)))
+    cfile.write("# Constraints parsed from {}\n".format(os.path.basename(config_file)))
     for package, version in sorted(versions.items()):
         if package in DENYLIST:
             print("Ignoring blacklisted package {}".format(package))

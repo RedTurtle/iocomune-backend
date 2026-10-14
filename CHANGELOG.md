@@ -1,6 +1,28 @@
 # Changelog
 
-## unreleased
+## YYYYMMDD-NN
+- collective.volto.socialsettings 0.2.2 -> 0.2.3
+  - permessi controlpanel [simone]
+- collective.volto.stickyblocks 1.0.0 -> 1.0.1
+  - permessi controlpanel [mamico]
+- redturtle.volto 5.9.5 -> 5.9.7
+  - log send mail [mamico]
+  - Serve a minimal standalone 404 page for HTML requests that hit the backend directly instead of Volto, overriding Plone's themed error page and disabling the site theme so it renders even when the frontend/theme assets are unreachable. The page text is translatable (Italian translation included). [fedevancin]
+  - overrides max_occurences with environment [mamico]
+  - Security fix: use api.content.get instead of restrictedTraverse in RelationChoiceFieldDeserializer to prevent type confusion via path/URL resolution [mamico]
+  - Configuring with plone.meta 2.x [mamico]
+  - Require Python >= 3.9 (Plone 6.0 does not support Python 3.8 anymore) and drop the unused Products.PortalTransforms requirement. [mamico]
+- experimental.noacquisition 1.0.* => 1.1.0b1 supporto plone 6.2 [mamico]
+- upgrade fonttools for plone 6.2 [mamico]
+- design.plone.contenttypes 6.3.17 -> 6.3.18
+  - Fix @scadenziario-day endpoint to return preview image properly. [daniele]
+
+## 20260901-01
+- https://community.plone.org/t/plone-security-fixes-20260831/23193 (plone.restapi + plone.autoform) [mamico]
+- mr.developer 2.0.2 -> 2.1.0 aggiunge attributo subpath per monorepo be+fe [mamico]
+
+## 20260812-01
+- [plone60] Pillow 11.0.0 -> 11.3.0 [mamico]
 - Supporto a tre linee Plone dallo stesso tag: `plone60.cfg` (6.0.15), `plone61.cfg` (6.1.5) e
   `plone62.cfg` (6.2.1, sperimentale). I pin dei prodotti sono ora in file condivisi sotto
   `versions/` e si modificano una volta sola; nei `ploneXX.cfg` restano solo i pin specifici di

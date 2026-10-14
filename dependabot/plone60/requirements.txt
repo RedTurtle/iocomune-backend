@@ -1,5 +1,5 @@
-# File created by /home/runner/work/iocomune-backend/iocomune-backend/docker/create-constraints.py
-# Constraints parsed from /home/runner/work/iocomune-backend/iocomune-backend/docker/constraints60.cfg
+# File created by create-constraints.py
+# Constraints parsed from constraints60.cfg
 AccessControl==7.2
 Acquisition==6.1
 AuthEncoding==6.0
@@ -22,7 +22,7 @@ MultiMapping==5.0
 Paste==3.10.1
 PasteDeploy==3.1.0
 Persistence==5.1
-Pillow==11.0.0
+Pillow==11.3.0
 Plone==6.0.15
 Products.BTreeFolder2==5.1
 Products.CMFCore==3.7
@@ -138,8 +138,8 @@ collective.volto.otp==1.0.1
 collective.volto.secondarymenu==2.0.0
 collective.volto.sitesettings==1.0.6
 collective.volto.slimheader==2.0.0
-collective.volto.socialsettings==0.2.2
-collective.volto.stickyblocks==1.0.0
+collective.volto.socialsettings==0.2.3
+collective.volto.stickyblocks==1.0.1
 collective.volto.subfooter==2.0.0
 collective.volto.subsites==1.5.1
 collective.xmltestreport==2.0.2
@@ -155,7 +155,7 @@ dataflake.wsgi.bjoern==2.2
 decorator==5.1.1
 defusedcsv==3.0.0
 defusedxml==0.7.1
-design.plone.contenttypes==6.3.17
+design.plone.contenttypes==6.3.18
 design.plone.externallogin==1.0.6
 design.plone.iocittadino==1.3.4
 design.plone.ioprenoto==1.2.10
@@ -170,7 +170,7 @@ emailcompat32crlf==1.0.3
 et-xmlfile==1.1.0
 exceptiongroup==1.2.2
 experimental.gracefulblobmissing==2.0
-experimental.noacquisition==1.0.0b10
+experimental.noacquisition==1.1.0b1
 fancycompleter==0.9.1
 feedparser==6.0.11
 filelock==3.16.1
@@ -230,7 +230,7 @@ mdurl==0.1.2
 mock==5.1.0
 monotonic==1.6
 more-itertools==10.5.0
-mr.developer==2.0.2
+mr.developer==2.1.0
 msgpack==1.1.0
 multipart==1.2.1
 mxdev==4.0.3
@@ -308,7 +308,7 @@ plone.app.vocabularies==5.0.5
 plone.app.widgets==5.0.2
 plone.app.workflow==5.0.4
 plone.app.z3cform==4.3.2
-plone.autoform==2.0.3
+plone.autoform==2.0.5
 plone.autoinclude==2.0.3
 plone.base==1.4.1
 plone.batching==2.0.6
@@ -350,7 +350,7 @@ plone.reload==4.0.0
 plone.resource==3.0.2
 plone.resourceeditor==4.0.1
 plone.rest==5.0.0
-plone.restapi==9.15.6
+plone.restapi==9.15.7
 plone.rfc822==3.0.1
 plone.scale==4.1.4
 plone.schema==2.0.2
@@ -415,7 +415,7 @@ redturtle.prenotazioni==2.8.8
 redturtle.rssservice==2.2.0
 redturtle.scale==1.0a2
 redturtle.unitaterritoriali==1.0.1
-redturtle.volto==5.9.5
+redturtle.volto==5.9.7
 redturtle.voltoplugin.editablefooter==2.0.0
 referencing==0.35.1
 repoze.catalog==0.9.0

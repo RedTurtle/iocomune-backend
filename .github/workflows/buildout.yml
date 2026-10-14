@@ -14,8 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
-      - name: No duplicated pins across the shared files
+        uses: actions/checkout@v7
+      - name: Lint
         run: make lint
 
   build:
@@ -42,20 +42,20 @@ jobs:
             # installato con pip nel venv (NON da buildout). Sulla 6.2 arriva già dal
             # requirements della release.
             extra_pins: "horse-with-no-namespace"
-            experimental: true
+            # experimental: true
           - line: "62"
-            plone: "6.2.1"
-            extra_pins: ""
-            experimental: true
+            plone: "6.2.2"
+            extra_pins: "horse-with-no-namespace"
+            # experimental: true
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
       - name: Set locale
         run: |
           sudo locale-gen en_US
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v7
         with:
           python-version: ${{ matrix.python }}
       - name: Check that the line files agree on the Plone version
