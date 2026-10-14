@@ -16,7 +16,8 @@
 - upgrade fonttools for plone 6.2 [mamico]
 - design.plone.contenttypes 6.3.17 -> 6.3.18
   - Fix @scadenziario-day endpoint to return preview image properly. [daniele]
-- redturtle.volto 5.9.7 -> 5.9.8 [fedevancin]
+- redturtle.volto 5.9.7 -> 5.9.8
+  - Generic blocks resolveuid deserializer now skips "title" and "simple_card_title" fields, so a text matching the id of a site-root object is no longer saved as a link to it. [fedevancin]
 
 ## 20260901-01
 - https://community.plone.org/t/plone-security-fixes-20260831/23193 (plone.restapi + plone.autoform) [mamico]
