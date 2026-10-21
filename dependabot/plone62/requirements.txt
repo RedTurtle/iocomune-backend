@@ -589,7 +589,7 @@ zope.pytestlayer==9.2
 zope.ramcache==4.0
 zope.schema==8.1
 zope.security==8.3
-zope.sendmail==7.2
+zope.sendmail==7.3
 zope.sequencesort==6.0
 zope.site==6.0
 zope.size==6.0
