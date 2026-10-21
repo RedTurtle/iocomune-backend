@@ -96,7 +96,7 @@ bravado-core==5.17.1
 build==1.2.2post1
 cachecontrol==0.14.1
 cached-property==2.0.1
-certifi==2024.12.14
+certifi==2026.10.19
 cffi==1.17.1
 charset-normalizer==3.4.1
 check-manifest==0.50
