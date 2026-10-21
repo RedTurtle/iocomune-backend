@@ -569,7 +569,7 @@ zope.publisher==7.3
 zope.ramcache==3.0
 zope.schema==7.0.1
 zope.security==7.3
-zope.sendmail==6.2
+zope.sendmail==7.3
 zope.sequencesort==5.0
 zope.site==5.0
 zope.size==5.0
