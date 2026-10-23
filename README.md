@@ -10,7 +10,7 @@ Lo stesso tag serve **tre linee Plone**: 6.0, 6.1 e 6.2.
 |-------|-------------------|----------------|---------------|-------------------|
 | 6.0   | `plone60.cfg`     | 6.0.15         | **3.9**       | 3.9 → 3.13        |
 | 6.1   | `plone61.cfg`     | 6.1.5          | **3.10**      | 3.10 → 3.13       |
-| 6.2   | `plone62.cfg`     | 6.2.2.1 (sperimentale) | **3.10** | 3.10 → 3.14    |
+| 6.2   | `plone62.cfg`     | 6.2.2.1        | **3.10** | 3.10 → 3.14    |
 
 Minimo e supportati sono quelli dichiarati da `Products.CMFPlone` per la versione pinnata.
 La CI esegue il buildout di **tutte e tre le linee sia con Python 3.11 sia con 3.12**.
