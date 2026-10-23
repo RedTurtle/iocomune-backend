@@ -8,9 +8,9 @@ Lo stesso tag serve **tre linee Plone**: 6.0, 6.1 e 6.2.
 
 | Linea | File da estendere | Versione Plone | Python minimo | Python supportati |
 |-------|-------------------|----------------|---------------|-------------------|
-| 6.0   | `plone60.cfg`     | 6.0.15         | **3.9**       | 3.9 → 3.13        |
-| 6.1   | `plone61.cfg`     | 6.1.5          | **3.10**      | 3.10 → 3.13       |
-| 6.2   | `plone62.cfg`     | 6.2.2.1        | **3.10** | 3.10 → 3.14    |
+| 6.0   | `plone60.cfg`     | 6.0.15         | **3.11**      | 3.11 → 3.13       |
+| 6.1   | `plone61.cfg`     | 6.1.5          | **3.11**      | 3.11 → 3.13       |
+| 6.2   | `plone62.cfg`     | 6.2.2.1        | **3.12**      | 3.12 → 3.14       |
 
 Minimo e supportati sono quelli dichiarati da `Products.CMFPlone` per la versione pinnata.
 Pillow 13.0.0, pinnato in `versions/base.cfg` per tutte le linee, richiede però **Python 3.11**: in pratica
