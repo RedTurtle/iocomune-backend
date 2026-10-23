@@ -33,6 +33,11 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v7
+        with:
+          # il commit che ha avviato la run: tag.yml sposta subito il tag sul suo commit
+          # "update version on tag creation" e checkout v7 rifiuta un tag che non punta più
+          # al commit atteso (così sono falliti tutti i job di 20260901-01)
+          ref: ${{ github.sha }}
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@4574d27a4764455b42196d70a065bc6853246a25  # v3.4.0
@@ -122,6 +127,11 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v7
+        with:
+          # il commit che ha avviato la run: tag.yml sposta subito il tag sul suo commit
+          # "update version on tag creation" e checkout v7 rifiuta un tag che non punta più
+          # al commit atteso (così sono falliti tutti i job di 20260901-01)
+          ref: ${{ github.sha }}
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@4574d27a4764455b42196d70a065bc6853246a25  # v3.4.0
