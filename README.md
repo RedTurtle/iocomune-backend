@@ -64,8 +64,8 @@ Con buildout gli egg finiscono in path separati, il namespace `zope` non si comp
 muore con `ModuleNotFoundError: No module named 'zope.interface'`. La soluzione è
 [horse-with-no-namespace](https://pypi.org/project/horse-with-no-namespace/), che **va installato
 con pip nello stesso virtualenv di zc.buildout, non da buildout** (altrimenti il suo `.pth` non
-viene caricato). Sulla 6.2 arriva già dal `requirements.txt` della release; sulla 6.1 lo
-aggiungiamo noi (vedi `EXTRA_PINS_61` nel Makefile e la matrice in `buildout.yml`).
+viene caricato). Sulla 6.2 arriva già dal `requirements.txt` della release; sulla 6.0 e la 6.1 lo
+aggiungiamo noi.
 Il percorso docker non è interessato: lì pip installa tutto in un unico `site-packages`.
 
 O il docker compose::
