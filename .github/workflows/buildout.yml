@@ -60,10 +60,11 @@ jobs:
           python-version: ${{ matrix.python }}
       - name: Check that the line files agree on the Plone version
         run: |
-          got=$(grep -hi 'plone' \
+          got=$(grep -hv '^[[:space:]]*#' \
                   plone${{ matrix.line }}.cfg \
                   requirements${{ matrix.line }}.txt \
                   development${{ matrix.line }}.cfg \
+                  | grep -i 'plone' \
                   | grep -oP '(?<![0-9.])6\.[0-9]+\.[0-9]+' | sort -u)
           test "$got" = "${{ matrix.plone }}"
       - name: Install dependencies

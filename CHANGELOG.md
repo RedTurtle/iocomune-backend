@@ -2,6 +2,8 @@
 
 ## YYYYMMDD-NN
 - Pillow -> 13.0.0 su tutte le linee (6.0 e 6.1 erano a 11.3.0, 6.2 a 13.0.0 solo con Python > 3.10): fix di sicurezza di 12.1.1, 12.2.0, 12.3.0 e 13.0.0. Richiede Python >= 3.11 [mamico]
+- [plone62] Plone 6.2.2 -> 6.2.2.1: pip 26.2.2 e certifi 2026.10.19 (incidente CA eMudhra/emSign), plone.app.content 5.0.1, Pillow 13.0.0 su Python > 3.10. Rimosso il pin locale di certifi, ora incluso nella release [mamico]
+- [plone60] [plone61] plone.app.content -> 4.2.1: protegge i vocabolari Users, Groups e Principals con il permesso "List portal members", stessa fix di Plone 6.2.2.1 [mamico]
 - collective.volto.socialsettings 0.2.2 -> 0.2.3
   - permessi controlpanel [simone]
 - collective.volto.stickyblocks 1.0.0 -> 1.0.1
