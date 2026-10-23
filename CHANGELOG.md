@@ -1,6 +1,7 @@
 # Changelog
 
 ## YYYYMMDD-NN
+- Pillow -> 13.0.0 su tutte le linee (6.0 e 6.1 erano a 11.3.0, 6.2 a 13.0.0 solo con Python > 3.10): fix di sicurezza di 12.1.1, 12.2.0, 12.3.0 e 13.0.0. Richiede Python >= 3.11 [mamico]
 - collective.volto.socialsettings 0.2.2 -> 0.2.3
   - permessi controlpanel [simone]
 - collective.volto.stickyblocks 1.0.0 -> 1.0.1

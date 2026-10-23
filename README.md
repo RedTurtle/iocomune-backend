@@ -13,6 +13,8 @@ Lo stesso tag serve **tre linee Plone**: 6.0, 6.1 e 6.2.
 | 6.2   | `plone62.cfg`     | 6.2.1 (sperimentale) | **3.10** | 3.10 → 3.14    |
 
 Minimo e supportati sono quelli dichiarati da `Products.CMFPlone` per la versione pinnata.
+Pillow 13.0.0, pinnato in `versions/base.cfg` per tutte le linee, richiede però **Python 3.11**: in pratica
+ogni linea va usata con Python 3.11 o superiore.
 La CI esegue il buildout di **tutte e tre le linee sia con Python 3.11 sia con 3.12**.
 
 `versions.cfg` esiste ancora ed è un **alias della linea di default (6.0)**: i buildout che lo
