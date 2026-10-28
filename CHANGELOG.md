@@ -24,6 +24,8 @@
 - zope.sendmail 6.2 -> 7.3 [cekk]
   - Add a timeout parameter to SMTPMailer (and to the smtpMailer ZCML directive) to control the socket timeout used when connecting and talking to the SMTP server. Previously no timeout was passed to smtplib, so a connection could hang indefinitely if the server stopped responding.
   - SMTPMailer now defaults to a 10 second timeout instead of blocking indefinitely. This is a behavior change: pass timeout=None explicitly to restore the previous unbounded behavior.
+- collective.volto.subsites 1.5.1 -> 1.6.0
+  - annidated subsites are now possible [fedevancin]
     
 ## 20260901-01
 - https://community.plone.org/t/plone-security-fixes-20260831/23193 (plone.restapi + plone.autoform) [mamico]
