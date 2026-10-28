@@ -15,7 +15,6 @@
   - Security fix: use api.content.get instead of restrictedTraverse in RelationChoiceFieldDeserializer to prevent type confusion via path/URL resolution [mamico]
   - Configuring with plone.meta 2.x [mamico]
   - Require Python >= 3.9 (Plone 6.0 does not support Python 3.8 anymore) and drop the unused Products.PortalTransforms requirement. [mamico]
-  - Fix 404 page override: redirects were ignored for requests going through the "++api++" traverser. [fedevancin]
   - Patch portal_membership.deleteLocalRoles to speed up user deletion on big sites: the search uses a fluid depth that skips subtrees without interesting local roles, and security indexes are reindexed only on the topmost objects that actually changed, instead of the whole site. See https://community.plone.org/t/delete-user-that-created-content/3787 [cekk]
 - experimental.noacquisition 1.0.* => 1.1.0b1 supporto plone 6.2 [mamico]
 - upgrade fonttools for plone 6.2 [mamico]
