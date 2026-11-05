@@ -535,7 +535,7 @@ z3c.unconfigure==3.0
 z3c.zcmlhook==3.0
 zExceptions==6.0
 zc.lockfile==4.0
-zc.recipe.cmmi==3.0.0
+zc.recipe.cmmi==5.0
 zc.recipe.egg==4.0.0
 zc.recipe.testrunner==4.2.post1
 zc.relation==3.0
