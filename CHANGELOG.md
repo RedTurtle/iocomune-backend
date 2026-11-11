@@ -1,6 +1,6 @@
 # Changelog
 
-## xxx
+## 20261111-01
 - [plone62] => 6.2.2.1 -> 6.2.3 https://community.plone.org/t/plone-security-hotfix-20261110 [cekk]
 - [plone61] => 6.1.5 -> 6.1.6 https://community.plone.org/t/plone-security-hotfix-20261110 [cekk]
 - [plone60] => 6.0.15 -> 6.0.16 https://community.plone.org/t/plone-security-hotfix-20261110 [cekk]
