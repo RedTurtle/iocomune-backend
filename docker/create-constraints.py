@@ -18,10 +18,18 @@ import sys
 # List packages that we should not include.
 # Originally this was for packages that are pinned by Zope
 # but cannot be pip installed on Py 2 or on Py 3.
-DENYLIST = [
+def canonical_name(package):
+    """Nome normalizzato secondo PEP 503."""
+    return re.sub(r"[-_.]+", "-", package).lower()
+
+
+DENYLIST = {
+    canonical_name(name)
+    for name in (
         "setuptools",
         "zc.buildout",
-]
+    )
+}
 
 # We could hardcode paths here, but working directories in tox confuse me.
 if not len(sys.argv) == 3:
@@ -54,8 +62,7 @@ versions = config.versions
 # zc.buildout non lo segnala, quindi lo intercettiamo qui.
 spellings = {}
 for package, version in versions.items():
-    canonical = re.sub(r"[-_.]+", "-", package).lower()
-    spellings.setdefault(canonical, {}).setdefault(version, []).append(package)
+    spellings.setdefault(canonical_name(package), {}).setdefault(version, []).append(package)
 conflicts = {name: found for name, found in spellings.items() if len(found) > 1}
 if conflicts:
     for name, found in sorted(conflicts.items()):
@@ -77,7 +84,9 @@ with open(constraints_file, "w") as cfile:
     cfile.write("# File created by {}\n".format(os.path.basename(__file__)))
     cfile.write("# Constraints parsed from {}\n".format(os.path.basename(config_file)))
     for package, version in sorted(versions.items()):
-        if package in DENYLIST:
+        # confronto sul nome canonico: zc.buildout >= 6 normalizza le chiavi di
+        # [versions] ("zc.buildout" -> "zc-buildout"), quindi il nome letterale non matcha
+        if canonical_name(package) in DENYLIST:
             print("Ignoring blacklisted package {}".format(package))
             continue
         cfile.write("{}=={}\n".format(package, version))
