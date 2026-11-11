@@ -32,11 +32,11 @@ jobs:
         # senza generarne di nuove
         include:
           - line: "60"
-            plone: "6.0.15"
+            plone: "6.0.16"
             # XXX: solo sulla 6.0, per https://github.com/pypa/setuptools/pull/4856/files
             extra_pins: "setuptools==75.8.2 zc.buildout==4.1.10"
           - line: "61"
-            plone: "6.1.5"
+            plone: "6.1.6"
             # zope.interface 8 usa i native namespace: con buildout gli egg stanno in path
             # separati e il namespace "zope" non si compone. horse-with-no-namespace va
             # installato con pip nel venv (NON da buildout). Sulla 6.2 arriva già dal
@@ -44,7 +44,7 @@ jobs:
             extra_pins: "horse-with-no-namespace"
             # experimental: true
           - line: "62"
-            plone: "6.2.2"
+            plone: "6.2.3"
             extra_pins: "horse-with-no-namespace"
             # experimental: true
 
