@@ -106,7 +106,7 @@ cmarkgfm==2025.10.22
 collective.MockMailHost==3.0.0
 collective.address==1.6
 collective.contentrules.mailfromfield==1.2.1
-collective.exportimport==1.10
+collective.exportimport==1.16
 collective.feedback==1.2.0
 collective.geolocationbehavior==1.7.2
 collective.honeypot==2.1
