@@ -1,5 +1,8 @@
 # Changelog
 
+## xxx
+- pin design.plone.ctgeneric = 1.2.0 [cekk]
+
 ## 20261111-01
 - [plone62] => 6.2.2.1 -> 6.2.3 https://community.plone.org/t/plone-security-hotfix-20261110 [cekk]
 - [plone61] => 6.1.5 -> 6.1.6 https://community.plone.org/t/plone-security-hotfix-20261110 [cekk]
