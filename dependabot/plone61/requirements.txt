@@ -434,7 +434,7 @@ redturtle.volto==5.10.1
 redturtle.voltoplugin.editablefooter==2.0.0
 referencing==0.37.0
 repoze.catalog==0.9.0
-repoze.xmliter==1.0
+repoze.xmliter==2.0
 requests==2.34.2
 requests-file==2.0.0
 requests-toolbelt==1.0.0
