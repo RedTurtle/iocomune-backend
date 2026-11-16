@@ -1,2 +1,0 @@
-# Placeholder temporaneo: forza GitHub a rileggere questo manifest (rimosso in #182)
-# e a chiudere gli alert Dependabot rimasti appesi. Verrà cancellato nel prossimo commit.
