@@ -2,6 +2,7 @@
 
 ## YYYYMMDD-01
 - redturtle.volto 5.10.0 -> 5.10.1: now even "text" field in slate blocks will bypass the automatic title to URL translation. [fedevancin]
+- brotli 1.0.9 -> 1.2.1 security [mamico]
 
 ## 20261111-01
 - [plone62] => 6.2.2.1 -> 6.2.3 https://community.plone.org/t/plone-security-hotfix-20261110 [cekk]

@@ -6,7 +6,6 @@ AuthEncoding==6.0
 BTrees==6.4
 Babel==2.18.0
 Beaker==1.11.0
-Brotli==1.0.9
 CacheControl==0.14.4
 Chameleon==4.6.0
 DateTime==6.0
@@ -96,6 +95,7 @@ bleach==6.4.0
 borg.localrole==5.0.1
 bravado==11.0.3
 bravado-core==5.17.1
+brotli==1.2.1
 build==1.6.1
 cached-property==2.0.1
 certifi==2026.10.23
