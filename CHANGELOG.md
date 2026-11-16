@@ -11,6 +11,7 @@
   - fonttools 4.56.0 -> 4.66.0 su 6.0 e 6.1 (6.2 era già a 4.66.0), zeep 4.2.1 -> 4.3.3
   - geopy 1.21.0 -> 2.5.0 e geographiclib 1.50 -> 2.1, sentry-sdk 2.0.0 -> 2.75.0
   - [plone60] RestrictedPython 8.3 -> 8.5
+- weasyprint 58.1 -> 70.0 (security), con pydyf 0.6.0 -> 0.13.0, tinycss2 1.2.1 -> 1.5.1, cssselect2 0.7.0 -> 0.10.1 e il nuovo tinyhtml5 2.1.0 [mamico]
 
 ## 20261111-01
 - [plone62] => 6.2.2.1 -> 6.2.3 https://community.plone.org/t/plone-security-hotfix-20261110 [cekk]
