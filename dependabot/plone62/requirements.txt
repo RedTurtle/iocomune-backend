@@ -5,8 +5,7 @@ Acquisition==6.2
 AuthEncoding==6.0
 BTrees==6.4
 Babel==2.18.0
-Beaker==1.11.0
-Brotli==1.0.9
+Beaker==1.14.1
 CacheControl==0.14.4
 Chameleon==4.6.0
 DateTime==6.0
@@ -15,7 +14,7 @@ DocumentTemplate==5.3
 ExtensionClass==6.3
 GitPython==3.2.1
 Jinja2==3.1.6
-Mako==1.1.5
+Mako==1.4.3
 Markdown==3.10.3
 MarkupSafe==3.0.3
 Missing==5.2
@@ -96,6 +95,7 @@ bleach==6.4.0
 borg.localrole==5.0.1
 bravado==11.0.3
 bravado-core==5.17.1
+brotli==1.2.1
 build==1.6.1
 cached-property==2.0.1
 certifi==2026.10.23
@@ -188,8 +188,8 @@ fqdn==1.5.1
 furl==2.1.4
 furo==2025.12.19
 future==1.0.0
-geographiclib==1.50
-geopy==1.21.0
+geographiclib==2.1
+geopy==2.5.0
 gitdb==4.0.12
 gunicorn==26.2.0
 h11==0.16.0
@@ -388,11 +388,11 @@ psutil==7.2.2
 psycopg2==2.9.12
 py==1.11.0
 pyOpenSSL==26.4.0
-pyasn1==0.5.0
-pyasn1-modules==0.3.0
+pyasn1==0.6.5
+pyasn1-modules==0.4.2
 pycountry==19.8.18
 pycparser==3.0
-pycryptodomex==3.11.0
+pycryptodomex==3.24.2
 pydantic==2.10.2
 pydantic-settings==2.6.1
 pydyf==0.6.0
@@ -416,7 +416,7 @@ python-dateutil==2.9.0.post0
 python-docx==1.1.2
 python-dotenv==1.2.4
 python-gettext==5.0
-python-ldap==3.4.3
+python-ldap==3.4.8
 python-memcached==1.59
 pytz==2026.6
 qrcode==8.0
@@ -463,7 +463,7 @@ rpds-py==2026.9.1
 sbom4python==0.12.5
 seedir==0.5.1
 selenium==4.52.0
-sentry-sdk==2.0.0
+sentry-sdk==2.75.0
 sgmllib3k==1.0.0
 simplejson==4.2.0
 six==1.17.0
@@ -473,7 +473,7 @@ snowballstemmer==3.1.1
 sortedcontainers==2.4.0
 souper==1.1.1
 souper.plone==1.3.1
-soupsieve==2.9.1
+soupsieve==4.1.1
 sphinx-basic-ng==1.0.0b2
 sphinxcontrib-applehelp==2.0.0
 sphinxcontrib-devhelp==2.0.0
@@ -541,7 +541,7 @@ zc.recipe.egg==4.0.0
 zc.recipe.testrunner==4.2.post1
 zc.relation==3.0
 zdaemon==5.2.1
-zeep==4.2.1
+zeep==4.3.3
 zest.pocompile==2.0.0
 zest.releaser==9.9.1
 zestreleaser.towncrier==2.0.1
