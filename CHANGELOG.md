@@ -1,6 +1,12 @@
 # Changelog
 
-## xxx
+## YYYYMMDD-01
+- redturtle.volto 5.10.0 -> 5.10.1: now even "text" field in slate blocks will bypass the automatic title to URL translation. [fedevancin]
+- redturtle.volto 5.10.1 -> 5.10.2
+  - better handling for @querystring-search event handling [fedevancin]
+  - @navroot (endpoint and expander) no longer returns blocks and blocks_layout [cekk]
+  - limit navigation depth for @navigation, navigation expander and @context-navigation (env REDTURTLE_VOLTO_MAX_NAVIGATION_DEPTH or registry plone.navigation_depth, default 3); a non-integer depth now returns 400 instead of 500 [cekk]
+  - cap navigation tree size (REDTURTLE_VOLTO_MAX_NAVIGATION_ITEMS, default 1000) [cekk]
 - pin design.plone.ctgeneric = 1.2.0 [cekk]
 
 ## 20261111-01
