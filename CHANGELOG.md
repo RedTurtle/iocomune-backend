@@ -7,6 +7,7 @@
   - @navroot (endpoint and expander) no longer returns blocks and blocks_layout [cekk]
   - limit navigation depth for @navigation, navigation expander and @context-navigation (env REDTURTLE_VOLTO_MAX_NAVIGATION_DEPTH or registry plone.navigation_depth, default 3); a non-integer depth now returns 400 instead of 500 [cekk]
   - cap navigation tree size (REDTURTLE_VOLTO_MAX_NAVIGATION_ITEMS, default 1000) [cekk]
+- pin design.plone.ctgeneric = 1.2.0 [cekk]
 
 ## 20261111-01
 - [plone62] => 6.2.2.1 -> 6.2.3 https://community.plone.org/t/plone-security-hotfix-20261110 [cekk]
