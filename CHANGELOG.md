@@ -19,6 +19,8 @@
 - pin design.plone.ctgeneric = 1.2.0 [cekk]
 - redturtle.bandi 1.6.0 -> 1.6.5 [cekk]
   - Plone 6.1 compatibility and other minor fixes [cekk]
+- pas.plugins.jwt 1.0.3 -> 1.0.4
+  - Ignora i token che sollevano jwt.InvalidKeyError (PyJWT >= 2.4) [cekk]
 
 ## 20261111-01
 - [plone62] => 6.2.2.1 -> 6.2.3 https://community.plone.org/t/plone-security-hotfix-20261110 [cekk]
