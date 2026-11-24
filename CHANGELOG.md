@@ -1,6 +1,6 @@
 # Changelog
 
-## YYYYMMDD-01
+## 20261125-01
 - brotli 1.0.9 -> 1.2.1 security [mamico]
 - aggiornamenti di sicurezza segnalati da Dependabot [mamico]:
   - lxml 5.4.0 -> 6.1.3 e lxml-html-clean 0.4.4 -> 0.4.6 su 6.0 e 6.1 (stessi valori della release 6.2.3), con repoze.xmliter 1.0 -> 2.0 necessario per lxml 6
