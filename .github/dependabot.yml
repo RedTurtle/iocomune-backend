@@ -14,11 +14,14 @@ updates:
     directory: "/dependabot/plone60" # Location of package manifests
     schedule:
       interval: "daily"
+    open-pull-requests-limit: 0
   - package-ecosystem: "pip"
     directory: "/dependabot/plone61"
     schedule:
       interval: "daily"
+    open-pull-requests-limit: 0
   - package-ecosystem: "pip"
     directory: "/dependabot/plone62"
     schedule:
       interval: "daily"
+    open-pull-requests-limit: 0
