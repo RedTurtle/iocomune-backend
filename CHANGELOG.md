@@ -21,7 +21,9 @@
   - Plone 6.1 compatibility and other minor fixes [cekk]
 - pas.plugins.jwt 1.0.3 -> 1.0.4
   - Ignora i token che sollevano jwt.InvalidKeyError (PyJWT >= 2.4) [cekk]
-
+- pin xmlsec = 1.3.18: lxml è stato aggiornato e deve avere la stessa vesione di libxml2 di xmlsec [cekk]
+- [plone60] pin Products.ExtendedPathIndex = 4.0.1: dm.plone.advancedquery 1.0 importa string_types da Products.ExtendedPathIndex, rimosso nella 5.0.0 (arrivata con Plone 6.0.16). Teniamo la versione di Plone 6.0.15 [cekk]
+  
 ## 20261111-01
 - [plone62] => 6.2.2.1 -> 6.2.3 https://community.plone.org/t/plone-security-hotfix-20261110 [cekk]
 - [plone61] => 6.1.5 -> 6.1.6 https://community.plone.org/t/plone-security-hotfix-20261110 [cekk]
