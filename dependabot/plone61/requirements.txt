@@ -1,4 +1,3 @@
-# refresh dependency graph
 # File created by create-constraints.py
 # Constraints parsed from constraints61.cfg
 AccessControl==7.7
