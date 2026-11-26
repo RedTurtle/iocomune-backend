@@ -1,18 +1,32 @@
 # Changelog
 
 ## YYYYMMDD-01
-- redturtle.volto 5.10.0 -> 5.10.1: now even "text" field in slate blocks will bypass the automatic title to URL translation. [fedevancin]
+- weasyprint 58.1 -> 70.0 (security), con pydyf 0.6.0 -> 0.13.0, tinycss2 1.2.1 -> 1.5.1, cssselect2 0.7.0 -> 0.10.1 e il nuovo tinyhtml5 2.1.0 [mamico]
+
+## 20261125-01
 - brotli 1.0.9 -> 1.2.1 security [mamico]
 - aggiornamenti di sicurezza segnalati da Dependabot [mamico]:
   - lxml 5.4.0 -> 6.1.3 e lxml-html-clean 0.4.4 -> 0.4.6 su 6.0 e 6.1 (stessi valori della release 6.2.3), con repoze.xmliter 1.0 -> 2.0 necessario per lxml 6
-  - soupsieve -> 4.1.1 su tutte le linee (6.0 e 6.1 erano a 2.10, 6.2 a 2.9.1); richiede Python >= 3.11.5
+  - soupsieve -> 4.1.1 solo sulle linee 6.1 e 6.2. 6.0 spesso gira su 3.11.2 mentre soupsieve richiede Python >= 3.11.5 (quindi è rimasto a 3.0.1 al momento).
   - pyasn1 0.5.0 -> 0.6.5, pyasn1-modules 0.3.0 -> 0.4.2, python-ldap 3.4.3 -> 3.4.8
   - Mako 1.1.5 -> 1.4.3, Beaker 1.11.0 -> 1.14.1, pycryptodomex 3.11.0 -> 3.24.2
   - fonttools 4.56.0 -> 4.66.0 su 6.0 e 6.1 (6.2 era già a 4.66.0), zeep 4.2.1 -> 4.3.3
   - geopy 1.21.0 -> 2.5.0 e geographiclib 1.50 -> 2.1, sentry-sdk 2.0.0 -> 2.75.0
   - [plone60] RestrictedPython 8.3 -> 8.5
-- weasyprint 58.1 -> 70.0 (security), con pydyf 0.6.0 -> 0.13.0, tinycss2 1.2.1 -> 1.5.1, cssselect2 0.7.0 -> 0.10.1 e il nuovo tinyhtml5 2.1.0 [mamico]
-
+- redturtle.volto 5.10.0 -> 5.10.2
+  - now even "text" field in slate blocks will bypass the automatic title to URL translation. [fedevancin]
+  - better handling for @querystring-search event handling [fedevancin]
+  - @navroot (endpoint and expander) no longer returns blocks and blocks_layout [cekk]
+  - limit navigation depth for @navigation, navigation expander and @context-navigation (env REDTURTLE_VOLTO_MAX_NAVIGATION_DEPTH or registry plone.navigation_depth, default 3); a non-integer depth now returns 400 instead of 500 [cekk]
+  - cap navigation tree size (REDTURTLE_VOLTO_MAX_NAVIGATION_ITEMS, default 1000) [cekk]
+- pin design.plone.ctgeneric = 1.2.0 [cekk]
+- redturtle.bandi 1.6.0 -> 1.6.5 [cekk]
+  - Plone 6.1 compatibility and other minor fixes [cekk]
+- pas.plugins.jwt 1.0.3 -> 1.0.4
+  - Ignora i token che sollevano jwt.InvalidKeyError (PyJWT >= 2.4) [cekk]
+- pin xmlsec = 1.3.18: lxml è stato aggiornato e deve avere la stessa vesione di libxml2 di xmlsec [cekk]
+- [plone60] pin Products.ExtendedPathIndex = 4.0.1: dm.plone.advancedquery 1.0 importa string_types da Products.ExtendedPathIndex, rimosso nella 5.0.0 (arrivata con Plone 6.0.16). Teniamo la versione di Plone 6.0.15 [cekk]
+  
 ## 20261111-01
 - [plone62] => 6.2.2.1 -> 6.2.3 https://community.plone.org/t/plone-security-hotfix-20261110 [cekk]
 - [plone61] => 6.1.5 -> 6.1.6 https://community.plone.org/t/plone-security-hotfix-20261110 [cekk]

@@ -33,7 +33,7 @@ Products.CMFPlone==6.0.16
 Products.CMFUid==4.2
 Products.DCWorkflow==3.0
 Products.DateRecurringIndex==3.0.1
-Products.ExtendedPathIndex==5.0.0
+Products.ExtendedPathIndex==4.0.1
 Products.ExternalMethod==6.0
 Products.GenericSetup==5.0.0
 Products.MailHost==6.0
@@ -156,6 +156,7 @@ decorator==5.3.1
 defusedcsv==3.0.0
 defusedxml==0.7.1
 design.plone.contenttypes==6.3.18
+design.plone.ctgeneric==1.2.0
 design.plone.externallogin==1.0.6
 design.plone.iocittadino==1.3.4
 design.plone.ioprenoto==1.2.10
@@ -169,6 +170,7 @@ docxtpl==0.20.0
 emailcompat32crlf==1.0.3
 et-xmlfile==1.1.0
 exceptiongroup==1.3.1
+experimental.catalogmoveopt==1.0.0a2
 experimental.gracefulblobmissing==2.0
 experimental.noacquisition==1.1.0b1
 fancycompleter==0.9.1
@@ -251,7 +253,7 @@ orderedmultidict==1.0.2
 outcome==1.3.0post0
 overrides==7.7.0
 packaging==25.0
-pas.plugins.jwt==1.0.3
+pas.plugins.jwt==1.0.4
 pas.plugins.ldap==1.8.3
 pas.plugins.oidc==2.0.0b4
 passlib==1.7.4
@@ -416,7 +418,7 @@ redturtle.prenotazioni==2.8.8
 redturtle.rssservice==2.2.0
 redturtle.scale==1.0a2
 redturtle.unitaterritoriali==1.0.1
-redturtle.volto==5.10.1
+redturtle.volto==5.10.2
 redturtle.voltoplugin.editablefooter==2.0.0
 referencing==0.37.0
 repoze.catalog==0.9.0
@@ -426,7 +428,7 @@ requests-file==2.0.0
 requests-toolbelt==1.0.0
 rer.customersatisfaction==2.2.4
 rer.linkmap==1.0.7
-rer.newsletter==3.1.1
+rer.newsletter==3.2.1
 responses==0.26.3
 rfc3339-validator==0.1.4
 rfc3986==2.0.0
@@ -458,7 +460,7 @@ snowballstemmer==2.2.0
 sortedcontainers==2.4.0
 souper==1.1.1
 souper.plone==1.3.1
-soupsieve==4.1.1
+soupsieve==3.0.1
 sphinx-basic-ng==1.0.0b2
 sphinxcontrib-applehelp==2.0.0
 sphinxcontrib-devhelp==2.0.0
@@ -498,6 +500,7 @@ wmctrl==0.5
 wrapt==1.17.3
 wsproto==1.2.0
 xidera.prenotazioni==1.0.2
+xmlsec==1.3.18
 yafowil==3.1.0
 yafowil.bootstrap==2.0.0a2
 yafowil.plone==5.0.0a2
