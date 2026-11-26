@@ -1,7 +1,7 @@
 # Changelog
 
 ## Unreleased
-- [plone61] aggiunto horse-with-no-namespace a requirements61.txt, come già per la 6.0 (e come indicato nel README): senza, il namespace pkg_resources di experimental.noacquisition nasconde experimental.catalogmoveopt (PEP 420), richiesto da redturtle.volto 5.10.2 [mamico]
+- [plone61] aggiunto horse-with-no-namespace a requirements61.txt, come già per la 6.0 [mamico]
 
 ## 20261125-01
 - brotli 1.0.9 -> 1.2.1 security [mamico]
