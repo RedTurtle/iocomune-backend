@@ -1,5 +1,8 @@
 # Changelog
 
+## YYYYMMDD-01
+- weasyprint 58.1 -> 70.0 (security), con pydyf 0.6.0 -> 0.13.0, tinycss2 1.2.1 -> 1.5.1, cssselect2 0.7.0 -> 0.10.1 e il nuovo tinyhtml5 2.1.0 [mamico]
+
 ## 20261125-01
 - brotli 1.0.9 -> 1.2.1 security [mamico]
 - aggiornamenti di sicurezza segnalati da Dependabot [mamico]:
