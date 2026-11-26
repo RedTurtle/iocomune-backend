@@ -2,6 +2,7 @@
 
 ## Unreleased
 - [plone61] aggiunto horse-with-no-namespace a requirements61.txt, come già per la 6.0 [mamico]
+- collective.regenv 1.0.0rc1 -> 1.0.0 [mamico]
 
 ## 20261125-01
 - brotli 1.0.9 -> 1.2.1 security [mamico]

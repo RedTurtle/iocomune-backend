@@ -122,7 +122,7 @@ collective.recipe.omelette==2.0.0
 collective.recipe.plonesite==1.12.0
 collective.recipe.template==2.2
 collective.recipe.vscode==0.1.9
-collective.regenv==1.0.0rc1
+collective.regenv==1.0.0
 collective.sentry==0.3.2
 collective.stats==1.1.0
 collective.taskqueue2==1.0a1
